@@ -6,6 +6,7 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'org.sonarqube'
 
 android {
+    buildToolsVersion "21.0.1"
     signingConfigs {
         release {
             keyAlias 'reprime'
