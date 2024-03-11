@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="184dp"
+    android:layout_height="184dp"
+    android:layout_marginEnd="6dp"
+    android:orientation="vertical"
+    android:tag="cards main container"
+    android:layout_marginRight="6dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:orientation="vertical"
+            android:tag="cards main container">
+
+            <FrameLayout
+                android:id="@+id/frame_map_image"
+                android:layout_width="0dp"
+                android:layout_height="184dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:foreground="@drawable/foreground_gradient_map_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="184dp"
+                    android:layout_height="184dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/create_ride_map_dummy"/>
+
+
+            </FrameLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.055555556"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95555556"/>
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/mustard"
+                android:fontFamily="@font/guardiansans_semibold"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/guideline13"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Sightseeing"/>
+
+            <TextView
+                android:id="@+id/textView_route"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/very_light_pink"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="Bengaluru > Shimoga > Gokarna"
+                app:layout_constraintTop_toBottomOf="@+id/category" app:layout_constraintVertical_bias="0.85"/>
+
+
+            <TextView
+                android:id="@+id/textViewKMInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/very_light_pink"
+                android:textSize="14sp"
+                android:maxLines="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="12 Kms"
+                app:layout_constraintTop_toBottomOf="@+id/category"
+                app:layout_constraintVertical_bias="0.65"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginLeft="10dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_two"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    tools:layout_editor_absoluteY="50dp">
+
+    <ImageView
+        android:id="@+id/location_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/location_image_description"
+        android:scaleType="fitXY"
+        android:src="@drawable/location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_check_in_place_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:lineSpacingExtra="2sp"
+        android:text="Tazza Thindi, Mysore road"
+        android:textColor="@color/white"
+        android:lineHeight="20sp"
+        android:letterSpacing="0"
+        android:textSize="@dimen/hotel_name"
+        app:layout_constraintLeft_toRightOf="@id/location_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_check_in_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:lineSpacingExtra="2sp"
+        android:text="Tazza Thindi, Mysore road"
+        android:textColor="@color/white"
+        android:lineHeight="20sp"
+        android:letterSpacing="0"
+        android:visibility="gone"
+        android:textSize="@dimen/hotel_name"
+        app:layout_constraintLeft_toRightOf="@id/location_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

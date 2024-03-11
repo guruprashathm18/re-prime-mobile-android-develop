@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.royalenfield.reprime">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
+
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.compass"
+        android:required="false" />
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".application.REApplication"
+        android:allowBackup="false"
+        android:appComponentFactory="androidx"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="false"
+        tools:replace="android:appComponentFactory,allowBackup">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths">
+            </meta-data>
+        </provider>
+
+
+        <activity
+            android:name=".ui.home.homescreen.view.NavigationMapsActivity"
+            android:label="@string/title_activity_navigation_maps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.homescreen.view.HelpAndSupportActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.homescreen.view.CustomerCareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.service.REServicingRootActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_noti_test" />
+
+        <activity
+            android:name=".ui.splash.activity.MainSplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/Theme.FullScreen.StatusBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:host="royalenfield.com"
+                android:scheme="https"/>
+            </intent-filter>
+
+            <!-- Branch URI Scheme -->
+            <intent-filter>
+                <data
+                    android:host="open"
+                    android:scheme="royalenfieldapp://" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <!-- Branch App Links (optional) -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="https" android:host="@string/host" />
+                <!-- example-alternate domain is required for App Links when the Journeys/Web SDK and Deepviews are used inside your website. -->
+                <data
+                    android:host="@string/host_alter"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="reprime.royalenfield.com"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity> <!-- Branch init -->
+        <meta-data
+            android:name="io.branch.sdk.BranchKey"
+            android:value="@string/branch_live_key" />
+        <meta-data
+            android:name="io.branch.sdk.BranchKey.test"
+            android:value="@string/branch_test_key" />
+       <activity
+            android:name=".ui.splash.activity.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.onboarding.useronboarding.activity.UserOnboardingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.onboarding.login.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.home.homescreen.view.REHomeActivity"
+            android:supportsPictureInPicture="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|uiMode|touchscreen"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <!--
+         <activity
+             android:name="com.facebook.CustomTabActivity"
+             android:exported="true">
+             <intent-filter>
+                 <action android:name="android.intent.action.VIEW" />
+
+                 <category android:name="android.intent.category.DEFAULT" />
+                 <category android:name="android.intent.category.BROWSABLE" />
+
+                 <data android:scheme="@string/fb_login_protocol_scheme" />
+             </intent-filter>
+         </activity>
+        -->
+        <activity
+            android:name=".base.REBaseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+
+        <activity
+            android:name=".ui.signup.views.PrivacyPolicyAndTermsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.forgot.activity.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.onboarding.userprofile.UserProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.ourworld.activity.NewsAndLaunchesDetailsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.rides.activity.RidesLightWeightWebActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.rides.activity.RidesTourActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.rides.activity.InRideActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.rides.activity.ExitRideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.riderprofile.activity.UpcomingRideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.riderprofile.activity.ModifyRidesActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.riderprofile.activity.RideImageCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.rides.activity.OngoingRidesActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.navigation.activity.NavigationWayPointSearchActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.navigation.activity.NavigationAddAddressMapActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.navigation.activity.SavedLocationsListActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.service.specificissue.AnySpecificIssueActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.home.service.search.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.home.service.search.view.SearchServiceCentreActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.resetpassword.activity.ResetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.onboarding.address.activity.AddLocationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.home.rides.activity.AddCheckInActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.onboarding.address.activity.AddAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.riderprofile.activity.REProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.onboarding.editprofile.activity.EditProfileActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.home.service.history.views.ServiceHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.home.service.billsummary.views.ServiceBillSummaryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.onboarding.AccountCreationSuccessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen" />
+        <activity
+            android:name=".ui.home.service.diy.activity.DoItYourSelfActivity"
+            android:label="@string/title_activity_do_it_your_self"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.service.diy.activity.YoutubePlayerActivity"
+            android:label="YoutubePlayerActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.riderprofile.activity.MotorcycleNotesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/googlemap_key" />
+
+
+        <activity
+            android:name=".ui.home.service.servicebookingstatus.views.ServiceCancelConfirmationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.splash.activity.RESuccessSplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.service.search.CalendarViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.rides.CalenderViewRides"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.onboarding.address.activity.ModifyAddressActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.home.rides.activity.RideTermsAndConditions"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.service.paymentgateway.BillDeskActivity"
+            android:label="@string/title_activity_payment_gate_way"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.riderprofile.activity.NearestServiceCentersActivity"
+            android:label="@string/text_title_servicecenter"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" /> <!-- Add Google Map Library -->
+<!--        <uses-library android:name="com.google.android.maps" />-->
+
+        <activity
+            android:name=".ui.home.service.servicebookingslots.view.TimeSlotViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.rides.activity.DealerRideDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.riderprofile.activity.RideDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.rides.activity.JoinRideStatusActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.rides.activity.PopularRidesDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.rides.activity.NotificationsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.rides.RecommendedRouteDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.rides.activity.CreateRideActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.home.rides.activity.PlanRideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.home.rides.activity.RideSaveShareConfirmationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.rides.activity.WayPointSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.rides.activity.ShareYourRideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.rides.activity.CreateRideSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name="com.royalenfield.bluetooth.BleSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.riderprofile.activity.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.riderprofile.activity.REWebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.riderprofile.activity.ChangePasswordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.riderprofile.activity.SettingsWebViewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+
+        <activity
+            android:name=".ui.riderprofile.activity.ConsentUpdateActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <!--
+                <service android:name=".ui.home.service.notification.service.REFirebaseInstanceIdService">
+                    <intent-filter>
+                        <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+                    </intent-filter>
+                </service>
+        -->
+        <activity
+            android:name=".ui.onboarding.vehicleonboarding.activity.OnboardingResultActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.onboarding.vehicleonboarding.activity.UploadDocumentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.homescreen.activity.UploadKYCActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.onboarding.vehicleonboarding.activity.AddVehicleActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <service
+            android:name="com.royalenfield.firebase.fcm.service.REFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ui.userdatavalidation.popup.activity.TransparentPopActivity"
+            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" />
+        <activity
+            android:name=".ui.userdatavalidation.detailsconfirmation.activity.DetailsConfirmationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.userdatavalidation.otp.activity.OtpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity
+            android:name=".ui.userdatavalidation.singlemotorcycle.activity.YourMotorcyclesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.UnderLine" />
+        <activity
+            android:name=".ui.phoneconfigurator.view.PCWebViewActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppThemeFullScreen"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.phoneconfigurator.view.PaymentWebViewActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.userdatavalidation.multiplemotorcycle.activity.MultipleMotorcycleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.UnderLine"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ui.home.navigation.activity.TripListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.navigation.activity.NavigationSummaryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.navigation.activity.BCTTripDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.navigation.activity.BCTEditTripActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name="com.royalenfield.bluetooth.DeviceSettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.home.navigation.activity.BCTSaveInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+
+        <receiver android:name=".notification.receiver.PhoneStateReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+
+        <activity
+            android:name=".ui.home.REAlertActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name=".ui.riderprofile.activity.AppSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+
+        <activity
+            android:name=".ui.riderprofile.activity.ContactUsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+
+
+        <service
+            android:name="com.royalenfield.bluetooth.DeviceSettingsActivity$ForegroundService"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+
+        <activity
+            android:name=".ui.wonderlust.view.WLWebViewActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppThemeFullScreen"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.radaee.reader.PDFViewAct"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.android.assignment.util.view.BarcodeScannerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+        <activity
+            android:name="com.radaee.reader.PDFGLViewAct"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".base.PopActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".ui.barcode.view.BarcodeSuccessActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.FullScreen.StatusBar" />
+
+    </application>
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+</manifest>

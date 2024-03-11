@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="600dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/calibrate_popup_title_TXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center|top"
+        android:text="@string/text_calibrate_title"
+        android:textColor="@color/black_light"
+        android:textSize="@dimen/dp_24" />
+
+    <TextView
+        android:id="@+id/calibrate_popup_desc_TXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:text="@string/text_calibrate_desc"
+        android:textColor="@color/black_light"
+        android:textSize="@dimen/sp_14" />
+
+    <ImageView
+        android:id="@+id/calibrate_popup_IMG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="350dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/calibration_animation" />
+
+    <TextView
+        android:id="@+id/calibrate_popup_accuracy_TXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:text="@string/text_calibrate_accuracy"
+        android:textColor="@color/black_light"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/calibrate_popup_done_TXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_22"
+        android:layout_marginBottom="@dimen/dp_22"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="@string/text_done"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/sp_14" />
+</LinearLayout>

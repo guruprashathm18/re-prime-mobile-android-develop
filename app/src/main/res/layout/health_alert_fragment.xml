@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/header_view"
+            layout="@layout/top_header_view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <RadioGroup
+            android:id="@+id/rg_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_bg"
+            android:orientation="horizontal"
+            android:layout_below="@+id/header_view"
+            app:layout_constraintTop_toBottomOf="@+id/header_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:gravity="center">
+            <RadioButton
+                android:id="@+id/rb_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open"
+                android:checked="true"
+                android:buttonTint="@color/white"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/white"></RadioButton>
+            <RadioButton
+                android:id="@+id/rb_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:buttonTint="@color/white"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:textColor="@color/white"></RadioButton>
+
+        </RadioGroup>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/header_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rg_alert"
+            android:background="@color/black_bg">
+   <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/recyclerView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="@dimen/dp_24"
+           android:layout_marginEnd="@dimen/dp_24" />
+
+
+           <TextView
+               android:id="@+id/txt_load_more_health"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/montserrat_regular"
+               android:text="Load More"
+               android:background="@drawable/button_background_rectangle_stroke"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:gravity="center"
+               android:layout_marginBottom="@dimen/_10sdp"
+               android:padding="@dimen/_10sdp"
+               android:layout_gravity="center"
+               android:layout_centerHorizontal="true"
+               android:textAlignment="center"
+               android:visibility="gone"
+               android:textColor="@color/yellow"
+               android:layout_below="@+id/recyclerView"
+               android:textSize="@dimen/_12ssp" />
+
+
+   </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+        <TextView
+            android:id="@+id/txt_no_alerts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="No Alerts found"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

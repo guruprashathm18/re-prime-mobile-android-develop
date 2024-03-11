@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_events_height"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05277"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_95"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.9555"/>
+
+
+            <ImageView
+                android:id="@+id/event_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/events_img_desc"/>
+
+            <FrameLayout
+                android:id="@+id/event_gradient"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/event_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:lineSpacingExtra="-2sp"
+                android:layout_marginBottom="@dimen/event_name_margin_bottom"
+                tools:text="Event Name"
+                android:textColor="@color/very_light_pink"
+                android:textSize="@dimen/text_size_event_name"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+                app:layout_constraintRight_toLeftOf="@id/guideline_v_95"
+                app:layout_constraintBottom_toTopOf="@id/event_date"/>
+
+            <TextView
+                android:id="@+id/event_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/event_date_margin_bottom"
+                tools:text="Event Date | 5000 Bikers registered"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_event_date"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+                app:layout_constraintRight_toLeftOf="@id/guideline_v_95"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/explore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_next_arrow"
+                android:layout_marginTop="@dimen/tv_explore_margin_top"
+                android:drawablePadding="@dimen/tv_explore_drawable"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/tv_explore"
+                android:textColor="@color/white"
+                android:textSize="@dimen/explore"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@id/event_date"/>
+
+            <Button
+                android:id="@+id/button_register"
+                android:layout_width="@dimen/register_button_width"
+                android:layout_height="@dimen/register_button_height"
+                android:layout_marginBottom="@dimen/register_button_margin_bottom"
+                android:background="@drawable/button_border"
+                android:fontFamily="@font/montserrat_regular"
+                android:padding="@dimen/register_button_padding"
+                android:text="@string/register_now"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:visibility="visible"
+                android:textSize="@dimen/register_button_text_size"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

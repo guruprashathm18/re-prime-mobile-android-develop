@@ -1,0 +1,19 @@
+{
+  "country" : [ {
+    "code" : "IN",
+    "description" : "India",
+    "diallingcode" : "+91",
+    "showInCountryList" : true,
+    "validations" : {
+      "phoneNumber" : {
+        "max" : 10,
+        "min" : 10
+      },
+      "pincode" : {
+        "max" : 6,
+        "min" : 6
+      }
+    }
+  }]
+}
+

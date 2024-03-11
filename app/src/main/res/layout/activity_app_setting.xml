@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_two">
+
+        <com.royalenfield.reprime.ui.custom.views.TitleBarView
+            android:id="@+id/titleBarView_app_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/re_actionbar_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+        </com.royalenfield.reprime.ui.custom.views.TitleBarView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.055555556" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95555556" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/decimal_separator"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/titleBarView_app_setting" />
+
+        <TextView
+            android:id="@+id/tv_title_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_next_arrow"
+            android:drawablePadding="@dimen/_5sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="right"
+            android:padding="@dimen/_10sdp"
+            android:text="Select"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintTop_toBottomOf="@+id/titleBarView_app_setting" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="#c0c0c0"
+            android:visibility="visible"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+
+        <TextView
+            android:id="@+id/tv_dist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/distance_unit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/tv_dist_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:drawableRight="@drawable/ic_next_arrow"
+            android:drawablePadding="@dimen/_5sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="right"
+            android:padding="@dimen/_10sdp"
+            android:text="Select"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.62" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="#c0c0c0"
+            android:visibility="visible"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dist_value" />
+
+        <TextView
+            android:id="@+id/tv_contact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableRight="@drawable/ic_next_arrow"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/text_contact_us"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dist_value" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+
+            android:background="#c0c0c0"
+            android:visibility="gone"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/tv_contact" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,39 @@
+{
+  "country" : [ {
+    "transId" : "abc123",
+    "bookingStatus" : "SUCCESS",
+    "name" : "Continental",
+    "description" : "India",
+    "status" : "PENDING",
+    "showInCountryList" : true
+  },{
+    "transId" : "def345",
+    "bookingStatus" : "SUCCESS",
+    "name" : "Thunderbird",
+    "description" : "India",
+    "status" : "PENDING",
+    "showInCountryList" : true
+  },{
+    "transId" : "ghi234",
+    "bookingStatus" : "PENDING",
+    "name" : "Bullet500",
+    "description" : "India",
+    "status" : "SUCCESS",
+    "showInCountryList" : true
+  },{
+    "transId" : "jkl234",
+    "bookingStatus" : "SUCCESS",
+    "name" : "Classic",
+    "description" : "India",
+    "status" : "CANCELLED",
+    "showInCountryList" : true
+  },{
+    "transId" : "xyz890",
+    "bookingStatus" : "SUCCESS",
+    "name" : "Classic",
+    "description" : "India",
+    "status" : "FAILED",
+    "showInCountryList" : true
+  }]
+}
+

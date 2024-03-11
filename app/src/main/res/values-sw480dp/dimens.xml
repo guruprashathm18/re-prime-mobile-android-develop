@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PC screen sizes size -->
+    <dimen name="pc_make_my_own_gif_size">180dp</dimen>
+
+    <!--phone configurator -->
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="dp_56">56dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_64">64dp</dimen>
+    <dimen name="dp_72">72dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="dp_148">148dp</dimen>
+    <dimen name="dp_160">160dp</dimen>
+    <dimen name="pc_variant_card_left_margin">8dp</dimen>
+    <dimen name="md_bottom_sheet_separator_top_margin">7dp</dimen>
+    <dimen name="choose_model_img_height">220dp</dimen>
+    <dimen name="choose_model_img_width">305dp</dimen>
+    <dimen name="dp_28">28dp</dimen>
+    <dimen name="sp_8">8sp</dimen>
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="pc_model_variant_title_size">28sp</dimen>
+    <dimen name="pc_dot_margin_top">32dp</dimen>
+
+    <!--motorcycle Dashboard-->
+    <dimen name="motorcycle_view_pager_height">240dp</dimen>
+    <dimen name="motorcycle_bike_width">326dp</dimen>
+    <dimen name="motorcycle_bike_height">184dp</dimen>
+    <dimen name="viewpager_layout_height">30dp</dimen>
+
+    <!--Text sizes-->
+    <dimen name="text_size_8">8sp</dimen>
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+
+    <!--sizes-->
+    <dimen name="size_2">2dp</dimen>
+    <dimen name="size_5">5dp</dimen>
+    <dimen name="size_8">8dp</dimen>
+    <dimen name="size_10">10dp</dimen>
+    <dimen name="size_15">15dp</dimen>
+    <dimen name="size_18">18dp</dimen>
+    <dimen name="size_20">20dp</dimen>
+    <dimen name="size_24">24dp</dimen>
+    <dimen name="size_30">30dp</dimen>
+    <dimen name="size_32">32dp</dimen>
+    <dimen name="size_40">40dp</dimen>
+    <dimen name="size_50">50dp</dimen>
+    <dimen name="size_60">60dp</dimen>
+    <dimen name="size_6">6dp</dimen>
+    <dimen name="size_3">3dp</dimen>
+    <dimen name="map_height">324dp</dimen>
+    <dimen name="size_1">1dp</dimen>
+
+</resources>

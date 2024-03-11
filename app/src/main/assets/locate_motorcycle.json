@@ -1,0 +1,28 @@
+{
+  "code": 200,
+  "error": false,
+  "errorMessage": null,
+  "appId": "2",
+  "data": [
+    {
+      "bikeModel": "Thunderbird X 500",
+      "lastLocationTime": "1576569251 ",
+      "ignitionOn": true,
+      "address": "Sector 18, Gurugram",
+      "location": {
+        "latitude": 28.51515,
+        "longitude": 77.093810
+      }
+    },
+    {
+      "bikeModel": "Thunderbird X 500",
+      "lastLocationTime": "1576569251 ",
+      "ignitionOn": false,
+      "address": "Sector 18, Gurugram",
+      "location": {
+        "latitude": 28.51515,
+        "longitude": 77.093810
+      }
+    }
+  ]
+}

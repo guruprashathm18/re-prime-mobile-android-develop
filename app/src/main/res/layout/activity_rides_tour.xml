@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                                       xmlns:tools="http://schemas.android.com/tools"
+                                       android:id="@+id/scroll_status"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:background="@color/black_two"
+                                       android:descendantFocusability="blocksDescendants"
+                                       android:scrollbars="none"
+                                       app:layout_constraintBottom_toBottomOf="parent"
+                                       app:layout_constraintEnd_toEndOf="parent"
+                                       app:layout_constraintStart_toStartOf="parent"
+                                       app:layout_constraintTop_toTopOf="parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/const_layout_padding_bottom"
+            tools:context="com.royalenfield.reprime.ui.home.rides.activity.DealerRideDetailsActivity">
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.055555556"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_95"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95"/>
+
+
+        <com.royalenfield.reprime.ui.custom.views.TitleBarView
+                android:id="@+id/title_bar_ride_detail"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline_title_bar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_title_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="@dimen/re_actionbar_height"/>
+
+        <FrameLayout
+                android:id="@+id/frame_ride_detail_image"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_ride_detail_top_cover_image_height"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_centerInParent="true"
+                app:layout_constraintTop_toBottomOf="@+id/title_bar_ride_detail">
+
+            <ImageView
+                    android:id="@+id/iv_coastal_ride"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_image_loading"
+                    android:contentDescription="@string/text_desc_profile_image"
+                    android:adjustViewBounds="true"/>
+
+        </FrameLayout>
+
+        <TextView
+                android:id="@+id/text_ride_info"
+                style="@style/RiderDetailTextValueStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/montserrat_regular"
+                android:padding="@dimen/text_ride_info_padding"
+                android:text="@string/location_permission_denied"
+                android:textSize="@dimen/text_ride_info_text_size"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/frame_ride_detail_image"/>
+
+        <com.royalenfield.reprime.ui.home.rides.custom.RideDetailsLayout
+                android:id="@+id/rideDetailsLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ride_details_layout_margin_top"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/text_ride_info">
+
+        </com.royalenfield.reprime.ui.home.rides.custom.RideDetailsLayout>
+
+        <TextView
+                android:id="@+id/tv_label_registration_policies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/registration_policies_padding_top_and_end"
+                android:layout_marginEnd="@dimen/tv_registration_policies_margin_end"
+                android:drawableEnd="@drawable/ic_next_arrow"
+                android:drawablePadding="@dimen/registration_policies_drawable_padding"
+                android:fontFamily="@font/montserrat_regular"
+                android:paddingStart="0dp"
+                android:paddingTop="@dimen/registration_policies_padding_top_and_end"
+                android:paddingEnd="@dimen/registration_policies_padding_top_and_end"
+                android:paddingBottom="@dimen/registration_policies_padding_bottom"
+                android:text="@string/text_registration_policies"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_ride_info_text_size"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/rideDetailsLayout"/>
+
+        <Button
+                android:id="@+id/btn_register"
+                android:layout_width="@dimen/register_button_width"
+                android:layout_height="@dimen/ride_tour_register_button_height"
+                android:layout_marginTop="@dimen/ride_tour_register_button_margin_top"
+                android:background="@drawable/button_border_enable"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="-5sp"
+                android:maxLines="1"
+                android:paddingStart="@dimen/ride_tour_register_button_padding"
+                android:paddingEnd="@dimen/ride_tour_register_button_padding"
+                android:text="@string/text_register_now"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_ride_info_text_size"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/tv_label_registration_policies"/>
+
+        <View
+                android:id="@+id/btn_book_service_line"
+                android:layout_width="@dimen/ride_tour_register_button_view_line_width"
+                android:layout_height="@dimen/viewline_height"
+                android:layout_marginTop="@dimen/ride_tour_register_button_view_line_margin"
+                android:background="@color/cZero"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/btn_register"/>
+
+
+        <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+                android:id="@+id/fl_key_places"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/btn_book_service_line"/>
+
+
+        <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+                android:id="@+id/f2_itinerary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/fl_key_places"/>
+
+        <TextView
+                android:id="@+id/tv_label_view_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ride_tour_register_button_view_line_margin"
+                android:layout_marginEnd="@dimen/tv_label_view_more_margin_and_padding"
+                android:drawableEnd="@drawable/ic_next_arrow"
+                android:drawablePadding="@dimen/textview_reschedule_drawablepadding"
+                android:fontFamily="@font/montserrat_regular"
+                android:paddingBottom="@dimen/tv_label_view_more_margin_and_padding"
+                android:text="@string/view_more"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_ride_info_text_size"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/f2_itinerary"/>
+
+        <TextView
+                android:id="@+id/textView_ride_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/text_ride_gallery"
+                android:textColor="@color/white_50"
+                android:textSize="@dimen/tv_label_key_places_text_size"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/tv_label_view_more"/>
+
+        <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+                android:id="@+id/f3_gallery"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_label_key_places_margin_top"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/textView_ride_gallery"/>
+
+        <TextView
+                android:id="@+id/tv_label_view_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/label_view_all_margin_top"
+                android:layout_marginEnd="@dimen/tv_registration_policies_margin_end"
+                android:drawableEnd="@drawable/ic_next_arrow"
+                android:drawablePadding="@dimen/registration_policies_drawable_padding"
+                android:fontFamily="@font/montserrat_regular"
+                android:paddingBottom="@dimen/tv_label_view_more_margin_and_padding"
+                android:text="@string/view_all"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_ride_info_text_size"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/f3_gallery"/>
+
+        <View
+                android:id="@+id/tv_view_all_line"
+                android:layout_width="@dimen/ride_tour_register_button_view_line_width"
+                android:layout_height="@dimen/viewline_height"
+                android:layout_marginTop="@dimen/itinerary_line_margin_top"
+                android:layout_marginBottom="@dimen/itinerary_line_margin_bottom"
+                android:background="@color/cZero"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/tv_label_view_all"/>
+
+
+        <Button
+                android:id="@+id/btn_register_now"
+                android:layout_width="@dimen/register_button_width"
+                android:layout_height="@dimen/ride_tour_register_button_height"
+                android:layout_marginTop="@dimen/ride_tour_register_button_margin_top"
+                android:layout_marginBottom="@dimen/register_now_btn_margin_bottom"
+                android:background="@drawable/button_border_enable"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="-5sp"
+                android:maxLines="1"
+                android:paddingStart="@dimen/ride_tour_register_button_padding"
+                android:paddingEnd="@dimen/ride_tour_register_button_padding"
+                android:text="@string/text_register_now"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_ride_info_text_size"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/tv_view_all_line"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

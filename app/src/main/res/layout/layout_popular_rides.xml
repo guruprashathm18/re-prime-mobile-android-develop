@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   xmlns:tools="http://schemas.android.com/tools"
+                                   android:id="@+id/marquee_cardview"
+                                   android:layout_width="@dimen/image_popular_width"
+                                   android:layout_height="wrap_content"
+                                   android:orientation="vertical"
+>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:orientation="vertical">
+
+        <FrameLayout
+                android:id="@+id/frame_map_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                    android:id="@+id/ivPopularRides"
+                    android:layout_width="@dimen/image_popular_width"
+                    android:layout_height="@dimen/image_popular_height"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline56"
+                    app:layout_constraintEnd_toEndOf="@+id/guideline55"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"/>
+
+        </FrameLayout>
+        <com.caverock.androidsvg.SVGImageView
+                android:id="@+id/imgRideIcon"
+                android:layout_width="@dimen/image_logo_popular_width"
+                android:layout_height="@dimen/image_logo_popular_height"
+                android:layout_marginTop="@dimen/image_logo_popular_margintop"
+                android:layout_marginEnd="@dimen/image_logo_popular_marginend"
+                android:adjustViewBounds="true"
+                tools:background="@drawable/coastal_trail_icon"
+                android:scaleType="centerInside"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/guideline55"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline54"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+                android:id="@+id/imgRideIcon_png"
+                android:layout_width="@dimen/image_logo_popular_width"
+                android:layout_height="@dimen/image_logo_popular_height"
+                android:layout_marginTop="@dimen/image_logo_popular_margintop"
+                android:layout_marginEnd="@dimen/image_logo_popular_marginend"
+                android:adjustViewBounds="true"
+                tools:background="@drawable/coastal_trail_icon"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/guideline55"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline54"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <TextView
+                android:id="@+id/tv_ride_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:lineSpacingExtra="-2sp"
+                tools:text="Coastal Trail"
+                android:textColor="@color/very_light_pink"
+                android:textSize="@dimen/text_popular_title_size"
+                app:layout_constraintEnd_toEndOf="@+id/guideline55"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline54"
+                android:layout_marginTop="@dimen/text_popular_title_margintop"
+                app:layout_constraintTop_toTopOf="@+id/frame_map_image"
+                android:layout_marginBottom="@dimen/text_popular_title_marginbottom"
+                app:layout_constraintBottom_toTopOf="@+id/tv_ride_date"
+                app:layout_constraintVertical_bias="1.0"/>
+
+
+        <TextView
+                tools:text="12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_duration_size"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:id="@+id/textView_duration"
+                app:layout_constraintStart_toEndOf="@+id/tv_ride_date"
+                android:layout_marginStart="@dimen/text_duration_marginstart"
+                android:layout_marginBottom="@dimen/text_duration_marginbottom"
+                app:layout_constraintBottom_toTopOf="@+id/btn_ride_register" android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline55" app:layout_constraintHorizontal_bias="0.0"/>
+
+        <TextView
+                android:id="@+id/tv_ride_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_popular_date_size"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:lineSpacingExtra="-6sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline54"
+                android:layout_marginBottom="@dimen/text_popular_date_marginbottom"
+                app:layout_constraintBottom_toTopOf="@+id/btn_ride_register"
+        />
+
+
+        <Button
+                android:id="@+id/btn_ride_register"
+                android:layout_width="@dimen/button_register_width"
+                android:layout_height="@dimen/button_register_height"
+                android:background="@drawable/button_border"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:lineSpacingExtra="-5sp"
+                android:text="@string/rides_register"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_register_textsize"
+                app:layout_constraintBottom_toTopOf="@+id/guideline56"
+                app:layout_constraintEnd_toStartOf="@+id/guideline55"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline54"
+                android:layout_marginBottom="@dimen/button_register_marginbottom"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="21dp"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="0dp"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintGuide_begin="355dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

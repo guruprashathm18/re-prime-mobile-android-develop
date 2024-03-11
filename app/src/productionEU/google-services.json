@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "901165690560",
+    "firebase_url": "https://eu-we-re-prime-prod01.firebaseio.com",
+    "project_id": "eu-we-re-prime-prod01",
+    "storage_bucket": "eu-we-re-prime-prod01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901165690560:android:34d48c34eb5ddb0d7a8725",
+        "android_client_info": {
+          "package_name": "com.eu.royalenfield.reprime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "901165690560-evo7efmjafh54nmpus3dpd9v02sj4o87.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArXAcOloheFHT7eklPx9zuudZDZjcluqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "901165690560-evo7efmjafh54nmpus3dpd9v02sj4o87.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "901165690560-0o5jvnas9lvotdud7adanftlkrnrvs6q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.rena.royalenfield.reprime"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

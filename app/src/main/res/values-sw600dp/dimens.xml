@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--motorcycle Dashboard-->
+    <dimen name="motorcycle_view_pager_height">240dp</dimen>
+    <dimen name="motorcycle_bike_width">326dp</dimen>
+    <dimen name="motorcycle_bike_height">184dp</dimen>
+    <dimen name="viewpager_layout_height">30dp</dimen>
+
+    <!--Text sizes-->
+    <dimen name="text_size_8">8sp</dimen>
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+
+    <!--sizes-->
+    <dimen name="size_2">2dp</dimen>
+    <dimen name="size_5">5dp</dimen>
+    <dimen name="size_8">8dp</dimen>
+    <dimen name="size_10">10dp</dimen>
+    <dimen name="size_15">15dp</dimen>
+    <dimen name="size_18">18dp</dimen>
+    <dimen name="size_20">20dp</dimen>
+    <dimen name="size_24">24dp</dimen>
+    <dimen name="size_30">30dp</dimen>
+    <dimen name="size_32">32dp</dimen>
+    <dimen name="size_40">40dp</dimen>
+    <dimen name="size_50">50dp</dimen>
+    <dimen name="size_60">60dp</dimen>
+    <dimen name="size_6">6dp</dimen>
+    <dimen name="size_3">3dp</dimen>
+    <dimen name="map_height">324dp</dimen>
+    <dimen name="size_1">1dp</dimen>
+</resources>

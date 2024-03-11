@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_two"
+            android:focusableInTouchMode="true"
+            tools:context="com.royalenfield.reprime.ui.home.rides.RecommendedRouteDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true">
+
+        <com.royalenfield.reprime.ui.custom.views.TitleBarView
+                android:id="@+id/tb_recommended_route_details"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline_title_bar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_title_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="@dimen/re_actionbar_height"/>
+
+        <FrameLayout
+                android:id="@+id/frame_hotel_image"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_ride_detail_top_cover_image_height"
+                android:foreground="@drawable/motorcycle_default"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tb_recommended_route_details">
+
+            <ImageView
+                    android:id="@+id/hotel_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_image_loading"
+                    android:contentDescription="@string/hotel_image_description"
+                    android:scaleType="fitXY"/>
+
+        </FrameLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05833"/>
+
+        <ImageView
+                android:id="@+id/location_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/location_margin_top"
+                android:contentDescription="@string/location_image_description"
+                android:scaleType="fitXY"
+                android:src="@drawable/location"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@id/frame_hotel_image"/>
+
+        <TextView
+                android:id="@+id/tv_hotel_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/hotel_name_margin_top"
+                android:layout_marginTop="@dimen/hotel_name_margin_top"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Tazza Thindi, Mysore road"
+                android:textColor="@color/white"
+                android:textSize="@dimen/hotel_name"
+                app:layout_constraintLeft_toRightOf="@id/location_image"
+                app:layout_constraintTop_toBottomOf="@id/frame_hotel_image"/>
+
+        <TextView
+                android:id="@+id/tv_hotel_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/hotel_name_margin_top"
+                android:fontFamily="@font/montserrat_semibold"
+                android:maxLines="2"
+                android:text="Breakfast, South Indian, Rs 100 for 2"
+                android:textColor="@color/white_50"
+                android:textSize="@dimen/hotel_description"
+                app:layout_constraintLeft_toRightOf="@id/location_image"
+                app:layout_constraintRight_toLeftOf="@id/guideline_v_92"
+                app:layout_constraintTop_toBottomOf="@id/tv_hotel_name"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_69"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.69722"/>
+
+        <View
+                android:id="@+id/separator"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/horizontal_separator_margin_top"
+                android:background="@color/white_50"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+                app:layout_constraintRight_toLeftOf="@id/guideline_v_69"
+                app:layout_constraintTop_toBottomOf="@id/tv_hotel_description"/>
+
+        <TextView
+                android:id="@+id/tv_riders_been_here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/riders_been_here_margin_top"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/riders_been_here"
+                android:textColor="@color/white_50"
+                android:textSize="@dimen/hotel_description"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@id/separator"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.03033"/>
+
+
+        <ImageView
+                android:id="@+id/other_riders_image3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                app:layout_constraintStart_toStartOf="@id/other_riders_image2"
+                app:layout_constraintTop_toBottomOf="@id/tv_riders_been_here"/>
+
+
+        <ImageView
+                android:id="@+id/other_riders_image2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                app:layout_constraintStart_toStartOf="@id/other_riders_image1"
+                app:layout_constraintTop_toBottomOf="@id/tv_riders_been_here"/>
+
+        <ImageView
+                android:id="@+id/other_riders_image1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:layout_constraintStart_toStartOf="@id/guideline_v_4"
+                app:layout_constraintTop_toBottomOf="@id/tv_riders_been_here"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_92"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.9277"/>
+
+        <TextView
+                android:id="@+id/other_riders_names"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/rider_names_margin_top"
+                android:fontFamily="@font/montserrat_regular"
+                android:maxLines="2"
+                android:text="Abhinav, Ayush Khatri and 50 Others"
+                android:textColor="@color/white"
+                android:textSize="@dimen/hotel_description"
+                app:layout_constraintLeft_toRightOf="@id/other_riders_image3"
+                app:layout_constraintRight_toLeftOf="@id/guideline_v_92"
+                app:layout_constraintTop_toBottomOf="@id/tv_riders_been_here"/>
+
+        <View
+                android:id="@+id/separator2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/horizontal_separator2_margin_top"
+                android:background="@color/white_50"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+                app:layout_constraintRight_toLeftOf="@id/guideline_v_69"
+                app:layout_constraintTop_toBottomOf="@id/other_riders_names"/>
+
+        <TextView
+                android:id="@+id/tv_like_to_go_here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/riders_been_here_margin_top"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/like_to_go_here"
+                android:textColor="@color/white_50"
+                android:textSize="@dimen/hotel_description"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@id/separator2"/>
+
+        <Button
+                android:id="@+id/button_start_navigation"
+                android:layout_width="210dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="@dimen/button_margin_top"
+                android:background="@drawable/button_border_enable"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/start_navigation"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/tv_like_to_go_here"/>
+
+        <View
+                android:id="@+id/dummy_separator"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/horizontal_separator2_margin_top"
+                android:background="@color/white_50"
+                android:visibility="invisible"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+                app:layout_constraintRight_toLeftOf="@id/guideline_v_69"
+                app:layout_constraintTop_toBottomOf="@id/button_start_navigation"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

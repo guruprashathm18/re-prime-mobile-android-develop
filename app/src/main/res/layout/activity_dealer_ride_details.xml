@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_two"
+            android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="com.royalenfield.reprime.ui.home.rides.activity.DealerRideDetailsActivity">
+
+        <com.royalenfield.reprime.ui.custom.views.TitleBarView
+                android:id="@+id/title_bar_ride_detail"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline_title_bar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_title_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="@dimen/re_actionbar_height"/>
+
+        <FrameLayout
+                android:id="@+id/frame_ride_detail_image"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_ride_detail_top_cover_image_height"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_bar_ride_detail" tools:visibility="visible">
+
+            <ImageView
+                    android:id="@+id/iv_ride_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/text_desc_profile_image"/>
+
+        </FrameLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_95"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05109489"/>
+
+        <TextView
+                android:id="@+id/tv_label_created_by"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_detail_createdby_margintop"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/created_by"
+                android:textColor="@color/white_50"
+                android:textSize="@dimen/text_detail_createdby_size"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/frame_ride_detail_image"/>
+
+        <com.royalenfield.reprime.ui.home.rides.custom.RECircularImageView
+                android:id="@+id/iv_dealer_image"
+                android:layout_width="@dimen/image_detail_circular_size"
+                android:layout_height="@dimen/image_detail_circular_size"
+                android:layout_marginTop="@dimen/image_detail_circular_margintop"
+                android:layout_marginEnd="@dimen/image_detail_circular_marginend"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+                app:layout_constraintRight_toLeftOf="@id/tv_dealer_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_label_created_by"/>
+
+        <TextView
+                android:id="@+id/tv_dealer_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/text_dealername_marginend"
+                android:fontFamily="@font/montserrat_regular"
+                android:maxLines="1"
+                android:ellipsize="end"
+                tools:text="Majestic Motors"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_dealername_size"
+                app:layout_constraintEnd_toStartOf="@+id/iv_dealer_whatsapp"
+                app:layout_constraintStart_toEndOf="@+id/iv_dealer_image"
+                app:layout_constraintTop_toTopOf="@+id/iv_dealer_image"/>
+
+        <TextView
+                android:id="@+id/tv_dealer_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_dealerlocation_marginstart"
+                android:layout_marginTop="@dimen/text_dealerlocation_margintop"
+                android:layout_marginEnd="@dimen/text_dealerlocation_marginend"
+                android:fontFamily="@font/montserrat_regular"
+                tools:text="Bangalore | 9867548392"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_ride_details_14"
+                app:layout_constraintStart_toEndOf="@+id/iv_dealer_image"
+                app:layout_constraintTop_toBottomOf="@+id/tv_dealer_name"/>
+
+        <TextView
+                android:id="@+id/creator_no_of_rides"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_noof_rides_margintop"
+                android:fontFamily="@font/montserrat_bold"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_ride_details_14"
+                app:layout_constraintLeft_toRightOf="@id/tv_dealer_location"
+                app:layout_constraintTop_toBottomOf="@id/tv_dealer_name"/>
+
+        <TextView
+                android:id="@+id/tv_rides"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_rides_margintop"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/white"
+                android:text="@string/tv_rides"
+                android:visibility="gone"
+                android:textSize="@dimen/text_size_ride_details_14"
+                app:layout_constraintLeft_toRightOf="@id/creator_no_of_rides"
+                app:layout_constraintTop_toBottomOf="@id/tv_dealer_name"/>
+
+        <ImageView
+                android:id="@+id/iv_dealer_whatsapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/image_whatsapp_margintop"
+                android:layout_marginBottom="@dimen/image_whatsapp_marginbottom"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_dealer_location"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintTop_toTopOf="@+id/tv_dealer_name"
+                app:srcCompat="@drawable/ic_call_icon"/>
+
+        <ImageView
+                android:id="@+id/iv_dealer_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/image_location_margin"
+                android:layout_marginEnd="@dimen/image_location_margin"
+                app:layout_constraintEnd_toStartOf="@+id/tv_ride_location_address"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toTopOf="@+id/tv_ride_location_address"
+                app:srcCompat="@drawable/location"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_ride_location_address"/>
+
+        <TextView
+                android:id="@+id/tv_ride_location_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_ride_address_marginstart"
+                android:layout_marginTop="@dimen/text_ride_address_margintop"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_regular"
+                android:maxLines="3"
+                tools:text="459, Dhanalakshmi Building, Goodshed Road, Bengaluru, Karnataka 560053"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_ride_details_14"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/iv_dealer_location"
+                app:layout_constraintTop_toBottomOf="@+id/tv_dealer_location"/>
+
+        <View
+                android:id="@+id/view_line"
+                android:layout_width="@dimen/view_ridedetail_width"
+                android:layout_height="@dimen/view_ridedetail_height"
+                android:layout_marginTop="@dimen/view_ridedetail_margintop"
+                android:background="@color/grey"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/tv_ride_location_address"/>
+
+        <Button
+                android:id="@+id/button_join_ride"
+                android:layout_width="@dimen/button_join_width"
+                android:layout_height="@dimen/button_join_height"
+                android:layout_marginTop="@dimen/button_join_margintop"
+                android:background="@drawable/button_border_enable"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="-5sp"
+                android:text="@string/text_button_join_ride"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_rider_details_18"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/view_line"/>
+
+        <TextView
+                android:id="@+id/tv_share_ride"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_next_arrow"
+                android:drawablePadding="@dimen/textview_reschedule_drawablepadding"
+                android:paddingBottom="8dp"
+                android:text="@string/text_share_ride"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="@dimen/textview_reschedule_size"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:layout_marginTop="16dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/button_join_ride" app:layout_constraintHorizontal_bias="0.0"/>
+
+
+        <com.royalenfield.reprime.ui.home.rides.custom.RideDetailsLayout
+                android:id="@+id/rideDetailsLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/tv_share_ride">
+
+        </com.royalenfield.reprime.ui.home.rides.custom.RideDetailsLayout>
+
+        <View
+                android:id="@+id/dummy_view"
+                android:layout_width="@dimen/view_ridedetail_width"
+                android:layout_height="@dimen/view_ridedetail_height"
+                android:layout_marginTop="@dimen/view_margintop"
+                android:background="@color/grey"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/rideDetailsLayout"/>
+
+        <include
+                android:id="@+id/layout_view_riders_joined"
+                layout="@layout/layout_ridersjoined_images"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+                app:layout_constraintRight_toLeftOf="@id/guideline_v_95"
+                app:layout_constraintTop_toBottomOf="@id/rideDetailsLayout"
+                android:layout_marginTop="@dimen/layout_riders_joined_margintop"/>
+
+        <Button
+                android:id="@+id/button_join_ride_2"
+                android:layout_width="@dimen/button_join_width"
+                android:layout_height="@dimen/button_join_height"
+                android:background="@drawable/button_border_enable"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="-5sp"
+                android:text="@string/text_button_join_ride"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_join_text_size"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/layout_view_riders_joined"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                android:layout_marginTop="@dimen/button_join_margintop"
+                android:layout_marginBottom="@dimen/button_join_margintop"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

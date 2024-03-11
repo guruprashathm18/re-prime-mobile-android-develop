@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/textView_timeslot"
+          android:layout_width="76dp"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="5dp"
+          android:layout_marginEnd="5dp"
+          android:background="@drawable/shape_global_white_border_for_edit_text"
+          android:fontFamily="@font/montserrat_semibold"
+          android:gravity="center_horizontal"
+          android:lineSpacingExtra="4sp"
+          android:padding="11dp"
+          android:text="Classic 500"
+          android:textColor="@color/white"
+          android:textSize="16sp"/>

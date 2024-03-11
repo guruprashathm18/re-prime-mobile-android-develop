@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/tv_level_of_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/level_of_difficulty"
+            android:textColor="@color/white_50"
+            android:textSize="15sp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.00"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.33333"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_66"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.666666"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1.00"/>
+
+    <Button
+            android:id="@+id/easy"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/button_border_disable"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/easy"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_0"
+            app:layout_constraintRight_toLeftOf="@id/guideline_v_33"
+            app:layout_constraintTop_toBottomOf="@+id/tv_level_of_difficulty"/>
+
+    <Button
+            android:id="@+id/medium"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/button_border_disable"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/medium"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_33"
+            app:layout_constraintRight_toLeftOf="@id/guideline_v_66"
+            app:layout_constraintTop_toBottomOf="@+id/tv_level_of_difficulty"/>
+
+    <Button
+            android:id="@+id/difficult"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/button_border_disable"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/difficult"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_66"
+            app:layout_constraintRight_toLeftOf="@id/guideline_v_100"
+            app:layout_constraintTop_toBottomOf="@+id/tv_level_of_difficulty"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

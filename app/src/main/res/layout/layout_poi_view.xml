@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        app:cardBackgroundColor="#00ffffff"
+        app:cardElevation="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="85dp"
+            android:layout_height="match_parent">
+
+
+            <com.royalenfield.reprime.ui.home.rides.custom.RECircularImageView
+                android:id="@+id/poi_image_box"
+                android:layout_width="@dimen/poi_image_box"
+                android:layout_height="@dimen/poi_image_box"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/white"
+                app:civ_border_color="@color/white"
+                app:civ_circle_background_color="@color/yellow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+            </com.royalenfield.reprime.ui.home.rides.custom.RECircularImageView>
+
+            <ImageView
+                android:id="@+id/poi_image"
+                android:layout_width="@dimen/poi_image"
+                android:layout_height="@dimen/poi_image"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@+id/poi_name"
+                app:layout_constraintEnd_toEndOf="@+id/poi_image_box"
+                app:layout_constraintStart_toStartOf="@+id/poi_image_box"
+                app:layout_constraintTop_toTopOf="@+id/poi_image_box" />
+
+
+            <TextView
+                android:id="@+id/poi_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="3dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_bold"
+                android:maxLines="2"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/poi_image_box"
+                tools:text="Ride Name" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_two"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:paddingTop="@dimen/extra_margin"
+    android:paddingBottom="@dimen/extra_margin">
+
+    <TextView
+        android:id="@+id/setting_item_TXT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/montserrat_light"
+        android:lineSpacingExtra="-1sp"
+        android:text="@string/text_software_update"
+        android:textColor="@color/white"
+        android:textSize="@dimen/edittext_size"
+        tools:text="@string/text_software_update" />
+
+    <TextView
+        android:id="@+id/software_badge_count_TXT"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/badge_circle"
+        android:fontFamily="@font/montserrat_light"
+        android:gravity="center|center_vertical"
+        android:text="1"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/setting_item_arrow_IMG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_arrow_right"
+        android:clickable="false"
+        android:contentDescription="@string/app_name" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pc_header_background_color"
+    android:orientation="vertical">
+    <include
+        android:visibility="gone"
+        android:id="@+id/llHeader"
+        layout="@layout/pc_header_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/make_my_own"
+        android:layout_width="@dimen/pc_make_my_own_gif_size"
+        android:layout_height="@dimen/pc_make_my_own_gif_size"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

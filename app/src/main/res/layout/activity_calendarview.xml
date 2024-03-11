@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:background="@color/black_two">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_two">
+
+        <com.royalenfield.reprime.ui.custom.views.TitleBarView
+                android:id="@+id/calendar_topbar"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/re_actionbar_height"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+        </com.royalenfield.reprime.ui.custom.views.TitleBarView>
+
+
+        <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/guardiansans_semibold"
+                android:theme="@style/CalenderViewDateCustomText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/calendar_topbar"/>
+
+        <View
+                android:id="@+id/tv_view_borderline"
+                android:layout_width="250dp"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                app:layout_constraintStart_toStartOf="@+id/guideline22"
+                app:layout_constraintTop_toBottomOf="@+id/calendarView"/>
+
+        <!--<TextView-->
+                <!--android:id="@+id/tv_servicecenter"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="16dp"-->
+                <!--android:fontFamily="@font/montserrat_semibold"-->
+                <!--android:text="@string/motorcycle_drop_time"-->
+                <!--android:textColor="@color/white_50"-->
+                <!--android:textSize="14sp"-->
+                <!--android:visibility="gone"-->
+                <!--app:layout_constraintStart_toStartOf="@+id/guideline22"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/tv_view_borderline"/>-->
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.04"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.955555556"/>
+
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.1018"/>
+
+
+        <TextView
+                android:id="@+id/textView_noslots"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/text_noslots_available_day"
+                android:textColor="@color/white_50"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/guideline23"
+                app:layout_constraintStart_toStartOf="@+id/guideline22"
+                app:layout_constraintTop_toBottomOf="@+id/tv_view_borderline"/>
+
+
+        <FrameLayout
+                android:id="@+id/time_slot_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline23"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline22"
+                app:layout_constraintTop_toBottomOf="@+id/textView_noslots"
+                app:layout_constraintVertical_bias="0.0">
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

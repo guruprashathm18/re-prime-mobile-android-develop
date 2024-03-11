@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_two"
+    >
+
+    <TextView
+        android:id="@+id/tv_choose_category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/choose_ride_category"
+        android:textColor="@color/white_50"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v_80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <RadioGroup
+        android:id="@+id/rg_ride_category_option"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/guideline_v_20"
+        app:layout_constraintRight_toLeftOf="@id/guideline_v_80"
+        app:layout_constraintTop_toBottomOf="@+id/tv_choose_category">
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/terrain_separator"
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white_50"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_20"
+        app:layout_constraintTop_toBottomOf="@+id/rg_ride_category_option" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>

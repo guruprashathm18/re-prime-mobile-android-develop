@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            tools:context=".ui.home.ourworld.activity.NewsAndLaunchesDetailsActivity">
+
+        <com.royalenfield.reprime.ui.custom.views.TitleBarView
+                android:id="@+id/tb_news_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline_title_bar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_title_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="@dimen/re_actionbar_height"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_95"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95"/>
+
+        <TextView
+                android:id="@+id/tv_news_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/news_details_tv_news_date_and_desc_margin_top"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/black"
+                tools:text="News and Launches Date"
+                android:textSize="@dimen/news_details_tv_news_date_and_desc"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+                app:layout_constraintRight_toLeftOf="@id/guideline_v_95"
+                app:layout_constraintTop_toBottomOf="@id/tb_news_title"/>
+
+        <TextView
+                android:id="@+id/tv_news_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/news_details_tv_news_date_and_desc_margin_top"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/black"
+                tools:text="News and Launches Description"
+                android:textSize="@dimen/news_details_tv_news_date_and_desc"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+                app:layout_constraintRight_toLeftOf="@id/guideline_v_95"
+                app:layout_constraintTop_toBottomOf="@id/tv_news_date"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_contentBody" android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/black"
+                android:layout_marginBottom="12dp"
+                android:textSize="@dimen/news_details_tv_news_date_and_desc"
+                app:layout_constraintTop_toBottomOf="@+id/tv_news_description"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

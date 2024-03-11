@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@color/black"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dp_14"
+    android:paddingBottom="@dimen/dp_14">
+
+    <TextView
+        android:id="@+id/tv_our_world"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/header_ourworld"
+        android:textAppearance="@style/HeaderSmallTitleStyle" />
+
+    <TextView
+        android:id="@+id/tv_rides"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/header_rides"
+        android:textAppearance="@style/HeaderSmallTitleStyle" />
+</LinearLayout>

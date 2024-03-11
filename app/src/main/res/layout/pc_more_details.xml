@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/google_tab_background_color"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/engine_capacity_tl"
+        android:text="@string/engine_capacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:layout_marginTop="@dimen/dp_32"
+        android:textColor="@color/pc_more_detail_title_color"
+        android:layout_marginStart="@dimen/dp_32" />
+    <TextView
+        android:id="@+id/engine_capacity"
+        android:layout_below="@id/engine_capacity_tl"
+        android:text="343 cc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:textColor="@color/pc_more_detail_title_color"
+        android:layout_marginStart="@dimen/dp_32" />
+    <TextView
+        android:id="@+id/power_tl"
+        android:layout_toRightOf="@id/engine_capacity_tl"
+        android:text="@string/power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:layout_marginTop="@dimen/dp_32"
+        android:textColor="@color/pc_more_detail_title_color"
+        android:layout_marginStart="@dimen/dp_32"
+        android:layout_toEndOf="@id/engine_capacity_tl" />
+    <TextView
+        android:id="@+id/power"
+        android:layout_toRightOf="@id/engine_capacity_tl"
+        android:layout_below="@id/engine_capacity_tl"
+        android:text="19.8 bhp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:textColor="@color/pc_more_detail_title_color"
+        android:layout_marginStart="@dimen/dp_32"
+        android:layout_toEndOf="@id/engine_capacity_tl" />
+    <TextView
+        android:id="@+id/torque_tl"
+        android:layout_below="@id/engine_capacity"
+        android:text="@string/torque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:layout_marginTop="@dimen/dp_16"
+        android:textColor="@color/pc_more_detail_title_color"
+        android:layout_marginStart="@dimen/dp_32"
+         />
+    <TextView
+        android:id="@+id/torque"
+        android:layout_below="@id/torque_tl"
+        android:text="52 NM @5250 rpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="@dimen/dp_32"
+        android:textColor="@color/pc_more_detail_title_color"
+        android:layout_marginStart="@dimen/dp_32"
+         />
+</RelativeLayout>

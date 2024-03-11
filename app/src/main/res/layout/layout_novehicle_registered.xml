@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:id="@+id/constraintLayout_novehicle"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:layout_marginTop="16dp"
+                                                   android:paddingBottom="10dp"
+                                                   android:visibility="visible"
+                                                   app:layout_constraintEnd_toEndOf="parent"
+                                                   app:layout_constraintStart_toStartOf="parent"
+                                                   app:layout_constraintTop_toTopOf="@+id/guideline40">
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95"/>
+
+    <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/text_label_motorcycle"
+            android:textColor="@color/white_50"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline42"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline41"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+            android:id="@+id/textView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/text_nomotorcycle_registered"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline42"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline41"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"/>
+
+    <View
+            android:id="@+id/view8"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="13dp"
+            android:background="@color/grey"
+        android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/guideline42"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline41"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"/>
+
+    <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+        android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/view8"
+            app:layout_constraintStart_toStartOf="@+id/guideline41"
+            app:layout_constraintTop_toTopOf="@+id/view8"
+            app:layout_constraintVertical_bias="0.100000024"
+            app:srcCompat="@drawable/information"/>
+
+    <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/text_visit_nearest_servicecenter"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+        android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/view8"
+            app:layout_constraintEnd_toEndOf="@+id/view8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/view8"/>
+
+    <View
+            android:id="@+id/tv_view_service_history_line_novehicle"
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="29dp"
+            android:background="#c0c0c0"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="@+id/guideline41"
+            app:layout_constraintTop_toBottomOf="@+id/view8"/>
+
+    <TextView
+            android:id="@+id/tv_label_service_center_novehicle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/text_nearest_servicecenters"
+            android:textColor="@color/white_50"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/guideline42"
+            app:layout_constraintStart_toStartOf="@+id/guideline41"
+            app:layout_constraintTop_toBottomOf="@+id/tv_view_service_history_line_novehicle"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_service_center_novehicle"
+            android:layout_width="0dp"
+            android:layout_height="184dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/guideline42"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline41"
+            app:layout_constraintTop_toBottomOf="@+id/tv_label_service_center_novehicle"/>
+
+    <TextView
+            android:id="@+id/tv_label_search_service_center_novehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="70dp"
+            android:drawableEnd="@drawable/ic_next_arrow"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingBottom="6dp"
+            android:paddingStart="0dp"
+            android:paddingTop="6dp"
+            android:text="@string/text_label_search_service_center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/guideline42"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline41"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView_service_center_novehicle"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Dots related dimens -->
+    <dimen name="dots_height">12dp</dimen>
+    <dimen name="dots_width">12dp</dimen>
+    <dimen name="dots_margin_left">5dp</dimen>
+    <dimen name="dots_margin_right">5dp</dimen>
+    <dimen name="dots_margin_bottom">5dp</dimen>
+    <dimen name="dots_padding">2dp</dimen>
+
+    <!--login screen-->
+    <dimen name="line_width">37dp</dimen>
+    <dimen name="line_height">2dp</dimen>
+    <dimen name="text_size">12sp</dimen>
+    <dimen name="login_top_bar">98dp</dimen>
+    <dimen name="login_option_fb">32dp</dimen>
+    <dimen name="login_item_size">40dp</dimen>
+    <dimen name="login_bar_icon">22dp</dimen>
+
+    <dimen name="login_skip_end">15dp</dimen>
+    <dimen name="login_skip_start">22dp</dimen>
+
+
+    <dimen name="login_text_bottom">18dp</dimen>
+    <dimen name="login_text_top">24dp</dimen>
+
+    <dimen name="login_text_size">30sp</dimen>
+
+    <dimen name="or_layout_margin">8dp</dimen>
+
+    <!--signupscreen1-->
+    <dimen name="signup_edittext_height">40dp</dimen>
+
+    <!--fragment_signup_second-->
+    <dimen name="signup_edtxt_paddingleft">20dp</dimen>
+    <dimen name="signup_edtxt_paddingright">20dp</dimen>
+    <dimen name="signup_edtxt_textsize">18sp</dimen>
+    <dimen name="signup_gendertxt_size">14sp</dimen>
+    <dimen name="signup_gender_radiobtn_marginleft">25dp</dimen>
+    <dimen name="signup_reown_radiobtn_marginleft">35dp</dimen>
+    <dimen name="signup_btn_width">210dp</dimen>
+    <dimen name="signup_btn_height">48dp</dimen>
+    <dimen name="signup_terms_padding">5dp</dimen>
+    <dimen name="signup_privacypolicy_textsize">12sp</dimen>
+    <dimen name="signup_imageprevious_marginbottom">12dp</dimen>
+    <dimen name="signup_textprevious_marginstart">10dp</dimen>
+    <dimen name="signup_edtxt_city_margintop">12dp</dimen>
+    <dimen name="signup_edittext_date_margintop">16dp</dimen>
+    <dimen name="signup_textView_gender_margintop">6dp</dimen>
+    <dimen name="signup_gender_radioGroup_margintop">5dp</dimen>
+    <dimen name="signup_signup_button_margintop">20dp</dimen>
+    <dimen name="signup_privacypolicy_tv_margintop">10dp</dimen>
+
+    <!--fragment_user_created_rides-->
+    <dimen name="view_pager_height">470dp</dimen>
+    <dimen name="view_pager_width">320dp</dimen>
+    <dimen name="view_pager_margin_top">2dp</dimen>
+    <dimen name="ride_route">13sp</dimen>
+    <dimen name="ride_date">11sp</dimen>
+    <dimen name="no_of_days">11sp</dimen>
+    <dimen name="created_by_tv">12sp</dimen>
+    <dimen name="creator_name">13sp</dimen>
+    <dimen name="creator_place">11sp</dimen>
+    <dimen name="ride_description">13sp</dimen>
+    <dimen name="other_riders_names">11sp</dimen>
+    <dimen name="other_names_margin_start">1dp</dimen>
+    <dimen name="swipe_up_text">12sp</dimen>
+    <dimen name="ride_route_margin_bottom">36dp</dimen>
+    <dimen name="card_padding_right">14dp</dimen>
+    <dimen name="card_padding_left">16dp</dimen>
+    <dimen name="card_page_margin">-12dp</dimen>
+    <dimen name="created_by_margin_top">12dp</dimen>
+    <dimen name="rider_margin_top">7dp</dimen>
+    <dimen name="creator_image_height">54dp</dimen>
+    <dimen name="creator_image_width">56dp</dimen>
+    <dimen name="other_rider_image_width">30dp</dimen>
+    <dimen name="other_rider_image_height">29dp</dimen>
+    <dimen name="horizontal_line_margin_top">16dp</dimen>
+    <dimen name="swipe_text_margin_top">10dp</dimen>
+
+    <!--our world-->
+    <dimen name="text_size_launch">14sp</dimen>
+    <dimen name="launch_image_width">150dp</dimen>
+    <dimen name="launch_image_height">150dp</dimen>
+    <dimen name="launch_card_margin">1.5dp</dimen>
+    <dimen name="text_size_event">14sp</dimen>
+    <dimen name="event_image_height">174dp</dimen>
+    <dimen name="event_name_margin">71dp</dimen>
+    <dimen name="explore_margin">18dp</dimen>
+    <dimen name="text_size_launch_name">12sp</dimen>
+    <dimen name="text_size_event_name">16sp</dimen>
+    <dimen name="text_size_event_date">14sp</dimen>
+    <dimen name="explore">14sp</dimen>
+
+    <!-- Dealer ride details dimens -->
+    <dimen name="dimen_ride_detail_top_cover_image_height">206dp</dimen>
+    <dimen name="text_size_ride_details_14">14sp</dimen>
+    <dimen name="text_size_rider_details_18">18sp</dimen>
+
+    <!--by_other_riders-->
+    <dimen name="rider_name">10.5sp</dimen>
+    <dimen name="route">9.5sp</dimen>
+    <dimen name="by_other_riders_text">10sp</dimen>
+    <dimen name="by_other_riders_margin_top">14dp</dimen>
+    <dimen name="border_width">4sp</dimen>
+    <dimen name="total_height">168dp</dimen>
+    <dimen name="fragment_width">112dp</dimen>
+    <dimen name="fragment_height">130dp</dimen>
+
+    <!--RecommendedRouteDetailActivity-->
+    <dimen name="location_margin_top">31dp</dimen>
+    <dimen name="hotel_name">18sp</dimen>
+    <dimen name="hotel_name_margin_top">28dp</dimen>
+    <dimen name="hotel_description">16sp</dimen>
+    <dimen name="horizontal_separator_margin_top">27dp</dimen>
+    <dimen name="riders_been_here_margin_top">26dp</dimen>
+    <dimen name="rider_names_margin_top">19dp</dimen>
+    <dimen name="horizontal_separator2_margin_top">35dp</dimen>
+    <dimen name="button_margin_top">9dp</dimen>
+
+    <!-- Navigation Menu Icons text size -->
+    <dimen name="nav_tab_active_text_size">28sp</dimen>
+    <dimen name="nav_tab_in_active_text_size">17sp</dimen>
+
+    <!-- PC screen sizes size -->
+    <dimen name="pc_make_my_own_gif_size">180dp</dimen>
+    <dimen name="size_1">1dp</dimen>
+
+
+</resources>

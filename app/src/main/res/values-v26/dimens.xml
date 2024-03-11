@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dealer ride details dimens -->
+    <dimen name="dimen_ride_detail_top_cover_image_height">206dp</dimen>
+    <dimen name="text_size_ride_details_14">14sp</dimen>
+    <dimen name="text_size_rider_details_18">18sp</dimen>
+
+    <!-- Navigation Menu Icons text size -->
+    <dimen name="nav_tab_active_text_size">28sp</dimen>
+    <dimen name="nav_tab_in_active_text_size">17sp</dimen>
+
+    <!-- PC screen sizes size -->
+    <dimen name="pc_make_my_own_gif_size">180dp</dimen>
+    <dimen name="size_1">1dp</dimen>
+</resources>

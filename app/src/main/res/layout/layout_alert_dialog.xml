@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/size_40"
+        android:background="@drawable/dialog_rounded_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/size_30">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/guardiansans_semibold"
+            android:gravity="center"
+            android:text="@string/are_you_sure"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_20"
+            android:layout_marginBottom="@dimen/size_20"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="@string/confirmation_turn_off_location"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="128dp"
+                android:layout_height="34dp"
+                android:background="@color/black"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/turn_off"
+                android:textAllCaps="false"
+                android:textColor="@color/alert_list_count_color" />
+
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="128dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="@dimen/size_20"
+                android:background="@color/black"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/text_cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

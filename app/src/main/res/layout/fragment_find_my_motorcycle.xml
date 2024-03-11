@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:clickable="true"
+        android:focusable="true"
+        tools:context=".ui.home.connected.locatemotorcycle.fragments.FindMyMotorcycleFragment">
+
+        <include
+            android:id="@+id/llHeader"
+            layout="@layout/search_banner_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/blankView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_40"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/llHeader" />
+
+
+        <fragment
+            android:id="@+id/mapView"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/space"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/blankView" />
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_40"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/linearLayout" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_curved_top_header"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/size_20"
+            android:paddingTop="@dimen/size_20"
+            android:paddingEnd="@dimen/size_10"
+            android:paddingBottom="@dimen/size_20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:id="@+id/txtBikeModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10"
+                android:layout_marginBottom="@dimen/size_10"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18"
+                tools:text="@string/text_dummy_bike_model" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/size_20"
+                android:background="@color/dialog_line_bg_color" />
+
+            <LinearLayout
+                android:id="@+id/llIgnition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20"
+                android:layout_marginBottom="@dimen/size_20"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgIgnitionIcon"
+                        android:layout_width="@dimen/size_20"
+                        android:layout_height="@dimen/size_20"
+                        android:contentDescription="@string/text_ignition_on"
+                        android:scaleType="center" />
+
+                    <TextView
+                        android:id="@+id/txtIgnitionStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/size_10"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textColor="@color/color_light_green"
+                        android:textSize="@dimen/text_size_12"
+                        tools:text="@string/text_ignition_on" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_30"
+                    android:ellipsize="end"
+                    android:maxHeight="80dp"
+                    android:fadeScrollbars="false"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:paddingTop="@dimen/size_2"
+                    android:paddingBottom="@dimen/size_2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16"
+                    android:scrollbars="vertical"
+                    tools:text="@string/text_dummy_address" />
+
+                <TextView
+                    android:id="@+id/txtLastLocationUpdatedTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_30"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12"
+                    android:layout_marginTop="10dp"
+                    tools:text="@string/text_dummy_time" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtInfoSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_20"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:lineSpacingExtra="5sp"
+                android:padding="@dimen/size_5"
+                android:text="@string/alert_msg_location_off"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtLocateMotorcycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_30"
+                android:layout_marginTop="@dimen/size_20"
+                android:layout_marginEnd="@dimen/size_30"
+                android:layout_marginBottom="@dimen/size_10"
+                android:background="@color/black"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/size_10"
+                android:text="@string/text_walk_to_my_motorcycle"
+                android:textColor="@color/text_color_light_orange"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/vehicle_settings_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_two"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_two">
+
+    <com.royalenfield.reprime.ui.custom.views.TitleBarView
+        android:id="@+id/titleBarView_changepassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/re_actionbar_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </com.royalenfield.reprime.ui.custom.views.TitleBarView>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/titleBarView_changepassword" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    app:layout_constraintTop_toBottomOf="@+id/frame"
+    ></View>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

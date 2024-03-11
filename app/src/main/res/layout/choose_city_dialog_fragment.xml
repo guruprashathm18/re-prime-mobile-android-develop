@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pc_header_background_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/llHeader"
+        layout="@layout/pc_header_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/guardiansans_semibold"
+            android:text="@string/choose_your_state_and_city"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText_state"
+            style="@style/PCCityPriceEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginStart="@dimen/dp_48"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_marginEnd="@dimen/dp_48"
+            android:drawableEnd="@drawable/ic_pc_down_arrow"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="@string/state"
+            android:imeOptions="actionNext"
+            android:longClickable="false"
+            android:paddingEnd="@dimen/dp_14"
+            android:singleLine="true"
+
+            />
+
+        <EditText
+            android:id="@+id/editText_city"
+            style="@style/PCCityPriceEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginStart="@dimen/dp_48"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginEnd="@dimen/dp_48"
+            android:drawableEnd="@drawable/ic_pc_down_arrow"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="@string/city"
+            android:imeOptions="actionNext"
+            android:longClickable="false"
+            android:paddingEnd="@dimen/dp_14"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="@dimen/_148sdp"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_80"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:background="@color/black_2"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/confirm"
+            android:textAllCaps="false"
+            android:textColor="@color/alert_list_count_color_2" />
+
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/_148sdp"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp_28"
+            android:background="@color/black"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

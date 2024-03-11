@@ -1,0 +1,18 @@
+{
+  "error": false,
+  "code": "200",
+  "data": {
+    "getDeviceData": {
+      "device_imei": "170820342",
+      "batch_no": "1",
+      "manufacturing_date": "1581638400000",
+      "iccid": "9036313237",
+      "model_name": "MINDA_1",
+      "vendor_name": "MINDA",
+      "sim_provider_name": "AIRTEL",
+      "admin_key": "123456",
+      "user_key": "ABC12345"
+    }
+  },
+  "errorMessage": null
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/motorcycle_background_color"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dimen_20">
+
+    <ImageView
+        android:id="@+id/imgMotorcycle"
+        android:layout_width="match_parent"
+        android:adjustViewBounds="true"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/_180sdp"
+        android:contentDescription="@string/app_name" />
+    <TextView
+        android:id="@+id/txtConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_bg_curved_red"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_28"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingRight="@dimen/dp_28"
+        android:paddingBottom="@dimen/dp_8"
+        android:text="@string/text_connect"
+        android:textColor="@color/text_color_white"
+        android:textSize="@dimen/sp_14"
+        android:visibility="gone" />
+</RelativeLayout>

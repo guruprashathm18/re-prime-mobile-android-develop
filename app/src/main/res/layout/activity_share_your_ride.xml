@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_two"
+    android:focusableInTouchMode="true"
+    tools:context="com.royalenfield.reprime.ui.home.rides.activity.ShareYourRideActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true">
+
+        <com.royalenfield.reprime.ui.custom.views.TitleBarView
+            android:id="@+id/tb_share_your_ride"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_title_bar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="@dimen/re_actionbar_height" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout_share_ride_image"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_ride_detail_top_cover_image_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tb_share_your_ride">
+
+            <FrameLayout
+                android:id="@+id/frame_share_ride_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="@drawable/foreground_gradient_profile_image">
+
+                <ImageView
+                    android:id="@+id/share_ride_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/share_image_description" />
+
+            </FrameLayout>
+
+
+            <ImageView
+                android:id="@+id/ivEditIcon"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/group_4"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/camera_add_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:contentDescription="@string/camera_add_image_description"
+                android:scaleType="fitXY"
+                android:src="@drawable/camera_add"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_upload_ride_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/upload_ride_photo"
+                android:textColor="@color/white_50"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/camera_add_image" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_80"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.80" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_94"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9444" />
+
+        <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+            android:id="@+id/layout_ride_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintRight_toLeftOf="@id/guideline_v_94"
+            app:layout_constraintTop_toBottomOf="@id/constraint_layout_share_ride_image" />
+
+        <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+            android:id="@+id/layout_level_of_difficulty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintRight_toLeftOf="@id/guideline_v_94"
+            app:layout_constraintTop_toBottomOf="@id/layout_ride_info" />
+
+        <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+            android:id="@+id/layout_type_of_terrain"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintRight_toLeftOf="@id/guideline_v_94"
+            app:layout_constraintTop_toBottomOf="@id/layout_level_of_difficulty" />
+
+
+        <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+            android:id="@+id/layout_ride_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintRight_toLeftOf="@id/guideline_v_94"
+            app:layout_constraintTop_toBottomOf="@id/layout_type_of_terrain" />
+
+        <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+            android:id="@+id/layout_ride_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintRight_toLeftOf="@id/guideline_v_94"
+            app:layout_constraintTop_toBottomOf="@id/layout_ride_type" />
+
+        <TextView
+            android:id="@+id/tv_ride_tags"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="left"
+            android:text="@string/ride_tags"
+            android:textColor="@color/white_50"
+            android:textSize="15sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@id/layout_ride_category" />
+
+        <EditText
+            android:id="@+id/et_ride_tags"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:background="@color/white"
+            android:fontFamily="@font/montserrat_light"
+            android:gravity="start"
+            android:hint="@string/hint_your_ride_tags"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:paddingStart="14dp"
+            android:paddingTop="13dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="13dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_50"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintRight_toLeftOf="@id/guideline_v_94"
+            app:layout_constraintTop_toBottomOf="@id/tv_ride_tags"
+            android:paddingLeft="14dp"
+            android:paddingRight="15dp" />
+
+        <View
+            android:id="@+id/tags_separator"
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/white_50"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@id/et_ride_tags" />
+
+        <TextView
+            android:id="@+id/tv_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:onClick="onModifyCreateRide"
+            android:text="@string/modify"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@id/tags_separator" />
+
+        <ImageView
+            android:id="@+id/next_arrow_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/modify_next_margin_start"
+            android:layout_marginTop="@dimen/modify_next_margin_top"
+            android:contentDescription="@string/next_arrow"
+            android:onClick="onModifyCreateRide"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:src="@drawable/next_arrow_copy_5"
+            app:layout_constraintLeft_toRightOf="@+id/tv_modify"
+            app:layout_constraintTop_toBottomOf="@id/tags_separator"
+            android:layout_marginLeft="@dimen/modify_next_margin_start" />
+
+        <View
+            android:id="@+id/modify_separator"
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/white_50"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@id/tv_modify" />
+
+
+        <include
+            android:id="@+id/layout_share_ride_details"
+            layout="@layout/layout_share_ride_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintRight_toLeftOf="@id/guideline_v_94"
+            app:layout_constraintTop_toBottomOf="@id/modify_separator" />
+
+        <TextView
+            android:id="@+id/tv_terms_conditions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="2dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:onClick="clickTermsAndConditions"
+            android:text="@string/text_ride_terms_and_conditions"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@id/guideline_v_94"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@id/layout_share_ride_details" />
+
+        <ImageView
+            android:id="@+id/next_terms_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/modify_next_margin_top"
+            android:contentDescription="@string/next_arrow"
+            android:onClick="clickTermsAndConditions"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:src="@drawable/next_arrow_copy_5"
+            app:layout_constraintEnd_toStartOf="@id/guideline_v_94"
+            app:layout_constraintLeft_toRightOf="@+id/tv_terms_conditions"
+            app:layout_constraintTop_toBottomOf="@id/layout_share_ride_details"
+            android:layout_marginLeft="@dimen/modify_next_margin_start" />
+
+
+        <View
+            android:id="@+id/terms_conditions_separator"
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white_50"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_terms_conditions" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="210dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_border_enable"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/text_global_submit_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/terms_conditions_separator" />
+
+        <View
+            android:id="@+id/dummy_separator"
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/white_50"
+            android:visibility="invisible"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@id/button_next" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

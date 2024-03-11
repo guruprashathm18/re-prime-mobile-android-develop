@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_two"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_two">
+
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.06"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="21dp"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="20dp"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <EditText
+                android:id="@+id/editText_firstname"
+                style="@style/OnBoardEditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/signup_edittext_height"
+                android:hint="@string/text_hint_first_name"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+            android:longClickable="false"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:inputType="textPersonName|textCapSentences"
+                app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline14"
+                app:layout_constraintTop_toTopOf="@+id/guideline10"/>
+
+        <TextView
+                android:id="@+id/text_fname_error"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/signup_error_txt_margintop"
+                android:text="@string/inline_error_text"
+                android:textColor="@color/orangey_red"
+                android:textSize="@dimen/signup_error_textsize"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                app:layout_constraintStart_toStartOf="@+id/guideline14"
+                app:layout_constraintTop_toBottomOf="@+id/editText_firstname"/>
+
+
+        <EditText
+                android:id="@+id/edittext_lastname"
+                style="@style/OnBoardEditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/signup_edittext_height"
+                android:layout_marginTop="@dimen/signup_edtxt_margintop"
+                android:hint="@string/text_hint_last_name"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+            android:longClickable="false"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:inputType="textPersonName|textCapSentences"
+                app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                app:layout_constraintStart_toStartOf="@+id/guideline14"
+                app:layout_constraintTop_toBottomOf="@+id/text_fname_error"/>
+
+        <TextView
+                android:id="@+id/text_lastname_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/signup_error_txt_margintop"
+                android:text="@string/inline_error_text"
+                android:textColor="@color/orangey_red"
+                android:textSize="@dimen/signup_error_textsize"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline14"
+                app:layout_constraintTop_toBottomOf="@+id/edittext_lastname"/>
+
+        <EditText
+                android:id="@+id/edittext_email"
+                style="@style/OnBoardEditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/signup_edittext_height"
+                android:layout_marginTop="@dimen/signup_edtxt_margintop"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:hint="@string/email_id"
+            android:longClickable="false"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                app:layout_constraintStart_toStartOf="@+id/guideline14"
+                app:layout_constraintTop_toBottomOf="@+id/text_lastname_error"/>
+
+        <TextView
+                android:id="@+id/text_email_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/signup_error_txt_margintop"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/inline_error_text"
+                android:textColor="@color/orangey_red"
+                android:textSize="@dimen/signup_error_textsize"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline14"
+                app:layout_constraintTop_toBottomOf="@+id/edittext_email"/>
+
+
+
+        <EditText
+            android:id="@+id/editText_code"
+            style="@style/OnBoardEditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/signup_edittext_height"
+            android:layout_marginTop="@dimen/signup_edtxt_margintop"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:editable="false"
+            android:focusable="false"
+            android:longClickable="false"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@drawable/dropdown_arrow_disabled"
+            app:layout_constraintStart_toEndOf="@+id/guideline14"
+            app:layout_constraintEnd_toStartOf="@id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/text_email_error"/>
+
+        <EditText
+                android:id="@+id/editText_phone"
+                style="@style/OnBoardEditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/signup_edittext_height"
+                android:layout_marginTop="@dimen/signup_edtxt_margintop"
+                android:hint="@string/text_hint_mobile"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:inputType="number"
+            android:longClickable="false"
+                app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+                app:layout_constraintTop_toBottomOf="@+id/text_email_error"/>
+
+        <TextView
+                android:id="@+id/text_phone_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/signup_error_txt_margintop"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/inline_error_text"
+                android:textColor="@color/orangey_red"
+                android:textSize="@dimen/signup_error_textsize"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline14"
+                app:layout_constraintTop_toBottomOf="@+id/editText_phone"/>
+        <TextView
+            android:id="@+id/tv_re_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="left"
+            android:text="@string/not_use_country_code"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/text_phone_error"
+            app:layout_constraintEnd_toEndOf="@+id/edittext_email"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline14"/>
+
+        <EditText
+                android:id="@+id/editText_password"
+                style="@style/OnBoardEditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/signup_edittext_height"
+                android:layout_marginTop="@dimen/signup_edtxt_margintop"
+                android:drawablePadding="@dimen/signup_password_eye_padding"
+                android:hint="@string/text_hint_password"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:inputType="textPassword"
+            android:longClickable="false"
+                app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline14"
+                app:layout_constraintTop_toBottomOf="@+id/tv_re_info"/>
+
+
+        <TextView
+                android:id="@+id/text_password_error"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/sign_up_error_text_layout_height"
+                android:layout_marginTop="@dimen/signup_error_txt_margintop"
+                android:text="@string/invalid_password_length"
+                android:textColor="@color/orangey_red"
+                android:textSize="@dimen/signup_error_textsize"
+            android:fontFamily="@font/montserrat_bold"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline14"
+                app:layout_constraintTop_toBottomOf="@+id/editText_password"/>
+
+        <TextView
+                android:id="@+id/text_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/sign_up_text_next_margin_right"
+                android:layout_marginBottom="@dimen/signup_text_next_marginbottom"
+                android:layout_marginTop="@dimen/signup_text_next_margintop"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/text_next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/signup_next_textsize"
+                app:layout_constraintBottom_toTopOf="@+id/view"
+                app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                app:layout_constraintTop_toBottomOf="@+id/text_password_error"
+                app:layout_constraintVertical_bias="0.0"/>
+
+        <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/signup_viewline_height"
+                android:layout_marginTop="@dimen/signup_view_dash_margintop"
+                android:background="@color/white_50"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/guideline21"
+                app:layout_constraintHorizontal_bias="0.036"
+                app:layout_constraintStart_toStartOf="@+id/guideline14"
+                app:layout_constraintTop_toBottomOf="@+id/image_next_arrow"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.66"/>
+
+        <TextView
+                android:id="@+id/text_alreadymember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/signup_text_alreadymember_margintop"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textColorLink="@color/white"
+                android:textSize="@dimen/signup_alreadymember_textsize"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="fdffdfdf fdfdfdfd fdfd fdfd fd fd fd f df  fd fd fd fd fd fd fd fd fd fd fd fd f df d fd fd "
+                 app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                app:layout_constraintStart_toStartOf="@+id/guideline14"
+                app:layout_constraintTop_toBottomOf="@+id/view"/>
+
+        <ImageView
+                android:id="@+id/image_next_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/signup_image_nextarrow"
+                android:layout_marginTop="@dimen/signup_image_margintop"
+                android:padding="@dimen/sign_up_img_next_arrow_padding"
+                app:layout_constraintEnd_toStartOf="@+id/guideline21"
+                app:layout_constraintHorizontal_bias="0.07"
+                app:layout_constraintStart_toEndOf="@+id/text_next"
+                app:layout_constraintTop_toBottomOf="@+id/text_password_error"
+                app:srcCompat="@drawable/ic_next_arrow"
+                android:contentDescription="@string/next_arrow"/>
+
+        <ImageView
+                android:id="@+id/image_password_eye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/signup_image_password_eye_marginbottom"
+                android:layout_marginEnd="@dimen/signup_image_password_eye_marginend"
+                android:layout_marginStart="@dimen/signup_image_password_eye_marginstart"
+                android:layout_marginTop="@dimen/signup_image_password_eye_margintop"
+                android:padding="@dimen/signup_image_password_eye_padding"
+                app:layout_constraintBottom_toBottomOf="@+id/editText_password"
+                app:layout_constraintEnd_toEndOf="@+id/editText_password"
+                app:layout_constraintTop_toTopOf="@+id/editText_password"
+                app:srcCompat="@drawable/ic_passwordeye_slash"
+                android:contentDescription="@string/password_eye_img_desc"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

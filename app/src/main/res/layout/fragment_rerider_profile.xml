@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black_two"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_two"
+        tools:context=".ui.riderprofile.activity.REProfileActivity">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_h_40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="220dp" />
+
+        <FrameLayout
+            android:id="@+id/frame_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:foreground="@drawable/foreground_profile_image"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_h_40"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_rider_or_motorcycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_image_loading"
+                android:contentDescription="@string/text_desc_profile_image" />
+
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/iv_edit_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="34dp"
+            android:contentDescription="Edit Profile"
+            android:paddingStart="8dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/ic_camera"
+            app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_80" />
+
+        <ImageView
+            android:id="@+id/iv_edit_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="34dp"
+            android:contentDescription="Edit Profile"
+            android:paddingStart="8dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/group_4"
+            app:layout_constraintBottom_toTopOf="@id/guideline_h_40"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_80" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_80"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.80" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.055555556" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+        <TextView
+            android:id="@+id/tv_view_goto_rider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_next_arrow"
+            android:drawablePadding="10dp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="@string/go_to_rider_portal"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/view_about_me"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout_profile"
+            style="@style/AppTabLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_view_goto_rider"
+            app:tabMode="scrollable"
+            app:tabBackground="@android:color/transparent"
+            app:tabRippleColor="@android:color/transparent"
+            app:tabTextAppearance="@style/AppTabTextAppearance">
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <com.royalenfield.reprime.ui.riderprofile.viewpager.RiderProfileViewPager
+            android:id="@+id/view_pager_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/tabLayout_profile"
+            app:layout_constraintVertical_bias="0.0" />
+<TextView
+    android:id="@+id/txt_firebase_error"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/montserrat_regular"
+    android:text="@string/firebase_auth_error"
+    android:textColor="@color/white"
+    android:gravity="center_vertical"
+    android:visibility="visible"
+    android:textSize="@dimen/_14ssp"
+    android:layout_margin="@dimen/_10sdp"
+    app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+    app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+    app:layout_constraintTop_toBottomOf="@+id/tabLayout_profile"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintVertical_bias="0.0"
+    ></TextView>
+
+        <TextView
+            android:id="@+id/tv_rider_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_bold"
+            android:singleLine="true"
+            android:text="Not available!"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_rider_email"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_80"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toTopOf="@+id/frame_image"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tv_rider_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="20dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_regular"
+            android:singleLine="true"
+            android:text="Not available!"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_h_40"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_80"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5" />
+
+        <TextView
+            android:id="@+id/tv_about_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/frame_image" />
+
+        <View
+            android:id="@+id/view_about_me"
+            android:layout_width="230dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="28dp"
+            android:background="#c0c0c0"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_about_me" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

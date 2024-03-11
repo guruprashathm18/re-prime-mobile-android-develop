@@ -1,0 +1,515 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_two">
+
+
+
+    <Spinner
+        android:id="@+id/spinner_booking_status_list1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:dropDownWidth="match_parent"
+        android:dropDownVerticalOffset="50dp"
+        android:minHeight="49dp"
+        android:spinnerMode="dropdown"
+        android:theme="@style/mySpinnerStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_status" />
+    <Spinner
+        android:id="@+id/spinner_booking_status_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/white"
+        android:dropDownWidth="match_parent"
+        android:dropDownVerticalOffset="50dp"
+        android:minHeight="49dp"
+        android:spinnerMode="dropdown"
+        android:theme="@style/mySpinnerStyle"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_status" />
+
+
+    <TextView
+        android:id="@+id/textView_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/booking_status"
+        android:textColor="@color/white_50"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/calendar_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/spinner_background"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/spinner_booking_status_list"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_booking_status_list"
+        app:layout_constraintTop_toTopOf="@id/spinner_booking_status_list"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_booking_status_list">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/parent_constraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/spinner_booking_status_list">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout_booking_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white_blue"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+           >
+
+
+            <TextView
+                android:id="@+id/tv_label_booking_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:lineSpacingExtra="9sp"
+                android:text="@string/text_label_booking_status"
+                android:textColor="@color/black_two"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_booking_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="9sp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_label_booking_status" />
+            <TextView
+                android:id="@+id/track_your_order_1"
+                android:textSize="16sp"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_booking_status"
+                android:textColor="@color/blue"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginLeft="20dp"
+                android:text="@string/track_order"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:visibility="visible"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <View
+                android:id="@+id/under_line"
+                android:textSize="18sp"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintTop_toBottomOf="@+id/track_your_order_1"
+                android:background="@color/blue"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginLeft="20dp"
+                android:text="@string/track_order"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:visibility="visible"
+                app:layout_constraintRight_toRightOf="@+id/track_your_order_1"
+                android:drawablePadding="@dimen/_10sdp"
+                android:layout_width="0dp"
+                android:layout_height="1dp"></View>
+
+            <TextView
+                android:id="@+id/tv_label_booking_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:lineSpacingExtra="9sp"
+                android:text="@string/text_label_booking_id"
+                android:textColor="@color/black_two"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/track_your_order_1" />
+
+            <TextView
+                android:id="@+id/tv_booking_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="9sp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_label_booking_id" />
+
+
+            <TextView
+                android:id="@+id/tv_label_trans_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:lineSpacingExtra="9sp"
+                android:text="@string/text_label_name_trans_id"
+                android:textColor="@color/black_two"
+                android:textSize="14sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_booking_id" />
+
+            <TextView
+                android:id="@+id/tv_trans_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="9sp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_label_trans_id" />
+
+
+            <TextView
+                android:id="@+id/tv_label_trans_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/text_label_trans_status"
+                android:textColor="@color/black_two"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_trans_id" />
+
+            <TextView
+                android:id="@+id/tv_trans_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="9sp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_label_trans_status" />
+
+
+            <TextView
+                android:id="@+id/tv_label_bike_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:lineSpacingExtra="9sp"
+                android:text="@string/text_label_bike_name"
+                android:textColor="@color/black_two"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/layout_number_plate"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_trans_status" />
+
+            <TextView
+                android:id="@+id/tv_model_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="9sp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_number_plate"
+                 app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_label_bike_name"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <TextView
+                android:id="@+id/tv_label_bike_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:lineSpacingExtra="9sp"
+                android:text="@string/text_label_bike_code"
+                android:textColor="@color/black_two"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/layout_number_plate"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_model_name" />
+
+            <TextView
+                android:id="@+id/tv_model_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="9sp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_number_plate"
+                app:layout_constraintEnd_toStartOf="@+id/layout_number_plate"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_label_bike_code"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+
+            <TextView
+                android:id="@+id/tv_label_date_of_booking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:lineSpacingExtra="9sp"
+                android:text="@string/text_label_booking_date"
+                android:textColor="@color/black_two"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/layout_number_plate"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_model_code" />
+
+            <TextView
+                android:id="@+id/tv_date_of_booking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="9sp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:paddingBottom="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_number_plate"
+                app:layout_constraintEnd_toStartOf="@+id/layout_number_plate"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_label_date_of_booking"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+
+            <ExpandableListView
+                android:id="@+id/activity_expandable_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_number_plate"
+                app:layout_constraintEnd_toStartOf="@+id/layout_number_plate"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_date_of_booking"
+                app:layout_constraintVertical_bias="0.0"
+                />
+
+            <ExpandableListView
+                android:visibility="visible"
+                android:id="@+id/activity_expandable_list_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_number_plate"
+                app:layout_constraintEnd_toStartOf="@+id/layout_number_plate"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/activity_expandable_list_view"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ExpandableListView
+                android:id="@+id/activity_expandable_list_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_number_plate"
+                app:layout_constraintEnd_toStartOf="@+id/layout_number_plate"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/activity_expandable_list_view1"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ExpandableListView
+                android:id="@+id/activity_expandable_list_view3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_number_plate"
+                app:layout_constraintEnd_toStartOf="@+id/layout_number_plate"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/activity_expandable_list_view2"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/finance_booking"
+        android:textSize="18sp"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout_booking_details"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:paddingBottom="20dp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:text="@string/finance_booking"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:drawableRight="@drawable/ic_next_arrow"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/track_your_order"
+        android:textSize="18sp"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finance_booking"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:paddingBottom="20dp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:text="@string/track_order"
+        android:gravity="center"
+        android:visibility="visible"
+        android:layout_marginBottom="20dp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:drawableRight="@drawable/ic_next_arrow"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/text_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/no_booking"
+        android:textColor="@color/white_50"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/track_your_order" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/white_50"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_error" />
+
+    <TextView
+        android:id="@+id/fetch_new_booking"
+        android:textSize="18sp"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:text="@string/fetch_new_booking"
+        android:paddingTop="@dimen/_10sdp"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_width="0dp"
+        android:paddingBottom="@dimen/_20sdp"
+
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_two"
+    tools:context="com.royalenfield.reprime.ui.home.service.search.SearchActivity">
+
+    <com.royalenfield.reprime.ui.custom.views.TitleBarView
+        android:id="@+id/search_topbar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline_h_0"
+        app:layout_constraintVertical_bias="0.0">
+
+    </com.royalenfield.reprime.ui.custom.views.TitleBarView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <TextView
+        android:id="@+id/tv_where_are_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/where_are_you"
+        android:textColor="@color/grey"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/search_topbar" />
+
+
+    <EditText
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="21dp"
+        android:background="@color/white"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint="@string/search_hint"
+        android:imeOptions="actionDone"
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp"
+        android:singleLine="true"
+        android:textColor="#80252525"
+        android:textColorHint="#80252525"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tv_where_are_you" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="19dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="19dp" />
+
+
+    <!--<android.support.v7.widget.RecyclerView
+        android:id="@+id/dealers_list"
+        android:layout_width="0dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="31dp"
+        android:nestedScrollingEnabled="false"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" /> -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/re_actionbar_height" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dealers_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <TextView
+        android:id="@+id/textView_no_servicecenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/search_noresults"
+        android:textColor="@color/grey"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dealers_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+
+    <!--<android.support.v7.widget.RecyclerView
+        android:id="@+id/dealers_list"
+        android:layout_width="360dp"
+        android:layout_height="516dp"
+        android:layout_marginBottom="24dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />  -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+{
+  "data": {
+    "getDeviceLatestLocation": {
+      "vehicleNumber": "TS07UF6212",
+      "vehicleType": "Bike",
+      "vehicleModel": "Tata",
+      "vehicleGroups": [],
+      "timestamp": "1579141401",
+      "latitude": 17.43645668029785,
+      "longitude": 78.45648956298828,
+      "gpsStatus": "A",
+      "isOffline": true,
+      "address": "White House, Vision 2029 APSDPS,Planning Department Government of Andhra Pradesh #517-522,5th Floor,Block-3, Greenlands Rd, Kundanbagh Colony, Begumpet, Hyderabad, Telangana 500016, India",
+      "uniqueId": "it_170809930",
+      "satellites": null,
+      "idlingStatus": false,
+      "haltStatus": true,
+      "isOverspeed": false,
+      "isHA": false,
+      "isHB": false,
+      "isPrimaryBattery": true,
+      "isNoGps": false,
+      "speed": 0,
+      "extBatVol": 12230,
+      "plusCode": "7J9WCFP4+"
+    }
+  }
+}

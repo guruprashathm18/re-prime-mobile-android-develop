@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "78531059252",
+    "firebase_url": "https://latm-re-prime-prod-default-rtdb.firebaseio.com",
+    "project_id": "latm-re-prime-prod",
+    "storage_bucket": "latm-re-prime-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78531059252:android:55b8e35249411d08ceb461",
+        "android_client_info": {
+          "package_name": "com.latm.royalenfield.reprime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78531059252-2t59epfsnj9ll8fq49jpajjer64ddchs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKoi7MZ3nZtwQXSkQNEe_A6l-GlGcGiXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78531059252-2t59epfsnj9ll8fq49jpajjer64ddchs.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "78531059252-l7q9s4osv42hv5av47c1ns6ijgn401cu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.latm.royalenfield.reprime"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

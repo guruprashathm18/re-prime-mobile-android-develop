@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="@dimen/customdialog_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/dialog_customalert_background"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/tv_alertservice_offlne_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/customalert_title_margintop"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/customalert_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/customalert_title_textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_call_icon"
+        android:layout_marginTop="@dimen/customalert_title_margintop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_alertservice_offlne_title"/>
+
+    <TextView
+        android:id="@+id/tv_alertservice_offlne_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/customalert_message_height"
+        android:layout_marginEnd="@dimen/customalert_message_marginend"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat_regular"
+        android:minHeight="@dimen/customalert_message_height"
+        android:textColor="@color/white"
+        android:textSize="@dimen/customalert_message_textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_alertservice_offlne_title" />
+
+    <TextView
+        android:id="@+id/textView_alert_okbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="@string/customalert_ok"
+        android:textColor="@color/orangey_red"
+        android:textSize="@dimen/customalert_ok_textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_alertservice_offlne_msg"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

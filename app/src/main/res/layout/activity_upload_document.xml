@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/onboard_background"
+    android:fillViewport="true"
+    tools:context="com.royalenfield.reprime.ui.onboarding.vehicleonboarding.activity.UploadDocumentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_16">
+
+            <TextView
+                android:id="@+id/upload_doc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:paddingTop="@dimen/dp_16"
+                android:text="@string/upload_documents_for_verification"
+                android:textColor="@color/add_vehicle_screen_label_color"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/ownership_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16">
+
+                <ImageView
+                    android:id="@+id/owner_doc_left_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/tick"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/owner_doc_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/ownship_doc_right_img"
+                    android:layout_toEndOf="@+id/owner_doc_left_img"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/ownership_document"
+                    android:textColor="@color/add_vehicle_screen_label_color"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/ownship_doc_right_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/error_owndoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/doc_error_text_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ownership_img"
+                android:layout_width="144dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/dp_16"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/kyc_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dp_32">
+
+                <ImageView
+                    android:id="@+id/kyc_doc_left_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/tick"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/kyc_doc_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/kyc_doc_right_img"
+                    android:layout_toEndOf="@+id/kyc_doc_left_img"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/kyc_document"
+                    android:textColor="@color/add_vehicle_screen_label_color"
+                    android:textSize="16sp"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/kyc_doc_right_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/error_kyc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Only .pdf allowed"
+                android:textColor="@color/doc_error_text_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/kyc_img"
+                android:layout_width="144dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/dp_16"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_56"
+                android:fontFamily="@font/montserrat_semibold_italic"
+                android:paddingTop="@dimen/dp_80"
+                android:text="@string/only_jpeg_and_pdf_accepted_maximum_size_per_file_3_mb"
+                android:textColor="@color/add_vehicle_screen_label_color"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/upload_doc_submit"
+                    android:layout_width="210dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/disable_button_bg"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/add_vehicle_screen_label_color" />
+
+                <Button
+                    android:id="@+id/upload_doc_cancel"
+                    android:layout_width="210dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:layout_marginBottom="@dimen/dp_80"
+                    android:background="@drawable/enable_button_bg"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:background="@drawable/re_stripe" />
+    </RelativeLayout>
+</ScrollView>

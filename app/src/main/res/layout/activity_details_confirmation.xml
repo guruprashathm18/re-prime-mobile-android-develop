@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black_two">
+
+    <FrameLayout
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="21dp">
+
+        <ImageView
+            android:src="@drawable/cancel_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="@string/cross_btn"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cancel"
+        android:layout_marginTop="69dp"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/details_validation_msg"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:fontFamily="@font/montserrat_bold" />
+
+    <ImageView
+        android:id="@+id/status_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/txv_title"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="67dp"
+        android:contentDescription="@string/success_msg"
+        android:src="@drawable/success" />
+
+    <TextView
+        android:id="@+id/txv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_img"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_marginStart="@dimen/dimen_39"
+        android:layout_marginEnd="@dimen/dimen_38"
+        app:fontFamily="@font/montserrat_regular"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/txv_view_my_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="134dp"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center"
+        app:fontFamily="@font/montserrat_regular"
+        android:textColor="@color/white"
+        android:text="@string/view_my_profile"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/textview_border"/>
+
+    <TextView
+        android:id="@+id/txv_show_motorcycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="86dp"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center"
+        android:text="@string/show_motorcycle"
+        app:fontFamily="@font/montserrat_regular"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:background="@drawable/textview_border"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@drawable/ic_re_stripe"
+        android:layout_above="@id/view1"/>
+
+
+</RelativeLayout>

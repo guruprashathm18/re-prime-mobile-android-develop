@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                                       xmlns:tools="http://schemas.android.com/tools"
+                                       android:id="@+id/scroll_home_screen"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:background="@color/black_two"
+                                       android:fillViewport="true"
+                                       tools:context=".ui.home.service.specificissue.AnySpecificIssueActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_two">
+
+        <com.royalenfield.reprime.ui.custom.views.TitleBarView
+                android:id="@+id/problem_topbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/re_actionbar_height"
+                app:layout_constraintEnd_toEndOf="@+id/guideline28"
+                app:layout_constraintStart_toStartOf="@+id/guideline24"
+                app:layout_constraintTop_toTopOf="parent">
+
+        </com.royalenfield.reprime.ui.custom.views.TitleBarView>
+
+        <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline24"
+                app:layout_constraintTop_toBottomOf="@+id/problem_topbar">
+
+
+            <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabGravity="center"
+                    app:tabIndicatorColor="@android:color/white"
+                    app:tabMode="scrollable"
+                    app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                    app:tabTextColor="@color/white"/>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.royalenfield.reprime.ui.riderprofile.viewpager.RiderProfileViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+                app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                app:layout_constraintStart_toStartOf="@+id/guideline24"
+        />
+
+
+        <EditText
+                android:id="@+id/editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="106dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="start"
+                android:hint="@string/anything_specific"
+                android:imeOptions="actionDone"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:textColor="@color/black_two"
+                android:textColorHint="@color/black_two_lighter"
+                android:textSize="14sp"
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toTopOf="@+id/issue_desc_add"
+                app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline24"
+                app:layout_constraintTop_toBottomOf="@+id/viewpager"
+                app:layout_constraintVertical_bias="0.0"/>
+
+        <ImageView
+                android:id="@+id/iv_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/editText"
+                app:layout_constraintEnd_toEndOf="@+id/editText"
+                app:layout_constraintHorizontal_bias="0.944"
+                app:layout_constraintStart_toStartOf="@+id/editText"
+                app:layout_constraintTop_toBottomOf="@+id/viewpager"
+                android:baselineAlignBottom="true"
+                app:srcCompat="@drawable/group_8_add"
+                android:visibility="gone"/>
+
+        <TextView
+                android:id="@+id/issue_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_blue"
+                android:fontFamily="@font/montserrat_semibold"
+                android:lineSpacingExtra="9sp"
+                android:padding="10dp"
+                android:text="@string/issue_desc"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                app:layout_constraintStart_toStartOf="@+id/guideline24"
+                app:layout_constraintTop_toBottomOf="@+id/editText"/>
+
+        <TextView
+                android:id="@+id/issue_desc_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white_blue"
+                android:fontFamily="@font/montserrat_regular"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                app:layout_constraintStart_toStartOf="@+id/guideline24"
+                app:layout_constraintTop_toBottomOf="@+id/issue_desc"/>
+
+
+        <Button
+                android:id="@+id/btn_issue_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/button_border_enable"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="-5sp"
+                android:text="@string/submit_issue"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline24"
+                app:layout_constraintTop_toBottomOf="@+id/issue_desc_add"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="20dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

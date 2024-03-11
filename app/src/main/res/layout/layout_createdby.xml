@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_two">
+
+    <TextView
+        android:id="@+id/tv_label_created_by"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/created_by"
+        android:textColor="@color/white_50"
+        android:textSize="@dimen/text_detail_createdby_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.royalenfield.reprime.ui.home.rides.custom.RECircularImageView
+        android:id="@+id/iv_image"
+        android:layout_width="@dimen/image_detail_circular_size"
+        android:layout_height="@dimen/image_detail_circular_size"
+        android:layout_marginTop="@dimen/image_detail_circular_margintop"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_created_by" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat_regular"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_dealername_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_image"
+        app:layout_constraintTop_toTopOf="@+id/iv_image"
+        tools:text="Majestic Motors" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/text_dealerlocation_margintop"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat_regular"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_ride_details_14"
+        app:layout_constraintStart_toEndOf="@+id/iv_image"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        tools:text="Bangalore" />
+
+    <TextView
+        android:id="@+id/creator_no_of_rides"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_noof_rides_margintop"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_ride_details_14"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/tv_location"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_rides"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_rides_margintop"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/tv_rides"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_ride_details_14"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/creator_no_of_rides"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+    <ImageView
+        android:id="@+id/iv_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/image_whatsapp_margintop"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="@dimen/image_whatsapp_marginbottom"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_name"
+        app:srcCompat="@drawable/ic_call_icon" />
+
+    <TextView
+        android:id="@+id/textView_ridecount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_ride_details_14"
+        app:layout_constraintStart_toEndOf="@+id/tv_location"
+        app:layout_constraintTop_toTopOf="@+id/tv_location" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/tv_rides"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_ride_details_14"
+        app:layout_constraintStart_toEndOf="@+id/textView_ridecount"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

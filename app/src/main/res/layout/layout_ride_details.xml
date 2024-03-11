@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_blue"
+    android:paddingBottom="20dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05109489" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v_95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <TextView
+        android:id="@+id/tv_label_ride_route"
+        style="@style/RiderDetailTextViewLabelStyle"
+        android:text="@string/text_ride_route"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_ride_route_name"
+        style="@style/RiderDetailTextValueStyle"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_ride_route"
+        tools:text="Showroom-Showroom" />
+
+    <TextView
+        android:id="@+id/tv_label_ride_start_date"
+        style="@style/RiderDetailTextViewLabelStyle"
+        android:text="@string/text_ride_date"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ride_route_name" />
+
+    <TextView
+        android:id="@+id/tv_ride_start_date"
+        style="@style/RiderDetailTextValueStyle"
+        android:ellipsize="end"
+        android:maxLines="2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_ride_start_date"
+        tools:text="17th - 20th Feb’ 2019" />
+
+    <TextView
+        android:id="@+id/tv_label_ride_end_date"
+        style="@style/RiderDetailTextViewLabelStyle"
+        android:text="@string/ride_end_date"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ride_start_date" />
+
+    <TextView
+        android:id="@+id/tv_ride_end_date"
+        style="@style/RiderDetailTextValueStyle"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_ride_end_date"
+        tools:text="17th - 20th Feb’ 2019" />
+
+    <TextView
+        android:id="@+id/tv_label_ride_start_time"
+        style="@style/RiderDetailTextViewLabelStyle"
+        android:text="@string/text_ride_start_time"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ride_end_date" />
+
+    <TextView
+        android:id="@+id/tv_ride_start_time"
+        style="@style/RiderDetailTextValueStyle"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_ride_start_time"
+        tools:text="5:00am" />
+
+    <TextView
+        android:id="@+id/tv_label_ride_end_time"
+        style="@style/RiderDetailTextViewLabelStyle"
+        android:text="@string/text_ride_end_time"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ride_start_time" />
+
+    <TextView
+        android:id="@+id/tv_ride_end_time"
+        style="@style/RiderDetailTextValueStyle"
+        android:ellipsize="end"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_ride_end_time"
+        tools:text="5:00am" />
+
+    <TextView
+        android:id="@+id/tv_label_ride_duration"
+        style="@style/RiderDetailTextViewLabelStyle"
+        android:text="@string/text_ride_duration"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ride_end_time" />
+
+    <TextView
+        android:id="@+id/tv_ride_duration"
+        style="@style/RiderDetailTextValueStyle"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_ride_duration"
+        tools:text="NA" />
+
+    <TextView
+        android:id="@+id/tv_label_ride_desc"
+        style="@style/RiderDetailTextViewLabelStyle"
+        android:text="@string/text_ride_description"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ride_duration" />
+
+    <TextView
+        android:id="@+id/tv_ride_desc"
+        style="@style/RiderDetailTextValueStyle"
+        android:letterSpacing="0.04"
+        android:lineSpacingExtra="1sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_ride_desc"
+        tools:text="A casual weekend ride, weather conditions permitting, for anyone wanting to enjoy the Forest Service roads." />
+
+    <TextView
+        android:id="@+id/tv_label_difficulty"
+        style="@style/RiderDetailTextViewLabelStyle"
+        android:text="@string/text_level_of_difficulty"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ride_desc" />
+
+    <TextView
+        android:id="@+id/tv_difficulty"
+        style="@style/RiderDetailTextValueStyle"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_difficulty"
+        tools:text="Easy" />
+
+    <TextView
+        android:id="@+id/tv_label_terrain"
+        style="@style/RiderDetailTextViewLabelStyle"
+        android:text="@string/text_terrain"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_difficulty" />
+
+    <TextView
+        android:id="@+id/tv_terrain"
+        style="@style/RiderDetailTextValueStyle"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_terrain"
+        tools:text="Off-Roading" />
+
+    <TextView
+        android:id="@+id/tv_label_riders_joined"
+        style="@style/RiderDetailTextViewLabelStyle"
+        android:text="@string/text_number_of_riders_joined"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_terrain" />
+
+    <TextView
+        android:id="@+id/tv_rider_joined"
+        style="@style/RiderDetailTextValueStyle"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_riders_joined"
+        tools:text="NA" />
+
+    <TextView
+        android:id="@+id/tv_label_rider_status"
+        style="@style/RiderDetailTextViewLabelStyle"
+        android:text="@string/text_ride_status"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rider_joined" />
+
+    <TextView
+        android:id="@+id/tv_ride_status"
+        style="@style/RiderDetailTextValueStyle"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_rider_status"
+        tools:text="NA" />
+
+    <TextView
+        android:id="@+id/tv_label_ride_type"
+        style="@style/RiderDetailTextViewLabelStyle"
+        android:text="@string/text_ride_type"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ride_status" />
+
+    <TextView
+        android:id="@+id/tv_ride_type"
+        style="@style/RiderDetailTextValueStyle"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_ride_type"
+        tools:text="NA" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

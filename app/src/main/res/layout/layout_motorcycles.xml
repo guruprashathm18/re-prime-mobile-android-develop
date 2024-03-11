@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/motorcycle_background_color"
+    tools:ignore="UseCompoundDrawables">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/motorcycle_background_color"
+        tools:ignore="UseCompoundDrawables">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_actionbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:fontFamily="@font/guardiansans_semibold"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/sp_8"
+                android:paddingTop="@dimen/dp_5"
+                android:paddingBottom="@dimen/dp_10"
+                android:singleLine="true"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:text="@string/text_title_default" />
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/llRoot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@color/motorcycle_background_color"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/pager_dots"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@android:color/transparent"
+                            android:gravity="center|start"
+                            android:orientation="horizontal"
+                            android:paddingStart="@dimen/dp_10"
+                            android:paddingEnd="0dp" />
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/txtBikeModel"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:lineSpacingExtra="@dimen/sp_12"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_18" />
+                    <ImageView
+                        android:id="@+id/img_gsm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_signal_strength"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/img_gps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/_3sdp"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_gps_strength"></ImageView>
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtRegNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/dp_10"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textAllCaps="true"
+                            android:textColor="@color/text_color_grey"
+                            android:textSize="@dimen/sp_16" />
+
+                        <TextView
+                            android:id="@+id/pen_txtRegNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/dp_10"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/yellow"
+                            android:textSize="@dimen/sp_12"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+
+                    <com.royalenfield.reprime.ui.home.homescreen.fragments.WrappingViewPager
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/layout_motorcycle_page" />
+                    <ImageView
+                        android:id="@+id/img_wing"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:src="@drawable/re_wingerman_white"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/txtAuthorize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_bg_curved_red"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_28"
+                        android:paddingTop="@dimen/dp_8"
+                        android:paddingRight="@dimen/dp_28"
+                        android:paddingBottom="@dimen/dp_8"
+                        android:text="@string/text_authorize"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_color_white"
+                        android:textSize="@dimen/sp_14"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/space" />
+                    <TextView
+                        android:id="@+id/txt_ignition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_semibold"
+                       android:textColor="@color/colorIndicatorGreen"
+                        android:textSize="@dimen/_12ssp"
+                        android:visibility="gone"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/llFuelBattery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size_20"
+                        android:animateLayoutChanges="true"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/viewpager">
+
+                        <LinearLayout
+                            android:id="@+id/llFuel"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/rel_fuel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/imgFuel"
+                                    android:layout_width="@dimen/dimen_60"
+                                    android:layout_height="@dimen/dimen_40"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@drawable/layout_curved_border_shadow"
+                                    android:scaleType="center"
+                                    android:src="@drawable/ic_fuel" />
+
+                                <ImageView
+                                    android:id="@+id/info_fuel"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="right"
+                                    android:layout_toRightOf="@+id/imgFuel"
+                                    android:background="@drawable/circular_dot_grey"
+                                    android:padding="@dimen/_2sdp"
+                                    android:src="@drawable/info"
+                                    android:visibility="visible"></ImageView>
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.royalenfield.reprime.ui.home.homescreen.customviews.SegmentedProgressBar
+                                    android:id="@+id/segmented_progressbar"
+                                    android:layout_width="0dp"
+                                    android:layout_height="10dp"
+                                    android:layout_gravity="bottom"
+                                    android:layout_marginLeft="@dimen/_15sdp"
+                                    android:layout_marginRight="@dimen/_15sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_weight="1"
+                                    android:visibility="visible"
+                                    app:container_color="@color/colorAccent"
+                                    app:corner_radius="2dp"
+                                    app:fill_color="@color/colorIndicatorGreen"
+                                    app:gap_size="3dp"
+                                    app:segment_count="7" />
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:src="@drawable/info"
+                                    android:visibility="gone"></ImageView>
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/txtFuelStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:gravity="center_horizontal"
+                                android:padding="@dimen/size_5"
+                                android:textColor="@color/text_color_white"
+                                android:textSize="@dimen/text_size_12"
+                                android:visibility="gone"
+                                tools:text="@string/text_good" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dimen_40"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/size_15"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/size_15"
+                                android:background="@drawable/layout_curved_border_shadow"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="2dp"
+                                android:visibility="visible">
+
+                                <TextView
+                                    android:id="@+id/txtMeter"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dimen_34dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginStart="1dp"
+                                    android:layout_marginEnd="1dp"
+                                    android:background="@color/meter_box_bg_color"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:gravity="center"
+                                    android:letterSpacing="0.75"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_18"
+                                    app:autoSizeMaxTextSize="@dimen/text_size_18"
+                                    app:autoSizeStepGranularity="1sp"
+                                    app:autoSizeTextType="uniform" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:gravity="center_horizontal"
+                                android:padding="@dimen/size_5"
+                                android:text="@string/text_kms"
+                                android:textColor="@color/text_color_white"
+                                android:textSize="@dimen/text_size_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llBattery"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/rel_bat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/imgBattery"
+                                    android:layout_width="@dimen/dimen_60"
+                                    android:layout_height="@dimen/dimen_40"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@drawable/layout_curved_border_shadow"
+                                    android:scaleType="center"
+                                    android:src="@drawable/ic_battery" />
+
+                                <ImageView
+                                    android:id="@+id/info_bat"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="right"
+                                    android:layout_toRightOf="@+id/imgBattery"
+                                    android:background="@drawable/circular_dot_grey"
+                                    android:padding="@dimen/_2sdp"
+                                    android:src="@drawable/info"
+                                    android:visibility="visible"></ImageView>
+
+                            </RelativeLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/txtBatteryStatus"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:gravity="center_horizontal"
+
+                                    android:textColor="@color/text_color_white"
+                                    android:textSize="@dimen/text_size_12"
+                                    tools:text="@string/text_good" />
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/info"
+                                    android:visibility="gone"></ImageView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_20"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:id="@+id/llNavigate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/imgNavigate"
+                                android:layout_width="@dimen/dp_60"
+                                android:layout_height="@dimen/dp_60"
+                                android:layout_gravity="center"
+                                android:background="@drawable/ic_circle_bg_black"
+                                android:contentDescription="@string/txt_navigate"
+                                android:padding="@dimen/dp_18"
+                                android:src="@drawable/ic_menu_navigate" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center_horizontal"
+                                android:text="@string/txt_navigate"
+                                android:textColor="@color/text_color_white"
+                                android:textSize="@dimen/sp_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llService"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgService"
+                                android:layout_width="@dimen/dp_60"
+                                android:layout_height="@dimen/dp_60"
+                                android:layout_gravity="center"
+                                android:background="@drawable/ic_circle_bg_black"
+                                android:contentDescription="@string/txt_service"
+                                android:padding="@dimen/dp_6"
+                                android:src="@drawable/ic_service" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center_horizontal"
+                                android:text="@string/txt_service"
+                                android:textAllCaps="true"
+                                android:textColor="@color/text_color_white"
+                                android:textSize="@dimen/sp_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llLocate"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/imgLocate"
+                                android:layout_width="@dimen/size_60"
+                                android:layout_height="@dimen/size_60"
+                                android:layout_gravity="center"
+                                android:background="@drawable/ic_circle_bg_black"
+                                android:contentDescription="@string/txt_locate"
+                                android:padding="@dimen/dp_6"
+                                android:src="@drawable/ic_locate"
+                                android:tint="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/size_10"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center_horizontal"
+                                android:text="@string/txt_locate"
+                                android:textColor="@color/text_color_white"
+                                android:textSize="@dimen/text_size_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llRSA"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgRSA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/dp_60"
+                                android:layout_gravity="center"
+                                android:background="@drawable/ic_circle_bg_black"
+                                android:contentDescription="@string/txt_rsa"
+                                android:padding="@dimen/dp_6"
+                                android:src="@drawable/ic_rsa_white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center_horizontal"
+                                android:text="@string/txt_rsa"
+                                android:textAllCaps="true"
+                                android:textColor="@color/text_color_white"
+                                android:textSize="@dimen/sp_12" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llVehicleDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_20"
+                        android:layout_marginBottom="@dimen/size_20"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llServiceRSA">
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/txtTripAnalysis"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/size_10"
+                                android:background="@drawable/layout_curved_border"
+                                android:drawableTop="@drawable/ic_trip_analysis"
+                                android:drawablePadding="@dimen/size_6"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center_horizontal"
+                                android:paddingLeft="@dimen/dimen_16"
+                                android:paddingTop="@dimen/dimen_16"
+                                android:paddingRight="@dimen/dimen_16"
+                                android:paddingBottom="@dimen/dimen_16"
+                                android:text="@string/text_trip_analysis"
+                                android:textAllCaps="true"
+                                android:textColor="@color/text_color_white"
+                                android:textSize="@dimen/text_size_12" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/txtVehicleAlerts"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/size_10"
+                                android:background="@drawable/layout_curved_border"
+                                android:drawableTop="@drawable/ic_vehicle_alert"
+                                android:drawablePadding="@dimen/size_6"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center_horizontal"
+                                android:padding="@dimen/dimen_16"
+                                android:text="@string/text_vehicle_alerts"
+                                android:textAllCaps="true"
+                                android:textColor="@color/text_color_white"
+                                android:textSize="@dimen/text_size_12" />
+
+                            <TextView
+                                android:id="@+id/txtVehicleAlertsCount"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:layout_gravity="right"
+                                android:textAllCaps="true"
+                                android:layout_marginRight="15dp"
+                                android:background="@drawable/badge_circle_red"
+                                android:textColor="@color/reddish"
+                                android:textSize="20sp"
+                                android:visibility="gone" />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/txtVehicleSettings"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/size_10"
+                                android:background="@drawable/layout_curved_border"
+                                android:drawableTop="@drawable/ic_settings"
+                                android:drawablePadding="@dimen/size_6"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center_horizontal"
+                                android:paddingLeft="@dimen/dimen_16"
+                                android:paddingTop="@dimen/dimen_16"
+                                android:paddingRight="@dimen/dimen_16"
+                                android:paddingBottom="@dimen/dimen_16"
+                                android:text="@string/text_vehicle_settings"
+                                android:textAllCaps="true"
+                                android:textColor="@color/text_color_white"
+                                android:textSize="@dimen/text_size_12" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_21"
+                        android:layout_marginBottom="@dimen/dp_21"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/txtServiceHistory"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_background_ractangle_curved"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:gravity="center"
+                            android:padding="@dimen/dp_10"
+                            android:text="@string/servicehistory_title"
+                            android:textColor="@color/yellow"
+                            android:textSize="@dimen/sp_14"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/txtGuides"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/button_background_ractangle_curved"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:gravity="center"
+                            android:padding="@dimen/dp_10"
+                            android:text="@string/support"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_14" />
+
+                        <TextView
+                            android:id="@+id/health_alert"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_background_ractangle_curved"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:gravity="center"
+                            android:padding="@dimen/dp_10"
+                            android:text="Health Alert"
+                            android:textColor="@color/yellow"
+                            android:textSize="@dimen/sp_14"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/motorcycle_background_color"
+                        android:orientation="vertical"
+                        android:padding="30dp"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/button_navigation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_border_enable"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/navigation"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/button_add_address_textsize" />
+
+                        <Button
+                            android:id="@+id/button_servicing"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/button_border_enable"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/servicing_text"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/button_add_address_textsize" />
+
+                        <Button
+                            android:id="@+id/button_locate_motorcycle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/button_border_enable"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/locate_motorcycle"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/button_add_address_textsize"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/llHelpSupport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="40dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:lineSpacingExtra="5sp"
+                                android:text="@string/help_support"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/button_saveaddress_textsize"
+                                tools:text="@string/help_support" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/vehicle_detail_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="@string/we_are_working_on_your_vehicle_request"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_motorcycle_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+</FrameLayout>

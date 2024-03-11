@@ -1,0 +1,1821 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation" >
+    <string name="app_name">Royal Enfield</string>
+
+
+    <!-- Splash screen string values -->
+    <string name="re_name_logo_content_desc">re name logo</string>
+    <string name="sign_up_button_content_desc">Sign up button</string>
+    <string name="explore_rides_text_info">Explore rides</string>
+    <string name="not_ready_to_sign_up_explore_the_app_info">Not ready to Sign Up? Explore the app.</string>
+    <string name="not_ready_to_sign_up_continue_as_guest_info">Continue as a Guest</string>
+    <string name="login_button_content_desc">login button</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_header">LOGIN</string>
+    <string name="signup_header">SIGN-UP</string>
+    <string name="service_header">Servicing</string>
+
+    <!--facebook metadata values -->
+    <string name="facebook_app_id">436653927299141</string>
+    <string name="fb_login_protocol_scheme">fb436653927299141</string>
+
+    <!-- forgot password screen string values-->
+    <string name="text_title_default">Title text</string>
+    <string name="menu_button">menu_button</string>
+    <string name="text_forgot_password">Forgot Password</string>
+    <string name="text_forgot_password_login">Forgot Password?</string>
+    <string name="invalid_forgot">Please enter valid E-mail Id or Phone number</string>
+
+    <!-- login screen string values-->
+    <string name="text_skip_for_now">Skip for now</string>
+    <string name="text_login">Login</string>
+    <string name="text_action_bar_title">Title</string>
+    <string name="desc_login_header_re_logo">logo_re_header</string>
+    <string name="text_do_not_have_an_re_account_sign_up">Do not have a Royal Enfield account? Sign-up</string>
+    <string name="text_login_button_image_view">login button image view</string>
+    <string name="text_incorrect_password">Incorrect password!</string>
+    <string name="text_incorrect_username">Incorrect username!</string>
+    <string name="text_version">Version :</string>
+    <string name="skip">Skip</string>
+    <string name="dont_remember"> Don\'t remember your password? Use Forgot Password to reset your password.</string>
+<string name="not_use_country_code">Please do not include the country code or 0 when entering mobile number.</string>
+    <!-- login-sign-up screen and or separator string values-->
+    <string name="text_or">or</string>
+    <string name="text_image_right_line">image right line</string>
+    <string name="text_image_left_line">image left line</string>
+    <string name="text_hint_username">Username</string>
+    <string name="text_hint_email_mobile_number">Email/Mobile Number</string>
+    <string name="text_hint_password">Password</string>
+    <string name="text_login_screen_footer">login screen footer</string>
+    <string name="text_hint_confirm_password">Confirm Password</string>
+    <string name="text_hint_email_id_mobile_number">Email Id/Mobile number</string>
+    <string name="text_hint_email_id_phone_number">Email ID/Phone number</string>
+    <string name="text_btn_sign_up">Sign-up</string>
+    <string name="inline_error_text">Shouldn\'t be empty</string>
+    <string name="text_hint_mobile">Mobile Number</string>
+    <string name="password_eye_img_desc">Password eye image</string>
+    <string name="previous_arrow_image_desc">Previous arrow</string>
+    <string name="calendar_image_desc">Calendar image</string>
+    <string name="text_sign_up_info_already_a_member_login">Already a member?
+        <u>Login</u>
+    </string>
+    <string name="text_btn_login">Login</string>
+    <string name="text_error_enter_valid_user_id">Enter an email ID/mobile number</string>
+    <string name="text_error_enter_username">Enter an email ID/mobile number</string>
+    <string name="text_error_enter_password">Enter a password</string>
+
+    <!--userprofile_banner-->
+    <string name="yourprofile_header">Your profile</string>
+    <string name="skip_header">Skip for now</string>
+
+    <!--layout_uploadpicture-->
+    <string name="text_upload_text">Upload your profile photo</string>
+
+
+    <!--activity_userprofile-->
+    <string name="rider_profile">RIDER PROFILE</string>
+    <string name="editText_fullname">Full Name</string>
+    <string name="editText_username">User Name</string>
+    <string name="edittext_reclub">RE Club association</string>
+    <string name="text_add_address">+ Add Address</string>
+    <string name="text_motorcycleprofile">MOTORCYCLE PROFILE</string>
+    <string name="text_upload_rider_photo">Upload your profile photo</string>
+    <string name="text_upload_motorcycle_photo">Upload your motorcycle photo</string>
+    <string name="edittext_yourmotorcycles">Your Motorcycles</string>
+    <string name="text_add_motorcycle">+ Add New Motorcycle</string>
+    <string name="edittext_motorcycle_registration">Motorcycle Registration Number</string>
+    <string name="button_saveprofile">Save Profile</string>
+    <string-array name="motorcycle_profile">
+        <item>Your Motorcycle</item>
+    </string-array>
+    <string name="take_photo">Take Photo</string>
+    <string-array name="profile_rides">
+        <item>Your Motorcycle</item>
+    </string-array>
+    <string-array name="profile_rides_types">
+        <item>Pending Rides</item>
+        <item>Upcoming Rides</item>
+        <item>Past Rides</item>
+        <item>Rejected Rides</item>
+    </string-array>
+
+    <!--splashscreen-->
+    <string name="splash_prime">PRIME</string>
+    <string name="text_global_submit_button">Submit</string>
+    <string name="re_text_logo_img_desc">RE text logo image</string>
+    <string name="road_image_desc">Road image</string>
+    <string name="bike_image_desc">Bike image</string>
+
+    <!--Reset password screen -->
+    <string name="text_forgot_password_label_email_id_phone_number">Enter Email/Mobile Number</string>
+    <string name="text_hint_enter_new_password">Enter new password</string>
+    <string name="text_hint_enter_otp">Enter OTP</string>
+    <string name="text_hint_enter_otp_password">Enter one time password\u0020(OTP)</string>
+    <string name="text_message_otp_sent_success">OTP Sent Successfully!</string>
+    <string name="text_otp_not_received_link">Still not received?\u0020</string>
+    <string name="text_otp_resend_link">Resend OTP</string>
+    <string name="text_back_arrow">back arrow</string>
+
+    <!--fragment_signup_first-->
+    <string name="text_hint_first_name">First Name</string>
+    <string name="text_hint_last_name">Last Name</string>
+    <string name="text_hint_email">Email ID</string>
+    <string name="text_hint_phone">Phone Number</string>
+    <string name="text_next">Next</string>
+    <string name="text_already_member">If you are already registered with us on our website or our online store, please use the same credentials to </string>
+    <string name="text_error_password">Enter Password</string>
+    <string name="text_valid_email_error">Enter a valid Email Id</string>
+    <string name="text_valid_phone_error">Enter a valid Phone Number</string>
+
+
+    <!--fragment_signup_second-->
+    <string name="text_previous">Previous</string>
+    <string name="text_hint_city">City</string>
+    <string name="text_hint_date">Date of birth</string>
+    <string name="text_hint_gender">Gender:</string>
+    <string name="text_hint_male">Male</string>
+    <string name="text_hint_female">Female</string>
+    <string name="text_own_re">Do you own a Royal Enfield Motorcycle</string>
+    <string name="text_yes">Yes</string>
+    <string name="text_no">No</string>
+    <string name="text_policies_conditions">I accept the </string>
+    <string name="text_privacy_policies">privacy policy</string>
+    <string name="text_privacy_policies_camel">Privacy Policy</string>
+    <string name="text_and">\u0020as well as\u0020</string>
+    <string name="signup_success">Signup Success</string>
+
+    <!-- Reset password string values -->
+    <string name="text_terms_conditions">terms and conditions</string>
+    <string name="text_enter_otp">Enter OTP</string>
+    <string name="text_enter_new_password">Enter new password</string>
+    <string name="text_enter_confirm_password">Enter Confirm password</string>
+
+    <!--dialog_customalert-->
+    <string name="customalert_title">Alert!</string>
+    <string name="customalert_title1">Alert</string>
+    <string name="customalert_ok">OK</string>
+    <string name="text_password_mismatch">Password mismatch</string>
+    <string name="text_servicecenter_offline_title">Service Centre Offline</string>
+    <string name="text_servicecenter_offline_msg">We regret to inform that the service station chosen is unable to accept your service booking online. Please call to book your slot. Thank you for your understanding.</string>
+
+    <!--activity_add_address-->
+    <string name="title_add_address">Add Address</string>
+    <string name="text_your_address">Your address:</string>
+    <string name="button_text_add_address">Add this Address</string>
+    <string name="hint_add_address">Click to add Address</string>
+    <string name="hint_add_flat">Add flat number/house no. etc&#8230;</string>
+
+    <!--activity_add_address_location-->
+    <string name="text_address_title">Address:</string>
+    <string name="edittext_hint_address">Address</string>
+    <string name="edittext_hint_locality">Locality</string>
+    <string name="edittext_hint_street">Street</string>
+    <string name="edittext_hint_city">City</string>
+    <string name="edittext_hint_pincode">Pincode</string>
+    <string name="edittext_hint_state">State</string>
+    <string name="text_usecurrentlocation">Use Current Location</string>
+    <string name="button_address_save">Save address</string>
+
+    <!-- Rider profile string values-->
+    <string name="text_label_name_your_motorcycle">Your Motorcycle:</string>
+    <string name="text_label_name_purchase_date">Purchase date:</string>
+    <string name="text_label_name_color">Color:</string>
+    <string name="text_label_name_year_of_manufacture">Year of manufacture:</string>
+    <string name="text_label_name_engine_number">Engine Number:</string>
+    <string name="text_label_name_last_serviced">Last Serviced:</string>
+    <string name="text_view_service_history">View service history</string>
+    <string name="text_register_other_motorcycle">Register other motorcycle:</string>
+    <string name="text_visit_nearest_service_center">Visit nearest service centre</string>
+    <string name="text_reemail_send">email to: \ndnait@royalenfield.com</string>
+    <string name="text_close_profile_image">close profile image</string>
+    <string name="text_edit_profile">edit profile</string>
+    <string name="image_camera_add">camera add</string>
+    <string name="tab_text_motorcycle">Motorcycle</string>
+    <string name="tab_text_motorcycles">Motorcycles</string>
+
+    <string-array name="country_arrays">
+        <item>Thunderbird 500</item>
+        <item>Continental GT</item>
+        <item>Royal Enfield 350</item>
+    </string-array>
+
+    <!--edit profile-->
+    <string name="bike_image">bike</string>
+    <string name="rider_profile_text">Rider Profile</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_id">Email</string>
+    <string name="ph_number">Phone Number</string>
+    <string name="dob">DOB</string>
+    <string name="city">City</string>
+    <string name="password">Password</string>
+    <string name="calendar">Calendar</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="text_edit_profile_title">Edit Profile</string>
+    <string name="add_new_address">+Add new address</string>
+    <string name="pickup_address">Pick-up Address:</string>
+    <string name="modify_address">Modify Address</string>
+    <string name="next_arrow">Next Arrow</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_ph_number">Enter Phone number</string>
+    <string name="first_name_error">Enter First Name</string>
+    <string name="last_name_error">Enter Last Name</string>
+    <string name="dob_error">Enter DoB</string>
+    <string name="city_error">Enter City</string>
+    <string name="password_error">Enter Password</string>
+    <string name="valid_email">Enter a valid Email</string>
+    <string name="valid_phone_number">Enter a valid Phone number</string>
+    <string name="invalid_password">Password doesn\'t match</string>
+    <string name="edit_profile_photo">Edit profile photo</string>
+
+    <!--account created successfully-->
+    <string name="account_created_successfully">Your Royal Enfield account created successfully!</string>
+    <string name="cross">cross image view</string>
+    <string name="bike">bike image view</string>
+    <string name="small_road">small road image view</string>
+    <string name="line">line image view</string>
+    <string name="tick">tick image view</string>
+    <string name="contact_rider">Contact rider for any further queries:</string>
+    <string name="mobile_updated_success">Congratulations! Your details have been successfully updated</string>
+    <!--servicehistory-->
+    <string name="servicehistory_title">SERVICE HISTORY</string>
+    <string name="text_amountpaid">Amount paid:</string>
+    <string name="text_viewbill_summary">View bill summary</string>
+
+    <!--serviceBillSummary-->
+    <string name="service_bill_summary">VIEW BILL SUMMARY</string>
+    <string name="issue_date">Issue date:</string>
+    <string name="invoice_number">Invoice number:</string>
+    <string name="service_date">Service date:</string>
+    <string name="payment_method">Payment method:</string>
+
+
+    <!--Actvity Service Home-->
+    <string name="text_label_schedule_service">Schedule a Service</string>
+    <string name="text_label_motorcycle">Your Motorcycle:</string>
+    <string name="text_label_service_center">Service Centre:</string>
+    <string name="text_nearest_servicecenters">Nearest Service Centre(s):</string>
+    <string name="text_label_search_service_center">Search Service Centre</string>
+    <string name="text_label_service_history">View service history</string>
+    <string name="text_label_last_visited">Last Visited</string>
+    <string name="text_label_near_you">Near you</string>
+    <string name="text_label_specific_issue">Any Specific Issue?</string>
+    <string name="text_label_motorcycle_issue">ATTENTION REQUIRED</string>
+    <string name="text_label_bike_service_label">Motorcycle Drop at the Service Centre:</string>
+    <string name="text_label_bike_self_drop">Self Drop &amp; Pick-up</string>
+    <string name="text_label_bike_pickup">Pick-up &amp; Drop Service</string>
+    <string name="text_label_bike_doorstep">Service on Wheels</string>
+    <string name="text_label_date">Date of Service:</string>
+    <string name="text_label_time">Time Slot:</string>
+    <string name="text_label_book_service">Book Service</string>
+    <string name="text_label_format">Today \n</string>
+    <string name="text_label_format2">Tomorrow\n</string>
+    <string name="text_label_issue_desc">Issue with the motorcycle: \nEngine oil leak</string>
+    <string name="text_label_modify_issues">Modify Issues</string>
+    <string name="text_label_address">Modify Address</string>
+    <string name="text_label_pickup_address">Pick-up Address: \n450, Brigade Metropolis,\nWhitefield main
+        road,\nBengaluru, 560081
+    </string>
+    <string name="text_nomotorcycle_registered">No motorcycle registered!</string>
+    <string name="text_visit_nearest_servicecenter">Visit nearest service centre with your valid documents to register
+        your motorcycle with us.
+    </string>
+    <string name="text_nearest_servicecenter">Nearest Service Centre(s)</string>
+    <string name="text_title_servicecenter">Service Centre</string>
+    <string name="text_locate_sc_desc">Locate a Service Centre:</string>
+    <string name="text_search_hint">Search pincode/location/city</string>
+    <string name="pick_and_drop">Pick and drop</string>
+    <string name="no_pick_and_drop">No pick and drop</string>
+    <string name="text_home_servicecenter">Service Centre:</string>
+    <string name="text_online">Online</string>
+    <string name="text_offline">Offline</string>
+
+    <string name="text_no_pickupavailabiity">All pick-up and drop slots are full for the chosen date. Please choose a different date.</string>
+    <string name="text_no_doorstepavailabiity">All Service on Wheels slots are full for the chosen date. Please choose a different date.</string>
+
+    <!--search_service_center -->
+
+    <string name="search_banner">Search</string>
+    <string name="search_hint">Service Centre/City</string>
+    <string name="title_activity_do_it_your_self">DoItYourSelfActivity</string>
+    <string name="do_it_yourself">Do it yourself</string>
+    <string name="play_video"></string>
+    <string name="search_noresults">Can’t find your Service Centre? Service Centres upto 500 kilometers from your current location will be listed here. Please dis-allow location access to this app from setting to see all service centres.</string>
+    <string name="dealer_noservice">Servcie not Available By this Dealer</string>
+    <string name="where_are_you">Where are you?</string>
+    <string name="search_places">Search places</string>
+    <string name="no_check_in_available">No check-in available</string>
+
+
+    <!--youtube -->
+
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+    <string name="text_desc_profile_image">profile image</string>
+
+    <!-- we need to use video ids instead of video link -->
+    <string-array name="video_id_array">
+        <item>x7cL1ujji5c</item>
+        <item>bBO6vjAMnpA</item>
+        <item>X2-6NQ7Y_cc</item>
+        <item>T34OTwGwYrY</item>
+        <item>LxNjIMoWHOk</item>
+        <item>Xdq9ylbp8IQ</item>
+        <item>JRfS5fODWWk</item>
+        <item>6qTZrxOENfM</item>
+        <item>u7ZiLeWjcmw</item>
+        <item>3YkRJXxHNLM</item>
+        <item>Fob9Pf8T7Gw</item>
+    </string-array>
+
+    <string name="permission_rationale_location">Access to the location service is required to show your current
+        location on the map.
+    </string>
+    <string name="location_permission_denied">This sample requires location permission to enable the \'my location\'
+        layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it
+        can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.
+    </string>
+    <string name="permission_required_toast">Location permission is required for this app.</string>
+
+    <!--activity_servicehistory-->
+    <string name="text_servicehistory">Service History:</string>
+    <string name="motorcycle_issues">Motorcycle Issues</string>
+    <string name="pick_service_date">PICK A DATE</string>
+    <string name="submit_issue">Submit</string>
+    <string name="issue_desc">Issue with the motorcycle:</string>
+    <string name="issue_desc_value">Issues with the motorcycle: %1$s</string>
+    <string name="distance">%1$s km</string>
+
+
+    <!--activity_serviceappointmentstatus-->
+    <string name="service_cancelbooking">Cancel booking</string>
+    <string name="service_proceedtopay">Make payment</string>
+    <string name="servicing_text">SERVICE</string>
+    <string name="livefeed_title_text">Watch live feed when your motorcycle is getting serviced</string>
+    <string name="text_sevicestatus">Service Status:</string>
+    <string name="text_servicecenter">Service Centre:</string>
+    <string name="text_notavailable">---</string>
+    <string name="text_hyphen_na">---</string>
+    <string name="text_motorccyle">Motorcycle:</string>
+    <string name="text_reschedule">Reschedule</string>
+    <string name="text_issue_motorcycle">Issue with the motorcycle:</string>
+    <string name="text_address_motorcyclepickup">Motorcycle pick-up address:</string>
+    <string name="text_motorcycle_service_date">Scheduled service date:</string>
+    <string name="text_motorcycle_service_type">Service Type:</string>
+    <string name="text_amounttobepaid">Service charge:</string>
+    <string name="text_dealer_name_address">%1$s%2$s %3$s</string>
+    <string name="text_status_received">Service request received</string>
+    <string name="text_servicecenter_cutofftime_message">The booking period of Today has been exceeded.Please select a date from day after tomorrow, within 10 days.</string>
+
+    <!--activity_servicebooking_cancellation-->
+    <string name="service_booking_cancelled">Booking Cancelled Successfully</string>
+
+    <!--motorcycle notes-->
+    <string name="text_motorcycle_notes_title">Motorcycle Notes</string>
+    <string name="write_notes">Write notes..</string>
+    <string name="button_save_notes">Save</string>
+    <string name="enternotes_toast">Please enter notes</string>
+    <!--activity_servicebooking_cancellation-->
+    <string name="text_service_cancel_text">Are you sure you want to cancel your motorcycle service booking</string>
+    <string name="text_yes_cancel">Yes,Cancel</string>
+
+    <!--servicebookedsuccess-->
+    <string name="text_message_servicebooked">Your service is booked</string>
+    <string name="text_message_servicerescheduled">Your service is rescheduled</string>
+
+
+    <string-array name="month_name_arrays">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sept</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+
+    <string-array name="week_day_name">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    <string name="time_date_name">%1$s</string>
+
+
+    <string name="name">%1$s %2$s</string>
+
+    <string name="amount_rs">%1$s %2$s %3$s</string>
+    <string name="rupees">Rs</string>
+    <string name="rupees_slash">/-</string>
+
+
+    <!--Modify Address-->
+    <string name="save_address_button">Save address</string>
+    <string name="image_location_pin">image_view_location_pin</string>
+    <string name="type_address">Type your address here</string>
+    <string name="add_flat_no">Add flat number/house no etc...</string>
+    <string name="title_modify_address">Modify Address</string>
+    <string name="text_schedule_a_service">Schedule a Service</string>
+    <string name="text_revert_to_original_request">Revert to original request</string>
+
+    <string name="title_activity_payment_gate_way">PaymentGateWayActivity</string>
+    <string name="title_activity_bill_desk">BillDeskActivity</string>
+    <string name="title_activity_new_calender_view">NewCalenderViewActivity</string>
+
+
+    <!-- new calender activity -->
+    <string name="Morning">Morning</string>
+    <string name="Afternoon">Afternoon</string>
+    <string name="Evening">Evening</string>
+    <string name="string_choose_slot">Choose slot</string>
+    <integer name="morning_slot_interval_start">01</integer>
+    <integer name="morning_slot_interval_ends">12</integer>
+
+    <integer name="afternoon_slot_interval_start">12</integer>
+    <integer name="afternoon_slot_interval_ends">16</integer>
+
+    <integer name="evening_slot_interval_start">16</integer>
+    <integer name="evening_slot_interval_ends">12</integer>
+    <string name="text_label_show_available_slots">Choose Time Slot</string>
+    <string name="text_noslots_available_day">Sorry no slots available on this day! Pick a different date</string>
+    <string name="text_noslots_available">Sorry no slots available!</string>
+    <string name="text_noslots_contact_servicecenter">Sorry no slots available. Please contact service centre</string>
+
+    <string name="motorcycle_drop_time">Motorcycle drop time:</string>
+
+
+    <string name="text_title_reschedule_service">Re-schedule Service</string>
+    <string name="text_reschedule_now">Reschedule now</string>
+
+    <!--activity_calendarview-->
+    <string name="text_noslot_available">Sorry no slots available on this day! Pick a different date</string>
+
+    <string name="text_back_exit">Press back again to exit</string>
+
+    <string name="network_failure">No Internet!</string>
+
+    <!--RidesAndServicesActivity-->
+    <string name="text_modifyaddress">Modify Address</string>
+    <string name="text_pickupaddress">Pick-up Address:</string>
+    <string name="text_new_addaddress">+ Add address</string>
+    <string name="text_noaddress_added">No Address added!</string>
+    <string name="text_noaddress_found">No Address Found</string>
+
+    <string name="text_date_placeholder">%1$d%2$s%3$d%4$s%5$d</string>
+    <string name="text_label_scheduled_slot_time">Scheduled slot time:</string>
+    <string name="desc_biker">Biker</string>
+    <string name="desc_bike">Bike</string>
+
+    <!--user_created_ride_details-->
+    <string name="below_description">Swipe Up to join the ride &amp; swipe left and right to view other rides</string>
+    <string name="tv_days">&#160;Days&#160;</string>
+    <string name="created_by">Created by: </string>
+    <string name="tv_rides">&#160;Rides&#160;</string>
+    <string name="riders_on_this_ride">Number of riders joined:</string>
+    <string name="ride_img_desc">Ride image</string>
+    <string name="bookmark_img_desc">Bookmark image</string>
+    <string name="creator_img_desc">Creator image</string>
+    <string name="zero_riders">Zero Riders.</string>
+    <string name="txt_marquee_heading">Register for Rides</string>
+    <string name="txt_user_rides_heading">Join Rides</string>
+
+    <!--JoinRides-->
+    <string name="by_other_riders">"By other riders:</string>
+    <string name="rider_image">Creator image</string>
+    <string name="share_ride">Share Ride</string>
+    <string name="user_created_ride_join">Ride joined!\nRide creator will be notified with your contact details</string>
+
+    <!-- Bike Specific issue category array -->
+    <string-array name="specific_issue_category_array">
+        <item>Engine</item>
+        <item>Chassis</item>
+        <item>Battery</item>
+        <item>Electrical</item>
+        <item>Aesthetics</item>
+        <item>Suspension</item>
+        <item>Wheels</item>
+    </string-array>
+    <string name="add_a_description">Add a description</string>
+    <string name="anything_specific">Anything specific</string>
+
+    <!--OurWorldActivity-->
+    <string name="news_title">NEWS</string>
+    <string name="news_and_launches">News and Launches</string>
+    <string name="events">Events</string>
+    <string name="re_website">Go to Royal Enfield website</string>
+    <string name="re_rides">Go to Royal Enfield Rides</string>
+    <string name="re_events">Go to Royal Enfield Events</string>
+    <string name="events_img_desc">Events image</string>
+    <string name="bikers_registered">Bikers registered</string>
+    <string name="tv_explore">Explore</string>
+    <string name="register_now">Register Now</string>
+    <string name="news_img_desc">News image</string>
+    <string name="status_square_img_desc">Status square image</string>
+
+    <string name="notifications_title">Notifications</string>
+
+    <!--activity_home-->
+    <string name="headertext_ourworld">Home</string>
+    <string name="headertext_rides">Rides</string>
+    <string name="header_ourworld">HOME</string>
+    <string name="header_rides">RIDES</string>
+    <string name="headertext_servicing">Servicing</string>
+
+    <!--activity_home  Bottom Navigation tab-->
+    <string name="tab_motorcycle">Motorcycle</string>
+    <string name="tab_re_community">Home</string>
+    <string name="tab_re_community_tab">Community</string>
+    <string name="tab_re_rides">Rides</string>
+    <string name="tab_make_your_own">Make Your Own</string>
+    <string name="tab_re_navigate">Navigate</string>
+    <string name="tab_re_maps">Maps</string>
+    <string name="store">Make It Yours</string>
+    <string name="tab_wonderlust">WanderLust</string>
+    <!--Motorcycle items-->
+
+    <string name="navigation">Navigation</string>
+
+    <!--RecommendedRouteDetailsActivity-->
+    <string name="hotel_image_description">Hotel Image</string>
+    <string name="location_image_description">Hotel Location</string>
+    <string name="riders_been_here">Riders who have been here:</string>
+    <string name="like_to_go_here">Would you like to go here?</string>
+    <string name="start_navigation">Start Navigation</string>
+
+
+    <!--ShareYourRideActivity-->
+    <string name="share_your_ride">Share your ride</string>
+    <string name="upload_ride_photo">Upload ride photo</string>
+    <string name="share_image_description">Share Image Description</string>
+    <string name="camera_add_image_description">Camera Add Image Description</string>
+    <string name="add_description">Add a description:</string>
+    <string name="hint_your_ride_title">Your ride title</string>
+    <string name="hint_your_ride_tags">Enter Ride tag [Eg.#Hilltop]</string>
+    <string name="hint_your_ride_description">Your ride description</string>
+    <string name="level_of_difficulty">Level of difficulty:</string>
+    <string name="ride_type">Ride Type:</string>
+    <string name="ride_status">Ride Status:</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="difficult">Hard</string>
+    <string name="type_of_terrain">Type of terrain:</string>
+    <string name="rural_roads">Rural roads</string>
+    <string name="broken_tarmac">Broken tarmac</string>
+    <string name="off_road">Off-Road</string>
+    <string name="highway">Highway</string>
+    <string name="ride_members">Ride members:</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="open_to_all_riders">Open to all riders?</string>
+    <string name="note_contact_details">* Your contact details will be shared</string>
+    <string name="ride_route">Ride Route:</string>
+    <string name="ride_start_date">Ride start date:</string>
+    <string name="ride_end_date">Ride end date:</string>
+    <string name="ride_start_time">Ride start time:</string>
+    <string name="ride_end_time">Ride end time:</string>
+    <string name="ride_duration">Ride Duration:</string>
+    <string name="modify">Modify</string>
+    <string name="add_checkin">ADD CHECK-IN</string>
+    <string name="button_share">Share</string>
+    <string name="button_submit">Submit</string>
+    <string name="label_ride_info">Your request has been submitted to Royal enfield rides team and the moderator will review and
+        approve within 24 hours.
+    </string>
+    <string name="text_ride_exit_desc">Are you sure you want to end this ride?</string>
+
+
+    <!--Error handling messages-->
+    <string name="wrong_login_details">Login Unsuccessful.\nPlease enter valid email\/mobile number and password to login.\nDon\'t remember your password? Use Forgot Password to reset your password.
+</string>
+    <string name="signup_issue_details">Your mobile number or email address is already registered with us. Please try to Login.</string>
+    <string name="system_down">Sorry, please try again</string>
+    <string name="no_tries_exceed">Number of tries exceeded. Please try again after some time.</string>
+    <string name="upload_profile_pic_failure">Sorry, please re-upload your profile picture again</string>
+
+    <!--Change Password-->
+    <string name="error_password_update">Error in updating password</string>
+
+    <!--AddCheckInActivity-->plea
+    <string name="upload_photo_description">Upload photo</string>
+    <string name="upload_photo">Upload photo</string>
+    <string name="place_category">What category is this place?</string>
+    <string name="rd_sightseeing">Sightseeing</string>
+    <string name="rd_others">Others</string>
+    <string name="rd_restaurant">Restaurant</string>
+    <string name="button_add_check_in">Add check-in</string>
+    <string name="check_in_desc_hint">Add Description (Optional)</string>
+
+
+    <string name="text_privacypolicy">1.INTRODUCTION \nRoyal Enfield, a unit of Eicher Motors Limited (hereafter
+        referred to as Royal Enfield) is committed to protecting your and your family\'s personal information when you
+        are using “ www.royalenfield.com”. We want our services to be safe and secure for our users. Uniform practices
+        for collecting, using, disclosing, storing, retaining, disposing, accessing, transferring or otherwise =
+        processing such information assists Royal Enfield to process Personal Information fairly and appropriately,
+        disclosing it and/or transferring it only under appropriate circumstances. This privacy policy relates to our
+        use of any personal information we collect from you on “www.royalenfield.com”.\n\nThis privacy policy tells you
+        how we use your personal information collected through the “www.royalenfield.com”. Please read this privacy
+        policy before using the “ www.royalenfield.com “or submitting any personal information. This policy will be
+        updated subject to any changes in information collection, activities performed or any applicable regulations.
+        You are encouraged to review the privacy policy whenever you visit the “ www.royalenfield.com” to make sure that
+        you understand how any personal information you provide will be used.\n\nPLEASE NOTE:\nThe privacy practices set
+        forth in this privacy policy are for “ www.royalenfield.com” only. If you link to other web sites, please review
+        those privacy policies, which may be very different.\n\n 2. COLLECTION AND USE OF INFORMATION\n\n2.1 COLLECTION
+        OF YOUR INFORMATION\n\nRoyal Enfield collects, processes, and retains information about you when you visit our
+        “www.royalenfield.com”. You may choose to provide us with information, such as your name, email address, company
+        information, street address, telephone number, or other information, to access protected information on “
+        www.royalenfield.com” or so we can follow up with you after your visit. Personal Information may include, but is
+        not limited to:\n\n i. Your name,\n\nii. Email addresses,\n\niii. Telephone numbers\n\niv. Country, City and
+        State\n\n Please update this section as applicable \n\n2.2 HOW WE USE YOUR INFORMATION\nAny of the information
+        we collect from you may be used in one of the following ways:\n\n(i)TO GATHER DETAILS ABOUT
+        PROSPECT\n\nCUSTOMERS: Your\ninformation helps us to more effectively respond to your requests and queries\nto
+        make the application interface user friendly.\n\n (ii)TO SEND PERIODIC EMAILS: We may use the information you
+        share with us, to communicate with you through e-mails, text messages and calls, in order to provide our product
+        or service related information and/or for promotional and marketing purposes for a period of five (5)
+        Year.\n\n(iii)SELECT CONTENT, IMPROVE QUALITY AND FACILITATE USE OF THE OTHER INTERFACE CHANNELS: Royal Enfield
+        may use your Personal\n\nInformation to help create and personalize content on our Channels, facilitate\nyour
+        use of the Channels for example, to facilitate navigation and the login\nprocess, avoid duplicate data entry,
+        enhance security, improve quality, track\ncampaign and survey responsiveness and evaluate page response
+        rates.\n\n(iv)OBTAIN THIRD PARTY SERVICES: We also share Personal Information and Other Information with third
+        parties who provide services to Royal Enfield website management, information technology and related
+        infrastructure provision, customer service, e-mail delivery, auditing, and other similar services. When Royal
+        Enfield shares Personal Information with third party service providers, we require that they use your Personal
+        Information and Other Information only for the purpose of providing services to us and subject to terms
+        consistent with this policy.\n\n3. FAIRNESS AND PURPOSE\n\nRoyal Enfield will collect adequate, relevant and
+        necessary Personal Information, and will process such information fairly and lawfully for the purpose it is
+        collected. The purpose of collection will be specified not later than at the time of data collection, or on each
+        occasion of change of purpose.\n\n4. DISTRIBUTION OF INFORMATION\n\n 4.1 INFORMATION DISCLOSURE\n\n \n\nRoyal
+        Enfield does not share, sell, rent, or trade personal information collected through its “www.royalenfield.com”
+        with third parties for their sole promotional purposes or as otherwise outlined in this Privacy Policy. Royal
+        Enfield may share information with third party service providers contracted to provide services on our behalf
+        for processing to provide your employment related services and benefits and other business purposes. These third
+        party service providers may only use information we provide to them as requested and instructed by Royal
+        Enfield.\n\n(i) Royal Enfield may disclose your Personal Information as we believe to be necessary or
+        appropriate:\n\na) under applicable law, including laws outside your country of residence;\n\nb) to comply with
+        legal process;\n\nc) to respond to requests from public and government authorities,\nincluding public and
+        government authorities outside your country of residence,\nfor national security and/or law enforcement
+        purposes;\n\nd) to enforce our terms and conditions; and\n\ne) to allow us to pursue available remedies or limit
+        the damages that\nwe may sustain.\n\n(ii) Additionally, in the event of a reorganization, merger, sale,\njoint
+        venture, assignment, transfer or other disposition of all or any portion\nof our business, assets or stock
+        (including in connection with any bankruptcy\nor similar proceedings), we may transfer the Personal Information
+        we have\ncollected to the relevant third party.\n\n(iii) We may share information with governmental agencies or
+        other companies assisting us in fraud prevention or investigation. We may do so when:\n\na) permitted or
+        required by law; or,\n\nb) trying to protect against or prevent actual or potential fraud or\nunauthorized
+        transactions; or,\n\nc) investigating fraud which has already taken place. The information\nis not provided to
+        these companies for marketing purposes.\n\n \n\nIf Royal Enfield goes through a business transition, such as a
+        merger, acquisition by another company, or sale of all or a portion of its assets, your personal information
+        collected through our website(s) may be among the assets transferred. A prominent notice will appear on our
+        website(s) for 30 days after any such change in ownership or control of your personal information.\n\nTo improve
+        your Web experience, and to offer you products in which you might be interested, we provide links to business
+        alliance companies, Royal Enfield dealers, and other third-party sites. When you click on these links, you will
+        be transferred out of our Web site and connected to the Web site of the organization or company that you
+        selected. Because Royal Enfield does not control these sites (even if an affiliation exists between our Web
+        sites and a third party site), you are encouraged to review their individual privacy notices. If you visit a Web
+        site that is linked to our sites, you should consult that site\'s privacy policy before providing any Customer
+        Identifiable Information. Royal Enfield does not assume any responsibility or liability in elation with conduct
+        of such third parties.\n\n \n\n4.2 CROSS-BORDER DATA TRANSFERS\n\nWhen conducting business, working on Company
+        projects, or implementing new processes or systems, an operation may require the transfer of personal
+        information to other entities or third parties that are located outside of the Royal Enfield operation’s country
+        of business including of third world countries.\n\n \n\n5. CONSENT AND CONTROL\n\n5.1 CONSENT\n\nConsent is
+        often referred to as an individual’s choice to “opt-in” or “opt-out” of the Company’s use of personal
+        information and is usually obtained by a “check box” or signature confirming the individual understands and
+        agrees to the processing of their personal information. At times, express written consent from the individual
+        may be required based on the information processing activity. Royal Enfield receives consent from individuals
+        prior to:\n\n(i) Collecting, using, or processing their personal information, including sensitive personal
+        information, in certain ways or sharing the individual’s personal information with any third party;\n\n(ii)
+        Transferring the individual’s personal information outside of the individual’s country of residence\n\n(iii)
+        Using or placing web cookies on an individual’s computer or other electronic devices.\n\nAll European Union
+        residents under the General Data Protection Regulations, at all times have the option to stop Royal Enfield from
+        using their personal information by unsubscribing clicking here or to be forgotten and requiring your
+        information to be expunged from Royal Enfield records by contacting myprivacy@royalenfield.com. \n\n \n\n5.2
+        CONTROL OF YOUR INFORMATION\n\nRoyal Enfield also provides individuals with the right to control their personal
+        information, which includes the right to access, modify, erase, restrict, transmit, or object to certain uses of
+        their information.\n\nYou may request to review, correct, update, suppress, or otherwise modify any of your
+        Personal Information that you have previously provided to us through “ www.royalenfield.com”, or object to the
+        use or processing of such Personal Information by us. If you have concerns regarding access to or the correction
+        of your Personal Information, please contact us at privacy contact information mentioned within Section 11
+        “Privacy Contact Information” of this policy.\n\nIn your request, please make clear what Personal Information
+        you would like to have changed, whether you would like to have your Personal Information that you have provided
+        to us suppressed from our database or otherwise let us know what limitations you would like to put on our use of
+        your Personal Information that you have provided to us.\n\nWhile the majority of questions and issues related to
+        access can be handled quickly, complex requests may take more research and time. In such cases, issues will be
+        addressed, or you will be contacted regarding the nature of the problem and appropriate next steps, within
+        thirty days.\n\n \n\n6. DATA STORAGE\n\nRoyal Enfield may transfer your information from “ www.royalenfield.com”
+        to other databases and store it on Royal Enfield or other supplier systems. Royal Enfield ensures appropriate
+        security controls while storing data on its or its suppliers systems.\n\n \n\n7. COMMITMENT TO DATA
+        SECURITY\n\nYour personally identifiable information is kept secure. Only authorized employees, business
+        partners, clients, vendors and other third party providers (who have agreed to keep information secure and
+        confidential) have access to this information.\n\nRoyal Enfield ensures that our supplier employs industry
+        standard security measures to ensure the security of information through legally binding terms and conditions.
+        However, users of our “ www.royalenfield.com” are responsible for maintaining the security of any password, user
+        ID, or other form of authentication involved in obtaining access to password protected or secure areas of any
+        Workday websites. Access to and use of password protected and/or secure area of “ www.royalenfield.com” is
+        restricted to authorized users only. Unauthorized access to such areas is prohibited and may lead to criminal
+        prosecution.\n\n \n\nUSE OF COOKIES\n\nAs is the case with many sites, when you visit our site and complete a
+        registration form, we will place a \"cookie\" on your computer, which helps us identify you more quickly when
+        you return. We will not use \"cookies\" or other devices to follow your click stream on the Internet generally,
+        but will use them, and other devices, to determine which pages or information you find most useful or
+        interesting at our own Web sites.\n\nMost browsers permit you to refuse to accept a \"cookie\" offered by a Web
+        site. You will not be denied access to any part of the website on account of your refusal to accept a
+        \"cookie,\" but your transactions through this Web site may be delayed due to the time it takes you to re-enter
+        basic information necessary to complete a transaction.\n\nShould you choose to unsubscribe or to be forgotten,
+        the cookies\nwill be disabled. For more information about cookies and its usage visit our\ncookie policy (Link
+        to be added) [SG1] \n\n \n\n8. RETENTION AND DISPOSAL\n\nRoyal Enfield Personal information shall be retained
+        only as long as necessary for the fulfillment of the stated purposes, and should be disposed thereafter. We will
+        retain your information for as long as your account is active or as needed to provide you services. If you wish
+        that we no longer use your information to provide you services, contact us via the information provided in
+        section 11 of this privacy policy. We will respond to your request within 30 days of receipt of the request. We
+        will retain and use your information as necessary to comply with our legal obligations, resolve disputes, and
+        enforce our agreements.\n\n \n\n9. SUPPLIER OBLIGATIONS\n\nOur suppliers for “ www.royalenfield.com” and therein
+        being the custodian of\ninformation will be liable for management of the following:\n\n1. security of the
+        personal information\n\n2. appropriate retention and disposal of personal information\n\n3. appropriate storage
+        of personal information\n\n \n\n10. YOUR CONSENT\nYour consent to personal data collection and processing may be
+        revoked by notifying us via our contact page. For users below the age of 16, the consent should be provided by
+        the holder of parental responsibility of the child.\n\nPlease note, in case you choose to not provide us with
+        the consentor withdraw the consent at any given point of time, we shall not be able to provision the services as
+        detailed in section 2.2 of this policy.\n\n \n\n11. PRIVACY CONTACT INFORMATION\n\nIf you have any questions
+        regarding our privacy policy or if you need to update, change or remove information, you can do so by contacting
+        [TBU[SG2] ] or by regular mail addressed to: [TBU[SG3] ].\n\n \n\n12. CHANGES TO THIS PRIVACY POLICY\n\nThis
+        Privacy Policy may be amended by Royal Enfield from time to time.
+    </string>
+
+    <string name="text_termsofcondition">Welcome to the website of Royal Enfield, a unit of Eicher Motors Limited. Royal
+        Enfield provides this Site as a service to its customers. Please review the following basic rules that govern
+        your usage of the Site.\n\nAlthough you may \"bookmark\" a particular portion of this Site and thereby bypass
+        this Agreement, your use of this Site still binds you to the terms. Since Royal Enfield may revise this
+        Agreement at any time, you should visit this page periodically to review the terms of your usage.\n\nSITE
+        CONTENTS\nOccasionally there may be information on this website that contains typographical errors,
+        inaccuracies, or omissions that may relate to product descriptions, pricing, and availability. We reserve the
+        right to correct any errors, inaccuracies or omissions and to change or update information at any time without
+        prior notice. We apologize for any inconvenience this may cause.\nUnless otherwise noted, all materials,
+        including images, illustrations, designs, icons, photographs, video clips and written and other materials that
+        are part of this Site (collectively, the \"Contents\") are copyrights, trademarks, trade dress and/or other
+        intellectual property owned, controlled or licensed by Royal Enfield. The Site as a whole is protected by
+        copyright, all worldwide rights, titles and interests in and to which are owned by Royal Enfield. ROYAL ENFIELD
+        and our other trademarks appearing at this Site are the trademarks of Eicher Motors Limited.\nThis Site and all
+        its Contents are intended solely for personal, non-commercial use. You may download or copy the Contents and
+        other downloadable materials displayed on the Site for your personal use only. No right, title or interest in
+        any downloaded materials or software is transferred to you as a result of any such downloading or copying. You
+        may not reproduce (except as noted above), publish, transmit, distribute, display, modify, create derivative
+        works from, sell or participate in any sale of or exploit in any way, in whole or in part, any of the Contents,
+        the Site or any related software.\n\nUSER COMMENTS, FEEDBACK, POSTCARDS AND OTHER SUBMISSIONS\n\nAll comments,
+        feedback, postcards, suggestions, ideas, and other submissions disclosed, submitted or offered to Royal Enfield
+        on or by this Site or otherwise disclosed, submitted or offered in connection with your use of this Site
+        (collectively, the \"Comments\") shall be and remain Royal Enfield\'s property. Such disclosure, submission or
+        offer of any Comments shall constitute an assignment to Royal Enfield of all worldwide rights, titles and
+        interests in all copyrights and other intellectual properties in the Comments. Thus, Royal Enfield will own
+        exclusively all such rights, titles and interests and shall not be limited in any way in its use, commercial or
+        otherwise, of any Comments. Royal Enfield is and shall be under no obligation\n- to maintain any Comments in
+        confidence;\n\n- to pay compensation to any user for any Comments; or\n\n- to respond to any user
+        Comments.\n\n\nYou agree that no Comments submitted by you to the Site will violate any right of any third
+        party, including copyright, trademark, privacy or other personal or proprietary right(s). You further agree that
+        no Comments submitted by you to the Site will be or contain libelous or otherwise unlawful, abusive or obscene
+        material. You are and shall remain solely responsible for the content of any Comments you make.\n\nCOLORS\nWe
+        have made every effort to display as accurately as possible the colors of our products that appear at the Site.
+        However, as the actual colors you see will depend on your monitor, we cannot guarantee that your monitor\'s
+        display of any color will be accurate.\n\nDISCLAIMER\nRoyal Enfield provides the materials on this site \"as
+        is\" without warranties of any kind, either express or implied, including without limitation, warranties of
+        title, implied warranties of merchantability, fitness for a particular purpose or non-infringement of
+        intellectual property. Royal Enfield expressly disclaims any duty to update or revise the materials on this
+        site, although Royal Enfield may modify the materials at any time without notice. By your use of this site, you
+        acknowledge that your use is at your sole risk and that you assume full responsibility for all costs associated
+        with all necessary servicing or repairs of any equipment you use in connection with your use of this site. You
+        further acknowledge that Royal Enfield shall not be liable for any damages or any kind related to your use of
+        this site.\nAll contributions made to this website in written, photographic or other form will become the sole
+        property of Royal Enfield. Consequently, Royal Enfield will hold the rights to use the same in any manner deemed
+        fit, online or offline.\nThe Trip experiences and discussions posted in the website are not endorsed by Royal
+        Enfield for content or veracity. Moreover, Royal Enfield does not take responsibility for any actions inspired
+        by content presented here. Royal Enfield strongly discourages riding under the influence of alcohol or any other
+        hallucinogenic substance. We strongly urge you to follow road rules, wear a helmet, and only use your motorcycle
+        as it was designed to be used. Modifications to the chassis and engine are not advisable, since they could
+        compromise your safety. Please enjoy your motorcycle and the great outdoors responsibly.\nWe may occasionally
+        ask for your assistance in market research to help improve our services to customers. Your personal data that
+        you provide in the form may be shared for these purposes with other authorized Royal Enfield partners and
+        suppliers of Royal Enfield approved products and services. We would like to contact you via phone, SMS and/or
+        email. You can tell us at any time if you would prefer NOT to receive this information; please write to us at
+        support@royalenfield.com.\n\nINDEMNIFICATION\nYou agree to defend, indemnify and hold Royal Enfield harmless
+        from and against any and all claims, damages, costs and expenses, including attorneys\' fees, arising from or
+        related to your use of the Site.\n\nMISCELLANEOUS\nUnless otherwise specified, this Site and the Contents
+        thereof are displayed solely for the purpose of promoting Royal Enfield\'s products and services. This Site is
+        controlled and operated by Royal Enfield from its office in Chennai, India.\nThe Courts in Chennai shall have
+        jurisdiction over all disputes arising out of or in respect of this Agreement.\n\nPRIVATE IMPORTS\nWe also do
+        not encourage private imports of Indian models through our Indian dealers. If you have done so, please note it
+        is at your own risk. If you face any problems with registering your privately imported motorcycle or haven\'t
+        received your motorcycle we cannot be held responsible or liable for this.\n\nTERMINATION\nThese terms are
+        effective unless and until terminated by either you or Royal Enfield. You may terminate this Agreement at any
+        time. Royal Enfield also may terminate this Agreement at any time and may do so immediately without notice, and
+        accordingly deny you access to the Site, if in Royal Enfield\'s sole discretion you fail to comply with any term
+        or provision of this Agreement. Upon any termination of the Agreement by either you or Royal Enfield, you must
+        promptly destroy all materials downloaded or otherwise obtained from this Site, as well as all copies of such
+        materials, whether made under the terms of use or otherwise.\n\nCANCELLATION OF ONLINE VEHICLE
+        BOOKING\nCancellation before final billing entitles you to a full refund. Customer shall not receive any refunds
+        online or reversal in their accounts. Refund will be through A/C payee cheque to the booking name only.
+    </string>
+
+    <string name="text_content_customer_feedback">Thank you for being our first users of the Royal Enfield mobile
+        application and the Rider Module.\n\nSince you have been using the Application for some time now, we wanted to
+        take feedback from you on how was your experience in using the Application till now and what you think we
+        should improve on.\n\nBelow is the link and instructions around the Customer Feedback.\n
+        <a href="https://forms.gle/zQMMhhcgNBBgEbvq5">https://forms.gle/zQMMhhcgNBBgEbvq5</a>\n\nWe request you to
+        please take 5 mins out of your busy schedule and provide us with valuable feedback, so that we can come
+        back to you with an improved version of the Royal Enfield mobile application soon.\n\nThanks
+        and Regards,\nRoyal Enfield Digital Team.
+
+    </string>
+
+    <string name="text_customer_feedback">Customer Feedback</string>
+
+    <string name="text_ride_type">Ride type:</string>
+    <string name="text_ride_status">Ride status:</string>
+    <string name="text_number_of_riders_joined">Number of riders joined:</string>
+    <string name="text_terrain">Terrain:</string>
+    <string name="text_ride_description">Ride Description:</string>
+    <string name="text_ride_duration">Ride Duration:</string>
+    <string name="text_ride_start_time">Ride start time:</string>
+    <string name="text_ride_end_time">Ride end time:</string>
+    <string name="text_ride_date">Ride date:</string>
+    <string name="text_ride_start_date">Ride start date:</string>
+    <string name="text_ride_end_date">Ride end date:</string>
+    <string name="text_ride_route">Ride Route:</string>
+    <string name="text_button_join_ride">Join Ride</string>
+    <string name="text_label_created_by">Created By:</string>
+    <string name="text_button_unjoin_ride">Unjoin Ride</string>
+    <string name="text_adding_to_your_rides">Adding to your rides..</string>
+
+    <string name="label_days">days</string>
+    <string name="label_day">day</string>
+    <string name="text_dealer_ride_route">%1$s - %2$s</string>
+    <string name="text_dealer_ride_date_format">%1$s - %2$s</string>
+    <string name="text_popular_ride_date_format">%1$s - %2$s</string>
+    <string name="text_dealer_location">%1$s | %2$s</string>
+
+    <string name="label_bikers_joined">Bikers joined</string>
+    <string name="label_riding_inspire">Get your riding inspiration</string>
+    <string name="label_browse_rides">Browse rides by category:</string>
+    <string name="label_create_ride">CREATE RIDE</string>
+    <string name="label_create_ride_btn">Create Ride</string>
+    <string name="text_popup_src_dest">Please enter different source and destination</string>
+    <string name="label_add_waypoint">ADD WAYPOINT</string>
+    <string name="label_add_destination">Enter Destination</string>
+    <string name="label_add_source">Enter Source</string>
+    <string name="label_add_home">Add Home Address</string>
+    <string name="label_add_office">Add Office Address</string>
+    <string name="label_create_navigation">Get Directions</string>
+    <string name="label_plan_ride">Plan a ride</string>
+    <string name="label_create_plan">Create a plan</string>
+    <string name="label_where_ride">Where do you want to ride?</string>
+    <string name="label_when_ride">When do you want to Start the Ride?</string>
+    <string name="label_when_end_ride">When do you want to End the Ride?</string>
+    <string name="label_current_location">Current Location</string>
+    <string name="label_source">Enter your source</string>
+    <string name="label_destination">Enter your destination</string>
+    <string name="label_route_details">View route details</string>
+    <string name="label_save_ride">Save ride plan</string>
+    <string name="label_start_navigation">Start navigation</string>
+    <string name="label_ride_duration">Suggested ride duration</string>
+    <string name="text_rideplan_waypoint">Where do you want to ride?</string>
+    <string name="text_createride_hint_msg">Please enter Source and Destination</string>
+
+    <!--fragment_ride_starttime-->
+    <string name="text_ride_starttime">Ride Start time:</string>
+    <string name="text_ride_endtime">Ride End time:</string>
+
+    <!--fragment_recommended_routes-->
+    <string name="text_recommended_route">Recommended motorcycling routes</string>
+    <string name="text_recommended_stops">Recommended stops on your way:</string>
+    <string name="text_recommended_service_centers">Authorized service centres:</string>
+    <string name="text_checkins">Your Check-ins</string>
+
+    <!--layout_duration_holder-->
+    <string name="text_duration">%1$s %2$s</string>
+    <string name="text_days">Days</string>
+    <string name="text_day">Day</string>
+
+    <!--activity_ride_save_confirm-->
+    <string name="text_ride_share_confirm">Ride plan saved! \n Would you like to share your ride?</string>
+    <string name="button_text_yes_share">Yes, End Ride</string>
+    <string name="button_text_end_ride">End Ride</string>
+    <string name="button_text_no_share">No, I\'m still riding</string>
+
+    <!--activity_ride_details-->
+    <string name="text_label_ride_details">Ride details:</string>
+    <string name="text_modify">Modify</string>
+    <string name="text_label_ride_members">Ride members:</string>
+    <string name="text_label_check_in">Your Check-ins:</string>
+    <string name="text_label_inspire_other_riders">Inspire other riders to take this ride:</string>
+    <string name="publish_ride">Publish ride</string>
+    <string name="loc_img_desc">Location image</string>
+    <string name="check_in_place_img_desc">Check-in place image</string>
+    <string name="title_past_rides">Past Ride</string>
+    <string name="title_rejected_ride">Rejected Ride</string>
+    <string name="title_pending_ride">Pending Ride</string>
+
+    <!--layout_other_riders-->
+    <string name="image1_desc">First rider image</string>
+    <string name="image2_desc">Second rider image</string>
+    <string name="image3_desc">Third rider image</string>
+
+    <!--choose ride category-->
+    <string name="step_1_of_2">Step 1/2</string>
+    <string name="choose_ride_category">Ride Category:</string>
+    <string name="ride_tags">Ride Tags:</string>
+    <string name="step_2_of_2">Step 2/2</string>
+    <string name="day_ride">Day Ride</string>
+    <string name="weekend_ride">Weekend Ride</string>
+    <string name="long_weekend_ride">Long Weekend Ride</string>
+    <string name="multiday_ride">Multiday Ride</string>
+    <string name="button_next">Next</string>
+
+    <!-- Invite friends activity -->
+    <string name="tb_invite_friends">Invite friends</string>
+    <string name="share_on_social_media">Share on social media:</string>
+    <string name="fb_img_desc">Facebook image</string>
+    <string name="instagram_img_desc">Instagram image</string>
+    <string name="twitter_img_desc">Twitter image</string>
+    <string name="select_contacts">Select Contacts:</string>
+    <string name="search_contact_hint">Search contacts</string>
+    <string name="contact_image_desc">Contact image</string>
+    <string name="add_contact_button_desc">Add contact</string>
+    <string name="done_button">Done</string>
+    <string name="no_contacts_available">No contacts available</string>
+
+
+    <!-- Bila map -->
+    <string name="no_routes_found">No routes found to destination</string>
+    <string name="no_result_found">No results found for specified destination</string>
+
+    <string name="message_ride_created">Ride Created Successfully</string>
+    <string name="title_activity_feature_test">FeatureTestActivity</string>
+
+    <string-array name="fm_features">
+        <item>Our World</item>
+        <item>Navigate</item>
+        <item>Rides</item>
+        <item>Servicing</item>
+    </string-array>
+
+    <string-array name="fm_home_features">
+        <item>OurWorld</item>
+        <item>Rides</item>
+    </string-array>
+
+    <string-array name="fm_feature_status">
+        <item>false</item>
+        <item>false</item>
+        <item>true</item>
+    </string-array>
+
+    <!--Bila Navigation related strings -->
+    <string name="navigation_next_maneuver">Next</string>
+    <string name="navigation_added_intermediate_waypoint">New intermediate stop was added</string>
+    <string name="navigation_rerouting_attempt_failed">Rerouting attempt failed: %1$s</string>
+    <string name="navigation_finished">Destination reached</string>
+    <string name="navigation_enter_destination">ENTER DESTINATION</string>
+    <string name="navigation_hint_enter_destination">Enter Destination</string>
+
+
+    <string name="distance_x_km">%1$s km</string>
+    <string name="distance_x_m">%1$s m</string>
+
+    <string name="distance_x_mi">%1$s mi</string>
+    <string name="distance_x_ft">%1$s ft</string>
+
+    <string name="distance_now">Now</string>
+    <string name="distance_in_x_meter">In %1$s meter:</string>
+    <string name="distance_x_meter">%1$s meter</string>
+    <string name="distance_in_x_kilometer">In %1$s kilometer:</string>
+    <string name="distance_x_kilometer">%1$s kilometer</string>
+    <string name="distance_in_x_feet">In %1$s feet:</string>
+    <string name="distance_x_feet">%1$s feet</string>
+    <string name="distance_in_x_miles">In %1$s miles:</string>
+    <string name="distance_x_miles">%1$s miles</string>
+    <string name="one">one</string>
+
+    <string name="duration_x_hour_y_min">%1$d hr %2$d min</string>
+    <string name="duration_x_min">%1$d min</string>
+
+    <string name="map_route_duration">Duration: %1$s</string>
+    <string name="map_route_distance">Distance: %1$s</string>
+
+    <string name="navigation_calculate_new_route">New route is calculated…</string>
+    <string name="navigation_follow_route">Follow the route</string>
+
+    <string name="data_notavailable">Not Available</string>
+    <string name="stop_navigation">Stop navigation</string>
+
+    <!--activity_settings-->
+    <string name="text_label_settings">Settings</string>
+    <string name="text_button_logout">Logout</string>
+    <string name="text_terms_and_conditions">Terms and Conditions</string>
+    <string name="text_ride_terms_and_conditions">Accept Ride Terms &amp; Conditions</string>
+    <string name="text_faqs">FAQs</string>
+    <string-array name="list_settings">
+        <item>Terms and Conditions</item>
+        <item>FAQs</item>
+    </string-array>
+    <string-array name="consent_array">
+        <item>Communication Settings</item>
+        <item>Forget Me</item>
+    </string-array>
+    <!--activity_changepassword-->
+    <string name="text_title_changepassword">Change Password</string>
+    <string name="editext_newpassword">Enter new password</string>
+    <string name="editext_confirm_password">Confirm password</string>
+    <string name="changepassword_success">Password changed successfully</string>
+    <string name="previous_password">Enter previous password</string>
+
+    <!--Splash Headers-->
+    <string-array name="text_splashheader">
+        <item></item>
+        <item>EXPLORE AND PLAN RIDES</item>
+        <item>BOOK SERVICE</item>
+        <item>EXPLORE AND PLAN RIDES</item>
+
+    </string-array>
+
+    <string name="text_nointernet">No Internet Connection</string>
+
+
+    <!-- FCM -->
+    <string name="re_notification_channel_id" translatable="false">fcm_royal_enfield_channel</string>
+
+    <string name="diy_youtube_install_error">Youtube app need to be installed in your mobile to watch the video</string>
+    <!-- Adobe campaign SDK-->
+    <string name="text_adobecampaign_integrationkey">BDD13E77-DCF6-4DBC-873A-23229C3D0D27</string>
+    <string name="text_adobecampaign_marketinghost">https://eichermo-stage.neolane.net/</string>
+    <string name="text_adobecampaign_trackinghost">https://eichermo-stage.neolane.net/</string>
+
+    <!--- User Data Validation-->
+    <string name="please_validate_your_profile">Please validate your user profile information</string>
+    <string name="primary_phone_hint">Primary Phone Number*</string>
+    <string name="secondary_phone_number">Secondary Phone Number</string>
+    <string name="make_as_primary_num">Make as Primary Number</string>
+    <string name="addPhone">+ Add Additional Phone No.</string>
+    <string name="emergency_phone_num">Emergency Phone Number*</string>
+    <string name="email_id_for_pop_up">Email ID*</string>
+    <string name="addressline1">Address Line 1</string>
+    <string name="addressline2">Address Line 2</string>
+    <string name="addressline3">Address Line 3</string>
+    <string name="fields_are_mandatory">*Fields are mandatory</string>
+    <string name="confirm_btn">Confirm button</string>
+    <string name="cross_btn">Cross button</string>
+    <string name="details_validation_title">Details will be updated and you will be notified via email or sms</string>
+    <string name="success_msg">Success message</string>
+    <string name="show_motorcycle">Show Motorcycles</string>
+    <string name="details_validation_msg">You already have 5 Motorcycles linked to your mobile number</string>
+    <string name="pop_up_validation_confirmation">Validation Confirmation</string>
+    <string name="motorcycle_title">Thunderbird 500</string>
+    <string name="motorcycle_image">Motorcycle Image</string>
+    <string name="engine_number">Engine Number</string>
+    <string name="registration_num">Registration Number</string>
+    <string name="do_not_own_motorcycle">I don’t own this motorcycle</string>
+    <string name="confirm">Confirm</string>
+    <string name="your_motorcycles">Your Motorcycles</string>
+    <string name="enter_registration_num">Enter registration number</string>
+    <string name="registrationNumRangeError">Enter number within the range of 8–10 characters</string>
+    <string name="view_my_profile">View My Profile</string>
+    <string name="motorcycle_screen_type">Motorcycle Confirmation</string>
+    <string name="motorcycle_details_validation_msg">Details will be reviewed and updated</string>
+    <string name="emergency_phone_error">*Emergency Phone Number is mandatory</string>
+    <string name="email_id_is_manadatory">*Email ID is mandatory</string>
+    <string name="enter_valid_email_error">Enter valid email address</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="user_verification">Login Verification</string>
+    <string name="otp_verification_msg">Please enter the verification code sent to +91 7800987878</string>
+    <string name="resend">Resend in 60 secs</string>
+    <string name="thankyou_msg">Thank you for your confirmation</string>
+    <string name="updated_and_will_be_reflected_in_application_soon">Updated and will be reflected in your application soon</string>
+    <string name="multiple_motorcycle">Multiple Motorcycle</string>
+    <string name="locate_motorcycle">Locate Motorcycle</string>
+    <string name="motorcycle_settings">Vehicle settings</string>
+    <string name="my_motorcycles">MOTORCYCLE</string>
+    <string name="text_diy">DIY - Videos</string>
+    <string name="text_diy_guides">DIY - Videos</string>
+    <string name="text_header_diy_guides">DIY - VIDEOS</string>
+    <string name="text_guides">Guides</string>
+    <string name="text_header_guides">GUIDES</string>
+    <string name="text_owners_manual">Owner\'s Manual</string>
+    <string name="text_extended_warranty">Ride Sure</string>
+    <string name="text_customer_care">Customer Care</string>
+    <string name="text_help_and_support">Help And Support</string>
+    <string name="help_support"><![CDATA[Help & Support]]></string>
+    <string name="text_send_mail">Send mail…</string>
+    <string name="text_contact_us">Contact Us</string>
+    <string name="err_not_installed_email_app">There are no email clients installed.</string>
+    <string name="err_not_logged_in">You are not logged in.</string>
+    <string name="support">Support</string>
+    <string name="bottom_sheet_option_camera">Use Camera</string>
+    <string name="bottom_sheet_option_gallery">Upload from Gallery</string>
+    <string name="bottom_sheet_option_heading">Add Photo</string>
+    <string name="bottom_sheet_option_remove_photo">Remove Photo</string>
+    <string name="add_another_vehicle"><u>Add Another Vehicle</u></string>
+    <string name="add_new_vehicle">+Add New Vehicle</string>
+    <string name="on_board_popup_tile">Do you own a Royal Enfield Motorcycle?</string>
+    <string name="on_boardpopup_yes">Yes</string>
+    <string name="on_boardpopup_no">No</string>
+    <string name="vehicle_purchased_date">Invoice Date*</string>
+    <string name="purchase_date_format">DD/MM/YYYY</string>
+    <string name="vehicle_engine_number">Engine Number*</string>
+    <string name="vehicle_verify">Verify</string>
+    <string name="upload_documents_for_verification">Upload Documents for Verification</string>
+    <string name="upload_documents">Upload Documents</string>
+    <string name="ownership_document">RC Document</string>
+    <string name="kyc_document">KYC Document</string>
+    <string name="only_jpeg_and_pdf_accepted_maximum_size_per_file_3_mb">Only .jpeg and .pdf accepted, maximum size per file - 3 MB</string>
+    <string name="only_jpeg_and_pdf_accepted_maximum_size_per_file_5_mb">Only .jpeg\/.png and .pdf accepted, maximum size per file - 5 MB</string>
+
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="max_onboard_filesize">Maximum file size exceeded</string>
+    <string name="error_on_board_file_type">Incompatible file format</string>
+    <string name="title_activity_navigation_maps">Map</string>
+    <string name="show_num_error">Enter alphanumeric characters</string>
+    <string name="customer_care">Customer Care</string>
+    <string name="call_customer_care">Call Customer Care</string>
+    <string name="details_will_be_validated_and_you_will_be_notified_via_email_or_sms">Details will be updated and you will be notified via email or sms</string>
+    <string name="verify_fail_1">Verification failed!</string>
+    <string name="verify_fail_2">Please contact customer care for more information</string>
+    <string name="enter_valid_emergency_phone_num">Enter Valid Emergency phone no.</string>
+    <string name="resend_otp">"Resend OTP"</string>
+    <string name="successfully_registered">Congratulations! You have successfully registered with us</string>
+    <string name="successfully_authorized">Motorcycle Authorized and Paired!</string>
+
+    <string name="otp_error">Please enter the valid OTP</string>
+    <string name="enter_valid_phone_num">*Primary Phone Number is mandatory</string>
+    <!--phone configurator-->
+    <string name="choose_model">Choose Model</string>
+    <string name="saved_motorcycle">My Configurations</string>
+    <string name="engine_capacity">ENGINE CAPACITY</string>
+    <string name="power">POWER</string>
+    <string name="torque">TORQUE</string>
+    <string name="bike_model">Classic</string>
+    <string name="see_variant">See Variants</string>
+    <string name="pc_more_detail">MORE DETAILS</string>
+    <string name="pc_less_detail">LESS DETAILS</string>
+    <string name="title_1">Title</string>
+    <string name="text_1">Dummy Text</string>
+    <string name="configure_now">Configure Now</string>
+    <string name="config_comming_soon">*Configurator coming soon</string>
+    <string name="from_u20b9_2_00_000">From ₹ </string>
+    <string name="total_price">Total</string>
+    <string name="ex_showroom_price">On-Road Price</string>
+    <string name="bike_model_350">Classic 350</string>
+    <string name="bike_interceptor">Classic 500</string>
+    <string name="bike_model_detail">- Single cylinder \n- 4 stroke \n- Twinspark \n- Air-cooled </string>
+    <string name="bike_model_interceptor">- 4 Stroke \n- Single overhead cam \n- Air cooled \n- Parallel twin </string>
+    <string name="classic_variants">CLASSIC VARIANTS</string>
+    <string name="upload_error">Sorry, Please try again.</string>
+    <string name="onboard_custome_care_no">1800 210 0007</string>
+    <string name="more_details">More Details</string>
+    <string name="checked_secondary">Checked Secondary</string>
+    <string name="engine_number_validation">0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</string>
+    <string name="phone_num">+91 %1$s</string>
+    <string name="img_desc_back_arrow">Back arrow</string>
+    <string name="verify_account_thank_you_text">Thank you for submitting.Please check your text message</string>
+    <string name="otp_sent">OTP sent to your registered mobile/email</string>
+    <string name="otp_sent_signup">OTP sent to your registered mobile number</string>
+    <string name="verify_your_account">Verify your account</string>
+    <string name="txt_navigate">NAVIGATE</string>
+    <string name="txt_service">Service</string>
+    <string name="txt_locate">LOCATE</string>
+    <string name="txt_rsa">Roadside\nAssistance</string>
+    <string name="invalid_registration_number">Enter valid registration number</string>
+    <string name="invalid_chassis_number">Enter valid chassis number</string>
+    <string name="add_vehicle_Dialog">add_vehicle_Dialog</string>
+    <string name="pdf_mime">application/pdf</string>
+    <string name="road_side_assistance">Roadside Assistance</string>
+
+    <string name="state">State</string>
+    <string name="pin_code">PinCode</string>
+    <string name="master_data_dialog">Master Data Dialog</string>
+    <string name="country">Country</string>
+    <string name="please_select_country_Code">Please select country code</string>
+    <string name="please_select_country">Please select country</string>
+    <string name="plesae_select_state">Please select state</string>
+    <string name="plesae_select_city">Please select city</string>
+    <string name="data_not_available">Data not available</string>
+    <string name="primary_default_country_code">+91</string>
+    <string name="country_code_with_desc">%1$s(%2$s)</string>
+
+    <string-array name="tags_array">
+        <item>#HighwayRide</item>
+        <item>#IndianRider</item>
+        <item>#Mountaintrip</item>
+        <item>#Ghatride</item>
+        <item>#MotoHimalaya</item>
+        <item>#Reunion</item>
+        <item>#HighwayRide</item>
+        <item>#IndianRider</item>
+        <item>#Mountaintrip</item>
+        <item>#Ghatride</item>
+        <item>#MotoHimalaya</item>
+        <item>#Reunion</item>
+        <item>#Mountaintrip</item>
+        <item>#Ghatride</item>
+        <item>#MotoHimalaya</item>
+        <item>#Reunion</item>
+    </string-array>
+
+    <!--health alert-->
+    <string-array name="custom_weekdays">
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+        <item>S</item>
+    </string-array>
+    <string name="calendar_dialog_fragment">Calendar dialog fragment</string>
+    <string name="thunderbird_x_500">Thunderbird X 500</string>
+    <string name="tn_02_8890">TN – 02 – 8890</string>
+    <string name="alerts">Alerts</string>
+    <string name="_3">3</string>
+    <string name="done">DONE</string>
+    <string name="make_my_own">MakeMyOwnFragment</string>
+    <string name="pc_main_fragment">PCMainFragment</string>
+    <string name="open">Open</string>
+    <string name="share">share</string>
+    <string name="delete_configuration">Delete Configuration</string>
+    <string name="are_you_sure_you_want_to_delete_this_configuration">Are you sure you want to delete this configuration?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="primary_phone_is_not_allowed">Primary phone number is not allowed</string>
+    <string name="additional_phone_no">Additional Phone Number</string>
+    <string name="model_variants_header"> Variants</string>
+    <string name="invalid_id">Invalid Id.</string>
+    <string name="no_saved_configuration">No Saved Configuration</string>
+    <string name="dailog_text_invalid_id">This configuraton could not be found</string>
+    <string name="error">Error</string>
+    <string name="network_error">Network Error</string>
+    <string name="secondary_phone_hint">Secondary Phone No.</string>
+    <string name="emergency_phone_hint">Emergency Phone No.</string>
+    <string name="please_enter_valid_pincode">Please enter valid pincode</string>
+    <string name="please_select_city">Please select city</string>
+    <string name="please_enter_add2">Please enter address line 2</string>
+    <string name="please_enter_add1">Please enter address line 1</string>
+    <string name="please_enter_pincode">Please enter pincode</string>
+    <string name="sorry_please_try_again">Sorry, please try again</string>
+    <string name="sorry_please_try_again1">Sorry! Please try again.</string>
+
+    <string name="tap_retry">Retry</string>
+    <string name="service_error">Couldn\'t load content</string>
+    <string name="service_alert_offline">This Dealer does not provide online Booking.Please call him to book offline</string>
+
+    <!--permissions-->
+    <string name="text_permission_necessary">Permissions are necessary</string>
+    <string name="text_permission_bg_location">, either Allow all the time or Keep and don\'t ask again</string>
+    <string name="text_settings_enable">Go to settings to enable permissions</string>
+    <string name="text_settings_enable_phone_permission">Phone permission not granted. Phone permission should be set to Allow for navigation. Go to: Settings->Apps &amp; notifications->App permissions->Phone->Royal Enfield->Allow.</string>
+
+    <!--fragment_rider_profile-->
+    <string name="text_status_rides">Status:</string>
+    <string name="text_previousrides">Previous Rides:</string>
+    <string name="title_upcoming">Upcoming Rides</string>
+    <string name="delete_ride">Delete Ride</string>
+
+    <!--Upcoming rides-->
+    <string name="start_now_splash_text">Your ride has been started</string>
+    <string name="end_now_splash_text">Your ride has been ended</string>
+    <!--Past rides-->
+    <string name="splash_past_ride">Published! \n Thank-you for inspiring your fellow riders</string>
+
+    <!--profile_of_ride_creator-->
+    <string name="tv_rides_of_creator">Rides:</string>
+    <string name="approx_distance">Approx distance: %1$s km</string>
+    <string name="approx_distance_long_ride">Approx distance: %1$s km, Looks like a long ride…</string>
+    <string name="bottom_red_stripe">Bottom red stripe</string>
+
+    <!--Ride Tours-->
+    <string name="ride_date_hyphen">-</string>
+    <string name="ride_date_format">%1$s %2$s %3$s</string>
+    <string name="duration">12 Days</string>
+    <string name="ride_inr">Rs</string>
+    <string name="ride_price_slash">/- for</string>
+    <string name="ride_price_registration_inr">registration &amp; &lt;br /&gt;Rs</string>
+    <string name="ride_price_registration">registration</string>
+    <string name="ride_price">%1$s %2$s %3$s %4$s %5$s %6$s %7$s %8$s %9$s</string>
+    <string name="ride_price_single">%1$s %2$s %3$s %4$s %5$s</string>
+    <string name="text_registration_policies">Registration Policies</string>
+    <string name="text_register_now">Register Now</string>
+    <string name="text_key_places_of_coastal_trail">Key places of Coastal Trail 2019:</string>
+    <string name="text_itinerary">Itinerary:</string>
+    <string name="text_events_and_schedules">Events and schedules:</string>
+    <string name="text_ride_gallery">Ride Gallery:</string>
+    <string name="text_pics_from_previous_year">Pictures from previous year:</string>
+    <string name="text_destination">Destination:</string>
+    <string name="text_ride_dates">Ride dates:</string>
+    <string name="text_distance">Distance:</string>
+    <string name="text_price">Price:</string>
+    <string name="recent">Recent:</string>
+    <string name="view_all">View All</string>
+    <string name="view_more">View More</string>
+    <string name="duration_title">Duration:</string>
+    <string name="text_event_dates">Event dates:</string>
+    <string name="text_registration_amount">Registration amount:</string>
+    <string name="text_inclusions">Inclusions:</string>
+
+    <string name="text_label_policies">Registration Policies</string>
+    <string name="address1">Address 1:</string>
+
+    <!--layout_dealer_rides_list_item-->
+    <string name="dealer_thumbnail_img_desc">Dealer thumbnail image</string>
+
+    <!--rides_error-->
+    <string name="text_popular_rides_error">Couldn\'t load popular rides</string>
+    <string name="text_no_popularrides">Can\’t wait to plan our next ride. But wait we must.</string>
+    <string name="rides_register">Register</string>
+
+    <string name="text_marquee_rides_error">Couldn\'t load marquee rides</string>
+    <string name="text_no_marqueerides">There are no rides available in your vicinity.</string>
+
+    <string name="text_user_rides_error">Couldn\'t load user rides</string>
+    <string name="text_no_userrides">There are no rides available in your vicinity.</string>
+
+    <string name="text_dealer_rides_error">Couldn\'t load dealer rides</string>
+    <string name="text_no_dealerrides">There are no rides available in your vicinity.</string>
+    <string name="text_share_ride">Share Ride</string>
+    <string name="text_start_now">Start Now</string>
+    <string name="text_level_of_difficulty">Level of difficulty:</string>
+    <string name="text_rider_status">Rider Status</string>
+    <string name="label_way_point">Way Points</string>
+    <string name="your_ride">Your Ride:</string>
+    <string name="title_modify_rides">MODIFY RIDE</string>
+    <string name="text_publish_ride">Publish Ride</string>
+    <string name="text_saveride">Save ride plan</string>
+    <string name="inspire_other_riders_to_take_this_ride">Inspire other riders to take this ride…</string>
+
+
+    <!--InRide-->
+
+    <!--our_world_error-->
+    <string name="text_news_error">Couldn\'t load news</string>
+    <string name="text_no_news">No news available</string>
+    <string name="text_events_error">Couldn\'t load events</string>
+    <string name="text_no_events">No events available</string>
+
+
+    <!--profile_rides-->
+    <string name="text_pastrides_no_data">No past rides available</string>
+    <string name="text_pastrides_error">Couldn\'t load past rides</string>
+
+    <string name="text_upcomingrides_no_data">No upcoming rides available</string>
+    <string name="text_upcomingrides_error">Couldn\'t load upcoming rides</string>
+
+    <string name="text_userprofile_rides_error">No rides available</string>
+
+    <string name="ride_three_string_placeholder">%1$s %2$s %3$s</string>
+    <string name="ride_two_string_placeholder">%1$s %2$s</string>
+    <string name="ride_route_title">></string>
+    <string name="ride_pipe">" | "</string>
+    <string name="ride_to_text">km to</string>
+
+    <string name="text_loading">Loading…</string>
+
+    <string name="text_inride">In Ride</string>
+
+    <string name="text_createdby">Created by:</string>
+
+    <!--dialog_chooser-->
+    <string name="text_take_photo">Take Photo</string>
+    <string name="text_choose_gallery">Choose from Gallery</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_add_photo">Add Photo!</string>
+
+
+    <!--Navigation Filter Screen -->
+    <string name="navigation_title">NAVIGATION</string>
+    <string name="nav_filter_changeunit">Change Unit</string>
+    <string name="nav_filter_title">Navigation Settings</string>
+    <string name="nav_filter_traffic">Live Traffic</string>
+    <string name="nav_filter_highway">Avoid Highway</string>
+    <string name="nav_filter_toll">Avoid Tolls</string>
+    <string name="nav_filter_ferry">Avoid Ferries</string>
+    <string name="nav_filter_nightmode">Night Mode</string>
+    <string name="nav_filter_eta_distance">Enable for ETA/Disable for distance</string>
+    <string name="nav_filter_call_notification">Call Notification</string>
+    <string name="call_notification_info">This feature is available only in the Tripper OS version 12.10 and above</string>
+    <string name="call_notification_enabled">Call Notification is enabled</string>
+    <string name="ncall_notification_disabled">Call Notification is disabled</string>
+    <string name="call_notification_below_twelve">This feature is available with tripper os 12.10 or above.Please visit nearest service center to get this update.</string>
+    <string name="nav_distance">Distance \n %1$s</string>
+    <string name="nav_duration">ETA \n %1$s</string>
+    <string name="navigation_label">Navigate</string>
+    <string name="stop_navigation_label">Stop Navigation</string>
+    <string name="record_label">Record</string>
+    <string name="resume_label">Resume</string>
+    <string name="pause_label">Pause</string>
+    <string name="stop_label">Stop Recording</string>
+    <string name="nav_msg">Navigation is being displayed on the motorcycle\'s Tripper device</string>
+    <string name="nav_msg_disconnected">Tripper disconnected.\n Please connect.</string>
+    <string name="nav_msg_arrived">Arrived at Destination</string>
+    <string name="nav_end_msg">Navigation Ended!</string>
+    <string name="nav_route_save">Route Saved!</string>
+    <string name="nav_route_share">Route Shared!</string>
+    <string name="nav_route_msg">Route Summary</string>
+    <string name="speed_msg">Average Speed - %1$s kmph</string>
+    <string name="speed_msg_miles">Average Speed - %1$s mph</string>
+    <string name="time_reach">Time Taken - %1$s</string>
+    <string name="total_distance">* Total Distance - %1$s</string>
+    <string name="speed_msg_null">Average Speed - 0 kmph</string>
+    <string name="time_reach_null">Time Taken - 00:00:00</string>
+    <string name="total_distance_null">Total Distance - 0 m</string>
+    <string name="nav_show_map">Show Map</string>
+    <string name="nav_home_label">Home</string>
+    <string name="nav_office_label">Office</string>
+    <string name="nav_more_label">More</string>
+    <string name="add_navigation_display">Add Navigation Display</string>
+    <string name="nav_device_management">Device Management</string>
+    <string name="text_device_name">TBT Device1</string>
+    <string name="text_software_update">Software update</string>
+    <string name="text_gdpr">GDPR</string>
+    <string name="text_user_manual">User manual</string>
+    <string name="title_device_settings">DEVICE SETTINGS</string>
+    <string name="text_functionality_limited">Functionality Limited!!</string>
+    <string name="text_bg_location_android_9">Location access not granted. Go to: Settings->App Management->Royal Enfield->Permissions and grant location access to this app.</string>
+    <string name="text_bg_location_android_10">Location access not granted. Location access should be set to Allow all the time for navigation. Go to: Settings->Apps &amp; notifications->App permissions->Location->Royal Enfield->Allow all the time.</string>
+    <string name="text_permit_manually">Permit Manually</string>
+    <string name="text_package">package</string>
+
+    <plurals name="plurals_x_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+
+    <string name="navigation_x_faster_route_found_speak">We found a route, which is %1$s faster. The route is automatically applied.</string>
+    <string name="navigation_follow_route_x">Follow the route for %1$s</string>
+
+    <string name="text_error_no_destination">Please enter a destination</string>
+    <string name="hint_waypoint_limit_exceeded">Waypoint limit exceeded</string>
+    <string name="add_desc">Add description</string>
+    <string name="do_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="logout">Logout</string>
+
+    <string name="text_ignition_on">Ignition on</string>
+    <string name="text_connected">Connected</string>
+    <string name="text_not_connected">Not Connected</string>
+    <string name="text_ignition_off">Ignition off</string>
+    <string name="text_last_updated_time">Last Updated : %1$s</string>
+    <string name="text_dummy_address">Ejipura, Bengaluru</string>
+    <string name="text_dummy_address1">Gurugram Sector 103, Haryana</string>
+    <string name="text_dummy_time">Last Updated : 13th Nov 2019, 12:43 PM</string>
+    <string name="text_walk_to_my_motorcycle">Guide me to my motorcycle</string>
+    <string name="text_my_motorcycle_settings">Open Vehicle Settings</string>
+    <string name="text_dummy_bike_model">Thunderbird X 500</string>
+    <string name="model_name">Thunderbird X 500</string>
+    <string name="hyphen">-</string>
+    <string name="model_number">TN - 02 - 8890</string>
+    <string name="circle_image">Circle Image</string>
+    <string name="kms">\u0020KMS\u0020</string>
+    <string name="hrs">\u0020HRS\u0020</string>
+    <string name="mins">\u0020MINS</string>
+    <string name="hr">\u0020hr\u0020</string>
+    <string name="min">\u0020min\u0020</string>
+    <string name="seconds">\u0020secs</string>
+    <string name="trip_analysis">TRIP SUMMARY</string>
+    <string name="trip_details">Trip summary</string>
+    <string name="delete_icon">Delete</string>
+    <!--    payment_strings-->
+    <string name="text_payment_success">Received payment. You can take delivery of vehicle</string>
+    <string name="text_payment_failure">Your transaction could not be completed. Please make payment again.</string>
+    <string name="we_are_working_on_your_vehicle_request">We are working on your Vehicle Request. Please try after sometime.</string>
+    <string name="thirty_days_vehicle_sucess">Vehicle is added to the user’s profile</string>
+    <string name="already_signed_up">"You are already signed up. Please enter OTP to verify your account."</string>
+    <string name="update_mobile_verify">Please enter OTP to verify your account.</string>
+    <string name="vehicle_failure_signin">Sorry, We couldn\'t fetch the vehicle details at the moment. Please try again later.</string>
+    <string name="vehicle_failure_signup">Your Registration is successful! Sorry, We couldn\'t fetch the vehicle details at the moment. Please try again later.</string>
+
+    <string name="text_trip_analysis">Trip\nSummary</string>
+    <string name="text_vehicle_health">Vehicle\nHealth</string>
+    <string name="text_vehicle_alerts">Vehicle\nAlerts</string>
+    <string name="text_vehicle_settings">Vehicle\nSettings</string>
+    <string name="text_kms">Kms</string>
+    <string name="text_low">Low</string>
+    <string name="text_good">Good</string>
+    <string name="text_connect">Connect</string>
+    <string name="text_authorize">Authorize</string>
+    <string name="no_of_day">%1$s day</string>
+    <string name="no_of_hour">%1$s hr</string>
+    <string name="no_of_minute">%1$s min</string>
+    <string name="no_of_sec">%1$s sec</string>
+    <string name="time_ago">%1$s ago</string>
+    <string name="avg_speed">AVG. SPEED</string>
+    <string name="rider_behaviour">Rider Behaviour</string>
+    <string name="action_snapshot">Action Snapshot</string>
+    <string name="wheel_spooter">Locate Your Motorcycle</string>
+    <string name="moto_buddy">MOTO BUDDY</string>
+    <string name="harsh_acceleration">HARSH\nACCELARATION</string>
+    <string name="over_speeding">OVER\nSPEEDING</string>
+    <string name="engine_idle_time">ENGINE\nIDLE TIME</string>
+    <string name="harsh_breaking">HARSH\nBRAKING</string>
+    <string name="vehicle_alert">Alerts</string>
+    <string name="pairing_motorcycles">Pairing Motorcycle</string>
+    <string name="location_access">Location Access</string>
+    <string name="notification_settings">Notification settings</string>
+    <string name="connection_settings">Connection Settings</string>
+    <string name="motorcycle_notifications">Vehicle Notifications</string>
+    <string name="software_version">Vehicle Software VERSION</string>
+    <string name="view_terms_condition"><![CDATA[VIEW TERMS & CONDITIONS]]></string>
+    <string name="device_serial_no">Device Serial No:</string>
+    <string name="imei_no">IMEI No:</string>
+    <string name="vehicle_no">Vin No:</string>
+    <string name="config_version">Config Version:</string>
+    <string name="software_updated_note">This is the latest software version available</string>
+    <string name="dummy_version_no">Version 2.0</string>
+    <string name="vehicle_version_no">Version %1$s</string>
+    <string name="trip_delete">Delete Trip</string>
+    <string name="are_you_sure_you_want_delete_the_trip">Do you want to delete the trip?</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="turn_off">Turn Off</string>
+    <string name="confirmation_turn_off_location">Turning this feature off will not give you access to the live parameters visible on your motorcycle page.</string>
+    <string name="confirmation_turn_off_notification">Turning this feature Off will not provide you with any notification on the connected motorcycle.</string>
+    <string name="alert_msg_location_off">Please turn on ‘Location Access’ from your vehicle settings to use this feature.</string>
+    <string name="alert_pairing_key_incorrect">entered pairing key is incorrect</string>
+    <string name="alert_pairing_key_success">pairing is successful</string>
+    <string name="error_not_swapble">"Secondary phone number could not be set as the primary number because the secondary phone number was already a registered number. Please try with another secondary phone number."</string>
+    <string name="please_enter_verification_code">Please enter the verification code sent to %1$s %2$s</string>
+    <string name="resend_in_sec">Resend (%1$d secs)</string>
+    <string name="app_update_required">This version is not supported. Please update the app to continue using it</string>
+
+    <string name="software_update_success">Software update successful. The navigation device needs to reboot to affect changes. Don’t switch off the motorcycle.</string>
+    <string name="text_ble_turning_on">Turning on bluetooth</string>
+
+    <string name="text_hint_connect_re_display">Phone is not connected with the motorcycle\'s Tripper Device. Tap on the helmet icon to connect via Bluetooth.</string>
+    <string name="vehicle_chassis_number">Chassis number</string>
+    <string name="vehicle_registration_number">Registration number</string>
+    <string name="one_of_the_fields_is_mandatory">One of the fields is mandatory</string>
+    <string name="choose_your_state_and_city">Choose your State and City</string>
+    <string name="change">Change</string>
+
+    <string name="no_connection">No Connection</string>
+    <string name="no_connection_msg">You have lost your connection</string>
+    <string name="connection_details">Connectivity details</string>
+    <string name="your_phone">Your Phone</string>
+    <string name="please_enter_correct_code">Please enter the correct code</string>
+    <string name="instruction_ignition_on">Please make sure that the motorcycle ignition is turned on</string>
+    <string name="enter_6_digit_code">ENTER 6 Digit Code</string>
+    <string name="authorize_our_application">Authorize Our Application</string>
+    <string name="instructions_for_motorcycle_settings">You can later edit these settings from your motorcycle settings located on your dashboard.</string>
+
+    <string name="term_of_condition">Terms of Condition</string>
+    <string name="term_of_condition_drsa">Terms of Condition DRSA</string>
+    <string name="book_a_motorcycle">Book Now</string>
+    <string name="primary_phone_number">Phone Number*</string>
+    <string name="user_details_verification">USER DETAILS VERIFICATION</string>
+    <string name="user_details_verification_sub"> Please verify the information below. This will help us in providing a better experience. You will be asked to log in again after successful verification of your information.
+</string>
+
+    <string name="first_name_detail">First Name*</string>
+    <string name="last_name_detal">Last Name*</string>
+    //BLE
+    <string name="text_ble_device_paired">Device Authorized and Paired!</string>
+    <string name="text_ble_device_forget">Are you sure you want to unpair the device?</string>
+    <string name="text_ble_device_bricked">OTAP Installation Failed!\n Are you sure you want to unpair the device?</string>
+    <string name="text_ble_android_device_bricked">Software update failed. Keep your phone paired and try again.</string>
+    <string name="text_ble_iOS_device_bricked">Device Bricked, Please use the same handset used for reinstall the Tripper OS</string>
+    <string name="text_ble_device_disconnect">Are you sure you want to disconnect the device?</string>
+    <string name="yes_unapair">Yes,Unpair</string>
+    <string name="yes_disconnect">Yes,Disconnect</string>
+
+    <string name="ble_text_title_default">Device Management</string>
+    <string name="software">Tripper Software</string>
+    <string name="tbt_devices">My Tripper Devices</string>
+    <string name="tbt_other_devices">Other Devices</string>
+    <string name="tbt_refresh">Refresh</string>
+    <string name="tbt_dev_not_connected">Not Connectd</string>
+    <string name="tbt_scan_status_switch_on">Scanning in progress...\nPlease turn off/on the ignition to connect with tripper navigation.</string>
+    <string name="tbt_scan_status_switch_on_timeout">To connect with tripper navigation, Please turn off/on the ignition to connect with tripper navigation.</string>
+    <string name="tbt_scan_status_switch_off">Scanning in progress...\nPlease turn off/on the ignition to connect with tripper navigation. It is recommended to keep the auto connect toggle switch on for seamless connection.</string>
+    <string name="tbt_scan_status_switch_off_timeout">To connect with tripper navigation, Please turn off/on the ignition to connect with tripper navigation. It is recommended to keep the auto connect toggle switch on for seamless connection.</string>
+    <string name="tbt_no_device_found">To connect with Tripper Navigation, please turn off/on the ignition and then tap on refresh.</string>
+    <string name="tbt_device_scan_failed">Scanning failed</string>
+    <string name="tbt_pairing_devices">Pairing Devices</string>
+    <string name="tbt_digit_label">Enter 6 digit code</string>
+    <string name="pin_content_desc">PIN input field</string>
+    <string name="pin_connect_label">Connect</string>
+    <string name="preference_file_key">RE_APP</string>
+    <string name="preference_file_key_iosconnected_trippers">RE_APP_iOS_Tripper</string>
+    <string name="text_invalid_pin">Please enter the valid PIN</string>
+    <string name="text_connection_unsuccess">Connection Unsuccessful</string>
+    <string name="text_turnon_display">Make sure “RE_DISP” is turned on and in range</string>
+
+    <!--otap update-->
+    <string name="text_tbt_display_update_os">Tripper Display Software</string>
+    <string name="btn_text_download">Download</string>
+    <string name="btn_text_install">Install</string>
+    <string name="text_learnmore">Learn more</string>
+    <string name="text_otap_retry">Software upgrade failed.Please tap to retry.</string>
+    <string name="text_otap_display_info">1. Don\'t switch off the phone during the software update.\n2. Keep the Royal Enfield app on the foreground.\n3. Keep the phone within 5 meters of the Tripper.\n4. Don\'t turn off the Bluetooth on the phone.\n5. Keep the ignition of the motorcycle ON during the software update.</string>
+    <string name="text_otap_display_info_caution">Caution \n\n1. Don\'t switch off the phone during the software update.\n2. Keep the Royal Enfield app on the foreground.\n3. Keep the phone within 5 meters of the Tripper.\n4. Don\'t turn off the Bluetooth on the phone.\n5. Keep the ignition of the motorcycle ON during the software update.</string>
+
+    <string name="text_alert_tripper_version">This feature is available only in the Tripper OS version 12.10 and above.</string>
+
+    <string name="text_navigation_devices">NAVIGATION DEVICES</string>
+    <string name="text_alert_login_message">Please login to use this feature!</string>
+    <string name="label_login">Login</string>
+    <string name="text_battery_optimisation">Please Ignore Battery Optimization for better navigation experience.\n</string>
+    <string name="text_bg_location_permission">"Goto Settings and enable Background Location permission."</string>
+    <string name="title_alert_cancel_downloading">Are you sure you want to cancel downloading ?</string>
+    <string name="text_navigation_refresh">Please refresh the screen by Tapping on the X button.</string>
+    <string name="error_nav_unauthorized">You logged into another phone. Please logout to use this feature.</string>
+    <string name="error_tbt_api">Slow Network, please retry after a few seconds.</string>
+    <string name="something_went_wrong">Something went wrong, Please try again after some time.</string>
+    <string name="remote_config_failure">Please check your network connection. If the issue still persists, try using your mobile network to access the app.</string>
+    <string name="web_view_error">Please check your network connection. If the issue still persists, try switching to another network.</string>
+    <string name="retry">Retry</string>
+    <string name="close">Close</string>
+
+    <string name="text_nav_back_exit">Navigation is in progress. Are you sure you want to exit</string>
+    <string name="text_alert_diy"><u>DIY Videos</u></string>
+    <string name="text_bg_permission">Royal Enfield app will use background location data to perform the below activities:\n
+        \n1. Provide better navigation experience\n\n2. Provide navigation summary\n\n3. Seamless reroute if you go off the route</string>
+
+    <string name="bookings">Motorcycle Booking</string>
+    <string name="gma_bookings">Accessories Booking</string>
+    <string name="booking_status">Booking Status:</string>
+    <string name="text_userprofile_booking_error">No Booking available</string>
+    <string name="text_label_bike_name">Model Booked:</string>
+    <string name="text_label_bike_code">Model Code:</string>
+    <string name="text_label_booking_date">Date of Booking:</string>
+    <string name="text_label_name_trans_id">Transaction ID:</string>
+    <string name="text_label_booking_status">Booking Status:</string>
+    <string name="text_label_booking_id">Booking ID:</string>
+    <string name="text_label_trans_status">Transaction Status:</string>
+    <string name="invalid_password_length">Password must be atleast 6 characters</string>
+    <string name="no_booking">No Booking found</string>
+    <string name="txt_something_went_wrong_error">"Sorry, Something went wrong. Please try again."</string>
+    <string name="tdd">Tentative Delivery Date:</string>
+    <string name="accessories_ride_sure">Accessories and Ride Sure</string>
+    <string name="genuine_accessories">Genuine Motorcycle Accessories</string>
+    <string name="apprael_parts">Apparels</string>
+    <string name="finance_details">Finance Details</string>
+
+    <string name="trips">Trips</string>
+    <string name="text_calibrate_title">Calibrate your blue\ndot\'s compass</string>
+    <string name="text_calibrate_desc">Tilt and move your phone 3 times\nlike this:</string>
+    <string name="text_calibrate_accuracy">Compass accuracy:</string>
+    <string name="text_done">Done</string>
+    <string name="text_otap_nav_progress_error">Navigation currently active. Please exit to update OTAP.</string>
+    <string name="text_alert_installing">Installing</string>
+    <string name="text_alert_please_wait">Please wait for few minutes...\nWe are initiating install.</string>
+    <string name="text_alert_disconnected">Tripper device disconnected.Please connect to update OTAP</string>
+    <string name="text_alert_device_os">Your Tripper device is not ready for this software update. Please walk into a Royal Enfield authorised Service Centre to get support for this update</string>
+    <string name="text_alert_ensure_ignition_on">For a successful software upgrade, please keep the ignition on and your mobile within 5 metres from the motorcycle</string>
+    <string name="text_otap_internet_msg">Please make sure you are in good connectivity for uninterrupted firmware download.</string>
+    <string name="nav_reroute_msg">Rerouting...</string>
+    <string name="total_distance_disclaimer">* Total distance travelled is as per Google Maps, actual reading may differ.</string>
+    <string name="text_battery_optimization_oppo">To avoid the navigation disconnection please ignore battery optimization by enabling \'Allow background activity\' option.
+        (Tap OK-> Battery Usage-> Enable \'Allow background activity\'-> Select \'Allow\' in the popup)</string>
+    <string name="text_battery_optimization_oneplus">To avoid the navigation disconnection please ignore battery optimization by selecting the \'Don\'t optimise\' option.
+        (Tap OK-> Advanced-> Battery Optimization-> Select Don\'t Optimize)</string>
+    <string name="text_battery_optimization_moto">To avoid the navigation disconnection please ignore battery optimization by selecting Don\'t Optimize option.
+        (Tap OK-> Select All apps-> Select Royal Enfield-> Select the Don\'t Optimize option-> Done)</string>
+    <string name="text_battery_optimization_vivo">To avoid the navigation disconnection please ignore battery optimization by selecting Don\'t Optimize option.
+        (Tap OK-> Settings-> Battery-> High background power consumption-> Select Royal Enfield and enable the option)</string>
+    <string name="text_battery_optimization_samsung">To avoid the navigation disconnection please ignore battery optimization by selecting Disable option.
+        (Tap OK-> Select All apps-> Select Royal Enfield-> Disable option)</string>
+    <string name="text_battery_optimization_huawei">To avoid the navigation disconnection please ignore battery optimization by selecting Don\'t allow option.
+        (Tap OK-> Select All apps-> Select Royal Enfield-> Select Don\'t allow-> OK)</string>
+    <string name="text_battery_optimization_xiaomi_redmi">To avoid the navigation disconnection please ignore battery optimization by selecting \'No Restrictions\' option.
+        (Tap OK-> Battery Saver-> No restrictions)</string>
+
+    <string name="str_info_fuel">Always keep your tank half full for better mileage.</string>
+    <string name="str_info_bat">For optimal performance, get your vehicle battery periodically checked at an authorised Royal Enfield Service Centre.</string>
+    <string name="txt_resend">Haven\'t received any SMS yet? Please click on</string>
+    <string name="str_resend">Resend</string>
+    <string name="eula">End-User License Agreement</string>
+    <string name="tnc_consent">By continuing further, you agree with the terms and conditions of the </string>
+    <string name="consent_post_tnc"> You should know that by proceeding further, through this Mobile App, you allow us to access your live location data in order to enable us to reach you in case you choose to avail our services in the event of vehicle breakdown or otherwise. You also allow us to access data pertaining to your vehicle in order to avail our services of generating trip vitals, sending vehicle health alerts and other related notifications to you.</string>
+<string name="and_the">and the</string>
+    <string name="pairing_key_success">Pairing Key sent successfully.</string>
+    <string name="emergency_update_header">Please complete your user profile information to continue with authorization of the vehicle</string>
+    <string name="closed">Closed</string>
+    <string name="app_setting">App Settings</string>
+    <string name="decimal_point">Decimal Point</string>
+    <string name="decimal_comma">Decimal Comma</string>
+    <string name="decimal_separator">Decimal Separator</string>
+    <string name="unit_kms">Kilometers</string>
+    <string name="unit_miles">Miles</string>
+    <string name="distance_unit">Distance Unit</string>
+    <string name="change_password">Change Password</string>
+    <string name="otp_sent_mobile_email">One time password has been sent to your email address and mobile number. Please enter the OTP received.</string>
+
+    <string name="disclaimer_lbl">Disclaimer: </string>
+    <string name="disclaimer_text">for the use of this Platform. You also agree to avail the Road Side Assistance Services (RSA) offered to you by RSA Service Provider - Europ Assistance and you further allow us to share your details with Europ Assistance in order to enable them to reach out to you.</string>
+<string name="by_continuing_further">By continuing further, you hereby agree to the</string>
+
+
+    <string name="method">Method of Contact:</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="future_contact">Future Contact</string>
+    <string name="in_addition">In addition to this enquiry, Royal Enfield would like to keep in contact with you in the future regarding items that you may be interested in. Please be assured your information will be treated with the utmost care and we will never pass on your details outside of Royal Enfield, our Distributors, Dealers and Partners. Select below the channels of interest so we can keep you up to date with all things Royal Enfield.</string>
+<string name="please_contact_me">Please contact me about:</string>
+    <string name="community_activity">Community Activities</string>
+    <string name="promotions_news">Promotions &amp; News</string>
+    <string name="survey_reserch">Survey &amp; Research</string>
+    <string name="all">All</string>
+    <string name="delete_confirm">All your data in our system will be removed. Please Confirm</string>
+    <string name="consent">Communication Settings</string>
+    <string name="disclaimer">Disclaimer: By signing this form/checking this box, you acknowledge and agree that we may use the information you share with us, to communicate with you through e-mails, In order to provide our product or service related information and/or for promotional and marketing purposes. All information provided will be secured and processed as per our privacy policy. The data collected for the navigation feature is governed by the respective clauses in T&amp;C.</string>
+<string name="forget_me">Forget Me</string>
+    <string name="update">Update</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="push_noti">Push Notification</string>
+    <string name="oops_something">Oops! something went wrong. Please try again.</string>
+    <string name="go_to_rider_portal">Go to Rider Portal</string>
+    <string name="decimal_seprator">Decimal Separator</string>
+<string name="we_are_unable_to_fetch">We are unable to fetch your details at this point of time. Please try again later.</string>
+    <string name="bct_edit_text">Edit</string>
+    <string name="bct_edit_success_msg">Route updated successfully</string>
+    <string name="deep_recording_radio_text">Trail Recording</string>
+    <string name="deep_recording_info_msg">Hurray! You are eligible for Trail Recording as your distance is less than </string>
+    <string name="record_popup_heading">Recording Options</string>
+    <string name="intelligent_recording_radio_text">Intelligent Recording</string>
+    <string name="terms_info">Please accept the terms and conditions to start with Record</string>
+    <string name="terms_and_conditions"> <u>Terms and Conditions</u></string>
+    <string name="heading">Heading....</string>
+    <string name="record_stopped_no_data">Recording Stopped.\nNo Data saved</string>
+
+    <string name="mode_of_payment">Mode of Payment</string>
+
+    <string name="fetch_new_booking">+Fetch New Booking</string>
+    <string name="track_order">Track Your Order</string>
+    <string name="finance_booking">Finance your Booking</string>
+    <string name="financer_name">Financier name:</string>
+    <string name="approval_status">Approval Status:</string>
+    <string name="loan_id">Loan Id:</string>
+    <string name="loan_amount">Requested Loan Amount (₹):</string>
+    <string name="down_payment">Down Payment (₹):</string>
+    <string name="repayment_tenure">Repayment Tenure (months):</string>
+    <string name="flat_intrest_rate">Flat Interest Rate (%):</string>
+    <string name="estimated_emi">Estimated EMI (₹):</string>
+    <string name="processing_fee">Processing Fee (₹):</string>
+    <string name="payment_mode">Payment Mode:</string>
+    <string name="dd_number">DD Number:</string>
+    <string name="cheque_number">Cheque Number:</string>
+    <string name="bank_name">Bank Name:</string>
+    <string name="card_type">Card Type:</string>
+    <string name="date_of_dd">Date of DD:</string>
+    <string name="date_of_cheque">Date of Cheque:</string>
+    <string name="payment_date">Payment Date:</string>
+    <string name="bank_refrence_number">Bank Reference Number:</string>
+    <string name="approval_code">Approval Code:</string>
+
+    <string name="spare_part">Spares Genuinity Check</string>
+    <string name="firebase_auth_error">We are unable to fetch your data due to a network issue. Please try later</string>
+ <string name="firebase_auth_progress">We are working on your Vehicle request. Please try after some time.</string>
+    <string name="unauthorized_login">Unauthorized! Please try login again</string>
+    <string name="standard_recording">Standard Recording</string>
+    <string name="firebase_auth_progress_fetch_data">We are trying to fetch your data. Please wait for some time.</string>
+
+    <string name="text_ble_permission">Royal Enfield app will use this permission to perform the below activity:\n
+        \n1. To establish the connection to tripper</string>
+
+    <string name="text_ble_nearby_permission">Nearby devices permissions not granted.Nearby devices permissions should be set to allow for navigation. Goto:Apps &amp; notifications->App permissions->Nearby devices->Allow </string>
+
+    <string name="get_started">Get Started</string>
+    <string name="or">Or</string>
+    <string name="sign_up">Sign up</string>
+    <string name="no_account">Looks like you don’t have an account.</string>
+    <string name="lets_create_an_account">Lets create an account for  </string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="create_account">Create Account</string>
+
+    <string name="add_address">Add Address</string>
+    <string name="choose_location">Add Location</string>
+    <string name="save_location">Save Location</string>
+    <string name="set_home">SET HOME</string>
+    <string name="set_work">SET WORK</string>
+    <string name="set_default">CHOOSE LOCATION ON MAP</string>
+    <string name="fileaccesspermission">Please allow the file access permission</string>
+    <string name="camerapermission">Please allow the camera access permission</string>
+
+    <string name="didnt_received_otp">Didn\'t received OTP? </string>
+<string name="otp_expired">The entered OTP has expired, please restart the Sign-up process.</string>
+    <string name="email_exist">Your email id is already registered with us. Please try with another email id.</string>
+    <string name="mobile_exist">Your mobile number is already registered with us. Please try with another mobile number.</string>
+<string name="welcome_to">Hello! Welcome to</string>
+    <string name="otp_invalid">OTP entered is not valid. Please try again!</string>
+    <string name="sync_issue">We have encountered an issue, please try after sometime.</string>
+    <string name="account_hasbeen_deactivated">Dear User, your account is no longer active, please sign up to continue using RE App features.</string>
+    <string name="update_alert">Update!</string>
+    <string name="merge_trips">Merge Trips</string>
+    <string name="we_are_working">We are working on obtaining your vehicle details but, it is taking longer than expected. Please try again later.</string>
+<string name="vehile_failure">Thank you for your patience. Unfortunately,  we cannot process your request at this time. If you continue to face issues or need further assistance, please reach out to us at</string>
+<string name="for_further_assistance">for further assistance.</string>
+    <string name="your_esim">Your e-SIM will be transferred to you for your connected motorcycle. Enjoy enhanced connectivity and a seamless riding experience ahead.</string>
+</resources>
+
+

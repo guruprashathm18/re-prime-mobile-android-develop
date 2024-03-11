@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+    <string name="website_base_url">https://api-dev2.royalenfield.com/v2/</string>
+<!--
+    <string name="local_base_url">http://34.93.90.136:1414/</string>
+-->
+    <string name="local_base_url">https://api-tbt.royalenfield.com/v3/</string>
+    <string name="website_webview_base_url">https://devcdn.royalenfield.com</string>
+    <string name="serviceappointment_base_url">https://api-dev2.royalenfield.com/v2/</string>
+    <string name="notification_base_url">https://api-dev2.royalenfield.com/</string>
+    <string name="website_image_base_url">https://devcdn.royalenfield.com</string>
+    <string name="v4API">https://api-dev2.royalenfield.com/v4/</string>
+    <!--<string name="website_base_url">https://api-dev2.royalenfield.com/v2/</string>-->
+<!--    <string name="website_webview_base_url">https://devcdn.royalenfield.com</string>-->
+<!--    <string name="serviceappointment_base_url">https://api-dev2.royalenfield.com/v2/</string>-->
+<!--    <string name="notification_base_url">https://api-dev2.royalenfield.com/</string>-->
+<!--    <string name="website_image_base_url">https://devcdn.royalenfield.com</string>-->
+    <string name="firebase_dealers_tablename">CRMCORE</string>
+    <!--<string name="firestore_url">https://re-platform-dev-</string>
+    <string name="firestore_pc_url">https://re-configurator-dev-</string>-->
+    <string name="web_config_child">SIT-WAVE-2</string>
+    <string name="support_email">support@royalenfield.com</string>
+
+    <!--Navigation-->
+    <string name="proxy_google_api">https://api-dev2.royalenfield.com/</string>
+    <string name="bct_cloud_url">http://52.172.217.220:5160/</string>
+    <string name="website_navigation_url">https://api-dev2.royalenfield.com/</string>
+
+    <!--Map Keys-->
+    <string name="googlemap_key">AIzaSyADFFafYXw0cKkzcNgTNfCU5UZLtyKqICg</string>
+    <string name="app_name">Royal Enfield</string>
+    <string name="branch_test_key">key_test_dnJNkPRQDnBYDZQ8yGY6gfggCDnL83vK</string>
+    <string name="branch_live_key">key_live_nbMQeRNKybCYA7RXvM44ffefrwdHY6yA</string>
+    <string name="MC_APP_ID">4870c15c-3e9a-441e-9fc3-2c6f367b1b3f</string>
+    <string name="MC_ACCESS_TOKEN">3ztWg6NRO1gDQRh2snSPsTDh</string>
+    <string name="MC_SENDER_ID">119002103004</string>
+    <string name="MC_MID">534007137</string>
+    <string name="MC_SERVER_URL">https://mc3snfg-sfh7x8jmy5gw1rdk4zbq.device.marketingcloudapis.com/</string>
+    <string name="remote_config_version">166</string>
+    <string name="connectedCustomCare">+918045369701</string>
+</resources>
+

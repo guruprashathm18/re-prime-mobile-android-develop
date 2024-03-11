@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="re_actionbar_height">63dp</dimen>
+
+    <!--Splash Screen dimension values -->
+    <dimen name="login_layout_margin_bottom">80dp</dimen>
+    <dimen name="login_button_margin_start">25dp</dimen>
+    <dimen name="login_button_width">150dp</dimen>
+    <dimen name="login_button_height">45dp</dimen>
+    <dimen name="sign_up_button_margin_end">25dp</dimen>
+    <dimen name="sign_up_button_margin_start">10dp</dimen>
+    <dimen name="splash_screen_text_info_message_size">30sp</dimen>
+    <dimen name="splash_screen_re_logo_name_width">140dp</dimen>
+    <dimen name="splash_screen_re_logo_name_height">22dp</dimen>
+    <dimen name="splash_screen_re_logo_name_margin_bottom">23dp</dimen>
+    <dimen name="splash_screen_re_logo_name_margin_end">74dp</dimen>
+    <dimen name="splash_screen_re_logo_name_margin_start">76dp</dimen>
+    <dimen name="splash_screen_re_logo_name_margin_top">61dp</dimen>
+    <dimen name="splash_screen_heading_margin_end">65dp</dimen>
+    <dimen name="splash_screen_heading_margin_start">65dp</dimen>
+    <dimen name="splash_screen_explore_info_margin_bottom">20dp</dimen>
+    <dimen name="splash_screen_explore_infor_margin_end">28dp</dimen>
+    <dimen name="splash_screen_explore_info_margin_start">28dp</dimen>
+
+    <!--Dots related dimens -->
+    <dimen name="dots_height">40dp</dimen>
+    <dimen name="dots_width">40dp</dimen>
+    <dimen name="dots_margin_left">20dp</dimen>
+    <dimen name="dots_margin_right">20dp</dimen>
+    <dimen name="dots_margin_bottom">27dp</dimen>
+    <dimen name="dots_padding">5dp</dimen>
+
+
+    <!-- login screen -->
+    <dimen name="line_width">37dp</dimen>
+    <dimen name="line_height">2dp</dimen>
+    <dimen name="login_top_bar">98dp</dimen>
+    <dimen name="login_option_fb">32dp</dimen>
+    <dimen name="login_item_size">40dp</dimen>
+    <dimen name="login_bar_icon">33dp</dimen>
+
+    <dimen name="login_skip_end">15dp</dimen>
+    <dimen name="login_skip_start">22dp</dimen>
+
+
+    <dimen name="login_text_bottom">18dp</dimen>
+    <dimen name="login_text_top">24dp</dimen>
+
+    <dimen name="login_text_size">20sp</dimen>
+
+    <dimen name="or_layout_margin">8dp</dimen>
+    <dimen name="login_button_top">47dp</dimen>
+    <dimen name="dimen_login_btn_width">170dp</dimen>
+    <dimen name="dimen_login_btn_height">50dp</dimen>
+    <dimen name="edit_username_height">46dp</dimen>
+
+    <!-- text size inline errors -->
+    <dimen name="text_size_inline_error">14sp</dimen>
+    <dimen name="progress_bar_margin">8dp</dimen>
+
+    <!--userprofile_banner-->
+    <dimen name="banner_layout_height">60dp</dimen>
+    <dimen name="text_skipnow_size">12sp</dimen>
+    <dimen name="text_yourprofile_size">24sp</dimen>
+
+    <!--layout_uploadpicture-->
+    <dimen name="uploadpicture_layout_height">207dp</dimen>
+
+    <!--activity_userprofile-->
+    <dimen name="userprofile_top_bar_height">60dp</dimen>
+    <dimen name="image_footer_width">0dp</dimen>
+    <dimen name="scrollview_height">505dp</dimen>
+    <dimen name="text_riderprofile_marginstart">1dp</dimen>
+    <dimen name="text_riderprofile_margintop">14dp</dimen>
+    <dimen name="text_riderprofile_size">14sp</dimen>
+    <dimen name="editText_fullname_width">0dp</dimen>
+    <dimen name="editText_fullname_height">42dp</dimen>
+    <dimen name="editText_fullname_marginend">15dp</dimen>
+    <dimen name="editText_fullname_marginstart">15dp</dimen>
+    <dimen name="editText_fullname_margintop">8dp</dimen>
+    <dimen name="text_addaddress_margintop">16dp</dimen>
+    <dimen name="width_zero">0dp</dimen>
+    <dimen name="edittext_size">18sp</dimen>
+    <dimen name="editText_username_marginend">15dp</dimen>
+    <dimen name="editText_username_marginstart">15dp</dimen>
+    <dimen name="editText_username_margintop">8dp</dimen>
+    <dimen name="text_addaddress_size">18sp</dimen>
+    <dimen name="upload1_margintop">16dp</dimen>
+    <dimen name="textView_motorcycle_profile_marginstart">16dp</dimen>
+    <dimen name="textView_motorcycle_profile_margintop">14dp</dimen>
+    <dimen name="textView_motorcycle_profile_size">14sp</dimen>
+    <dimen name="spinner_motorcycle_height">42dp</dimen>
+    <dimen name="viewline_height">1dp</dimen>
+    <dimen name="viewline_marginstart">19dp</dimen>
+    <dimen name="viewline_marginend">19dp</dimen>
+    <dimen name="viewline_margintop">2dp</dimen>
+    <dimen name="editText_reg_number_margintop">8dp</dimen>
+    <dimen name="button_saveprofile_width">210dp</dimen>
+    <dimen name="button_saveprofile_height">54dp</dimen>
+    <dimen name="button_saveprofile_marginbottom">10dp</dimen>
+    <dimen name="button_saveprofile_marginstart">17dp</dimen>
+    <dimen name="button_saveprofile_margintop">16dp</dimen>
+    <dimen name="button_saveprofile_textsize">18sp</dimen>
+
+
+    <!--activity_main_splash-->
+    <dimen name="image_reicon_margintop">50dp</dimen>
+    <dimen name="image_retitle_margintop">22dp</dimen>
+    <dimen name="text_prime_size">36sp</dimen>
+    <dimen name="image_motorcycle_marginbottom">98dp</dimen>
+    <dimen name="image_motorcycle_marginstart">16dp</dimen>
+    <dimen name="text_prime_margintop">11dp</dimen>
+
+    <!--activity_layout_signup-->
+    <dimen name="view_indicator_height">6dp</dimen>
+    <dimen name="view_indicator_margin">1dp</dimen>
+    <dimen name="view_pager_splash_screen_margintop">8dp</dimen>
+
+    <!-- text size inline errors -->
+    <dimen name="text_edit_field_enter_otp_height">46dp</dimen>
+    <dimen name="edit_field_otp_screen_margin_top">19dp</dimen>
+
+    <!--fragment_signup_first-->
+    <dimen name="signup_edittext_height">40dp</dimen>
+    <dimen name="signup_next_textsize">18sp</dimen>
+    <dimen name="signup_edtxt_margintop">16dp</dimen>
+    <dimen name="signup_viewline_height">1dp</dimen>
+    <dimen name="sign_up_error_text_layout_height">18dp</dimen>
+    <dimen name="signup_error_txt_margintop">3dp</dimen>
+    <dimen name="signup_error_textsize">14sp</dimen>
+    <dimen name="signup_password_eye_padding">20dp</dimen>
+    <dimen name="signup_text_next_marginbottom">8dp</dimen>
+    <dimen name="signup_text_next_margintop">19dp</dimen>
+    <dimen name="sign_up_text_next_margin_right">20dp</dimen>
+    <dimen name="signup_view_dash_margintop">25dp</dimen>
+    <dimen name="signup_text_alreadymember_margintop">20dp</dimen>
+    <dimen name="signup_image_nextarrow">8dp</dimen>
+    <dimen name="sign_up_img_next_arrow_padding">10dp</dimen>
+    <dimen name="signup_image_margintop">15dp</dimen>
+    <dimen name="signup_image_password_eye_marginbottom">8dp</dimen>
+    <dimen name="signup_image_password_eye_marginend">15dp</dimen>
+    <dimen name="signup_image_password_eye_marginstart">5dp</dimen>
+    <dimen name="signup_image_password_eye_margintop">8dp</dimen>
+    <dimen name="signup_image_password_eye_padding">10dp</dimen>
+    <dimen name="signup_alreadymember_textsize">14sp</dimen>
+
+
+    <!--fragment_signup_second-->
+    <dimen name="signup_edtxt_paddingleft">20dp</dimen>
+    <dimen name="signup_edtxt_paddingright">20dp</dimen>
+    <dimen name="signup_edtxt_textsize">18sp</dimen>
+    <dimen name="signup_gendertxt_size">14sp</dimen>
+    <dimen name="signup_gender_radiobtn_marginleft">25dp</dimen>
+    <dimen name="signup_reown_radiobtn_marginleft">35dp</dimen>
+    <dimen name="signup_btn_width">210dp</dimen>
+    <dimen name="signup_btn_height">48dp</dimen>
+    <dimen name="signup_terms_padding">5dp</dimen>
+    <dimen name="signup_privacypolicy_textsize">12sp</dimen>
+    <dimen name="signup_imageprevious_marginbottom">12dp</dimen>
+    <dimen name="sign_up_previous_img_padding">10dp</dimen>
+    <dimen name="signup_textprevious_marginstart">10dp</dimen>
+    <dimen name="sign_up_previous_text_margin_end">8dp</dimen>
+    <dimen name="signup_edtxt_city_margintop">12dp</dimen>
+    <dimen name="signup_edittext_date_margintop">16dp</dimen>
+    <dimen name="signup_gender_radioGroup_margintop">5dp</dimen>
+    <dimen name="radio_btn_male_margin_start">-4dp</dimen>
+    <dimen name="sign_up_calendar_image_margin">8dp</dimen>
+    <dimen name="sign_up_calendar_image_padding">10dp</dimen>
+    <dimen name="signup_signup_button_margintop">20dp</dimen>
+    <dimen name="signup_privacypolicy_tv_margintop">10dp</dimen>
+
+    <!--dialog_customalert-->
+    <dimen name="customdialog_width">320dp</dimen>
+    <dimen name="customdialog_height">190dp</dimen>
+    <dimen name="customalert_title_marginstart">20dp</dimen>
+    <dimen name="customalert_title_margintop">14dp</dimen>
+    <dimen name="customalert_title_textsize">18sp</dimen>
+    <dimen name="customalert_message_height">36dp</dimen>
+    <dimen name="customalert_message_marginend">23dp</dimen>
+    <dimen name="customalert_message_marginstart">20dp</dimen>
+    <dimen name="customalert_message_margintop">14dp</dimen>
+    <dimen name="customalert_message_textsize">14sp</dimen>
+    <dimen name="customalert_ok_marginbottom">11dp</dimen>
+    <dimen name="customalert_ok_marginend">13dp</dimen>
+    <dimen name="customalert_ok_marginstart">8dp</dimen>
+    <dimen name="customalert_ok_margintop">3dp</dimen>
+    <dimen name="customalert_ok_paddingleft">10dp</dimen>
+    <dimen name="customalert_ok_paddingright">15dp</dimen>
+    <dimen name="customalert_ok_textsize">18sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="battery_message_textsize">12sp</dimen>
+
+    <!--activity_add_address-->
+    <dimen name="imageView_location_pin_marginend">10dp</dimen>
+    <dimen name="imageView_location_pin_margintop">20dp</dimen>
+    <dimen name="textView_address_margintop">17dp</dimen>
+    <dimen name="textView_address_textsize">14sp</dimen>
+    <dimen name="editText_address_margintop">3dp</dimen>
+    <dimen name="editText_address_paddingright">5dp</dimen>
+    <dimen name="editText_address_textsize">18sp</dimen>
+    <dimen name="editText_address_two_margintop">20dp</dimen>
+    <dimen name="button_add_address_margintop">30dp</dimen>
+    <dimen name="button_add_address_padding">5dp</dimen>
+    <dimen name="button_add_address_textsize">18sp</dimen>
+
+    <!--activity_add_address_location-->
+    <dimen name="textView_address_marginend">8dp</dimen>
+    <dimen name="textView_address_marginstart">4dp</dimen>
+    <dimen name="textView_address_loc_margintop">19dp</dimen>
+    <dimen name="textView_address_size">14sp</dimen>
+    <dimen name="editText_address_loc_margintop">12dp</dimen>
+    <dimen name="editText_address_loc_textsize">18sp</dimen>
+    <dimen name="editText_address_1_margintop">8dp</dimen>
+    <dimen name="imageView_location_margintop">22dp</dimen>
+    <dimen name="textView_use_currentlocation_marginbottom">8dp</dimen>
+    <dimen name="textView_use_currentlocation_marginend">8dp</dimen>
+    <dimen name="textView_use_currentlocation_marginstart">14dp</dimen>
+    <dimen name="textView_use_currentlocation_margintop">8dp</dimen>
+    <dimen name="textView_use_currentlocation_size">18sp</dimen>
+    <dimen name="button_saveaddress_height">54dp</dimen>
+    <dimen name="button_saveaddress_marginstart">4dp</dimen>
+    <dimen name="button_saveaddress_marginend">8dp</dimen>
+    <dimen name="button_saveaddress_margintop">33dp</dimen>
+    <dimen name="button_saveaddress_textsize">18sp</dimen>
+
+    <!--activity_servicehistory-->
+    <dimen name="text_servicehistory_margintop">16dp</dimen>
+    <dimen name="recyclerview_servicehistory_marginbottom">8dp</dimen>
+    <dimen name="recyclerview_servicehistory_margintop">11dp</dimen>
+
+    <!--<item_servicehistory-->
+    <dimen name="textView_invoice_date_margintop">6dp</dimen>
+    <dimen name="textView_invoice_date_textsize">18sp</dimen>
+    <dimen name="textView_amountpaid_margintop">4dp</dimen>
+    <dimen name="textView_amountpaid_textsize">14sp</dimen>
+    <dimen name="textView_invoice_amount_margintop">4dp</dimen>
+    <dimen name="textView_invoice_amount_textsize">14sp</dimen>
+    <dimen name="textview_view_bill_summary_margintop">4dp</dimen>
+    <dimen name="textview_view_bill_summary_paddingbottom">3dp</dimen>
+    <dimen name="textview_view_bill_summary__drawablepadding">15dp</dimen>
+    <dimen name="textview_view_bill_summary_textsize">18sp</dimen>
+
+    <!--activity_service_bill_summary-->
+    <dimen name="textView_invoicenumber_margintop">16dp</dimen>
+    <dimen name="textView_invoicenumber_size">14sp</dimen>
+    <dimen name="textView_invoiceno_marginend">8dp</dimen>
+    <dimen name="textView_invoiceno_margintop">10dp</dimen>
+    <dimen name="textView_invoiceno_textsize">18sp</dimen>
+    <dimen name="summary_view_margintop">16dp</dimen>
+    <dimen name="imageView_paid_marginend">16dp</dimen>
+    <dimen name="imageView_paid_margintop">16dp</dimen>
+    <dimen name="textView_date_summary_margintop">18dp</dimen>
+    <dimen name="textView_date_summary_size">14sp</dimen>
+    <dimen name="textView_issuedate_margintop">4dp</dimen>
+    <dimen name="textView_issuedate_size">18sp</dimen>
+    <dimen name="textView_servicecenter_margintop">18dp</dimen>
+    <dimen name="textView_servicecenter_size">14sp</dimen>
+    <dimen name="textView_addresssummary_marginend">8dp</dimen>
+    <dimen name="textView_addresssummary_margintop">4dp</dimen>
+    <dimen name="textView_addresssummary_size">18sp</dimen>
+    <dimen name="textView_amount_marginend">8dp</dimen>
+    <dimen name="textView_amount_margintop">18dp</dimen>
+    <dimen name="textView_amount_size">14sp</dimen>
+    <dimen name="textView_amountpaidsummary_margintop">4dp</dimen>
+    <dimen name="textView_amountpaidsummary_marginend">8dp</dimen>
+    <dimen name="textView_amountpaidsummary_size">18sp</dimen>
+    <dimen name="textView_payment_margiontop">18dp</dimen>
+    <dimen name="textView_payment_size">14sp</dimen>
+    <dimen name="textView_paymentmethod_margintop">4dp</dimen>
+    <dimen name="textView_paymentmethod_paddingbottom">6dp</dimen>
+    <dimen name="textView_paymentmethod_size">18sp</dimen>
+
+    <!--activity_serviceappointmentstatus-->
+    <dimen name="textView_watchlivefeed_marginbottom">10dp</dimen>
+    <dimen name="textView_watchlivefeed_marginend">50dp</dimen>
+    <dimen name="textView_watchlivefeed_margintop">8dp</dimen>
+    <dimen name="textView_watchlivefeed_textsize">14sp</dimen>
+    <dimen name="textView_servicestatus_marginend">8dp</dimen>
+    <dimen name="textView_servicestatus_margintop">3dp</dimen>
+    <dimen name="textView_servicestatus_textsize">14sp</dimen>
+    <dimen name="recyclerView_servicestatus_margintop">8dp</dimen>
+    <dimen name="constraint_servicedetails_margintop">8dp</dimen>
+    <dimen name="constraint_servicedetails_paddingbottom">10dp</dimen>
+    <dimen name="textView_servicecenterstatus_margintop">13dp</dimen>
+    <dimen name="textView_servicecenterstatus_size">14sp</dimen>
+    <dimen name="textView_serviceCenter_name_marginend">8dp</dimen>
+    <dimen name="textView_serviceCenter_name_margintop">2dp</dimen>
+    <dimen name="textView_serviceCenter_name_size">18sp</dimen>
+    <dimen name="textView_motorcycle_model_marginend">8dp</dimen>
+    <dimen name="textView_motorcycle_model_margintop">12dp</dimen>
+    <dimen name="textView_motorcycle_model_size">14sp</dimen>
+    <dimen name="textView_motorcycle_margintop">2dp</dimen>
+    <dimen name="textView_motorcycle_size">18sp</dimen>
+    <dimen name="imageView_call_servicecenter_marginstart">8dp</dimen>
+    <dimen name="imageView_call_servicecenter_margintop">16dp</dimen>
+    <dimen name="textView_pickupaddress_marginend">8dp</dimen>
+    <dimen name="textView_pickupaddress_margintop">12dp</dimen>
+    <dimen name="textView_pickupaddress_size">14sp</dimen>
+    <dimen name="textView_motorcycle_pickupaddress_margintop">2dp</dimen>
+    <dimen name="textView_motorcycle_pickupaddress_size">18sp</dimen>
+    <dimen name="textView_pickuptime_marginend">8dp</dimen>
+    <dimen name="textView_pickuptime_margintop">12dp</dimen>
+    <dimen name="textView_pickuptime_size">14sp</dimen>
+    <dimen name="textView_motorcycle_pickuptime_margintop">2dp</dimen>
+    <dimen name="textView_motorcycle_pickuptime_size">18sp</dimen>
+    <dimen name="textView_issue_marginend">8dp</dimen>
+    <dimen name="textView_issue_margintop">12dp</dimen>
+    <dimen name="textView_issue_size">14sp</dimen>
+    <dimen name="textView_motorcycle_issue_top">2dp</dimen>
+    <dimen name="textView_motorcycle_issue_size">18sp</dimen>
+    <dimen name="textview_reschedule_marginend">8dp</dimen>
+    <dimen name="textview_reschedule_margintop">16dp</dimen>
+    <dimen name="textview_reschedule_drawablepadding">20dp</dimen>
+    <dimen name="textview_reschedule_size">18sp</dimen>
+    <dimen name="line_view_width">200dp</dimen>
+    <dimen name="line_view_height">1dp</dimen>
+    <dimen name="line_view_margintop">24dp</dimen>
+    <dimen name="button_cancelbooking_width">210dp</dimen>
+    <dimen name="button_cancelbooking_height">54dp</dimen>
+    <dimen name="button_cancelbooking_marginbottom">70dp</dimen>
+    <dimen name="button_cancelbooking_margintop">24dp</dimen>
+    <dimen name="button_cancelbooking_size">18sp</dimen>
+
+    <!--activity_servicebooking_cancellation-->
+    <dimen name="imageView_close_marginend">8dp</dimen>
+    <dimen name="textView_message_margintop">40dp</dimen>
+    <dimen name="textView_message_paddingleft">10dp</dimen>
+    <dimen name="textView_message_paddingright">10dp</dimen>
+    <dimen name="textView_message_size">22sp</dimen>
+    <dimen name="imageView_questionmark_margintop">40dp</dimen>
+    <dimen name="button_no_width">210dp</dimen>
+    <dimen name="button_no_height">54dp</dimen>
+    <dimen name="button_no_marginend">8dp</dimen>
+    <dimen name="button_no_marginstart">8dp</dimen>
+    <dimen name="button_no_margintop">35dp</dimen>
+    <dimen name="button_no_textsize">18sp</dimen>
+    <dimen name="button_yes_margintop">25dp</dimen>
+    <dimen name="button_yes_textsize">18sp</dimen>
+
+    <!--loading-->
+    <dimen name="linearlayout_dots_margin">4dp</dimen>
+    <dimen name="image_bike_margin_from_bottom">31dp</dimen>
+
+    <!--fragment_user_created_rides-->
+    <dimen name="view_pager_height">540dp</dimen>
+    <dimen name="view_pager_width">380dp</dimen>
+    <dimen name="view_pager_margin_top">15dp</dimen>
+    <dimen name="ride_route">18sp</dimen>
+    <dimen name="ride_date">14sp</dimen>
+    <dimen name="no_of_days">14sp</dimen>
+    <dimen name="created_by_tv">14sp</dimen>
+    <dimen name="creator_name">18sp</dimen>
+    <dimen name="creator_place">14sp</dimen>
+    <dimen name="ride_description">18sp</dimen>
+    <dimen name="other_riders_names">14sp</dimen>
+    <dimen name="other_names_margin_start">9.5dp</dimen>
+    <dimen name="swipe_up_text">14sp</dimen>
+    <dimen name="ride_route_margin_bottom">42.6dp</dimen>
+    <dimen name="card_padding_right">15dp</dimen>
+    <dimen name="card_padding_left">17dp</dimen>
+    <dimen name="card_page_margin">-12dp</dimen>
+    <dimen name="created_by_margin_top">15dp</dimen>
+    <dimen name="rider_margin_top">13dp</dimen>
+    <dimen name="creator_image_height">43.9dp</dimen>
+    <dimen name="creator_image_width">44.9dp</dimen>
+    <dimen name="other_rider_image_width">26.4dp</dimen>
+    <dimen name="other_rider_image_height">26.3dp</dimen>
+    <dimen name="horizontal_line_margin_top">26dp</dimen>
+    <dimen name="swipe_text_margin_top">12dp</dimen>
+
+    <!--our world-->
+    <dimen name="text_size_launch">18sp</dimen>
+    <dimen name="launch_image_width">184dp</dimen>
+    <dimen name="launch_image_height">184dp</dimen>
+    <dimen name="launch_card_margin">6dp</dimen>
+    <dimen name="text_size_event">18sp</dimen>
+    <dimen name="event_image_height">207dp</dimen>
+    <dimen name="event_name_margin">83dp</dimen>
+    <dimen name="explore_margin">20dp</dimen>
+    <dimen name="text_size_launch_name">18sp</dimen>
+    <dimen name="text_size_event_name">24sp</dimen>
+    <dimen name="text_size_event_date">18sp</dimen>
+    <dimen name="explore">18sp</dimen>
+
+    <!--servicing-->
+    <dimen name="text_modifyaddress_drawablepadding">25dp</dimen>
+
+
+    <!-- Recyclerview item decoration size -->
+    <dimen name="decoration_size">4dp</dimen>
+
+    <!-- Dealer ride details dimens -->
+    <dimen name="dimen_ride_detail_top_cover_image_height">206dp</dimen>
+    <dimen name="text_size_ride_details_14">14sp</dimen>
+    <dimen name="text_size_rider_details_18">18sp</dimen>
+
+    <!--by_other_riders-->
+    <dimen name="rider_name">14sp</dimen>
+    <dimen name="route">13sp</dimen>
+    <dimen name="by_other_riders_text">14sp</dimen>
+    <dimen name="by_other_riders_margin_top">16dp</dimen>
+    <dimen name="borderWidth">4sp</dimen>
+    <dimen name="total_height">190dp</dimen>
+    <dimen name="fragment_width">120dp</dimen>
+    <dimen name="fragment_height">130dp</dimen>
+
+    <!--RecommendedRouteDetailActivity-->
+    <dimen name="location_margin_top">31dp</dimen>
+    <dimen name="hotel_name">18sp</dimen>
+    <dimen name="hotel_name_margin_top">28dp</dimen>
+    <dimen name="hotel_description">14sp</dimen>
+    <dimen name="horizontal_separator_margin_top">27dp</dimen>
+    <dimen name="riders_been_here_margin_top">26dp</dimen>
+    <dimen name="rider_names_margin_top">19dp</dimen>
+    <dimen name="horizontal_separator2_margin_top">40dp</dimen>
+    <dimen name="button_margin_top">9dp</dimen>
+
+    <!--ShareYourRideActivity-->
+    <dimen name="invite_next_arrow_margin_top">15dp</dimen>
+    <dimen name="invite_next_arrow_margin_start">12dp</dimen>
+    <dimen name="modify_next_margin_top">30.3dp</dimen>
+    <dimen name="modify_next_margin_start">15dp</dimen>
+
+    <!--item_ridetime_start-->
+    <dimen name="ridetime_view_height">15dp</dimen>
+    <dimen name="ridetime_view_selected_height">20dp</dimen>
+
+    <dimen name="ridetime_view_margin">9dp</dimen>
+    <dimen name="ridetime_view_selected_margin">0dp</dimen>
+
+    <!--Dashed line related dimens -->
+    <dimen name="dash_line_height">3dp</dimen>
+    <dimen name="dash_line_width">13dp</dimen>
+    <dimen name="dash_line_margin_left">4dp</dimen>
+    <dimen name="dash_line_margin_right">4dp</dimen>
+
+    <!-- Navigation Menu Icons text size -->
+    <dimen name="nav_tab_active_text_size">28sp</dimen>
+    <dimen name="nav_tab_in_active_text_size">17sp</dimen>
+
+    <dimen name="extra_margin">16dp</dimen>
+
+
+    <!--user data validation -->
+    <dimen name="dimen_37">37dp</dimen>
+    <dimen name="size_18">18sp</dimen>
+    <dimen name="dimen_79">79dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_19">19dp</dimen>
+    <dimen name="dimen_12">12dp</dimen>
+    <dimen name="dimen_80">80dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_11">11dp</dimen>
+    <dimen name="dimen_35dp">35dp</dimen>
+    <dimen name="size_12">12sp</dimen>
+    <dimen name="dimen_21">21dp</dimen>
+    <dimen name="dimen_7">7dp</dimen>
+    <dimen name="dimen_36">36dp</dimen>
+    <dimen name="dimen_28">28dp</dimen>
+    <dimen name="dimen_36dp">36dp</dimen>
+    <dimen name="dimen_32">32dp</dimen>
+    <dimen name="dimen_16">16sp</dimen>
+    <dimen name="dimen_53">53dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dimen_39">39dp</dimen>
+    <dimen name="dimen_38">38dp</dimen>
+    <dimen name="dp_21">21dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+    <dimen name="dimen_60">60dp</dimen>
+    <dimen name="dimen_31">31dp</dimen>
+    <dimen name="dimen_22">22dp</dimen>
+    <dimen name="dimen_35">35dp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+
+    <!--phone configurator -->
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="dp_56">56dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_64">64dp</dimen>
+    <dimen name="dp_72">72dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+    <dimen name="dp_148">148dp</dimen>
+    <dimen name="dp_160">160dp</dimen>
+    <dimen name="pc_variant_card_left_margin">8dp</dimen>
+    <dimen name="md_bottom_sheet_separator_top_margin">7dp</dimen>
+    <dimen name="choose_model_img_height">220dp</dimen>
+    <dimen name="save_model_img_height">220dp</dimen>
+    <dimen name="choose_model_img_width">305dp</dimen>
+    <dimen name="dp_28">28dp</dimen>
+    <dimen name="sp_8">8sp</dimen>
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="design_tab_text_size_2line" tools:override="true">20sp</dimen>
+
+    <dimen name="sp_20">20sp</dimen>
+    <dimen name="pc_model_variant_title_size">28sp</dimen>
+    <dimen name="pc_dot_margin_top">32dp</dimen>
+    <dimen name="size_11">11sp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+    <dimen name="dp_36">36dp</dimen>
+    <dimen name="dp_39">39dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+
+
+
+    <!--activity_layout_signup-->
+    <dimen name="view_pager_sign_up_margin_top">4dp</dimen>
+    <dimen name="view_pager_sign_up_margin_bottom">8dp</dimen>
+    <dimen name="pager_indicator_margin_top">135dp</dimen>
+    <dimen name="pager_indicator_margin_end">1dp</dimen>
+    <dimen name="skip_text_margin_top">6dp</dimen>
+    <dimen name="skip_text_size">18sp</dimen>
+
+    <!--our world-->
+    <dimen name="tv_news_and_launch_margin_top">12dp</dimen>
+    <dimen name="rv_news_and_launch_margin_top">5dp</dimen>
+    <dimen name="news_card_margin_end">6dp</dimen>
+    <dimen name="news_card_launch_name_margin_bottom">14dp</dimen>
+    <dimen name="news_details_tv_news_date_and_desc">16sp</dimen>
+    <dimen name="news_details_tv_news_date_and_desc_margin_top">18sp</dimen>
+    <dimen name="text_news_error">20sp</dimen>
+    <dimen name="events_label_margin_top">20dp</dimen>
+    <dimen name="rv_events_height">220dp</dimen>
+    <dimen name="rv_events_margin_top">5dp</dimen>
+    <dimen name="layout_events_height">210dp</dimen>
+    <dimen name="event_name_margin_bottom">2dp</dimen>
+    <dimen name="event_date_margin_bottom">84dp</dimen>
+    <dimen name="tv_explore_margin_top">25dp</dimen>
+    <dimen name="tv_explore_drawable">15dp</dimen>
+    <dimen name="register_button_width">210dp</dimen>
+    <dimen name="register_button_height">54dp</dimen>
+    <dimen name="register_button_padding">5dp</dimen>
+    <dimen name="register_button_margin_bottom">14sp</dimen>
+    <dimen name="register_button_text_size">18sp</dimen>
+    <dimen name="bottom_line_margin_top">35dp</dimen>
+
+    <!--activity_rides_tour-->
+    <dimen name="const_layout_padding_bottom">24dp</dimen>
+    <dimen name="text_ride_info_padding">25dp</dimen>
+    <dimen name="text_ride_info_text_size">18sp</dimen>
+    <dimen name="ride_details_layout_margin_top">30dp</dimen>
+    <dimen name="tv_registration_policies_margin_end">8dp</dimen>
+    <dimen name="registration_policies_drawable_padding">20dp</dimen>
+    <dimen name="registration_policies_padding_bottom">8dp</dimen>
+    <dimen name="registration_policies_padding_top_and_end">10dp</dimen>
+    <dimen name="ride_tour_register_button_height">49dp</dimen>
+    <dimen name="ride_tour_register_button_margin_top">24dp</dimen>
+    <dimen name="ride_tour_register_button_padding">18dp</dimen>
+    <dimen name="ride_tour_register_button_view_line_width">250dp</dimen>
+    <dimen name="ride_tour_register_button_view_line_margin">24dp</dimen>
+    <dimen name="tv_label_key_places_text_size">16sp</dimen>
+    <dimen name="tv_label_key_places_margin_top">18dp</dimen>
+    <dimen name="key_places_view_line_margin_top">9dp</dimen>
+    <dimen name="tv_label_view_more_margin_and_padding">8dp</dimen>
+    <dimen name="itinerary_line_margin_top">23dp</dimen>
+    <dimen name="itinerary_line_margin_bottom">24dp</dimen>
+    <dimen name="label_view_all_margin_top">10dp</dimen>
+    <dimen name="register_now_btn_margin_bottom">34dp</dimen>
+
+    <!--layout_dealer_rides_list_item-->
+    <dimen name="dealer_ride_list_const_layout_width">180dp</dimen>
+    <dimen name="dealer_text_size">18sp</dimen>
+    <dimen name="dealer_name_margin_start">11dp</dimen>
+    <dimen name="dealer_name_margin_top">12dp</dimen>
+    <dimen name="dealer_name_margin_end">22dp</dimen>
+    <dimen name="dealer_ride_name_margin_start">15dp</dimen>
+    <dimen name="dealer_ride_name_margin_end">25dp</dimen>
+    <dimen name="dealer_ride_name_margin_bottom">6dp</dimen>
+    <dimen name="dealer_location_margin_end">18dp</dimen>
+    <dimen name="dealer_location_margin_bottom">12dp</dimen>
+
+    <!--activity_home-->
+    <dimen name="home_header_height">130dp</dimen>
+    <dimen name="home_logo_margintop">22dp</dimen>
+    <dimen name="home_notif_icon_margintop">10dp</dimen>
+    <dimen name="home_notif_icon_padding">5dp</dimen>
+    <dimen name="home_profile_icon_margintop">10dp</dimen>
+    <dimen name="home_profile_icon_padding">5dp</dimen>
+    <dimen name="home_rsa_icon_padding">5dp</dimen>
+    <dimen name="header_linear_margintop">8dp</dimen>
+    <dimen name="header_text_marginstart">8dp</dimen>
+    <dimen name="header_text_padding">8dp</dimen>
+    <dimen name="home_profile_icon_marginend">8dp</dimen>
+    <dimen name="home_indicator_constraint_marginbottom">14dp</dimen>
+    <dimen name="home_createride_text_height">46dp</dimen>
+    <dimen name="home_createride_text_margin">8dp</dimen>
+    <dimen name="home_createride_text_size">18sp</dimen>
+    <dimen name="home_createride_map_height">8dp</dimen>
+    <dimen name="home_createride_map_margin">8dp</dimen>
+    <dimen name="home_createride_map_padding">20dp</dimen>
+    <dimen name="home_text_diy_height">46dp</dimen>
+    <dimen name="home_text_diy_margin">8dp</dimen>
+    <dimen name="home_text_diy_size">18sp</dimen>
+    <dimen name="home_servicediy_image_height">8dp</dimen>
+    <dimen name="home_servicediy_image_margin">8dp</dimen>
+    <dimen name="home_servicediy_image_padding">20dp</dimen>
+    <dimen name="home_header_text_size">18sp</dimen>
+
+    <!--fragment_popular_rides-->
+    <dimen name="text_popular_error_size">20sp</dimen>
+    <dimen name="text_popular_error_margin">8dp</dimen>
+
+    <!--layout_popular_rides-->
+    <dimen name="image_popular_width">345dp</dimen>
+    <dimen name="image_popular_height">355dp</dimen>
+    <dimen name="image_logo_popular_width">95dp</dimen>
+    <dimen name="image_logo_popular_height">95dp</dimen>
+    <dimen name="image_logo_popular_margintop">24dp</dimen>
+    <dimen name="image_logo_popular_marginend">8dp</dimen>
+    <dimen name="text_popular_title_size">24sp</dimen>
+    <dimen name="text_popular_title_margintop">8dp</dimen>
+    <dimen name="text_popular_title_marginbottom">6dp</dimen>
+    <dimen name="text_duration_size">18sp</dimen>
+    <dimen name="text_duration_marginstart">8dp</dimen>
+    <dimen name="text_duration_marginbottom">16dp</dimen>
+    <dimen name="text_popular_date_size">18sp</dimen>
+    <dimen name="text_popular_date_marginbottom">16dp</dimen>
+    <dimen name="button_register_width">210dp</dimen>
+    <dimen name="button_register_height">54dp</dimen>
+    <dimen name="button_register_textsize">18sp</dimen>
+    <dimen name="button_register_marginbottom">24dp</dimen>
+
+    <!--fragment_custom_rides-->
+    <dimen name="text_marquee_size">20sp</dimen>
+
+    <!--layout_customrides-->
+    <dimen name="cardview_marquee_width">180dp</dimen>
+    <dimen name="image_marquee_width">180dp</dimen>
+    <dimen name="image_marquee_height">180dp</dimen>
+    <dimen name="textview_ride_marginstart">9dp</dimen>
+    <dimen name="textview_ride_marginend">8dp</dimen>
+    <dimen name="textview_ride_size">18sp</dimen>
+    <dimen name="textview_ride_date_height">24dp</dimen>
+    <dimen name="textview_ride_date_marginbottom">8dp</dimen>
+    <dimen name="textview_ride_date_marginstart">9dp</dimen>
+    <dimen name="textview_ride_date_size">14sp</dimen>
+    <dimen name="textview_ride_date_marginend">8dp</dimen>
+    <dimen name="ride_logo_height">40dp</dimen>
+    <dimen name="ride_logo_width">40dp</dimen>
+    <dimen name="ride_logo_margin">8dp</dimen>
+    <dimen name="text_ridename_size">18sp</dimen>
+    <dimen name="text_ridename_margin">8dp</dimen>
+
+    <!--fragment_user_created_rides-->
+    <dimen name="text_userrides_error_size">20sp</dimen>
+    <dimen name="text_user_otherrides_size">14sp</dimen>
+    <dimen name="recyclerview_userrides_margintop">11dp</dimen>
+
+    <!--layout_user_created_rides-->
+    <dimen name="constraint_userrides_width">130dp</dimen>
+    <dimen name="images_rides_dimen">70dp</dimen>
+    <dimen name="image_userrides_border_width">2sp</dimen>
+    <dimen name="text_userride_margintop">6dp</dimen>
+    <dimen name="text_userride_size">14sp</dimen>
+    <dimen name="text_userride_route_marginstart">8dp</dimen>
+    <dimen name="text_userride_route_marginend">8dp</dimen>
+    <dimen name="text_userride_route_margintop">1dp</dimen>
+    <dimen name="text_userride_route_size">13sp</dimen>
+
+    <!--activity_dealer_ride_details-->
+    <dimen name="text_detail_createdby_margintop">17dp</dimen>
+    <dimen name="text_detail_createdby_size">15sp</dimen>
+    <dimen name="image_detail_circular_size">38dp</dimen>
+    <dimen name="image_detail_circular_margintop">12dp</dimen>
+    <dimen name="image_detail_circular_marginend">10dp</dimen>
+    <dimen name="text_dealername_marginend">8dp</dimen>
+    <dimen name="text_dealername_size">18sp</dimen>
+    <dimen name="text_dealerlocation_marginstart">10dp</dimen>
+    <dimen name="text_dealerlocation_margintop">4dp</dimen>
+    <dimen name="text_dealerlocation_marginend">8dp</dimen>
+    <dimen name="text_noof_rides_margintop">4dp</dimen>
+    <dimen name="text_rides_margintop">4dp</dimen>
+    <dimen name="image_whatsapp_margintop">8dp</dimen>
+    <dimen name="image_whatsapp_marginbottom">8dp</dimen>
+    <dimen name="image_location_margin">8dp</dimen>
+    <dimen name="text_ride_address_marginstart">13dp</dimen>
+    <dimen name="text_ride_address_margintop">15dp</dimen>
+    <dimen name="view_ridedetail_width">220dp</dimen>
+    <dimen name="view_ridedetail_height">1dp</dimen>
+    <dimen name="view_ridedetail_margintop">24dp</dimen>
+    <dimen name="button_join_width">210dp</dimen>
+    <dimen name="button_join_height">54dp</dimen>
+    <dimen name="button_join_margintop">30dp</dimen>
+    <dimen name="text_share_margintop">24dp</dimen>
+    <dimen name="text_share_drawable_padding">20dp</dimen>
+    <dimen name="layout_rides_margintop">30dp</dimen>
+    <dimen name="view_margintop">30dp</dimen>
+    <dimen name="layout_riders_joined_margintop">20dp</dimen>
+    <dimen name="button_join_text_size">18sp</dimen>
+
+    <!--AddCheckInActivity-->
+    <dimen name="camera_add_margin_top">60dp</dimen>
+    <dimen name="tv_upload_photo">14sp</dimen>
+    <dimen name="upload_photo_margin_top">14dp</dimen>
+    <dimen name="view_margin_top">27dp</dimen>
+    <dimen name="add_description_min_height">111dp</dimen>
+    <dimen name="add_description_margin_top">30dp</dimen>
+    <dimen name="tv_place_category">14sp</dimen>
+    <dimen name="place_category_margin_top">16dp</dimen>
+    <dimen name="radio_group_margin_top">15dp</dimen>
+    <dimen name="radio_button_margin_top">10dp</dimen>
+    <dimen name="radio_button_margin_start">25dp</dimen>
+    <dimen name="check_in_margin_top">32dp</dimen>
+
+    <!-- TBT & BCT UI Flow -->
+    <dimen name="poi_image_box">50dp</dimen>
+    <dimen name="poi_image">25dp</dimen>
+    <dimen name="nav_text_box">60dp</dimen>
+    <dimen name="nav_info_circle">72dp</dimen>
+    <dimen name="nav_helmet_margin">160dp</dimen>
+
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="drawable_padding">24dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="normal_padding">10dp</dimen>
+
+    <!-- Trip Listing -->
+    <dimen name="dp_13">13dp</dimen>
+    <dimen name="dp_7">7dp</dimen>
+    <dimen name="dp_19">19dp</dimen>
+    <dimen name="dp_31">31dp</dimen>
+    <dimen name="dp_45">45dp</dimen>
+
+    <!--motorcycle Dashboard-->
+    <dimen name="motorcycle_view_pager_height">240dp</dimen>
+    <dimen name="motorcycle_bike_width">326dp</dimen>
+    <dimen name="motorcycle_bike_height">184dp</dimen>
+    <dimen name="viewpager_layout_height">30dp</dimen>
+
+    <!--Text sizes-->
+    <dimen name="text_size_8">8sp</dimen>
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+
+    <!--sizes-->
+    <dimen name="size_2">2dp</dimen>
+    <dimen name="size_5">5dp</dimen>
+    <dimen name="size_8">8dp</dimen>
+    <dimen name="size_10">10dp</dimen>
+    <dimen name="size_15">15dp</dimen>
+    <dimen name="size_20">20dp</dimen>
+    <dimen name="size_24">24dp</dimen>
+    <dimen name="size_30">30dp</dimen>
+    <dimen name="size_32">32dp</dimen>
+    <dimen name="size_40">40dp</dimen>
+    <dimen name="size_50">50dp</dimen>
+    <dimen name="size_60">60dp</dimen>
+    <dimen name="size_6">6dp</dimen>
+    <dimen name="size_3">3dp</dimen>
+    <dimen name="map_height">324dp</dimen>
+    <dimen name="size_1">1dp</dimen>
+
+    <dimen name="design_bottom_navigation_height" tools:override="true">70dp</dimen>
+    <dimen name="design_bottom_navigation_image" tools:override="true">50dp</dimen>
+    <dimen name="dimen_34dp">34dp</dimen>
+    <dimen name="nav_helmet_size">84dp</dimen>
+    <dimen name="dp_232">232dp</dimen>
+    <dimen name="signup_activity_edittext_height">48dp</dimen>
+
+
+</resources>

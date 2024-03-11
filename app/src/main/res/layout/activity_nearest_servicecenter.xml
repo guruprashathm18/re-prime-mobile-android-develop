@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/black_two"
+                                                   android:focusable="true"
+                                                   android:focusableInTouchMode="true">
+
+    <com.royalenfield.reprime.ui.custom.views.TitleBarView
+            android:id="@+id/problem_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/re_actionbar_height"
+            app:layout_constraintEnd_toEndOf="@+id/guideline48"
+            app:layout_constraintStart_toStartOf="@+id/guideline47"
+            app:layout_constraintTop_toTopOf="parent">
+
+    </com.royalenfield.reprime.ui.custom.views.TitleBarView>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="20dp"/>
+
+    <TextView
+            android:id="@+id/tv_locate_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/text_locate_sc_desc"
+            android:textColor="@color/white_50"
+            android:textSize="@dimen/textView_issue_size"
+            app:layout_constraintEnd_toStartOf="@+id/guideline48"
+            app:layout_constraintStart_toStartOf="@+id/guideline47"
+            app:layout_constraintTop_toBottomOf="@+id/problem_topbar"/>
+
+    <LinearLayout
+            android:id="@+id/llsearchbox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline48"
+            app:layout_constraintStart_toStartOf="@+id/guideline47"
+            app:layout_constraintTop_toBottomOf="@+id/tv_locate_desc">
+
+        <ImageView
+                android:id="@+id/ivLocation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="10"
+                android:background="@drawable/location"
+                android:visibility="visible"/>
+
+        <EditText
+                android:id="@+id/et_search"
+                style="@style/REEditTextNearestServiceCenterStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:imeOptions="actionDone"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="@string/search_hint"
+                android:textColor="@color/black_50"
+                app:layout_constraintEnd_toStartOf="@+id/guideline48"
+                app:layout_constraintTop_toBottomOf="@+id/tv_locate_desc"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_nearest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline48"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline47"
+            app:layout_constraintTop_toBottomOf="@+id/llsearchbox"/>
+    <TextView
+            android:text="@string/search_noresults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_no_servicecenter"
+            android:textColor="@color/grey"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:fontFamily="@font/montserrat_regular"
+            app:layout_constraintTop_toBottomOf="@+id/llsearchbox"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="@+id/guideline47"
+            app:layout_constraintEnd_toStartOf="@+id/guideline48"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

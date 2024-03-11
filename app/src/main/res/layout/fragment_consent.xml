@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clickable="true">
+
+        <include layout="@layout/signup_toolbar_view"
+            android:id="@+id/topview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></include>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_two"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_20sdp"
+        android:clickable="true">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="21dp"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="17dp"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="20dp"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.01"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.03"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+        <ImageView
+            android:id="@+id/imageView_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/signup_imageprevious_marginbottom"
+            android:paddingBottom="@dimen/sign_up_previous_img_padding"
+            android:paddingStart="0dp"
+
+            android:paddingEnd="@dimen/sign_up_previous_img_padding"
+            android:paddingTop="@dimen/sign_up_previous_img_padding"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:srcCompat="@drawable/ic_previous_arrow"
+            android:contentDescription="@string/previous_arrow_image_desc"/>
+
+        <TextView
+            android:id="@+id/text_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/sign_up_previous_text_margin_end"
+            android:layout_marginStart="@dimen/signup_textprevious_marginstart"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/text_previous"
+            android:textColor="@color/white"
+            android:textSize="@dimen/signup_next_textsize"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintHorizontal_bias="0.0"
+
+            app:layout_constraintStart_toEndOf="@+id/imageView_previous"
+            app:layout_constraintTop_toTopOf="@+id/imageView_previous"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_previous"/>
+
+
+
+        <TextView
+            android:id="@+id/txt_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/method"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:paddingBottom="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_previous"
+
+            />
+
+        <CheckBox
+            android:id="@+id/phone_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/text_color_grey"
+            android:textColor="@color/text_color_grey"
+            android:textColorLink="@color/white"
+            android:text="@string/phone"
+            android:visibility="gone"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/text_size_14"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintEnd_toEndOf="@+id/guideline50"
+            app:layout_constraintStart_toStartOf="@+id/txt_method"
+            app:layout_constraintTop_toBottomOf="@+id/txt_method" />
+        <CheckBox
+            android:id="@+id/email_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/text_color_grey"
+            android:textColor="@color/text_color_grey"
+            android:textColorLink="@color/white"
+            android:layout_marginStart="10dp"
+            android:text="@string/email"
+            android:visibility="gone"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/text_size_14"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintEnd_toEndOf="@+id/guideline7"
+            app:layout_constraintStart_toEndOf="@+id/phone_check"
+            app:layout_constraintTop_toBottomOf="@+id/txt_method" />
+
+        <CheckBox
+            android:id="@+id/whatsapp_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/text_color_grey"
+            android:textColor="@color/text_color_grey"
+            android:textColorLink="@color/white"
+            android:text="@string/whatsapp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/text_size_14"
+            android:visibility="gone"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintEnd_toEndOf="@+id/guideline50"
+            app:layout_constraintStart_toStartOf="@+id/txt_method"
+            app:layout_constraintTop_toBottomOf="@+id/phone_check" />
+
+        <CheckBox
+            android:id="@+id/push_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/text_color_grey"
+            android:textColor="@color/text_color_grey"
+            android:textColorLink="@color/white"
+            android:layout_marginStart="10dp"
+            android:text="@string/push_noti"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/text_size_14"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintEnd_toEndOf="@+id/guideline7"
+            app:layout_constraintStart_toEndOf="@+id/whatsapp_check"
+            app:layout_constraintTop_toBottomOf="@+id/phone_check" />
+
+        <TextView
+            android:id="@+id/lbl_future"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/future_contact"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:paddingBottom="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/whatsapp_check"
+
+            />
+        <TextView
+            android:id="@+id/txt_future"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/text_color_grey"
+            android:textSize="@dimen/signup_privacypolicy_textsize"
+            android:text="@string/in_addition"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintEnd_toEndOf="@id/guideline7"
+            app:layout_constraintStart_toEndOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_future"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_connect_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/please_contact_me"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:paddingBottom="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/txt_future"
+
+            />
+
+        <CheckBox
+            android:id="@+id/community_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/text_color_grey"
+            android:textColor="@color/text_color_grey"
+            android:textColorLink="@color/white"
+            android:text="@string/community_activity"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/text_size_14"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintEnd_toEndOf="@+id/guideline50"
+            app:layout_constraintStart_toStartOf="@+id/txt_connect_me"
+            app:layout_constraintTop_toBottomOf="@+id/txt_connect_me" />
+        <CheckBox
+            android:id="@+id/promotion_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/text_color_grey"
+            android:textColor="@color/text_color_grey"
+            android:textColorLink="@color/white"
+            android:layout_marginStart="10dp"
+            android:text="@string/promotions_news"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/text_size_14"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintEnd_toEndOf="@+id/guideline7"
+            app:layout_constraintStart_toEndOf="@+id/community_check"
+
+            app:layout_constraintTop_toBottomOf="@+id/txt_connect_me" />
+        <CheckBox
+            android:id="@+id/survey_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/text_color_grey"
+            android:textColor="@color/text_color_grey"
+            android:textColorLink="@color/white"
+            android:text="@string/survey_reserch"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/text_size_14"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintEnd_toEndOf="@+id/guideline50"
+            app:layout_constraintStart_toStartOf="@+id/txt_connect_me"
+            app:layout_constraintTop_toBottomOf="@+id/community_check" />
+        <CheckBox
+            android:id="@+id/all_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/text_color_grey"
+            android:textColor="@color/text_color_grey"
+            android:textColorLink="@color/white"
+            android:layout_marginStart="10dp"
+            android:text="@string/all"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/text_size_14"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintEnd_toEndOf="@+id/guideline7"
+            app:layout_constraintStart_toEndOf="@+id/community_check"
+
+            app:layout_constraintTop_toBottomOf="@+id/promotion_check" />
+
+        <TextView
+            android:id="@+id/txt_disclaimer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/text_color_grey"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/signup_privacypolicy_textsize"
+            android:text="@string/disclaimer"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/survey_check"
+
+            />
+
+
+        <CheckBox
+            android:id="@+id/privacypolicy_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:buttonTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"
+            android:textSize="@dimen/signup_privacypolicy_textsize"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/txt_disclaimer" />
+
+        <TextView
+            android:id="@+id/privacypolicy_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white"
+            android:text=""
+            android:paddingRight="@dimen/signup_terms_padding"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"
+            android:textSize="@dimen/signup_privacypolicy_textsize"
+            app:layout_constraintBottom_toBottomOf="@+id/privacypolicy_check"
+            app:layout_constraintStart_toEndOf="@+id/privacypolicy_check"
+            app:layout_constraintTop_toTopOf="@+id/privacypolicy_check" />
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="@dimen/signup_btn_width"
+            android:layout_height="@dimen/signup_btn_height"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/button_border_disable"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/update"
+            android:textAllCaps="false"
+            android:textColor="@color/white_50"
+            android:textSize="@dimen/signup_edtxt_textsize"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/privacypolicy_tv"/>
+
+
+
+
+        <Button
+            android:id="@+id/signup_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/dp_32"
+            android:background="@drawable/shape_global_login_button"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/create_account"
+            android:textAllCaps="false"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline6"
+            app:layout_constraintTop_toBottomOf="@+id/privacypolicy_tv" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+    </LinearLayout>
+</layout>

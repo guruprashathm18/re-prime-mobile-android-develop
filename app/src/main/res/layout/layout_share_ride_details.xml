@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/grey">
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.0555"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1.0"/>
+
+    <TextView
+            android:id="@+id/tv_ride_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/ride_route"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+            android:id="@+id/ride_route"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            tools:text="Bengaluru>Shimoga>Gokarna"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintRight_toLeftOf="@id/guideline_v_100"
+            app:layout_constraintTop_toBottomOf="@id/tv_ride_route"/>
+
+    <TextView
+            android:id="@+id/tv_ride_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/ride_start_date"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@id/ride_route"/>
+
+    <TextView
+            android:id="@+id/ride_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_light"
+            tools:text="17th Nov’ 2018 - 20th Nov’ 2018"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@id/tv_ride_date"/>
+    <TextView
+        android:id="@+id/tv_ride_end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/ride_end_date"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@id/ride_date"/>
+
+    <TextView
+        android:id="@+id/ride_end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_light"
+        tools:text="17th Nov’ 2018 - 20th Nov’ 2018"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@id/tv_ride_end_date"/>
+
+    <TextView
+            android:id="@+id/tv_ride_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/ride_start_time"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@id/ride_end_date"/>
+
+    <TextView
+            android:id="@+id/ride_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_light"
+            tools:text="5:00am"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@id/tv_ride_start_time"/>
+    <TextView
+        android:id="@+id/tv_ride_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/ride_end_time"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@id/ride_start_time"/>
+
+    <TextView
+        android:id="@+id/ride_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_light"
+        tools:text="5:00am"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@id/tv_ride_end_time"/>
+
+    <TextView
+            android:id="@+id/tv_ride_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/ride_duration"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@id/ride_end_time"/>
+
+    <TextView
+            android:id="@+id/ride_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/montserrat_light"
+            tools:text="3 Days"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@id/tv_ride_duration"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

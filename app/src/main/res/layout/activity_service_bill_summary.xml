@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/black_two">
+
+    <com.royalenfield.reprime.ui.custom.views.TitleBarView
+            android:id="@+id/tb_add_address"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="@dimen/re_actionbar_height"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="19dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.675"/>
+
+    <TextView
+            android:id="@+id/textView_invoicenumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/textView_invoicenumber_margintop"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/invoice_number"
+            android:textColor="@color/white_50"
+            android:textSize="@dimen/textView_invoicenumber_size"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toTopOf="@+id/guideline11"/>
+
+    <TextView
+            android:id="@+id/textView_invoiceno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/textView_invoiceno_marginend"
+            android:layout_marginTop="@dimen/textView_invoiceno_margintop"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="NA"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textView_invoiceno_textsize"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/textView_invoicenumber"/>
+
+    <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="18dp"
+            android:background="@color/white_50"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/textView_invoiceno"/>
+
+    <TextView
+            android:id="@+id/textView_date_summary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/textView_date_summary_margintop"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/service_date"
+            android:textColor="@color/white_50"
+            android:textSize="@dimen/textView_date_summary_size"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/view"/>
+
+    <TextView
+            android:id="@+id/textView_issuedate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/textView_issuedate_margintop"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="NA"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textView_issuedate_size"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/textView_date_summary"/>
+
+    <View
+            android:id="@+id/view9"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="18dp"
+            android:background="@color/white_50"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/textView_issuedate"/>
+
+    <TextView
+            android:id="@+id/textView_servicecenter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/textView_servicecenter_margintop"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/text_label_service_center"
+            android:textColor="@color/white_50"
+            android:textSize="@dimen/textView_servicecenter_size"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/view9"/>
+
+    <TextView
+            android:id="@+id/textView_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/textView_addresssummary_marginend"
+            android:layout_marginTop="@dimen/textView_addresssummary_margintop"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="NA"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textView_addresssummary_size"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/textView_servicecenter"/>
+
+    <View
+            android:id="@+id/view10"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="18dp"
+            android:background="@color/white_50"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/textView_address"/>
+
+    <TextView
+            android:id="@+id/textView_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/textView_amount_marginend"
+            android:layout_marginTop="@dimen/textView_amount_margintop"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/text_amountpaid"
+            android:textColor="@color/white_50"
+            android:textSize="@dimen/textView_amount_size"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/view10"/>
+
+    <TextView
+            android:id="@+id/textView_amountpaid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/textView_amountpaidsummary_marginend"
+            android:layout_marginTop="@dimen/textView_amountpaidsummary_margintop"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/text_hyphen_na"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textView_amountpaidsummary_size"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/textView_amount"/>
+
+    <View
+            android:id="@+id/view11"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="18dp"
+            android:background="@color/white_50"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/textView_amountpaid"/>
+
+    <TextView
+            android:id="@+id/textView_payment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/textView_payment_margiontop"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/payment_method"
+            android:textColor="@color/white_50"
+            android:textSize="@dimen/textView_payment_size"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/view11"/>
+
+    <TextView
+            android:id="@+id/textView_paymentmethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="@dimen/textView_paymentmethod_margintop"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingBottom="@dimen/textView_paymentmethod_paddingbottom"
+            android:text="@string/text_hyphen_na"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textView_paymentmethod_size"
+            app:layout_constraintBottom_toTopOf="@+id/imageView5"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline17"
+            app:layout_constraintTop_toBottomOf="@+id/textView_payment"
+            app:layout_constraintVertical_bias="0.0"/>
+
+    <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_re_stripe"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

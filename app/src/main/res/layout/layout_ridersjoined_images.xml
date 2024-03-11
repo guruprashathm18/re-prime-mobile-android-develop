@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:orientation="vertical"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:background="@color/black_two">
+
+    <View
+            android:id="@+id/modify_separator"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/cZero"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toStartOf="@+id/guideline72"
+            android:layout_marginEnd="8dp"/>
+
+    <TextView
+            android:id="@+id/tv_label_ride_members"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/text_label_ride_members"
+            android:textColor="@color/white_50"
+            app:layout_constraintTop_toBottomOf="@+id/modify_separator" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
+
+    <include
+            android:id="@+id/layout_other_riders"
+            layout="@layout/layout_other_riders"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_ride_members" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp" app:layout_constraintHorizontal_bias="0.0">
+    </include>
+
+    <View
+            android:id="@+id/other_riders_separator"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/cZero"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/layout_other_riders"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline72"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/guideline72"
+                                                app:layout_constraintGuide_percent="0.70"
+                                                android:orientation="vertical"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

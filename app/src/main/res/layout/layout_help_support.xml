@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_two"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_header_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/extra_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llDIYGuides"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingTop="@dimen/extra_margin"
+            android:paddingBottom="@dimen/extra_margin">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="-1sp"
+                android:text="@string/text_diy_guides"
+                android:textColor="@color/white"
+                android:textSize="@dimen/edittext_size"
+                tools:text="@string/text_diy_guides" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow_right"
+                android:clickable="false"
+                android:contentDescription="@string/app_name" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_30" />
+
+        <LinearLayout
+            android:id="@+id/ll_owner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingTop="@dimen/extra_margin"
+            android:paddingBottom="@dimen/extra_margin">
+
+            <TextView
+                android:id="@+id/txt_owner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="-1sp"
+                android:text="@string/text_owners_manual"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:textColor="@color/white"
+                android:textSize="@dimen/edittext_size"
+                tools:text="@string/text_owners_manual" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_30" />
+
+        <LinearLayout
+            android:id="@+id/llExtendedWarranty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingTop="@dimen/extra_margin"
+            android:paddingBottom="@dimen/extra_margin">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="-1sp"
+                android:text="@string/text_extended_warranty"
+                android:textColor="@color/white"
+                android:textSize="@dimen/edittext_size"
+                tools:text="@string/text_extended_warranty" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow_right"
+                android:clickable="false"
+                android:contentDescription="@string/app_name" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_30" />
+
+        <LinearLayout
+            android:id="@+id/ll_rsa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingTop="@dimen/extra_margin"
+            android:paddingBottom="@dimen/extra_margin">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="-1sp"
+                android:text="@string/road_side_assistance"
+                android:textColor="@color/white"
+                android:textSize="@dimen/edittext_size"
+                tools:text="@string/road_side_assistance" />
+
+            <ImageButton
+                android:id="@+id/image_rsa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow_right"
+                android:clickable="false"
+                android:contentDescription="@string/app_name" />
+        </LinearLayout>
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_30" />
+
+        <LinearLayout
+            android:id="@+id/llCustomerCare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingTop="@dimen/extra_margin"
+            android:paddingBottom="@dimen/extra_margin">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="-1sp"
+                android:text="@string/text_contact_us"
+                android:textColor="@color/white"
+                android:textSize="@dimen/edittext_size"
+                tools:text="@string/text_contact_us" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow_right"
+                android:clickable="false"
+                android:contentDescription="@string/app_name" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_30" />
+
+        <LinearLayout
+            android:id="@+id/llSpareParts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingTop="@dimen/extra_margin"
+            android:paddingBottom="@dimen/extra_margin">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_regular"
+                android:lineSpacingExtra="-1sp"
+                android:text="@string/spare_part"
+                android:textColor="@color/white"
+                android:textSize="@dimen/edittext_size"
+                tools:text="@string/spare_part" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow_right"
+                android:clickable="false"
+                android:contentDescription="@string/app_name" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@drawable/ic_re_stripe" />
+
+</LinearLayout>

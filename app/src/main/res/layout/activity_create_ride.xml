@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_home_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_two"
+    android:fillViewport="true"
+    tools:context="com.royalenfield.reprime.ui.home.rides.activity.CreateRideActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_two"
+        tools:context="com.royalenfield.reprime.ui.home.service.search.SearchActivity">
+
+        <com.royalenfield.reprime.ui.custom.views.TitleBarView
+            android:id="@+id/create_ride_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/re_actionbar_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ble_search_create_ride"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.82"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_bluetooth_ic"/>
+        </com.royalenfield.reprime.ui.custom.views.TitleBarView>
+
+        <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+            android:id="@+id/fl_create_ride_holder"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_ride_header"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="20dp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/label_where_ride"
+            android:textColor="@color/white_50"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline62"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline61"
+            app:layout_constraintTop_toBottomOf="@+id/fl_create_ride_holder"/>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="11dp"
+            android:layout_height="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_current_loc"
+            app:layout_constraintStart_toStartOf="@+id/guideline61"
+            app:layout_constraintTop_toTopOf="@+id/et_current_loc"
+            app:srcCompat="@drawable/ic_marker_green"/>
+
+
+        <EditText
+            android:id="@+id/et_current_loc"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="18dp"
+            android:background="@color/white"
+            android:focusable="false"
+            android:fontFamily="@font/montserrat_light"
+            android:gravity="fill"
+            android:imeOptions="actionDone"
+            android:letterSpacing="0.04"
+            android:maxLines="1"
+            android:inputType="textNoSuggestions"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_two"
+            android:textSize="18sp"
+            android:hint="@string/label_source"
+            app:layout_constraintEnd_toStartOf="@+id/guideline62"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" tools:ignore="LabelFor"/>
+
+
+        <ImageView
+            android:id="@+id/imageView_dashed"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_waypoint_dashline"
+            app:layout_constraintStart_toStartOf="@+id/guideline61"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7"/>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="11dp"
+            android:layout_height="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/dest_constraint"
+            app:layout_constraintStart_toStartOf="@+id/guideline61"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_dashed"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_marker_red"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0dp"
+            android:id="@+id/dest_constraint"
+            android:layout_height="40dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline62"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView8"
+            app:layout_constraintTop_toBottomOf="@+id/et_current_loc"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            android:layout_marginStart="24dp">
+            <EditText
+                android:id="@+id/et_destination"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:focusable="false"
+                android:fontFamily="@font/montserrat_light"
+                android:gravity="fill"
+                android:hint="@string/label_destination"
+                android:imeOptions="actionDone"
+                android:letterSpacing="0.04"
+                android:maxLines="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black_two"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/imageView_close"/>
+            <ImageView
+                android:id="@+id/imageView_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="8dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_close_waypoint"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/et_destination"
+                app:layout_constraintTop_toTopOf="@+id/et_destination"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/tv_distance_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@color/white_50"
+            android:textSize="14sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toStartOf="@+id/guideline62"
+            app:layout_constraintStart_toStartOf="@+id/guideline61"
+            app:layout_constraintTop_toBottomOf="@+id/dest_constraint" />
+
+
+        <TextView
+            android:id="@+id/text_config_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background='@color/banner_yellow'
+            android:fontFamily="@font/montserrat_semibold"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/guideline62"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline61"
+            app:layout_constraintTop_toBottomOf="@+id/tv_distance_label" />
+
+        <Button
+            android:id="@+id/btn_createride"
+            android:layout_width="210dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/button_border_enable"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:letterSpacing="0"
+            android:lineSpacingExtra="-5sp"
+            android:text="@string/label_create_ride_btn"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline62"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintStart_toStartOf="@+id/guideline61"
+            app:layout_constraintTop_toBottomOf="@+id/text_config_message"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/ic_stripe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_re_stripe"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

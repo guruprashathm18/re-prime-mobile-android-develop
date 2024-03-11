@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_two"
+    >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp_16"
+        android:background="@color/black_two"
+        tools:context=".ui.onboarding.vehicleonboarding.activity.OnboardingResultActivity">
+
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:src="@drawable/cancel_icon"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/dp_18"
+                android:layout_width="@dimen/dp_64"
+                android:layout_height="@dimen/dp_64"/>
+
+
+
+        <TextView
+            android:layout_below="@+id/cancel"
+            android:id="@+id/title"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_48"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/details_will_be_validated_and_you_will_be_notified_via_email_or_sms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_below="@+id/title"
+            android:id="@+id/title_2"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/verify_fail_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/status_img"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginStart="@dimen/dp_16"
+            android:src="@drawable/success"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_marginTop="@dimen/dp_48"
+            android:layout_above="@+id/add_more_vehicle"
+            android:background="@drawable/enable_button_bg"
+            android:textColor="@color/white"
+            android:text="@string/view_my_profile"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/action_button"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:layout_width="232dp"
+            android:layout_marginBottom="@dimen/dp_32"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/add_more_vehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/dp_64"
+            android:layout_alignParentBottom="true"
+            android:focusable="true">
+            <TextView
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/add_another_vehicle"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@drawable/re_stripe" />
+</RelativeLayout>

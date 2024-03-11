@@ -1,0 +1,56 @@
+{
+  "success": true,
+  "message": "",
+  "data": [
+    {
+      "heading": "After Dark",
+      "thumbnailImage": "/content/dam/re-platform-images/rides/tour-of-uttarakhand/Gallery/G8.jpg",
+      "thumbnailImage_small": "/content/dam/re-platform-images/scramble-gurugram/l1/desktop/Scramble-logo-190x190.png",
+      "url": "https://www.royalenfield.com/in/en/home/rides/marquee-rides/after-dark/",
+      "startDate": "4th Feb 2019",
+      "endDate": "10th Feb 2019",
+      "noOfDays": "6",
+      "noOfBikersRegistered": "50"
+    },
+    {
+      "heading": "Coastal Trail",
+      "thumbnailImage": "/content/dam/re-platform-images/home/Rides/marqueeRides/gallery/1.jpg",
+      "thumbnailImage_small": "/content/dam/re-platform-images/scramble-gurugram/l1/desktop/Scramble-logo-190x190.png",
+      "url": "https://www.royalenfield.com/in/en/home/rides/marquee-rides/coastal-trail/",
+      "startDate": "20th March 2019",
+      "endDate": "25th March 2019",
+      "noOfDays": "5",
+      "noOfBikersRegistered": "10"
+    },
+    {
+      "heading": "Tour of Bhutan",
+      "thumbnailImage": "/content/dam/re-platform-images/home/Rides/marqueeRides/gallery/4.jpg",
+      "thumbnailImage_small": "/content/dam/re-platform-images/scramble-gurugram/l1/desktop/Scramble-logo-190x190.png",
+      "url": "https://www.royalenfield.com/in/en/home/rides/marquee-rides/tour-of-bhutan/",
+      "startDate": "20th March 2019",
+      "endDate": "25th March 2019",
+      "noOfDays": "7",
+      "noOfBikersRegistered": "10"
+    },
+    {
+      "heading": "Tour of UttaraKhand",
+      "thumbnailImage": "/content/dam/re-platform-images/home/Rides/marqueeRides/gallery/7.jpg",
+      "thumbnailImage_small": "/content/dam/re-platform-images/scramble-gurugram/l1/desktop/Scramble-logo-190x190.png",
+      "url": "https://www.royalenfield.com/in/en/home/rides/marquee-rides/tour-of-uttarkhand/",
+      "startDate": "20th March 2019",
+      "endDate": "25th March 2019",
+      "noOfDays": "15",
+      "noOfBikersRegistered": "10"
+    },
+    {
+      "heading": "White Out",
+      "thumbnailImage": "/content/dam/re-platform-images/rides/himalyan-odyssey/gallery/8.jpg",
+      "thumbnailImage_small": "/content/dam/re-platform-images/scramble-gurugram/l1/desktop/Scramble-logo-190x190.png",
+      "url": "https://www.royalenfield.com/in/en/home/rides/marquee-rides/whiteout/",
+      "startDate": "20th March 2019",
+      "endDate": "25th March 2019",
+      "noOfDays": "12",
+      "noOfBikersRegistered": "10"
+    }
+  ]
+}

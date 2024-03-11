@@ -1,0 +1,4 @@
+-keep,allowobfuscation,allowoptimization,allowshrinking public class com.bosch.softtec.components.nephele.** { *; }
+-keep,allowobfuscation,allowoptimization,allowshrinking public interface com.bosch.softtec.components.nephele.** { *; }
+-keep,allowobfuscation,allowoptimization,allowshrinking public class com.bosch.softtec.micro.tenzing.** { *; }
+-keep,allowobfuscation,allowoptimization,allowshrinking public interface com.bosch.softtec.micro.tenzing.** { *; }

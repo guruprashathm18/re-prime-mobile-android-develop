@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/trip_detail_parent_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#171717"
+            android:paddingBottom="@dimen/dp_32">
+
+            <include
+                android:id="@+id/header_view"
+                layout="@layout/top_header_view"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Spinner
+                android:id="@+id/spinner_booking_status_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@color/white"
+                android:dropDownWidth="match_parent"
+                android:dropDownVerticalOffset="0dp"
+                android:minHeight="49dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:spinnerMode="dropdown"
+                android:theme="@style/mySpinnerStyle"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header_view" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/trip_detail_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_19"
+                android:layout_marginEnd="@dimen/dp_24"
+                android:background="@drawable/curved_rectangle_background"
+                android:padding="@dimen/dp_15"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinner_booking_status_list">
+
+
+                <TextView
+                    android:id="@+id/txv_trip_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_18"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txv_trip_start_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_light"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_12"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txv_trip_start_time"
+                    tools:text="NOV" />
+
+                <TextView
+                    android:id="@+id/txv_trip_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_12"
+                    app:layout_constraintBottom_toBottomOf="@id/txv_trip_start_month"
+                    app:layout_constraintLeft_toRightOf="@id/txv_trip_start_month"
+                    tools:text="22" />
+
+                <TextView
+                    android:id="@+id/txv_trip_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintLeft_toRightOf="@id/txv_trip_start_time"
+                    app:layout_constraintTop_toTopOf="@id/txv_trip_start_time"
+                    tools:text="22" />
+
+                <TextView
+                    android:id="@+id/txv_trip_unit_in_km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_2"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/kms"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintBottom_toBottomOf="@id/txv_trip_distance"
+                    app:layout_constraintLeft_toRightOf="@id/txv_trip_distance" />
+
+                <TextView
+                    android:id="@+id/txv_trip_elapsed_time_in_hr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintBottom_toBottomOf="@id/txv_trip_distance"
+                    app:layout_constraintLeft_toRightOf="@id/txv_trip_unit_in_km"
+                    tools:text="05" />
+
+
+                <TextView
+                    android:id="@+id/txv_trip_elapsed_hr_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/hrs"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintBottom_toBottomOf="@id/txv_trip_distance"
+                    app:layout_constraintLeft_toRightOf="@id/txv_trip_elapsed_time_in_hr" />
+
+
+                <TextView
+                    android:id="@+id/txv_trip_elapsed_time_in_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintBottom_toBottomOf="@id/txv_trip_distance"
+                    app:layout_constraintLeft_toRightOf="@id/txv_trip_elapsed_hr_unit"
+                    tools:text="12" />
+
+
+                <TextView
+                    android:id="@+id/txv_trip_elapsed_min_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/mins"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintBottom_toBottomOf="@id/txv_trip_distance"
+                    app:layout_constraintLeft_toRightOf="@id/txv_trip_elapsed_time_in_min" />
+
+                <ImageView
+                    android:id="@+id/img_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:background="@drawable/ic_line"
+                    android:contentDescription="@string/circle_image"
+                    app:layout_constraintLeft_toLeftOf="@id/txv_trip_distance"
+                    app:layout_constraintTop_toBottomOf="@id/txv_trip_distance" />
+
+                <TextView
+                    android:id="@+id/txv_source"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_7"
+                    android:maxHeight="80dp"
+                    android:scrollbars="vertical"
+                    android:fadeScrollbars="false"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/sp_10"
+                    app:layout_constraintLeft_toLeftOf="@id/img_circle"
+                    app:layout_constraintRight_toLeftOf="@id/txv_trip_elapsed_time_in_hr"
+                    app:layout_constraintTop_toBottomOf="@id/img_circle"
+                    tools:text="Plot no. 3, kormangala near bus depot bangalore"
+                    />
+
+                <TextView
+                    android:id="@+id/txv_dest"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_7"
+                    android:maxHeight="80dp"
+                    android:scrollbars="vertical"
+                    android:fadeScrollbars="false"
+                    android:layout_marginEnd="@dimen/dp_8"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/sp_10"
+                    app:layout_constraintLeft_toLeftOf="@id/txv_trip_elapsed_time_in_min"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img_circle"
+                    tools:text="Plot no. 3, kormangala near bus depot bangalore" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/speed_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/trip_detail_view">
+
+                <ImageView
+                    android:id="@+id/img_avg_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="@dimen/dp_19"
+                    android:background="@drawable/ic_avg_speed"
+                    android:contentDescription="@string/circle_image"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txv_avg_speed"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_31"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/avg_speed"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/sp_10"
+                    app:layout_constraintLeft_toRightOf="@id/img_avg_speed"
+                    app:layout_constraintTop_toTopOf="@id/img_avg_speed"
+                    tools:text="AVG. SPEED" />
+
+                <TextView
+                    android:id="@+id/txv_avg_speed_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:maxLength="4"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintLeft_toLeftOf="@id/txv_avg_speed"
+                    app:layout_constraintTop_toBottomOf="@id/txv_avg_speed"
+                    tools:text="45" />
+
+                <TextView
+                    android:id="@+id/txv_avg_speed_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_6"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:paddingBottom="2dp"
+                    android:text="kmph"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/sp_10"
+                    app:layout_constraintBottom_toBottomOf="@id/txv_avg_speed_value"
+                    app:layout_constraintLeft_toRightOf="@id/txv_avg_speed_value"
+                    tools:text="kmph" />
+
+                <TextView
+                    android:id="@+id/txv_top_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_45"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="TOP SPEED"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/sp_10"
+                    app:layout_constraintLeft_toRightOf="@id/txv_avg_speed"
+                    app:layout_constraintTop_toTopOf="@id/txv_avg_speed"
+                    tools:text="TOP SPEED" />
+
+                <TextView
+                    android:id="@+id/txv_top_speed_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:maxLength="6"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintLeft_toLeftOf="@id/txv_top_speed"
+                    app:layout_constraintTop_toBottomOf="@id/txv_top_speed"
+                    tools:text="" />
+
+                <TextView
+                    android:id="@+id/txv_top_speed_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_6"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:paddingBottom="2dp"
+                    android:text="kmph"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/sp_10"
+                    app:layout_constraintBottom_toBottomOf="@id/txv_top_speed_value"
+                    app:layout_constraintLeft_toRightOf="@id/txv_top_speed_value"
+                    tools:text="kmph" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <fragment
+                android:id="@+id/fragment_map_view"
+                android:name="com.royalenfield.reprime.ui.tripdetail.view.WorkaroundMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/dp_19"
+                app:layout_constraintTop_toBottomOf="@id/speed_view" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rider_behaviour_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_19"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragment_map_view">
+
+                <ImageView
+                    android:id="@+id/img_rider_behaviour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:visibility="gone"
+                    android:background="@drawable/ic_rider_behaviour_average"
+                    android:contentDescription="@string/circle_image"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txv_rider_behaviour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/action_snapshot"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_12"
+                    android:visibility="visible"
+                    app:layout_constraintLeft_toRightOf="@id/img_rider_behaviour"
+                    app:layout_constraintTop_toTopOf="@id/img_rider_behaviour"
+                     />
+
+
+                <TextView
+                    android:id="@+id/txv_harsh_acceleration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/harsh_acceleration"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/sp_10"
+                    app:layout_constraintLeft_toLeftOf="@id/txv_rider_behaviour"
+                    app:layout_constraintRight_toRightOf="@id/txv_rider_behaviour"
+                    app:layout_constraintTop_toBottomOf="@id/txv_rider_behaviour"
+                    tools:text="HARSH ACCELARATION" />
+
+
+                <TextView
+                    android:id="@+id/txv_harsh_acceleration_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintLeft_toLeftOf="@id/txv_harsh_acceleration"
+                    app:layout_constraintTop_toBottomOf="@id/txv_harsh_acceleration"
+                    tools:text="02" />
+
+                <TextView
+                    android:id="@+id/txv_harsh_breaking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_45"
+                    android:layout_marginEnd="70dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/harsh_breaking"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/sp_10"
+                    app:layout_constraintLeft_toRightOf="@id/txv_harsh_acceleration"
+                    app:layout_constraintTop_toTopOf="@id/txv_harsh_acceleration" />
+
+
+                <TextView
+                    android:id="@+id/txv_harsh_breaking_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintLeft_toLeftOf="@id/txv_harsh_breaking"
+                    app:layout_constraintTop_toBottomOf="@id/txv_harsh_breaking"
+                    tools:text="02" />
+
+
+                <TextView
+                    android:id="@+id/txv_over_speeding"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_19"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/over_speeding"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/sp_10"
+                    app:layout_constraintLeft_toLeftOf="@id/txv_harsh_acceleration"
+                    app:layout_constraintRight_toRightOf="@id/txv_harsh_acceleration"
+                    app:layout_constraintTop_toBottomOf="@id/txv_harsh_breaking_val"
+                    tools:text="@string/over_speeding" />
+
+
+                <TextView
+                    android:id="@+id/txv_over_speeding_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintLeft_toLeftOf="@id/txv_over_speeding"
+                    app:layout_constraintTop_toBottomOf="@id/txv_over_speeding"
+                    tools:text="02" />
+
+                <TextView
+                    android:id="@+id/txv_engine_idle_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_19"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/engine_idle_time"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/sp_10"
+                    app:layout_constraintLeft_toLeftOf="@id/txv_harsh_breaking"
+                    app:layout_constraintTop_toBottomOf="@id/txv_harsh_breaking_val"
+                    tools:text="ENGINE IDLE TIME" />
+
+                <TextView
+                    android:id="@+id/txv_engine_time_in_hr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintLeft_toLeftOf="@id/txv_engine_idle_time"
+                    app:layout_constraintTop_toBottomOf="@id/txv_engine_idle_time"
+                    tools:text="1" />
+
+                <TextView
+                    android:id="@+id/txv_engine_hr_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/hr"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintBottom_toBottomOf="@id/txv_engine_time_in_hr"
+                    app:layout_constraintLeft_toRightOf="@id/txv_engine_time_in_hr"
+                    app:layout_constraintTop_toBottomOf="@id/txv_engine_idle_time"
+                    tools:text=" hr" />
+
+                <TextView
+                    android:id="@+id/txv_engine_time_in_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintBottom_toBottomOf="@id/txv_engine_time_in_hr"
+                    app:layout_constraintLeft_toRightOf="@id/txv_engine_hr_unit"
+                    app:layout_constraintTop_toBottomOf="@id/txv_engine_idle_time"
+                    tools:text="55" />
+
+                <TextView
+                    android:id="@+id/txv_engine_min_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/min"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintBottom_toBottomOf="@id/txv_engine_time_in_hr"
+                    app:layout_constraintLeft_toRightOf="@id/txv_engine_time_in_min"
+                    app:layout_constraintTop_toBottomOf="@id/txv_engine_idle_time" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

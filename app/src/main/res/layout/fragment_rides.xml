@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_two"
+    android:paddingBottom="70dp"
+    tools:context="com.royalenfield.reprime.ui.home.rides.fragment.dealer.RERidesFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_rides"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_two"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+            android:id="@+id/fl_marquee_rides_highlight"
+            android:layout_width="0dp"
+            android:layout_height="355dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+            android:id="@+id/fl_marquee_rides_tour"
+            android:layout_width="0dp"
+            android:layout_height="184dp"
+            android:layout_marginTop="19dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_marquee_rides_label" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05109489" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <TextView
+            android:id="@+id/tv_marquee_rides_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:visibility="gone"
+            android:fontFamily="@font/guardiansans_semibold"
+            android:letterSpacing="0.06"
+            android:lineSpacingExtra="-2sp"
+            android:text="@string/txt_marquee_heading"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_join_rides_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/guardiansans_semibold"
+            android:letterSpacing="0.06"
+            android:lineSpacingExtra="-2sp"
+            android:text="@string/txt_user_rides_heading"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/fl_marquee_rides_tour" />
+
+        <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+            android:id="@+id/fl_user_created_rides"
+            android:layout_width="0dp"
+            android:layout_height="193dp"
+            android:layout_marginTop="9dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_join_rides_label" />
+
+        <TextView
+            android:id="@+id/tv_dealer_rides_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="By local dealers:"
+            android:textColor="@color/white_50"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/fl_user_created_rides" />
+
+        <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+            android:id="@+id/fl_dealer_rides"
+            android:layout_width="0dp"
+            android:layout_height="186dp"
+            android:layout_marginTop="9dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dealer_rides_label" />
+
+        <TextView
+            android:id="@+id/tv_ride_inspiration_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/guardiansans_semibold"
+            android:letterSpacing="0.06"
+            android:lineSpacingExtra="-2sp"
+            android:text="@string/label_riding_inspire"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/fl_dealer_rides"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_browse_rides"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/label_browse_rides"
+            android:textColor="@color/white_50"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ride_inspiration_label"
+            tools:visibility="gone" />
+
+        <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+            android:id="@+id/fl_rides_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_browse_rides" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

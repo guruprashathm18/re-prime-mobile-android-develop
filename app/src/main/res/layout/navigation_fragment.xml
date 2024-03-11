@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_navigation_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="com.royalenfield.reprime.ui.home.navigation.fragment.RENavigationFragment">
+
+            <Button
+                android:id="@+id/crash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="75dp"
+                android:text="Crash"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:onClick="onClickCrash"
+                app:layout_constraintEnd_toEndOf="parent" />
+            <Button
+                android:id="@+id/current_loc_BTN"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="13dp"
+                android:background="@drawable/ic_location_address"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/recenter_navigation_BTN"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="13dp"
+                android:background="@drawable/ic_svg_relocate_arrow"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/reload_navigation_BTN"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="13dp"
+                android:background="@drawable/ic_round_close"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/speak_mute_BTN"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/speaker"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/recenter_navigation_BTN"
+                app:layout_constraintEnd_toEndOf="@+id/recenter_navigation_BTN"
+                app:layout_constraintTop_toBottomOf="@+id/recenter_navigation_BTN" />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_nav_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05109489" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_nav_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.96" />
+
+
+            <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+                android:id="@+id/nav_map_holder"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:foreground="@drawable/foreground_gradient_nav_map"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/nav_share_options">
+
+            </com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder>
+
+            <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+                android:id="@+id/nav_waypoint_holder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_nav_end"
+                app:layout_constraintStart_toStartOf="@+id/guideline_nav_start"
+                app:layout_constraintTop_toBottomOf="@+id/tv_actionbar_Header" />
+
+
+            <Button
+                android:id="@+id/nav_status_icon"
+                android:layout_width="@dimen/nav_helmet_size"
+                android:layout_height="@dimen/nav_helmet_size"
+                android:layout_marginTop="@dimen/nav_helmet_margin"
+                android:background="@drawable/red_helmet_ic"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:textColor="@color/reddish_two"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/nav_compass_BTN"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_svg_compass"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:textColor="@color/reddish_two"
+                android:visibility="gone"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_nav_start"
+                app:layout_constraintTop_toBottomOf="@id/nav_waypoint_holder" />
+
+            <TextView
+                android:id="@+id/nav_distance"
+                android:layout_width="@dimen/nav_info_circle"
+                android:layout_height="@dimen/nav_info_circle"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/circular_tv_background"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center|center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/guideline_nav_end"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_nav_start"
+                app:layout_constraintTop_toBottomOf="@+id/nav_duration"
+                tools:text="Distance \n45 Kms" />
+
+            <TextView
+                android:id="@+id/nav_duration"
+                android:layout_width="@dimen/nav_info_circle"
+                android:layout_height="@dimen/nav_info_circle"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/circular_tv_background"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toTopOf="@+id/nav_distance"
+                app:layout_constraintEnd_toEndOf="@+id/guideline_nav_end"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_nav_start"
+                app:layout_constraintTop_toBottomOf="@+id/nav_status_icon"
+                app:layout_constraintVertical_bias="0.07999998"
+                tools:text="Distance \n 45 Kms" />
+
+            <TextView
+                android:id="@+id/tool_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_corner"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="View List"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/nav_poi_recyclerView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_nav_start" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/nav_poi_recyclerView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@+id/navigation_constraint"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_nav_end"
+                app:layout_constraintStart_toStartOf="@+id/guideline_nav_start" />
+
+            <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+                android:id="@+id/nav_share_options"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/guideline_nav_end"
+                app:layout_constraintStart_toStartOf="@+id/guideline_nav_start"></com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder>
+
+            <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+                android:id="@+id/nav_grayed"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/navigation_constraint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/guideline_nav_end"
+                app:layout_constraintStart_toStartOf="@+id/guideline_nav_start">
+
+                <TextView
+                    android:id="@+id/tv_navigation"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/home_createride_text_height"
+                    android:background="@color/black"
+                    android:fontFamily="@font/guardiansans_semibold"
+                    android:gravity="center"
+                    android:text="@string/label_create_navigation"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/register_button_text_size"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView_navigation"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:id="@+id/coordinatorLayout2"
+                style="?attr/bottomSheetStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/guideline_nav_end"
+                app:layout_constraintStart_toStartOf="@+id/guideline_nav_start">
+
+                <include layout="@layout/layout_test_bottomsheet" />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_navi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="175dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="390dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navigation_piplayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/black_two"
+        android:visibility="gone" >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/imageView_retitle_image_pip"
+                android:layout_width="60dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="2dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/royalenfield_linear_single_homescreen" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tv_nav_msg_pip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0"
+            android:text="@string/nav_msg"
+            android:textColor="@color/white"
+            android:textSize="7sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_v_100"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_0"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tv_nav_msg_pip_ble_disconnected_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0"
+            android:text="@string/nav_msg_disconnected"
+            android:textColor="@color/white"
+            android:textSize="7sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/guideline_v_100"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_0"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/imageView_helmet_pip"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="visible"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_nav_msg_pip"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_0"
+            app:srcCompat="@drawable/green_helmet_ic" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="20dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

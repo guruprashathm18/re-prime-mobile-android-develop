@@ -1,0 +1,31 @@
+/* Font Definitions */
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("Montserrat-Regular.ttf");
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color:#ffffff;
+    font-size:2.5vh;
+    -webkit-text-size-adjust: none;
+    margin: 5vw;
+    background-color: #252525;
+     text-align:left
+}
+div {
+    font-family: "Montserrat", sans-serif;
+    font-size:2.5vh;
+}
+
+p{
+font-weight: 400;
+}
+
+div.grey{
+color:#777777
+}
+li{
+font-weight: 400;
+}

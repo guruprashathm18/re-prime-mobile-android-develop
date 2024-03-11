@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_two"
+            android:scrollbars="none"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="21dp"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="17dp"/>
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="20dp"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.03"/>
+
+        <ImageView
+                android:id="@+id/imageView_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/signup_imageprevious_marginbottom"
+                android:paddingBottom="@dimen/sign_up_previous_img_padding"
+                android:paddingStart="0dp"
+                android:paddingEnd="@dimen/sign_up_previous_img_padding"
+                android:paddingTop="@dimen/sign_up_previous_img_padding"
+            android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/edittext_city"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toTopOf="@+id/guideline8"
+                app:srcCompat="@drawable/ic_previous_arrow"
+                android:contentDescription="@string/previous_arrow_image_desc"/>
+
+        <TextView
+                android:id="@+id/text_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/sign_up_previous_text_margin_end"
+                android:layout_marginStart="@dimen/signup_textprevious_marginstart"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/text_previous"
+            android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="@dimen/signup_next_textsize"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView_previous"
+                app:layout_constraintTop_toTopOf="@+id/guideline8"/>
+
+        <EditText
+                android:id="@+id/edittext_city"
+                style="@style/OnBoardEditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/signup_edittext_height"
+                android:layout_marginTop="@dimen/signup_edtxt_city_margintop"
+                android:ems="10"
+                android:hint="@string/text_hint_city"
+            android:longClickable="false"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:inputType="textPersonName|textCapSentences"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/text_previous"/>
+
+        <EditText
+                android:id="@+id/edittext_date"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/signup_edittext_height"
+                android:layout_marginTop="@dimen/signup_edittext_date_margintop"
+                android:background="@drawable/shape_global_white_border_for_edit_text"
+                android:ems="10"
+                android:focusable="true"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="@string/text_hint_date"
+                android:digits="0123456789/"
+                android:inputType="date"
+            android:longClickable="false"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:paddingStart="@dimen/signup_edtxt_paddingleft"
+                android:paddingEnd="@dimen/signup_edtxt_paddingright"
+                android:textColor="@color/light_white"
+                android:textColorHint="@color/white_50"
+                android:textSize="@dimen/signup_edtxt_textsize"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/edittext_city"/>
+
+        <TextView
+                android:id="@+id/textView_gender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/signup_edtxt_city_margintop"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/text_hint_gender"
+                android:textColor="@color/white_50"
+                android:textSize="@dimen/signup_gendertxt_size"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/edittext_date"/>
+
+        <RadioGroup
+                android:id="@+id/gender_radioGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/signup_gender_radioGroup_margintop"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/textView_gender">
+
+            <RadioButton
+                    android:id="@+id/radioButton_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/text_hint_male"
+                android:layout_marginStart="-4dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/signup_edtxt_textsize"
+                    app:layout_constraintHorizontal_bias="0.0"/>
+
+            <RadioButton
+                    android:id="@+id/radioButton_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/signup_gender_radiobtn_marginleft"
+                    android:buttonTint="@color/white"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/text_hint_female"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/signup_edtxt_textsize"
+                    app:layout_constraintHorizontal_bias="0.0"/>
+
+
+        </RadioGroup>
+
+        <TextView
+                android:id="@+id/textView_ownre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/signup_edtxt_city_margintop"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/text_own_re"
+                android:textColor="@color/white_50"
+                android:textSize="@dimen/signup_gendertxt_size"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/gender_radioGroup"/>
+
+        <RadioGroup
+                android:id="@+id/re_radiogroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/signup_gender_radioGroup_margintop"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/textView_ownre">
+
+            <RadioButton
+                    android:id="@+id/radioButton_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/radio_btn_male_margin_start"
+                    android:buttonTint="@color/white"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/text_yes"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/signup_edtxt_textsize"/>
+
+            <RadioButton
+                    android:id="@+id/radioButton_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/signup_reown_radiobtn_marginleft"
+                    android:buttonTint="@color/white"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/text_no"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/signup_edtxt_textsize"/>
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/text_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/sign_up_text_next_margin_right"
+            android:layout_marginBottom="@dimen/signup_text_next_marginbottom"
+            android:layout_marginTop="@dimen/signup_text_next_margintop"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/text_next"
+            android:textColor="@color/white"
+            android:drawablePadding="@dimen/_2sdp"
+            android:drawableRight="@drawable/ic_next_arrow"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textSize="@dimen/signup_next_textsize"
+            app:layout_constraintTop_toBottomOf="@+id/re_radiogroup"/>
+
+        <CheckBox
+            android:id="@+id/privacypolicy_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:buttonTint="@color/white"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"
+            android:textSize="@dimen/signup_privacypolicy_textsize"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/re_radiogroup" />
+
+        <TextView
+            android:id="@+id/privacypolicy_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:buttonTint="@color/white"
+            android:text=""
+            android:paddingRight="@dimen/signup_terms_padding"
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"
+            android:textSize="@dimen/signup_privacypolicy_textsize"
+            app:layout_constraintBottom_toBottomOf="@+id/privacypolicy_check"
+            app:layout_constraintStart_toEndOf="@+id/privacypolicy_check"
+            app:layout_constraintTop_toBottomOf="@+id/re_radiogroup" />
+
+        <Button
+                android:id="@+id/signup_button"
+                android:layout_width="@dimen/signup_btn_width"
+                android:layout_height="@dimen/signup_btn_height"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/button_border_disable"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/signup_header"
+                android:textAllCaps="false"
+                android:textColor="@color/white_50"
+                android:textSize="@dimen/signup_edtxt_textsize"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/privacypolicy_tv"/>
+
+
+
+
+        <ImageView
+                android:id="@+id/imageView_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/sign_up_calendar_image_margin"
+                android:layout_marginEnd="@dimen/sign_up_calendar_image_margin"
+                android:layout_marginTop="@dimen/sign_up_calendar_image_margin"
+                android:padding="@dimen/sign_up_calendar_image_padding"
+                app:layout_constraintBottom_toBottomOf="@+id/edittext_date"
+                app:layout_constraintEnd_toEndOf="@+id/edittext_date"
+                app:layout_constraintTop_toTopOf="@+id/edittext_date"
+                app:srcCompat="@drawable/ic_calendar"
+                android:contentDescription="@string/calendar_image_desc"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black_two">
+
+    <FrameLayout
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="21dp">
+
+        <ImageView
+            android:src="@drawable/cancel_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="@string/cross_btn"/>
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/txv_otp_verification_title"
+        android:layout_below="@+id/cancel"
+        android:textColor="@color/white"
+        app:fontFamily="@font/montserrat_bold"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:text="@string/otp_verification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txv_otp_verification_msg"
+        android:layout_below="@+id/txv_otp_verification_title"
+        android:textColor="@color/white"
+        app:fontFamily="@font/montserrat_regular"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="34dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="27dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <com.mukesh.OtpView
+        android:id="@+id/otp_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        app:itemCount="6"
+        app:itemSpacing="12dp"
+        app:itemWidth="18dp"
+        app:lineColor="@drawable/otp_item_state"
+        android:layout_below="@id/txv_otp_verification_msg"
+        app:state_filled="true"
+        app:viewType="line" />
+
+
+
+    <TextView
+        android:id="@+id/txv_otp_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otp_view"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:text="@string/otp_error"
+        android:textColor="@color/reddish" />
+
+    <LinearLayout
+        android:id="@+id/ll_resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/otp_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txv_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:alpha="50"
+            android:paddingBottom="5dp"
+            android:text="@string/resend"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_50"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

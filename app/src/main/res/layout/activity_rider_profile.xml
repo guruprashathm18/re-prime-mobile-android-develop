@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/black_two"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_two"
+            tools:context=".ui.riderprofile.activity.REProfileActivity">
+
+        <include
+                android:id="@+id/layout_header_rider_profile"
+                layout="@layout/layout_rider_profile_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/re_actionbar_height"
+                app:layout_constraintBottom_toTopOf="@+id/frame_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"/>
+
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_h_13"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.10"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_h_40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="280dp"/>
+
+        <FrameLayout
+                android:id="@+id/frame_image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:foreground="@drawable/foreground_profile_image"
+                app:layout_constraintBottom_toTopOf="@+id/guideline_h_40"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline20">
+
+            <ImageView
+                    android:id="@+id/iv_rider_or_motorcycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_image_loading"
+                    android:contentDescription="@string/text_desc_profile_image"
+                    android:scaleType="fitXY"/>
+
+        </FrameLayout>
+
+        <ImageView
+                android:id="@+id/camera_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="@string/image_camera_add"
+                android:src="@drawable/camera_add"
+                app:layout_constraintBottom_toTopOf="@id/guideline_h_40"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_80"
+                app:layout_constraintRight_toLeftOf="@id/guideline_v_95"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_80"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.80"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.055555556"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_95"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95"/>
+
+        <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout_profile"
+                style="@style/AppTabLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frame_image"
+                app:tabMode="scrollable"
+                app:tabTextAppearance="@style/AppTabTextAppearance">
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <com.royalenfield.reprime.ui.riderprofile.viewpager.RiderProfileViewPager
+                android:id="@+id/view_pager_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/tabLayout_profile"
+                app:layout_constraintVertical_bias="0.0"/>
+
+        <TextView
+                android:id="@+id/tv_rider_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_bold"
+                android:singleLine="true"
+                android:text="Not available!"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_rider_email"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_80"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toTopOf="@+id/frame_image"
+                app:layout_constraintVertical_bias="1.0"/>
+
+        <TextView
+                android:id="@+id/tv_rider_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_regular"
+                android:singleLine="true"
+                android:text="Not available!"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline_h_40"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_80"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="64dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

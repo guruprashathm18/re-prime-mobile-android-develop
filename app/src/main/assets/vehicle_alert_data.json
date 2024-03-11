@@ -1,0 +1,69 @@
+{
+  "data": {
+    "getAllAlertsByUniqueId": [
+      {
+        "clientid": 3831,
+        "uniqueid": "it_170809599",
+        "alerttype": "pullout",
+        "alertvalue": "NA",
+        "from_ts": "1579592106",
+        "to_ts": "1579592134",
+        "server_ts": "1579592112000",
+        "lat": 17.356567,
+        "lng": 78.536125,
+        "to_lat": 17.355097,
+        "to_lng": 78.535912,
+        "alert_completed": true,
+        "view_status": false,
+        "pluscode": "7J9W9G4P+",
+        "address": "sri venkateshwara temple, India",
+        "vehicleNumber": "TS07UF6965",
+        "alertPriority": "P0",
+        "alertName": "Device Pullout Alert",
+        "alertDescription": "The power was pulled out from the device"
+      },
+      {
+        "clientid": 3831,
+        "uniqueid": "it_170809599",
+        "alerttype": "pullout",
+        "alertvalue": "NA",
+        "from_ts": "1579592106",
+        "to_ts": "1579592134",
+        "server_ts": "1579592112000",
+        "lat": 17.356567,
+        "lng": 78.536125,
+        "to_lat": 17.355097,
+        "to_lng": 78.535912,
+        "alert_completed": true,
+        "view_status": false,
+        "pluscode": "7J9W9G4P+",
+        "address": "sri venkateshwara temple, India",
+        "vehicleNumber": "TS07UF6965",
+        "alertPriority": "P1",
+        "alertName": "Device Pullout Alert",
+        "alertDescription": "The power was pulled out from the device"
+      },
+      {
+        "clientid": 3831,
+        "uniqueid": "it_170809599",
+        "alerttype": "pull",
+        "alertvalue": "NA",
+        "from_ts": "1579592106",
+        "to_ts": "1579592134",
+        "server_ts": "1579592112000",
+        "lat": 17.356567,
+        "lng": 78.536125,
+        "to_lat": 17.355097,
+        "to_lng": 78.535912,
+        "alert_completed": true,
+        "view_status": false,
+        "pluscode": "7J9W9G4P+",
+        "address": "sri venkateshwara temple, India",
+        "vehicleNumber": "TS07UF6965",
+        "alertPriority": "P1",
+        "alertName": "Device Pullout Alert",
+        "alertDescription": "The power was pulled out from the device"
+      }
+    ]
+  }
+}

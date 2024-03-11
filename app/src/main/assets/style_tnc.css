@@ -1,0 +1,27 @@
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("Montserrat-Regular.ttf");
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color:#ffffff;
+    font-size:2.5vh;
+    -webkit-text-size-adjust: none;
+    margin: 5vw;
+    background-color: #252525;
+    text-align:left
+}
+div {
+    font-family: "Montserrat", sans-serif;
+    font-size:2.5vh;
+}
+a { color: #FFFFFF; }
+
+li.li1 {margin: 0.0px 0.0px 0.0px 0.0px}
+li.li2 {margin: 0.0px 0.0px 10.0px 0.0px}
+span.s1 {text-decoration: underline}
+ol.ol1 {list-style-type: decimal;list-style-position: outside}
+ol.ol2 {list-style-type: upper-alpha;list-style-position: outside}
+ol.ol3 {list-style-type: lower-roman;list-style-position: outside}

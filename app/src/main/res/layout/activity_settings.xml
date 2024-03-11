@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/black_two">
+
+    <com.royalenfield.reprime.ui.custom.views.TitleBarView
+            android:id="@+id/titleBarView_settings"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/re_actionbar_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+    </com.royalenfield.reprime.ui.custom.views.TitleBarView>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.055555556"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95555556"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_settings_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/guideline_v_95"
+            app:layout_constraintStart_toStartOf="@id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/titleBarView_settings"/>
+
+    <Button
+            android:id="@+id/button_logout"
+            style="@style/REButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/text_button_logout"
+            android:visibility="visible"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline50"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView_settings_list"
+            app:layout_constraintVertical_bias="0.02"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.62"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

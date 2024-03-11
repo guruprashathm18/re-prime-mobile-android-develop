@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/customdialog_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/dialog_customalert_background"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView_alert_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/customalert_title_margintop"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Important information:"
+        android:textColor="@color/white"
+        android:textSize="@dimen/customalert_title_textsize"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/dialog_customalert_close_IMG"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/textView_alert_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_close" />
+
+    <TextView
+        android:id="@+id/textView_alert_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/customalert_message_margintop"
+        android:layout_marginEnd="@dimen/customalert_message_marginend"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat_regular"
+        android:minHeight="@dimen/customalert_message_height"
+        android:textColor="@color/white"
+        android:textSize="@dimen/customalert_message_textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_alert_title" />
+
+    <TextView
+        android:id="@+id/textView_alert_ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:padding="10dp"
+        android:text="Ok"
+        android:textColor="@color/orangey_red"
+        android:textSize="@dimen/customalert_ok_textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_alert_message" />
+
+    <TextView
+        android:id="@+id/textView_alert_cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:padding="10dp"
+        android:text="@string/cancel"
+        android:textColor="@color/orangey_red"
+        android:textSize="@dimen/customalert_ok_textsize"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/textView_alert_ok_button"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_alert_message" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

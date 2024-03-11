@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                                       xmlns:tools="http://schemas.android.com/tools"
+                                       android:id="@+id/scroll_home_screen"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:background="@color/black_two"
+                                       android:fillViewport="true"
+                                       tools:context=".ui.home.rides.activity.PlanRideActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="com.royalenfield.reprime.ui.home.rides.fragment.dealer.RidesFragment">
+
+        <com.royalenfield.reprime.ui.custom.views.TitleBarView
+                android:id="@+id/plan_ride_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/re_actionbar_height"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+        </com.royalenfield.reprime.ui.custom.views.TitleBarView>
+
+        <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+                android:id="@+id/fl_planride_mapview"
+                android:layout_width="match_parent"
+                android:layout_height="207dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/plan_ride_header"/>
+
+        <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+                android:id="@+id/fl_location_holder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/guideline_v_96"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_6"
+                app:layout_constraintTop_toBottomOf="@+id/fl_planride_mapview"/>
+
+        <FrameLayout
+                android:id="@+id/frame_planride"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fl_location_holder">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/fl_location_holder">
+
+
+                <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+                        android:id="@+id/fl_routes_holder"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+
+                <include
+                        android:id="@+id/fl_date_holder"
+                        layout="@layout/layout_calendar_holder"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                        app:layout_constraintTop_toBottomOf="@+id/fl_routes_holder"
+                        app:layout_constraintVertical_bias="0.0"/>
+
+                <include
+                        android:id="@+id/fl_duration_holder"
+                        layout="@layout/layout_duration_holder"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                        app:layout_constraintTop_toBottomOf="@+id/fl_date_holder"
+                        app:layout_constraintVertical_bias="0.0"/>
+
+                <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+                        android:id="@+id/fl_time_holder"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="26dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fl_duration_holder"/>
+                <include
+                    android:id="@+id/fl_end_date_holder"
+                    layout="@layout/layout_end_date_calender_holder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                    app:layout_constraintTop_toBottomOf="@+id/fl_time_holder"
+                    app:layout_constraintVertical_bias="0.0"/>
+                <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+                    android:id="@+id/fl_end_time_holder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fl_end_date_holder"/>
+
+                <Button
+                        android:id="@+id/btn_ride_register"
+                        android:layout_width="210dp"
+                        android:layout_height="54dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/button_border_enable"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:gravity="center"
+                        android:letterSpacing="0"
+                        android:lineSpacingExtra="-5sp"
+                        android:text="@string/button_next"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                        app:layout_constraintTop_toBottomOf="@+id/fl_end_time_holder"
+                        app:layout_constraintVertical_bias="0.22000003"/>
+
+
+                <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline_v_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.05109489"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline_v_95"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.95"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05109489"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_96"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

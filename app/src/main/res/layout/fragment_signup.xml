@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_two"
+    android:clickable="true">
+    <include layout="@layout/signup_toolbar_view"
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false"
+        app:layout_constraintTop_toBottomOf="@+id/topview">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.01"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="24dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="24dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.35" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.06" />
+            <EditText
+                android:id="@+id/edFirstName"
+                style="@style/OnBoardEditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/signup_activity_edittext_height"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:hint="@string/text_hint_first_name"
+                android:imeOptions="actionNext"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:inputType="textPersonName|textCapSentences"
+                android:longClickable="false"
+                android:singleLine="true"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/topview"/>
+
+            <TextView
+                android:id="@+id/tvFirstNameError"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/signup_error_txt_margintop"
+                android:text="@string/inline_error_text"
+                android:textColor="@color/orangey_red"
+                android:textSize="@dimen/signup_error_textsize"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/edFirstName" />
+
+            <EditText
+                android:id="@+id/edLastName"
+                style="@style/OnBoardEditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/signup_activity_edittext_height"
+                android:layout_marginTop="@dimen/dp_24"
+                android:hint="@string/text_hint_last_name"
+                android:imeOptions="actionNext"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:inputType="textPersonName|textCapSentences"
+                android:longClickable="false"
+                android:singleLine="true"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/tvFirstNameError" />
+
+            <TextView
+                android:id="@+id/tvLastNameError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/signup_error_txt_margintop"
+                android:text="@string/inline_error_text"
+                android:textColor="@color/orangey_red"
+                android:textSize="@dimen/signup_error_textsize"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/edLastName" />
+
+            <EditText
+                android:id="@+id/edEmail"
+                style="@style/OnBoardEditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/signup_activity_edittext_height"
+                android:layout_marginTop="@dimen/dp_24"
+                android:ems="10"
+                android:hint="@string/email_id"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:longClickable="false"
+                android:singleLine="true"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/tvLastNameError" />
+
+            <TextView
+                android:id="@+id/tvEmailError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/signup_error_txt_margintop"
+                android:text="@string/text_valid_email_error"
+                android:textColor="@color/orangey_red"
+                android:textSize="@dimen/signup_error_textsize"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/edEmail" />
+
+            <EditText
+                android:id="@+id/edDOB"
+                style="@style/OnBoardEditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/signup_activity_edittext_height"
+                android:layout_marginTop="@dimen/dp_24"
+                android:background="@drawable/shape_global_white_border_for_edit_text"
+                android:clickable="true"
+                android:digits="0123456789/"
+                android:ems="10"
+                android:focusable="false"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="@string/date_of_birth"
+                android:imeOptions="actionDone"
+                android:inputType="date"
+                android:longClickable="false"
+                android:paddingStart="@dimen/signup_edtxt_paddingleft"
+                android:paddingEnd="@dimen/signup_edtxt_paddingright"
+                android:singleLine="true"
+                android:textColor="@color/light_white"
+                android:textColorHint="@color/white_50"
+                android:textSize="@dimen/signup_edtxt_textsize"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+                app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/tvEmailError" />
+
+            <TextView
+                android:id="@+id/tvDobError"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/sign_up_error_text_layout_height"
+                android:layout_marginTop="@dimen/signup_error_txt_margintop"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/invalid_password_length"
+                android:textColor="@color/orangey_red"
+                android:textSize="@dimen/signup_error_textsize"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/edDOB" />
+
+
+            <CheckBox
+                android:id="@+id/privacypolicy_check"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textColorLink="@color/white"
+                android:textSize="@dimen/signup_privacypolicy_textsize"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+                app:layout_constraintTop_toBottomOf="@+id/tvDobError" />
+
+            <TextView
+                android:id="@+id/privacypolicy_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:buttonTint="@color/white"
+                android:paddingRight="@dimen/signup_terms_padding"
+                android:text=""
+                android:textColor="@color/white"
+                android:textColorLink="@color/white"
+                android:textSize="@dimen/signup_privacypolicy_textsize"
+                app:layout_constraintBottom_toBottomOf="@+id/privacypolicy_check"
+                app:layout_constraintStart_toEndOf="@+id/privacypolicy_check"
+                app:layout_constraintTop_toBottomOf="@+id/tvDobError" />
+
+            <ImageView
+                android:id="@+id/imageView_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sign_up_calendar_image_margin"
+                android:layout_marginEnd="@dimen/sign_up_calendar_image_margin"
+                android:layout_marginBottom="@dimen/sign_up_calendar_image_margin"
+                android:contentDescription="@string/calendar_image_desc"
+                android:padding="@dimen/sign_up_calendar_image_padding"
+                app:layout_constraintBottom_toBottomOf="@+id/edDOB"
+                app:layout_constraintEnd_toEndOf="@+id/edDOB"
+                app:layout_constraintTop_toTopOf="@+id/edDOB"
+                app:srcCompat="@drawable/ic_calendar" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_24sdp"
+        android:layout_marginRight="@dimen/_24sdp"
+        android:layout_marginBottom="@dimen/dp_32"
+        android:background="@drawable/shape_global_login_button"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/create_account"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/text_next"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/dp_32"
+        android:background="@drawable/shape_global_login_button"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/text_next"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/_24sdp"
+        android:layout_marginRight="@dimen/_24sdp"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </layout>

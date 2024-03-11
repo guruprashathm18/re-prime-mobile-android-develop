@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/customdialog_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/dialog_customalert_background"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/textView_record_alert_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/customalert_title_margintop"
+        android:text="@string/heading"
+        android:textColor="@color/white"
+        android:textSize="@dimen/customalert_title_textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_record_alert_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/customalert_message_margintop"
+        android:textColor="@color/white"
+        android:textSize="@dimen/customalert_message_textsize"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_record_alert_title" />
+
+    <RadioGroup
+        android:id="@+id/groupradio_record"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_record_alert_message">
+
+        <RadioButton
+            android:id="@+id/radio_intelligentrecord"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Standard Recording"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/radio_deeprecord"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Deep Recording "
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/record_termsandcondition_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/customalert_message_margintop"
+        android:textColor="@color/white"
+        android:textSize="@dimen/customalert_message_textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupradio_record" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:id="@+id/linearLayout"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:weightSum="1"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/record_termsandcondition_info">
+
+        <CheckBox
+            android:id="@+id/record_terms_checkBox"
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:layout_height="wrap_content">
+        </CheckBox>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".9"
+            android:id="@+id/terms_and_condition_text"
+            android:textColor="@color/white_editext_background"
+            android:text="@string/terms_and_conditions"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/textView_record_alert_okbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="OK"
+        android:textColor="@color/orangey_red"
+        android:textSize="@dimen/customalert_ok_textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView_alert_cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="10dp"
+        android:text="Cancel"
+        android:textColor="@color/orangey_red"
+        android:textSize="@dimen/customalert_ok_textsize"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/textView_record_alert_okbutton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

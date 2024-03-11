@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "625237969611",
+    "firebase_url": "https://apac-re-prime-dev.firebaseio.com",
+    "project_id": "apac-re-prime-dev",
+    "storage_bucket": "apac-re-prime-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625237969611:android:8d4cf39ac2155fe9bba94e",
+        "android_client_info": {
+          "package_name": "com.apac.royalenfield.reprime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625237969611-l23geulmc51qh8t2n355lilldhpqpd7i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNv8vTFNsyURkw2W8iTJ2xDvIY3i0ZTu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625237969611-l23geulmc51qh8t2n355lilldhpqpd7i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

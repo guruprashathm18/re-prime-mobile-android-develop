@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_two"
+    android:descendantFocusability="blocksDescendants"
+    android:scrollbars="none"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view12"
+            android:layout_width="0dp"
+            android:layout_height="207dp"
+            android:background="#40000000"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/view12"
+            app:layout_constraintEnd_toEndOf="@+id/view12"
+            app:layout_constraintStart_toStartOf="@+id/view12"
+            app:layout_constraintTop_toTopOf="@+id/view12"
+            app:srcCompat="@drawable/youtube_play" />
+
+        <TextView
+            android:id="@+id/textView_watchlivefeed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/textView_watchlivefeed_margintop"
+            android:layout_marginEnd="@dimen/textView_watchlivefeed_marginend"
+            android:layout_marginBottom="@dimen/textView_watchlivefeed_marginbottom"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/livefeed_title_text"
+            android:textColor="@color/white_50"
+            android:textSize="@dimen/textView_watchlivefeed_textsize"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/view12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline22"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="21dp" />
+
+        <TextView
+            android:id="@+id/textView_servicestatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/text_sevicestatus"
+            android:textColor="@color/white_50"
+            android:textSize="@dimen/textView_servicestatus_textsize"
+            app:layout_constraintEnd_toStartOf="@+id/guideline24"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline22"
+            app:layout_constraintTop_toBottomOf="@+id/view12" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="21dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_servicestatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:nestedScrollingEnabled="true"
+            app:layout_constraintEnd_toStartOf="@+id/guideline24"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline22"
+            app:layout_constraintTop_toBottomOf="@+id/textView_status_na" />
+
+        <TextView
+            android:id="@+id/text_paymemtsuccess"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background='@color/white_blue'
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/constraint_servicedetails"
+            app:layout_constraintEnd_toStartOf="@+id/guideline24"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline22"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView_servicestatus" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_servicedetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background='@color/white_blue'
+            android:paddingBottom="@dimen/constraint_servicedetails_paddingbottom"
+            app:layout_constraintEnd_toStartOf="@+id/guideline24"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline22"
+            app:layout_constraintTop_toBottomOf="@+id/text_paymemtsuccess">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="20dp" />
+
+            <TextView
+                android:id="@+id/textView_servicecenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textView_servicecenterstatus_margintop"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/text_servicecenter"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textView_servicecenterstatus_size"
+                app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline23"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_serviceCenter_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textView_serviceCenter_name_margintop"
+                android:layout_marginEnd="@dimen/textView_serviceCenter_name_marginend"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/text_notavailable"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textView_serviceCenter_name_size"
+                app:layout_constraintEnd_toStartOf="@+id/imageView_call_servicecenter"
+                app:layout_constraintStart_toStartOf="@+id/guideline23"
+                app:layout_constraintTop_toBottomOf="@+id/textView_servicecenter" />
+
+            <TextView
+                android:id="@+id/textView_motorcycle_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textView_motorcycle_model_margintop"
+                android:layout_marginEnd="@dimen/textView_motorcycle_model_marginend"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/text_motorccyle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textView_motorcycle_model_size"
+                app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline23"
+                app:layout_constraintTop_toBottomOf="@+id/textView_serviceCenter_name" />
+
+            <TextView
+                android:id="@+id/textView_motorcycle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textView_motorcycle_margintop"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/text_notavailable"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textView_motorcycle_size"
+                app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline23"
+                app:layout_constraintTop_toBottomOf="@+id/textView_motorcycle_model" />
+
+            <ImageView
+                android:id="@+id/imageView_call_servicecenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/imageView_call_servicecenter_marginstart"
+                android:layout_marginTop="@dimen/imageView_call_servicecenter_margintop"
+                app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/textView_motorcycle"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_call_icon" />
+
+            <TextView
+                android:id="@+id/textView_pickupaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textView_pickupaddress_margintop"
+                android:layout_marginEnd="@dimen/textView_pickupaddress_marginend"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/text_address_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textView_pickupaddress_size"
+                app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline23"
+                app:layout_constraintTop_toBottomOf="@+id/textView_motorcycle" />
+
+            <TextView
+                android:id="@+id/textView_motorcycle_pickupaddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textView_motorcycle_pickupaddress_margintop"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/text_notavailable"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textView_motorcycle_pickupaddress_size"
+                app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline23"
+                app:layout_constraintTop_toBottomOf="@+id/textView_pickupaddress" />
+
+            <TextView
+                android:id="@+id/textView_pickuptime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textView_pickuptime_margintop"
+                android:layout_marginEnd="@dimen/textView_pickuptime_marginend"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/text_motorcycle_service_date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textView_pickuptime_size"
+                app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline23"
+                app:layout_constraintTop_toBottomOf="@+id/textView_motorcycle_pickupaddress" />
+
+            <TextView
+                android:id="@+id/textView_motorcycle_pickuptime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textView_motorcycle_pickuptime_margintop"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/text_notavailable"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textView_motorcycle_pickuptime_size"
+                app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline23"
+                app:layout_constraintTop_toBottomOf="@+id/textView_pickuptime" />
+
+            <TextView
+                android:id="@+id/textView_serviceType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textView_pickuptime_margintop"
+                android:layout_marginEnd="@dimen/textView_pickuptime_marginend"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/text_motorcycle_service_type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textView_pickuptime_size"
+                app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline23"
+                app:layout_constraintTop_toBottomOf="@+id/textView_motorcycle_pickuptime" />
+
+            <TextView
+                android:id="@+id/textView_motorcycle_serviceType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textView_motorcycle_pickuptime_margintop"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/text_notavailable"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textView_motorcycle_pickuptime_size"
+                app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline23"
+                app:layout_constraintTop_toBottomOf="@+id/textView_serviceType" />
+
+            <TextView
+                android:id="@+id/textView_issue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/textView_issue_marginend"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/text_issue_motorcycle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textView_issue_size"
+                app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline23"
+                app:layout_constraintTop_toBottomOf="@+id/textView_amount" />
+
+            <TextView
+                android:id="@+id/textView_motorcycle_issue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textView_motorcycle_issue_top"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/text_notavailable"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textView_motorcycle_issue_size"
+                app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline23"
+                app:layout_constraintTop_toBottomOf="@+id/textView_issue" />
+
+            <TextView
+                android:id="@+id/textView_amounttobepaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/textView_issue_marginend"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/text_amounttobepaid"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textView_issue_size"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline23"
+                app:layout_constraintTop_toBottomOf="@+id/textView_motorcycle_serviceType" />
+
+            <TextView
+                android:id="@+id/textView_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textView_motorcycle_issue_top"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/text_notavailable"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textView_motorcycle_issue_size"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/guideline28"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline23"
+                app:layout_constraintTop_toBottomOf="@+id/textView_amounttobepaid" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/textview_reschedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/textview_reschedule_margintop"
+            android:layout_marginEnd="@dimen/textview_reschedule_marginend"
+            android:drawableEnd="@drawable/ic_next_arrow"
+            android:drawablePadding="@dimen/textview_reschedule_drawablepadding"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/text_reschedule"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textview_reschedule_size"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/guideline24"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline22"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_servicedetails" />
+
+
+        <View
+            android:id="@+id/line_view"
+            android:layout_width="@dimen/line_view_width"
+            android:layout_height="@dimen/line_view_height"
+            android:layout_marginTop="@dimen/line_view_margintop"
+            android:background="@color/white_50"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/guideline22"
+            app:layout_constraintTop_toBottomOf="@+id/textview_reschedule" />
+
+        <Button
+            android:id="@+id/button_cancelbooking"
+            android:layout_width="@dimen/button_cancelbooking_width"
+            android:layout_height="@dimen/button_cancelbooking_height"
+            android:layout_marginTop="@dimen/button_cancelbooking_margintop"
+            android:layout_marginBottom="@dimen/button_cancelbooking_marginbottom"
+            android:background="@drawable/button_border_enable"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/service_cancelbooking"
+            android:textAllCaps="false"
+            android:textSize="@dimen/button_cancelbooking_size"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline22"
+            app:layout_constraintTop_toBottomOf="@+id/line_view" />
+
+        <TextView
+            android:id="@+id/textView_status_na"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/text_notavailable"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/guideline24"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline22"
+            app:layout_constraintTop_toBottomOf="@+id/textView_servicestatus" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

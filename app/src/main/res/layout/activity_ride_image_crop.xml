@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_two"
+    tools:context=".ui.riderprofile.activity.RideImageCropActivity">
+
+    <TextView
+        android:id="@+id/tv_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:text="Move the image as per the white rectangle"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+    <com.naver.android.helloyako.imagecrop.view.ImageCropView xmlns:imagecrop="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/share_ride_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/share_image_description"
+        imagecrop:gridInnerColor="#66ffffff"
+        imagecrop:gridInnerStroke="1dp"
+        imagecrop:gridOuterColor="#ffffff"
+        imagecrop:gridOuterStroke="1dp"
+        imagecrop:setInnerGridMode="off"
+        imagecrop:setOuterGridMode="off"
+        tools:ignore="MissingConstraints"
+        imagecrop:layout_constraintBottom_toBottomOf="@id/tv_heading"/>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:padding="50dp"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_crop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:padding="50dp"
+        android:text="Choose"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/share_ride_image"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:background="@color/black_two"-->
+    <!--                    andrsoid:contentDescription="@string/share_image_description" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

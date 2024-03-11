@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+
+    <string name="website_login_base_url">https://api.royalenfield.com/</string>
+    <string name="website_base_url">https://api.royalenfield.com/</string>
+
+    <string name="serviceappointment_base_url">https://api.royalenfield.com/</string>
+    <string name="notification_base_url">https://api.royalenfield.com/</string>
+
+
+    <string name="website_image_base_url">https://replatform.blob.core.windows.net/prod</string>
+
+    <string name="firebase_dealers_tablename">CRMCORE</string>
+
+    <string name="website_webview_base_url">https://www.royalenfield.com</string>
+
+    <string name="dms_login_base_url">https://login.microsoftonline.com/624a95d9-8c90-4097-95cc-1f953608f9c4/</string>
+    <string name="dms_base_url">https://re-d365-apims.azure-api.net/</string>
+    <string name="firestore_url">https://re-platform-prod-/</string>
+    <string name="firestore_pc_url">https://re-configurator-prod-</string>
+    <string name="web_config_child">PROD</string>
+
+    <!--Map Keys-->
+    <string name="googlemap_key">AIzaSyAXVCgHro7foYlIuE-A6a77h39k5-jBpIg</string>
+    <string name="app_name">Royal Enfield</string>
+    <string name="branch_test_key">key_test_cj9gzJsTApCAZBlscWjYopbbBCgbjvs3</string>
+    <string name="branch_live_key">key_live_hjYcDHDGtdwEYEpxjYbdYdbnyCmbdqAM</string>
+<!--
+    <string name="local_base_url">http://34.93.90.136:1414/</string>
+-->
+    <string name="local_base_url">https://api-tbt.royalenfield.com/v3/</string>
+</resources>

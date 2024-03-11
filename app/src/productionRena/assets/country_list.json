@@ -1,0 +1,48 @@
+{
+  "country" : [ {
+    "code" : "CA",
+    "description" : "Canada",
+    "diallingcode" : "+1",
+    "showInCountryList" : true,
+    "validations" : {
+      "phoneNumber" : {
+        "max" : 15,
+        "min" : 7
+      },
+      "pincode" : {
+        "max" : 12,
+        "min" : 4
+      }
+    }
+  }, {
+    "code" : "MX",
+    "description" : "Mexico",
+    "diallingcode" : "+52",
+    "showInCountryList" : true,
+    "validations" : {
+      "phoneNumber" : {
+        "max" : 15,
+        "min" : 7
+      },
+      "pincode" : {
+        "max" : 12,
+        "min" : 4
+      }
+    }
+  }, {
+    "code" : "US",
+    "description" : "United States of America",
+    "diallingcode" : "+1",
+    "showInCountryList" : true,
+    "validations" : {
+      "phoneNumber" : {
+        "max" : 15,
+        "min" : 7
+      },
+      "pincode" : {
+        "max" : 12,
+        "min" : 4
+      }
+    }
+  } ]
+}

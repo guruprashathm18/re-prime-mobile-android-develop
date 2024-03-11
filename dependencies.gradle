@@ -1,0 +1,67 @@
+ext {
+
+    androidVersions = [
+            min_sdk_version    : 26,
+            compile_sdk_version: 33,
+            target_sdk_version : 33
+    ]
+    libVersions = [
+            jetpack : "1.0.0",
+            retrofit: "2.9.0",
+            room : "2.2.3"
+    ]
+
+    jetpackDependencies = [
+            core            : "androidx.core:core:$libVersions.jetpack",
+            material        : "com.google.android.material:material:$libVersions.jetpack",
+            appCompat       : "androidx.appcompat:appcompat:1.0.2",
+            annotations     : "androidx.annotation:annotation:$libVersions.jetpack",
+            palette         : "androidx.palette:palette:$libVersions.jetpack",
+            recyclerview    : "androidx.recyclerview:recyclerview:1.0.0",
+            cardView        : "androidx.cardview:cardview:$libVersions.jetpack",
+            percentLayout   : "androidx.percentlayout:percentlayout:$libVersions.jetpack",
+            constraintLayout: "androidx.constraintlayout:constraintlayout:1.1.3",
+            ktx             : "androidx.core:core-ktx:$libVersions.jetpack",
+            fragment_ktx    : "androidx.fragment:fragment-ktx:$libVersions.jetpack",
+            room_runtime    : "androidx.room:room-runtime:$libVersions.room",
+            room_compiler   : "androidx.room:room-compiler:$libVersions.room",
+            room_ktx        : "androidx.room:room-ktx:$libVersions.room",
+            room_testing    : "androidx.room:room-testing:$libVersions.room"
+    ]
+
+    playServiceDependencies = [
+            maps    : "com.google.android.gms:play-services-maps:16.1.0",
+            location: "com.google.android.gms:play-services-location:16.0.0",
+            material: "com.google.android.material:material:1.0.0"
+    ]
+
+    kotlinDependencies = [
+            stdlib         : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+            stdlib8        : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
+            coroutines_core: "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1"
+    ]
+
+    retrofitDependencies = [
+            retrofit         : "com.squareup.retrofit2:retrofit:$libVersions.retrofit",
+            converter_jackson: "com.squareup.retrofit2:converter-jackson:$libVersions.retrofit",
+            converter_scalars: "com.squareup.retrofit2:converter-scalars:$libVersions.retrofit",
+            converter_gson   : "com.squareup.retrofit2:converter-gson:$libVersions.retrofit",
+            gson             : "com.google.code.gson:gson:2.8.0"
+    ]
+
+    mapboxDependencies = [
+            navigation      : "com.mapbox.mapboxsdk:mapbox-android-navigation:0.33.2",
+            android_services: "com.mapbox.mapboxsdk:mapbox-android-services:2.2.10",
+            geojson         : "com.mapbox.mapboxsdk:mapbox-sdk-geojson:4.5.0"
+    ]
+
+    cloudDependencies = [
+            swagger    : "io.swagger:swagger-annotations:1.5.21",
+            cognitoSdk : "com.amazonaws:aws-android-sdk-cognitoauth:2.13.4@aar",
+            customTabs : "com.android.support:customtabs:28.0.0",
+            gsonFire   : "io.gsonfire:gson-fire:1.8.3",
+            oauthClient: "org.apache.oltu.oauth2:org.apache.oltu.oauth2.client:1.0.1",
+            annotations: "javax.annotation:javax.annotation-api:1.3.2"
+    ]
+
+}

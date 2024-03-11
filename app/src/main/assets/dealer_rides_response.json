@@ -1,0 +1,933 @@
+{
+  "success": true,
+  "message": "Found dealer rides",
+  "data": [
+    {
+      "_id": "5bae076eb6a2980068da5e43",
+      "__v": 20,
+      "rideStartDateIso": "2018-12-14T18:30:00.000Z",
+      "rideEndDateIso": "2018-12-14T18:30:00.000Z",
+      "DealerId": {
+        "_id": "5c9884b11ba850567c1a74d4",
+        "Landmark": "",
+        "DealerName": "Aravinduja Motors pvt ltd",
+        "DealerImage": null,
+        "PrimaryImage_mobile": null,
+        "PrimaryImage": null,
+        "Thumbnail_Image": null,
+        "Cover_image_mobile": null,
+        "Cover_image": null,
+        "MainPhoneNo": "+914445554888",
+        "State": "Tamil Nadu",
+        "City": "Chennai",
+        "Pincode": 600056,
+        "AddressLine3": "",
+        "AddressLine2": "Mount Poonamallee Road",
+        "AddressLine1": "No 105, Kamala Gardens"
+      },
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          26.7271,
+          88.395287
+        ]
+      },
+      "personalInfo": {
+        "bikeName": null,
+        "city": null,
+        "phoneNo": null,
+        "dob": null,
+        "isRoyalEnfieldOwner": null,
+        "email": null,
+        "gender": null,
+        "lName": null,
+        "fName": null
+      },
+      "ridersCount": 17,
+      "rideCategory": "ride-out",
+      "rideImages": [
+        {
+          "_id": "5bda4b26fa0b070470374322",
+          "srcPath": "/node/assets/Rides/ridePlaceholder.jpg"
+        }
+      ],
+      "totalDistance": 140,
+      "startTime": null,
+      "ridersJoined": [
+        "5bdcece1c4fa426c43554968",
+        "5bdc310b1d7ffa384a2fa78a",
+        "5bdcf069fde8bb7491f95dd8",
+        "5bacc6719bb8962504ab93f6",
+        "5bdc28b93952ca22df3b8077",
+        "5bf69ff8fe736a34759dcc76",
+        "5bacc7059bb8962504ac4f96",
+        "5bacc59d9bb8962504aa7a65",
+        "5bf93fcef92d4f63ae41fd26",
+        "5bff9e68eea39e5d0630a4b4",
+        "5bffc36de283f507c95e5110",
+        "5c0688ce4a5a9d4fc3451a1a",
+        "5bfe4d6be3117b519932d412",
+        "5bacc7079bb8962504ac53cb",
+        "5c0108001a3bd94f684d75ef",
+        "5c0944c71e5f4421e7a798d3",
+        "5bacc5f59bb8962504aae4eb"
+      ],
+      "terrain": "Highway",
+      "endDate": "15-12-2018",
+      "startDate": "15-12-2018",
+      "rideDetails": null,
+      "durationInDays": null,
+      "calculatedDistance": 0,
+      "durationInHours": null,
+      "waypoints": [],
+      "endPoint": {
+        "name": "Darjeeling",
+        "longitude": 88.26391,
+        "latitude": 27.03949
+      },
+      "startPoint": {
+        "name": "Legendry Motors PVT.LTD. SHOWROOM",
+        "longitude": 88.395287,
+        "latitude": 26.7271
+      },
+      "rideName": "Year Ending Ride",
+      "createdOn": null,
+      "ridePageUrl": "/content/royal-enfield/in/en/home/rides/ride-outs/ride-out-detail-catalog/ride-out-5bae076eb6a2980068da5e43.html",
+      "RideId": 35799,
+      "prevUserId": null,
+      "difficulty": null,
+      "CompanyName": "Legend Automotive",
+      "CountryCode": "IN",
+      "BranchCode": "4506",
+      "locality": {
+        "language": "en",
+        "country": "in"
+      }
+    },
+    {
+      "_id": "5bae076eb6a2980068da5e3f",
+      "__v": 17,
+      "rideStartDateIso": "2018-12-11T18:30:00.000Z",
+      "rideEndDateIso": "2018-12-11T18:30:00.000Z",
+      "DealerId": {
+        "_id": "5c9884b11ba850567c1a74d4",
+        "Landmark": "",
+        "DealerName": "Aravinduja Motors pvt ltd",
+        "DealerImage": null,
+        "PrimaryImage_mobile": null,
+        "PrimaryImage": null,
+        "Thumbnail_Image": null,
+        "Cover_image_mobile": null,
+        "Cover_image": null,
+        "MainPhoneNo": "+914445554888",
+        "State": "Tamil Nadu",
+        "City": "Chennai",
+        "Pincode": 600056,
+        "AddressLine3": "",
+        "AddressLine2": "Mount Poonamallee Road",
+        "AddressLine1": "No 105, Kamala Gardens"
+      },
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          25.4166,
+          86.1293
+        ]
+      },
+      "personalInfo": {
+        "bikeName": null,
+        "city": null,
+        "phoneNo": null,
+        "dob": null,
+        "isRoyalEnfieldOwner": null,
+        "email": null,
+        "gender": null,
+        "lName": null,
+        "fName": null
+      },
+      "ridersCount": 14,
+      "rideCategory": "ride-out",
+      "rideImages": [
+        {
+          "_id": "5bda4b26fa0b070470374320",
+          "srcPath": "/node/assets/Rides/ridePlaceholder.jpg"
+        }
+      ],
+      "totalDistance": 300,
+      "startTime": null,
+      "ridersJoined": [
+        "5bacc6719bb8962504ab93f6",
+        "5bdcece1c4fa426c43554968",
+        "5bdcf069fde8bb7491f95dd8",
+        "5be9473d0d2a9b4b3ef4c35f",
+        "5bf718d22c85334297c08fc2",
+        "5bf96100012c9c2ab5574177",
+        "5bacc60f9bb8962504ab0098",
+        "5bdc310b1d7ffa384a2fa78a",
+        "5bfd7bd5d659a56dcd3465d8",
+        "5bfdcda3a59f554722d0b190",
+        "5bfe4d6be3117b519932d412",
+        "5bfe8e3e7b85526e6eca62a1",
+        "5c099c180017f52280470f5f",
+        "5c0dc697c2753f1e3c728d4b"
+      ],
+      "terrain": "Highway",
+      "endDate": "12-12-2018",
+      "startDate": "12-12-2018",
+      "rideDetails": null,
+      "durationInDays": null,
+      "calculatedDistance": 0,
+      "durationInHours": null,
+      "waypoints": [],
+      "endPoint": {
+        "name": "Ride",
+        "longitude": 86.1293,
+        "latitude": 25.4166
+      },
+      "startPoint": {
+        "name": "BEGUSARAI",
+        "longitude": 86.1293,
+        "latitude": 25.4166
+      },
+      "rideName": "Kakolat Ride 2",
+      "createdOn": null,
+      "ridePageUrl": "/content/royal-enfield/in/en/home/rides/ride-outs/ride-out-detail-catalog/ride-out-5bae076eb6a2980068da5e3f.html",
+      "RideId": 35795,
+      "prevUserId": null,
+      "difficulty": null,
+      "CompanyName": "Mayamanu Motors Pvt. Ltd",
+      "CountryCode": "IN",
+      "BranchCode": "6093",
+      "locality": {
+        "language": "en",
+        "country": "in"
+      }
+    },
+    {
+      "_id": "5c124234332c76775244b3d7",
+      "__v": 15,
+      "rideStartDateIso": "2019-02-17T05:00:00.000Z",
+      "rideEndDateIso": "2019-02-17T05:00:00.000Z",
+      "DealerId": {
+        "_id": "5c9884b11ba850567c1a74d4",
+        "Landmark": "",
+        "DealerName": "Aravinduja Motors pvt ltd",
+        "DealerImage": null,
+        "PrimaryImage_mobile": null,
+        "PrimaryImage": null,
+        "Thumbnail_Image": null,
+        "Cover_image_mobile": null,
+        "Cover_image": null,
+        "MainPhoneNo": "+914445554888",
+        "State": "Tamil Nadu",
+        "City": "Chennai",
+        "Pincode": 600056,
+        "AddressLine3": "",
+        "AddressLine2": "Mount Poonamallee Road",
+        "AddressLine1": "No 105, Kamala Gardens"
+      },
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          54.5782,
+          54.5782
+        ]
+      },
+      "personalInfo": {
+        "bikeName": null,
+        "city": null,
+        "phoneNo": null,
+        "dob": null,
+        "isRoyalEnfieldOwner": null,
+        "email": null,
+        "gender": null,
+        "lName": null,
+        "fName": null
+      },
+      "ridersCount": 14,
+      "rideCategory": "ride-out",
+      "rideImages": [
+        {
+          "_id": "5c124245332c76775244b428",
+          "srcPath": "/node/assets/Rides/ridePlaceholder.jpg"
+        }
+      ],
+      "totalDistance": 400,
+      "startTime": null,
+      "ridersJoined": [
+        "5bacc7229bb8962504ac727b",
+        "5c27083acb00d40cdfb26662",
+        "5c099c180017f52280470f5f",
+        "5c2d951146e29d7be22ba5c3",
+        "5c39b49a4df6526d8952bde9",
+        "5c47efa8c196e353f24e2058",
+        "5c4a7af114c6974778c84363",
+        "5c5146a4347f195f5a8de622",
+        "5c51a69b42969e01f72db195",
+        "5c528018864ed42d0806e711",
+        "5c5405b47165cb400668cbcf",
+        "5c5420ee32e7747aef090b19",
+        "5c51a09742969e01f72db178",
+        "5c56eefdadca720a34916194"
+      ],
+      "terrain": "",
+      "endDate": "17-02-2019",
+      "startDate": "17-02-2019",
+      "rideDetails": null,
+      "durationInDays": null,
+      "calculatedDistance": 0,
+      "durationInHours": null,
+      "waypoints": [],
+      "endPoint": {
+        "name": "TAMILNAD",
+        "longitude": 12.4365,
+        "latitude": 12.4365
+      },
+      "startPoint": {
+        "name": "KOTTARAKKARA",
+        "longitude": 54.5782,
+        "latitude": 54.5782
+      },
+      "rideName": "Kanyakumari I Ride",
+      "createdOn": null,
+      "ridePageUrl": "/content/royal-enfield/in/en/home/rides/ride-outs/ride-out-detail-catalog/ride-out-5c124234332c76775244b3d7.html",
+      "RideId": 93400,
+      "prevUserId": null,
+      "difficulty": null,
+      "CompanyName": "Unnoonny Motors.",
+      "CountryCode": "IN",
+      "BranchCode": "6929",
+      "locality": {
+        "language": "en",
+        "country": "in"
+      }
+    },
+    {
+      "_id": "5c124234332c76775244b3a3",
+      "__v": 11,
+      "rideStartDateIso": "2019-03-23T04:00:00.000Z",
+      "rideEndDateIso": "2019-03-23T04:00:00.000Z",
+      "DealerId": {
+        "_id": "5c9884b11ba850567c1a74d4",
+        "Landmark": "",
+        "DealerName": "Aravinduja Motors pvt ltd",
+        "DealerImage": null,
+        "PrimaryImage_mobile": null,
+        "PrimaryImage": null,
+        "Thumbnail_Image": null,
+        "Cover_image_mobile": null,
+        "Cover_image": null,
+        "MainPhoneNo": "+914445554888",
+        "State": "Tamil Nadu",
+        "City": "Chennai",
+        "Pincode": 600056,
+        "AddressLine3": "",
+        "AddressLine2": "Mount Poonamallee Road",
+        "AddressLine1": "No 105, Kamala Gardens"
+      },
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          87.37711,
+          24.341154
+        ]
+      },
+      "personalInfo": {
+        "bikeName": null,
+        "city": null,
+        "phoneNo": null,
+        "dob": null,
+        "isRoyalEnfieldOwner": null,
+        "email": null,
+        "gender": null,
+        "lName": null,
+        "fName": null
+      },
+      "ridersCount": 10,
+      "rideCategory": "ride-out",
+      "rideImages": [
+        {
+          "_id": "5c124237332c76775244b3f5",
+          "srcPath": "/node/assets/Rides/ridePlaceholder.jpg"
+        }
+      ],
+      "totalDistance": 276,
+      "startTime": null,
+      "ridersJoined": [
+        "5c291dfe9b751c38bf636632",
+        "5c2a160b30537b6d173ff7ec",
+        "5c2cf83f78403a54315d20a0",
+        "5c32204b22698e622c3902ed",
+        "5c383e45888d571538033c9d",
+        "5c3ec4994ec89a5b53ed15b0",
+        "5bacc6ea9bb8962504ac3360",
+        "5c3df6d51bd45911234164f8",
+        "5c55716a1edf940cb8f0257e",
+        "5c574ec6adca720a349162a3"
+      ],
+      "terrain": "Non P Model",
+      "endDate": "23-03-2019",
+      "startDate": "23-03-2019",
+      "rideDetails": null,
+      "durationInDays": null,
+      "calculatedDistance": 0,
+      "durationInHours": null,
+      "waypoints": [],
+      "endPoint": {
+        "name": "SHOWROOM",
+        "longitude": 87.745785,
+        "latitude": 24.996268
+      },
+      "startPoint": {
+        "name": "SHOWROOM",
+        "longitude": 87.37711,
+        "latitude": 24.341154
+      },
+      "rideName": "MARCHEND RIDE",
+      "createdOn": null,
+      "ridePageUrl": "/content/royal-enfield/in/en/home/rides/ride-outs/ride-out-detail-catalog/ride-out-5c124234332c76775244b3a3.html",
+      "RideId": 93362,
+      "prevUserId": null,
+      "difficulty": null,
+      "CompanyName": "Majestic Autobikes Pvt Ltd.",
+      "CountryCode": "IN",
+      "BranchCode": "6463",
+      "locality": {
+        "language": "en",
+        "country": "in"
+      }
+    },
+    {
+      "_id": "5c124234332c76775244b3a5",
+      "__v": 6,
+      "rideStartDateIso": "2019-04-27T04:00:00.000Z",
+      "rideEndDateIso": "2019-04-27T04:00:00.000Z",
+      "DealerId": {
+        "_id": "5c9884b11ba850567c1a74d4",
+        "Landmark": "",
+        "DealerName": "Aravinduja Motors pvt ltd",
+        "DealerImage": null,
+        "PrimaryImage_mobile": null,
+        "PrimaryImage": null,
+        "Thumbnail_Image": null,
+        "Cover_image_mobile": null,
+        "Cover_image": null,
+        "MainPhoneNo": "+914445554888",
+        "State": "Tamil Nadu",
+        "City": "Chennai",
+        "Pincode": 600056,
+        "AddressLine3": "",
+        "AddressLine2": "Mount Poonamallee Road",
+        "AddressLine1": "No 105, Kamala Gardens"
+      },
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          87.416037,
+          24.228162
+        ]
+      },
+      "personalInfo": {
+        "bikeName": null,
+        "city": null,
+        "phoneNo": null,
+        "dob": null,
+        "isRoyalEnfieldOwner": null,
+        "email": null,
+        "gender": null,
+        "lName": null,
+        "fName": null
+      },
+      "ridersCount": 5,
+      "rideCategory": "ride-out",
+      "rideImages": [
+        {
+          "_id": "5c124238332c76775244b3f7",
+          "srcPath": "/node/assets/Rides/ridePlaceholder.jpg"
+        }
+      ],
+      "totalDistance": 125,
+      "startTime": null,
+      "ridersJoined": [
+        "5bacc68f9bb8962504abb7e8",
+        "5c2f0467e9b6c221bfc16223",
+        "5bfb8efe8a3cdc6bb46a740a",
+        "5c4b0b26dfb71434da41f46d",
+        "5c59c78e3a8229386007014e"
+      ],
+      "terrain": "Non P Model",
+      "endDate": "27-04-2019",
+      "startDate": "27-04-2019",
+      "rideDetails": null,
+      "durationInDays": null,
+      "calculatedDistance": 0,
+      "durationInHours": null,
+      "waypoints": [],
+      "endPoint": {
+        "name": "SHOWROOM",
+        "longitude": 87.676147,
+        "latitude": 24.157622
+      },
+      "startPoint": {
+        "name": "SHOWROOM",
+        "longitude": 87.416037,
+        "latitude": 24.228162
+      },
+      "rideName": "Ride to Maluti",
+      "createdOn": null,
+      "ridePageUrl": "/content/royal-enfield/in/en/home/rides/ride-outs/ride-out-detail-catalog/ride-out-5c124234332c76775244b3a5.html",
+      "RideId": 93365,
+      "prevUserId": null,
+      "difficulty": null,
+      "CompanyName": "Majestic Autobikes Pvt Ltd.",
+      "CountryCode": "IN",
+      "BranchCode": "6463",
+      "locality": {
+        "language": "en",
+        "country": "in"
+      }
+    },
+    {
+      "_id": "5c124234332c76775244b3d6",
+      "__v": 5,
+      "rideStartDateIso": "2019-02-10T05:00:00.000Z",
+      "rideEndDateIso": "2019-02-10T05:00:00.000Z",
+      "DealerId": {
+        "_id": "5c9884b11ba850567c1a74d4",
+        "Landmark": "",
+        "DealerName": "Aravinduja Motors pvt ltd",
+        "DealerImage": null,
+        "PrimaryImage_mobile": null,
+        "PrimaryImage": null,
+        "Thumbnail_Image": null,
+        "Cover_image_mobile": null,
+        "Cover_image": null,
+        "MainPhoneNo": "+914445554888",
+        "State": "Tamil Nadu",
+        "City": "Chennai",
+        "Pincode": 600056,
+        "AddressLine3": "",
+        "AddressLine2": "Mount Poonamallee Road",
+        "AddressLine1": "No 105, Kamala Gardens"
+      },
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          54.5782,
+          54.5782
+        ]
+      },
+      "personalInfo": {
+        "bikeName": null,
+        "city": null,
+        "phoneNo": null,
+        "dob": null,
+        "isRoyalEnfieldOwner": null,
+        "email": null,
+        "gender": null,
+        "lName": null,
+        "fName": null
+      },
+      "ridersCount": 4,
+      "rideCategory": "ride-out",
+      "rideImages": [
+        {
+          "_id": "5c124245332c76775244b427",
+          "srcPath": "/node/assets/Rides/ridePlaceholder.jpg"
+        }
+      ],
+      "totalDistance": 300,
+      "startTime": null,
+      "ridersJoined": [
+        "5bacc6199bb8962504ab2498",
+        "5c3bf44958351220ed7645e2",
+        "5c3f0dea3f6c4a0bfbc3b1e2",
+        "5c4dfca93c465346f57089fd"
+      ],
+      "terrain": "Non P Model",
+      "endDate": "10-02-2019",
+      "startDate": "10-02-2019",
+      "rideDetails": null,
+      "durationInDays": null,
+      "calculatedDistance": 0,
+      "durationInHours": null,
+      "waypoints": [],
+      "endPoint": {
+        "name": "IDUKKI",
+        "longitude": 12.4365,
+        "latitude": 12.4365
+      },
+      "startPoint": {
+        "name": "KOTTARAKARA",
+        "longitude": 54.5782,
+        "latitude": 54.5782
+      },
+      "rideName": "Panchalimedu",
+      "createdOn": null,
+      "ridePageUrl": "/content/royal-enfield/in/en/home/rides/ride-outs/ride-out-detail-catalog/ride-out-5c124234332c76775244b3d6.html",
+      "RideId": 93399,
+      "prevUserId": null,
+      "difficulty": null,
+      "CompanyName": "Unnoonny Motors.",
+      "CountryCode": "IN",
+      "BranchCode": "6929",
+      "locality": {
+        "language": "en",
+        "country": "in"
+      }
+    },
+    {
+      "_id": "5c124234332c76775244b3d8",
+      "__v": 5,
+      "rideStartDateIso": "2019-03-03T05:00:00.000Z",
+      "rideEndDateIso": "2019-03-03T05:00:00.000Z",
+      "DealerId": {
+        "_id": "5c9884b11ba850567c1a74d4",
+        "Landmark": "",
+        "DealerName": "Aravinduja Motors pvt ltd",
+        "DealerImage": null,
+        "PrimaryImage_mobile": null,
+        "PrimaryImage": null,
+        "Thumbnail_Image": null,
+        "Cover_image_mobile": null,
+        "Cover_image": null,
+        "MainPhoneNo": "+914445554888",
+        "State": "Tamil Nadu",
+        "City": "Chennai",
+        "Pincode": 600056,
+        "AddressLine3": "",
+        "AddressLine2": "Mount Poonamallee Road",
+        "AddressLine1": "No 105, Kamala Gardens"
+      },
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          54.5782,
+          54.5782
+        ]
+      },
+      "personalInfo": {
+        "bikeName": null,
+        "city": null,
+        "phoneNo": null,
+        "dob": null,
+        "isRoyalEnfieldOwner": null,
+        "email": null,
+        "gender": null,
+        "lName": null,
+        "fName": null
+      },
+      "ridersCount": 4,
+      "rideCategory": "ride-out",
+      "rideImages": [
+        {
+          "_id": "5c124246332c76775244b429",
+          "srcPath": "/node/assets/Rides/ridePlaceholder.jpg"
+        }
+      ],
+      "totalDistance": 250,
+      "startTime": null,
+      "ridersJoined": [
+        "5bacc6e29bb8962504ac1302",
+        "5c369cba853c5c28c59442cb",
+        "5c023502ef1e606f7ccdd2d2",
+        "5bacc7069bb8962504ac5147"
+      ],
+      "terrain": "Non P Model",
+      "endDate": "03-03-2019",
+      "startDate": "03-03-2019",
+      "rideDetails": null,
+      "durationInDays": null,
+      "calculatedDistance": 0,
+      "durationInHours": null,
+      "waypoints": [],
+      "endPoint": {
+        "name": "ALAPUZHA",
+        "longitude": 12.4365,
+        "latitude": 12.4365
+      },
+      "startPoint": {
+        "name": "KOTTARAKKARA",
+        "longitude": 54.5782,
+        "latitude": 54.5782
+      },
+      "rideName": "KUTTANADU  RIDE",
+      "createdOn": null,
+      "ridePageUrl": "/content/royal-enfield/in/en/home/rides/ride-outs/ride-out-detail-catalog/ride-out-5c124234332c76775244b3d8.html",
+      "RideId": 93401,
+      "prevUserId": null,
+      "difficulty": null,
+      "CompanyName": "Unnoonny Motors.",
+      "CountryCode": "IN",
+      "BranchCode": "6929",
+      "locality": {
+        "language": "en",
+        "country": "in"
+      }
+    },
+    {
+      "_id": "5bae07b9ece9930208e6913d",
+      "__v": 6,
+      "rideStartDateIso": "2018-11-14T18:30:00.000Z",
+      "rideEndDateIso": "2018-11-18T18:30:00.000Z",
+      "DealerId": {
+        "_id": "5c9884b11ba850567c1a74d4",
+        "Landmark": "",
+        "DealerName": "Aravinduja Motors pvt ltd",
+        "DealerImage": null,
+        "PrimaryImage_mobile": null,
+        "PrimaryImage": null,
+        "Thumbnail_Image": null,
+        "Cover_image_mobile": null,
+        "Cover_image": null,
+        "MainPhoneNo": "+914445554888",
+        "State": "Tamil Nadu",
+        "City": "Chennai",
+        "Pincode": 600056,
+        "AddressLine3": "",
+        "AddressLine2": "Mount Poonamallee Road",
+        "AddressLine1": "No 105, Kamala Gardens"
+      },
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          18.9702,
+          73.1319
+        ]
+      },
+      "personalInfo": {
+        "bikeName": null,
+        "city": null,
+        "phoneNo": null,
+        "dob": null,
+        "isRoyalEnfieldOwner": null,
+        "email": null,
+        "gender": null,
+        "lName": null,
+        "fName": null
+      },
+      "ridersCount": 3,
+      "rideCategory": "ride-out",
+      "rideImages": [
+        {
+          "_id": "5bda4b27fa0b07047037433b",
+          "srcPath": "/node/assets/Rides/ridePlaceholder.jpg"
+        }
+      ],
+      "totalDistance": 600,
+      "startTime": null,
+      "ridersJoined": [
+        "5bdcf069fde8bb7491f95dd8",
+        "5bdcece1c4fa426c43554968",
+        "5bdc310b1d7ffa384a2fa78a"
+      ],
+      "terrain": "Highway",
+      "endDate": "19-11-2018",
+      "startDate": "15-11-2018",
+      "rideDetails": null,
+      "durationInDays": null,
+      "calculatedDistance": 0,
+      "durationInHours": null,
+      "waypoints": [],
+      "endPoint": {
+        "name": "Vagator Goa",
+        "longitude": 73.7566,
+        "latitude": 15.5989
+      },
+      "startPoint": {
+        "name": "Dutta Snacks Panvel",
+        "longitude": 73.1319,
+        "latitude": 18.9702
+      },
+      "rideName": "Ride To Royal Enfield Rider Mania 2018 vagator Goa",
+      "createdOn": null,
+      "ridePageUrl": "/content/royal-enfield/in/en/home/rides/ride-outs/ride-out-detail-catalog/ride-out-5bae07b9ece9930208e6913d.html",
+      "RideId": 59570,
+      "prevUserId": null,
+      "difficulty": null,
+      "CompanyName": "Company Store Bandra Mumbai",
+      "CountryCode": "IN",
+      "BranchCode": "100042",
+      "locality": {
+        "language": "en",
+        "country": "in"
+      }
+    },
+    {
+      "_id": "5bae076eb6a2980068da5e45",
+      "__v": 6,
+      "rideStartDateIso": "2018-11-14T18:30:00.000Z",
+      "rideEndDateIso": "2018-11-18T18:30:00.000Z",
+      "DealerId": {
+        "_id": "5c9884b11ba850567c1a74d4",
+        "Landmark": "",
+        "DealerName": "Aravinduja Motors pvt ltd",
+        "DealerImage": null,
+        "PrimaryImage_mobile": null,
+        "PrimaryImage": null,
+        "Thumbnail_Image": null,
+        "Cover_image_mobile": null,
+        "Cover_image": null,
+        "MainPhoneNo": "+914445554888",
+        "State": "Tamil Nadu",
+        "City": "Chennai",
+        "Pincode": 600056,
+        "AddressLine3": "",
+        "AddressLine2": "Mount Poonamallee Road",
+        "AddressLine1": "No 105, Kamala Gardens"
+      },
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          18.9702,
+          73.1319
+        ]
+      },
+      "personalInfo": {
+        "bikeName": null,
+        "city": null,
+        "phoneNo": null,
+        "dob": null,
+        "isRoyalEnfieldOwner": null,
+        "email": null,
+        "gender": null,
+        "lName": null,
+        "fName": null
+      },
+      "ridersCount": 3,
+      "rideCategory": "ride-out",
+      "rideImages": [
+        {
+          "_id": "5bda4b26fa0b070470374323",
+          "srcPath": "/node/assets/Rides/ridePlaceholder.jpg"
+        }
+      ],
+      "totalDistance": 600,
+      "startTime": null,
+      "ridersJoined": [
+        "5bacc6719bb8962504ab93f6",
+        "5bdcece1c4fa426c43554968",
+        "5bdc310b1d7ffa384a2fa78a"
+      ],
+      "terrain": "Highway",
+      "endDate": "19-11-2018",
+      "startDate": "15-11-2018",
+      "rideDetails": null,
+      "durationInDays": null,
+      "calculatedDistance": 0,
+      "durationInHours": null,
+      "waypoints": [],
+      "endPoint": {
+        "name": "Vagator Goa",
+        "longitude": 73.7566,
+        "latitude": 15.5989
+      },
+      "startPoint": {
+        "name": "Dutta Snacks Panvel",
+        "longitude": 73.1319,
+        "latitude": 18.9702
+      },
+      "rideName": "Ride To Royal Enfield Rider Mania 2018 vagator Goa",
+      "createdOn": null,
+      "ridePageUrl": "/content/royal-enfield/in/en/home/rides/ride-outs/ride-out-detail-catalog/ride-out-5bae076eb6a2980068da5e45.html",
+      "RideId": 35801,
+      "prevUserId": null,
+      "difficulty": null,
+      "CompanyName": "Company Store Bandra Mumbai",
+      "CountryCode": "IN",
+      "BranchCode": "100042",
+      "locality": {
+        "language": "en",
+        "country": "in"
+      }
+    },
+    {
+      "_id": "5bae076eb6a2980068da5e3e",
+      "__v": 6,
+      "rideStartDateIso": "2018-11-10T18:30:00.000Z",
+      "rideEndDateIso": "2018-11-12T18:30:00.000Z",
+      "DealerId": {
+        "_id": "5c9884b11ba850567c1a74d4",
+        "Landmark": "",
+        "DealerName": "Aravinduja Motors pvt ltd",
+        "DealerImage": null,
+        "PrimaryImage_mobile": null,
+        "PrimaryImage": null,
+        "Thumbnail_Image": null,
+        "Cover_image_mobile": null,
+        "Cover_image": null,
+        "MainPhoneNo": "+914445554888",
+        "State": "Tamil Nadu",
+        "City": "Chennai",
+        "Pincode": 600056,
+        "AddressLine3": "",
+        "AddressLine2": "Mount Poonamallee Road",
+        "AddressLine1": "No 105, Kamala Gardens"
+      },
+      "geo": {
+        "type": "Point",
+        "coordinates": [
+          25.2242,
+          86.1113
+        ]
+      },
+      "personalInfo": {
+        "bikeName": null,
+        "city": null,
+        "phoneNo": null,
+        "dob": null,
+        "isRoyalEnfieldOwner": null,
+        "email": null,
+        "gender": null,
+        "lName": null,
+        "fName": null
+      },
+      "ridersCount": 3,
+      "rideCategory": "ride-out",
+      "rideImages": [
+        {
+          "_id": "5bda4b26fa0b07047037432e",
+          "srcPath": "/node/assets/Rides/ridePlaceholder.jpg"
+        }
+      ],
+      "totalDistance": 500,
+      "startTime": null,
+      "ridersJoined": [
+        "5bacc6719bb8962504ab93f6",
+        "5bdcece1c4fa426c43554968",
+        "5bdcf069fde8bb7491f95dd8"
+      ],
+      "terrain": "Highway",
+      "endDate": "13-11-2018",
+      "startDate": "11-11-2018",
+      "rideDetails": null,
+      "durationInDays": null,
+      "calculatedDistance": 0,
+      "durationInHours": null,
+      "waypoints": [],
+      "endPoint": {
+        "name": "BABA DHAM RIDE",
+        "longitude": 86.1113,
+        "latitude": 25.2242
+      },
+      "startPoint": {
+        "name": "BEGUSARAI",
+        "longitude": 86.1113,
+        "latitude": 25.2242
+      },
+      "rideName": "BAIDHNATH DHAM RIDE",
+      "createdOn": null,
+      "ridePageUrl": "/content/royal-enfield/in/en/home/rides/ride-outs/ride-out-detail-catalog/ride-out-5bae076eb6a2980068da5e3e.html",
+      "RideId": 35794,
+      "prevUserId": null,
+      "difficulty": null,
+      "CompanyName": "Mayamanu Motors Pvt. Ltd",
+      "CountryCode": "IN",
+      "BranchCode": "6093",
+      "locality": {
+        "language": "en",
+        "country": "in"
+      }
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="@dimen/dimen_40"
+    android:paddingTop="@dimen/dimen_31"
+    android:paddingLeft="@dimen/dimen_22"
+    android:paddingStart="@dimen/dimen_22"
+    android:paddingEnd="@dimen/dimen_30"
+    android:paddingRight="@dimen/dimen_30">
+
+    <TextView
+        android:id="@+id/txv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fontFamily="@font/montserrat_regular"
+        android:textSize="18sp"
+        tools:text="1."
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/txv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fontFamily="@font/montserrat_regular"
+        android:textSize="18sp"
+        tools:text="Thunderbird 500"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/txv_number"
+        android:layout_toEndOf="@id/txv_number"/>
+
+    <ImageView
+        android:id="@+id/imgMotorcycle"
+        android:layout_width="115dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="38dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/motorcycle_image"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_engine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/engine_number"
+        android:layout_toRightOf="@id/imgMotorcycle"
+        android:layout_toEndOf="@id/imgMotorcycle"
+        android:layout_below="@id/txv_name"
+        android:textColorHint="@color/white_50">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_edit_engine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:focusable="false"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_registration_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/registration_num"
+        android:layout_toEndOf="@id/imgMotorcycle"
+        android:layout_below="@id/text_input_engine"
+        android:textColorHint="@color/white_50">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_edit_registration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+            android:drawableEnd="@drawable/edit"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/text_input_registration_num"
+        android:layout_toRightOf="@id/imgMotorcycle"
+        android:layout_toEndOf="@id/imgMotorcycle">
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/checbox_own_motorcycle"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:button="@drawable/custom_checkbox"/>-->
+
+        <ImageView
+            android:id="@+id/checkbox_own_motorcycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/checked_secondary"
+            android:src="@drawable/unchecked_box" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/montserrat_regular"
+            android:text="@string/do_not_own_motorcycle"
+            android:textColor="@color/white_50"
+            android:textSize="@dimen/size_12"
+            android:drawablePadding="11dp"
+            android:layout_marginLeft="@dimen/dimen_7"
+            android:layout_marginStart="@dimen/dimen_7"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

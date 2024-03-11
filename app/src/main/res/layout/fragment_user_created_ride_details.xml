@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:id="@+id/cardView_viewPager"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:layout_gravity="center"
+                                   app:cardBackgroundColor="@color/white"
+                                   app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_h_45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.45389"/>
+
+        <ImageView
+                android:id="@+id/ride_image"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:adjustViewBounds="true"
+                android:background="@color/black_two_lighter"
+                app:layout_constraintBottom_toBottomOf="@id/guideline_h_45"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_87"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.87222"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_94"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.94914"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_95"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.953611"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_h_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.0317"/>
+
+        <ImageView
+                android:id="@+id/bookmark_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bookmark"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_87"
+                app:layout_constraintTop_toBottomOf="@id/guideline_h_3"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_v_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.051188"/>
+
+        <TextView
+                android:id="@+id/tv_ride_route"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ride_route_margin_bottom"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Bangalore >> Pondicherry"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ride_route"
+                app:layout_constraintBottom_toBottomOf="@id/ride_image"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_5"/>
+
+        <TextView
+                android:id="@+id/tv_ride_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="10th Feb'19 "
+                android:textColor="@color/white"
+                android:textSize="@dimen/ride_date"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@id/tv_ride_route"/>
+
+        <TextView
+                android:id="@+id/tv_ride_no_of_days"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="| 3 Days"
+                android:textColor="@color/white"
+                android:textSize="@dimen/no_of_days"
+                app:layout_constraintLeft_toRightOf="@id/tv_ride_date"
+                app:layout_constraintTop_toBottomOf="@id/tv_ride_route"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_h_65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.67840"/>
+
+        <TextView
+                android:id="@+id/tv_created_by"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/created_by_margin_top"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/created_by"
+                android:textColor="@color/black_50"
+                android:textSize="@dimen/created_by_tv"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@id/ride_image"/>
+
+        <ImageView
+                android:id="@+id/creator_image"
+                android:layout_width="@dimen/creator_image_width"
+                android:layout_height="@dimen/creator_image_height"
+                android:layout_marginStart="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_created_by"/>
+
+        <TextView
+                android:id="@+id/creator_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Abhinav"
+                android:textColor="@color/black"
+                android:textSize="@dimen/creator_name"
+                app:layout_constraintLeft_toRightOf="@id/creator_image"
+                app:layout_constraintTop_toBottomOf="@id/tv_created_by"/>
+
+        <TextView
+                android:id="@+id/creator_place"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.5dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Bangalore "
+                android:textColor="@color/black"
+                android:textSize="@dimen/creator_place"
+                app:layout_constraintLeft_toRightOf="@id/creator_image"
+                app:layout_constraintTop_toBottomOf="@id/creator_name"/>
+
+        <TextView
+                android:id="@+id/creator_no_of_rides"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.5dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="| 25+ Rides"
+                android:textColor="@color/black"
+                android:textSize="@dimen/creator_place"
+                app:layout_constraintLeft_toRightOf="@id/creator_place"
+                app:layout_constraintTop_toBottomOf="@id/creator_name"/>
+
+        <View
+                android:id="@+id/creator_details_border"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="14dp"
+                android:background="@color/view_ride_creator_details"
+                app:layout_constraintBottom_toTopOf="@id/guideline_h_65"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+                app:layout_constraintRight_toLeftOf="@id/guideline_v_94"
+                app:layout_constraintTop_toBottomOf="@id/creator_place"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_h_80"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.825737"/>
+
+        <TextView
+                android:id="@+id/tv_ride_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_regular"
+                android:letterSpacing="0.04"
+                android:text="Fun and adventurous ride to goa.. always our favourite"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ride_description"
+                app:layout_constraintBottom_toTopOf="@id/ride_description_border"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+                app:layout_constraintRight_toLeftOf="@id/guideline_v_95"
+                app:layout_constraintTop_toBottomOf="@id/creator_details_border"/>
+
+        <View
+                android:id="@+id/ride_description_border"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/view_ride_creator_details"
+                app:layout_constraintBottom_toTopOf="@id/guideline_h_80"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+                app:layout_constraintRight_toLeftOf="@id/guideline_v_94"
+                app:layout_constraintTop_toBottomOf="@id/tv_ride_description"/>
+
+        <TextView
+                android:id="@+id/tv_riders_on_this_ride"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/rider_margin_top"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/riders_on_this_ride"
+                android:textColor="@color/black_50"
+                android:textSize="@dimen/created_by_tv"
+                app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@id/ride_description_border"/>
+
+        <ImageView
+                android:id="@+id/other_riders_image3"
+                android:layout_width="@dimen/other_rider_image_width"
+                android:layout_height="@dimen/other_rider_image_height"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="2dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_riders_on_this_ride"/>
+
+
+        <ImageView
+                android:id="@+id/other_riders_image2"
+                android:layout_width="@dimen/other_rider_image_width"
+                android:layout_height="@dimen/other_rider_image_height"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_riders_on_this_ride"/>
+
+        <ImageView
+                android:id="@+id/other_riders_image1"
+                android:layout_width="@dimen/other_rider_image_width"
+                android:layout_height="@dimen/other_rider_image_height"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="2dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_riders_on_this_ride"/>
+
+
+        <TextView
+                android:id="@+id/other_riders_names"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.9dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:maxLines="2"
+                android:text="Abhinav, Ayush Khatri and 4 Others"
+                android:textColor="@color/black"
+                android:textSize="@dimen/other_riders_names"
+                app:layout_constraintLeft_toRightOf="@id/other_riders_image3"
+                app:layout_constraintRight_toLeftOf="@id/guideline_v_87"
+                app:layout_constraintTop_toBottomOf="@id/tv_riders_on_this_ride"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

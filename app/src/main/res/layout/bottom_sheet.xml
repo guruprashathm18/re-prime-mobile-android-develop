@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="-10dp"
+        app:cardCornerRadius="11dp"
+        app:strokeColor="@color/pc_tab_divider_color"
+        app:strokeWidth="1dp"
+        android:theme="@android:style/Theme.Material"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_three">
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="@dimen/dp_56"
+                android:layout_height="@dimen/dp_56"
+                android:padding="@dimen/dp_18"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/cancel_icon" />
+
+            <TextView
+                android:id="@+id/re_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cancel"
+                android:layout_margin="@dimen/dp_32"
+                android:gravity="center"
+                android:text="@string/on_board_popup_tile"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/add_vehicle_yes"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/re_text"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                android:background="@drawable/enable_button_bg"
+                android:text="@string/on_boardpopup_yes"
+                android:textSize="@dimen/sp_18"
+                android:fontFamily="@font/montserrat_medium"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/add_vehicle_no"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/add_vehicle_yes"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_100"
+                android:background="@drawable/enable_button_bg"
+                android:text="@string/on_boardpopup_no"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="@dimen/sp_18"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                tools:ignore="RtlHardcoded" />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>
+
+
+
+
+
+

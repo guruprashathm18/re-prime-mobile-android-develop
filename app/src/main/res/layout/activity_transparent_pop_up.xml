@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.royalenfield.reprime.ui.custom.views.TitleBarView
+        android:id="@+id/tb_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@+id/tb_edit_profile"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/udv_border_view"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dimen_20"
+            android:paddingTop="@dimen/dimen_19"
+            android:paddingEnd="@dimen/dimen_12">
+
+
+            <TextView
+                android:id="@+id/txt_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:text="@string/please_validate_your_profile"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_18"
+                app:fontFamily="@font/montserrat_regular" />
+
+            <LinearLayout
+                android:id="@+id/ll_primary_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_37"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txv_primary_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/primary_phone_hint"
+                    android:textColor="@color/white_50"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edit_primary_country_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.20"
+                        android:drawableEnd="@drawable/dropdown_arrow_disabled"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:focusable="false"
+                        app:fontFamily="@font/montserrat_regular" />
+
+
+                    <EditText
+                        android:id="@+id/edit_primary_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.60"
+                        android:drawableEnd="@drawable/edit"
+                        android:inputType="number"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        app:fontFamily="@font/montserrat_regular" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txv_primary_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/doc_error_text_color"
+                    android:textSize="@dimen/size_11"
+                    android:visibility="gone"
+                    tools:text="Please enter valid phone" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/txv_AddPhoneNumber"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginTop="@dimen/dimen_28"-->
+            <!--            android:alpha="50"-->
+            <!--            android:text="@string/addPhone"-->
+            <!--            android:textColor="@color/white"-->
+            <!--            android:textSize="@dimen/dimen_16"-->
+            <!--            app:fontFamily="@font/montserrat_regular" />-->
+
+            <LinearLayout
+                android:id="@+id/ll_emergency_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_36"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txv_emergency_phone_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/emergency_phone_num"
+                    android:textColor="@color/white_50"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/edit_emergency_country_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.20"
+                        android:drawableEnd="@drawable/dropdown_arrow_disabled"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:inputType="none"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        app:fontFamily="@font/montserrat_regular" />
+
+                    <EditText
+                        android:id="@+id/edit_emergency_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.60"
+                        android:drawablePadding="8dp"
+                        android:drawableEnd="@drawable/edit"
+                        android:hint="@string/emergency_phone_hint"
+                        android:inputType="number"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white_50"
+                        android:textSize="18sp"
+                        app:fontFamily="@font/montserrat_regular" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txv_emergency_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/doc_error_text_color"
+                    android:textSize="@dimen/size_11"
+                    android:visibility="gone"
+                    tools:text="Please enter valid phone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_email_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_39"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email_id_for_pop_up"
+                    android:textColor="@color/white_50"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:fontFamily="@font/montserrat_regular" />
+
+
+                <EditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/edit"
+                    android:hint="@string/email_id_for_pop_up"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_50"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/montserrat_regular" />
+
+                <TextView
+                    android:id="@+id/txv_email_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/doc_error_text_color"
+                    android:textSize="@dimen/size_11"
+                    android:visibility="gone"
+                    tools:text="Please enter valid email" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_address_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_36"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txv_address_title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addressline1"
+                    android:textColor="@color/white_50"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:fontFamily="@font/montserrat_regular" />
+
+                <EditText
+                    android:id="@+id/edit_address_title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/edit"
+                    android:hint="@string/addressline1"
+                    android:maxLength="40"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_50"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/montserrat_regular" />
+
+
+                <TextView
+                    android:id="@+id/txv_address_error1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/doc_error_text_color"
+                    android:textSize="@dimen/size_11"
+                    android:visibility="gone"
+                    tools:text="Please enter valid city" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_address_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_36"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txv_address_title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addressline2"
+                    android:textColor="@color/white_50"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:fontFamily="@font/montserrat_regular" />
+
+                <EditText
+                    android:id="@+id/edit_address_title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/edit"
+                    android:hint="@string/addressline2"
+                    android:maxLength="40"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_50"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/montserrat_regular" />
+
+
+                <TextView
+                    android:id="@+id/txv_address_error2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/doc_error_text_color"
+                    android:textSize="@dimen/size_11"
+                    android:visibility="gone"
+                    tools:text="Please enter valid city" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_country_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_36"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txv_country_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/country"
+                    android:textColor="@color/white_50"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:fontFamily="@font/montserrat_regular" />
+
+                <EditText
+                    android:id="@+id/edit_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/dropdown_arrow_disabled"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="@string/country"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_50"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/montserrat_regular" />
+
+
+                <TextView
+                    android:id="@+id/txv_country_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/doc_error_text_color"
+                    android:textSize="@dimen/size_11"
+                    android:visibility="gone"
+                    tools:text="Please enter valid country" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_state_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_36"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txv_state_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/state"
+                    android:textColor="@color/white_50"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:fontFamily="@font/montserrat_regular" />
+
+                <EditText
+                    android:id="@+id/edit_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/dropdown_arrow_disabled"
+                    android:editable="false"
+                    android:hint="@string/state"
+                    android:focusable="false"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_50"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/montserrat_regular" />
+
+
+                <TextView
+                    android:id="@+id/txv_state_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/doc_error_text_color"
+                    android:textSize="@dimen/size_11"
+                    android:visibility="gone"
+                    tools:text="Please enter valid country" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_city_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_36"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txv_city_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/city"
+                    android:textColor="@color/white_50"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:fontFamily="@font/montserrat_regular" />
+
+                <EditText
+                    android:id="@+id/edit_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/dropdown_arrow_disabled"
+                    android:editable="false"
+                    android:hint="@string/city"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_50"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/montserrat_regular" />
+
+
+                <TextView
+                    android:id="@+id/txv_city_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/doc_error_text_color"
+                    android:textSize="@dimen/size_11"
+                    android:visibility="gone"
+                    tools:text="Please enter valid city" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_pin_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_36"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txv_pin_code_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pin_code"
+                    android:textColor="@color/white_50"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:fontFamily="@font/montserrat_regular" />
+
+                <EditText
+                    android:id="@+id/edit_pin_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pin_code"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:inputType="number"
+                   android:drawableEnd="@drawable/edit"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_50"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/montserrat_regular" />
+
+
+                <TextView
+                    android:id="@+id/txv_pin_code_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/doc_error_text_color"
+                    android:textSize="@dimen/size_11"
+                    android:visibility="gone"
+                    tools:text="Please enter valid city" />
+
+            </LinearLayout>
+
+
+            <!--        <TextView-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="@string/fields_are_mandatory"-->
+            <!--            android:textColor="@color/white_50"-->
+            <!--            android:layout_marginTop="26dp"-->
+            <!--            android:textStyle="italic"-->
+            <!--            app:fontFamily="@font/montserrat_regular"/>-->
+
+
+            <TextView
+                android:id="@+id/imgConfirm"
+                android:layout_width="210dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                app:fontFamily="@font/montserrat_regular" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

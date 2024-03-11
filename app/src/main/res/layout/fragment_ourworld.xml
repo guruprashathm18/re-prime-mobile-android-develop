@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/our_world_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_two">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05277"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.977"/>
+
+    <TextView
+        android:id="@+id/news_and_launches_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_news_and_launch_margin_top"
+        android:fontFamily="@font/montserrat_bold"
+        android:letterSpacing="0.06"
+        android:lineSpacingExtra="-2sp"
+        android:text="@string/news_and_launches"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_launch"
+        app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+        app:layout_constraintRight_toLeftOf="@id/guideline_v_9"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_news_and_launch"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/launch_image_height"
+        android:layout_marginTop="@dimen/rv_news_and_launch_margin_top"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_9"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/news_and_launches_label"/>
+
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white_50"
+        android:textSize="@dimen/text_news_error"
+        android:visibility="gone"
+        android:fontFamily="@font/montserrat_regular"
+        android:id="@+id/news_tv_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/recyclerView_news_and_launch"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerView_news_and_launch"/>
+
+    <TextView
+        android:id="@+id/text_re_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/events_label_margin_top"
+        android:drawableEnd="@drawable/next_arrow_copy_5"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:letterSpacing="0.06"
+        android:lineSpacingExtra="-2sp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:text="@string/re_website"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_event"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+        app:layout_constraintRight_toLeftOf="@id/guideline_v_9"
+        app:layout_constraintTop_toBottomOf="@id/recyclerView_news_and_launch" />
+
+    <TextView
+        android:id="@+id/text_re_rides"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/events_label_margin_top"
+        android:drawableEnd="@drawable/next_arrow_copy_5"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:letterSpacing="0.06"
+        android:lineSpacingExtra="-2sp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:visibility="gone"
+        android:text="@string/re_rides"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_event"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+        app:layout_constraintRight_toLeftOf="@id/guideline_v_9"
+        app:layout_constraintTop_toBottomOf="@id/text_re_web" />
+
+    <TextView
+        android:id="@+id/text_re_events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/events_label_margin_top"
+        android:drawableEnd="@drawable/next_arrow_copy_5"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:letterSpacing="0.06"
+        android:lineSpacingExtra="-2sp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:visibility="gone"
+        android:text="@string/re_events"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_event"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+        app:layout_constraintRight_toLeftOf="@id/guideline_v_9"
+        app:layout_constraintTop_toBottomOf="@id/text_re_rides" />
+    <TextView
+        android:id="@+id/events_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/events_label_margin_top"
+        android:fontFamily="@font/montserrat_bold"
+        android:letterSpacing="0.06"
+        android:lineSpacingExtra="-2sp"
+        android:text="@string/events"
+        android:visibility="visible"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_event"
+        app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+        app:layout_constraintRight_toLeftOf="@id/guideline_v_9"
+        app:layout_constraintTop_toBottomOf="@id/text_re_web"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rv_events_margin_top"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/events_label"
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintVertical_bias="0.0"
+        android:nestedScrollingEnabled="false"/>
+
+
+    <ImageView
+        android:id="@+id/no_event_image"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginTop="@dimen/rv_events_margin_top"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/events_label"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white_50"
+        android:textSize="@dimen/text_news_error"
+        android:visibility="gone"
+        android:fontFamily="@font/montserrat_regular"
+        android:id="@+id/events_tv_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/events_label"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerView_events" android:layout_marginTop="85dp"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <ImageView
+        android:id="@+id/bottom_line"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/bottom_line_margin_top"
+        app:layout_constraintTop_toBottomOf="@id/recyclerView_events"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_re_stripe"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

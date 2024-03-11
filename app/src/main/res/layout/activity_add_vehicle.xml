@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/onboard_background"
+    android:fillViewport="true"
+    tools:context=".ui.onboarding.vehicleonboarding.activity.AddVehicleActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_16">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:paddingTop="@dimen/dp_32"
+                android:text="@string/vehicle_chassis_number"
+                android:textColor="@color/add_vehicle_screen_label_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/chassis_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white_30"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:fontFamily="@font/montserrat_regular"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textColorHint="@color/add_vehicle_screen_label_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/error_chassis_number"
+                android:textColor="@color/doc_error_text_color"
+                android:text="@string/invalid_chassis_number"
+                android:textSize="12sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:paddingTop="@dimen/dp_32"
+                android:visibility="gone"
+                android:text="@string/vehicle_registration_number"
+                android:textColor="@color/add_vehicle_screen_label_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/registration_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white_30"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:textColorHint="@color/add_vehicle_screen_label_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/error_registration_number"
+                android:textColor="@color/doc_error_text_color"
+                android:text="@string/invalid_registration_number"
+                android:textSize="12sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/doc_error_text_color"
+                android:text="@string/one_of_the_fields_is_mandatory"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_semibold_italic"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_52sdp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/verify_vehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_120sdp"
+            android:background="@drawable/disable_verify_button"
+            android:clickable="false"
+            android:enabled="false"
+            android:text="@string/vehicle_verify"
+            android:textColor="@color/white" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:background="@drawable/re_stripe" />
+    </RelativeLayout>
+
+
+</ScrollView>
+

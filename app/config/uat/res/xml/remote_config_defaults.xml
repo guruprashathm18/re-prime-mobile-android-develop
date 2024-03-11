@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>global_validations</key>
+        <value>{"pincode":12,"phoneNumber":15,"minPhoneNum":7,"minPin":4}</value>
+    </entry>
+    <entry>
+        <key>connected_keys</key>
+        <value> {
+            "authKey" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbklkIjo1MDMwLCJ1c2VybmFtZSI6IlJFQWRtaW4iLCJyb2xlcyI6IkNMSUVOVCIsImlhdCI6MTYxODM3NzgyM30.26Q_5ROyYg-AOpgRLYVC_TpJQxQWNkFaiaTDhUNL7ss",
+            "obd_refresh_interval" : "65",
+            "other_refresh_interval" : "10",
+            "fuelThreshold" : "1",
+            "trip_count" : "5",
+            "health_alert_count" : "5",
+            "batteryThreshold" : "11",
+            "customer_care": "+918045369701",
+            "gsm_threshold": "120"
+            }</value>
+    </entry>
+    <entry>
+        <key>re_prime_app_logout_all_users</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>re_prime_app_minimum_ios_version</key>
+        <value>2.0</value>
+    </entry>
+    <entry>
+        <key>re_prime_app_minimum_android_version</key>
+        <value>30</value>
+    </entry>
+    <entry>
+        <key>configurable_features</key>
+        <value> {"createRide":{"releaseFeatureStatus":"enabled","featureStatus":"enabled","country":"IN","category":"2","message":"Thank you for your interest in creating a ride. Like you, we all are itching to get out \u0026 ride. However, our primary concern is everyone’s safety. We have therefore disabled this feature temporarily. We do hope we all are able to get back out riding soon when all this is over. Will keep you posted. Till then Stay Home, Stay Safe."},"serviceBooking":{"featureStatus":"enabled","country":"IN","category":"3","message":"Service booking to start post lockdown. Please upgrade your app to initiate service booking"},"bookServiceAppointment":{"featureStatus":"enabled","country":"IN","category":"1","message":"Service booking to start post lockdown. Please upgrade your app to initiate service booking"},"TBT":{"featureStatus":"disabled","country":"IN","category":"4","message":"Maps","tbtReleaseFeatureStatus":"enabled"},"communityevents":{"releaseFeatureStatus":"enabled","featureStatus":"enabled","country":"IN","category":"3","message":"Events to start post lockdown.","featureImageURL":"https://stagecdn.royalenfield.com/node/assets/reprime/event/450x250px(new).jpg"},"communityrides":{"releaseFeatureStatus":"enabled","featureStatus":"enabled","country":"IN","category":"3","message":"Rides to start post lockdown.","featureImageURL":"https://stagecdn.royalenfield.com/node/assets/reprime/rides/500x900px(latest).jpg"},"recordroute":{"featureStatus":"disabled","country":"IN","category":"1","message":"Record route disabled for the user"},"myo":{"featureStatus":"disabled","country":"IN","category":"1","message":"Make It Yours"},"DRSA":{"featureStatus":"enabled","country":"IN","category":"3","message":""}}</value>
+    </entry>
+
+
+    <entry>
+        <key>mobile_base_urls</key>
+        <value>{
+            "Wanderlust_URL" : "https://wanderlust-stage.royalenfield.com/",
+            "configurationShareUrl" : "https://stagecdn.royalenfield.com/configurator3d/view/",
+            "orderTrackingBaseURL" : "https://makeityours-uat.royalenfield.com/configurator/orderTracking",
+            "configuratorServicesURL" : "https://api-uat2.royalenfield.com/v3/3d/",
+            "tbtURL" : "https://api-tbtuat.royalenfield.com/v3/",
+            "ConnectedSocketURL" : "https://34.70.108.224:1414/websocketApp/websocket",
+            "ridesWeb" : "https://stagecdn.royalenfield.com/in/en/app/rides/marquee-rides/",
+            "ConnectedBaseURL" : "https://34.70.108.224:1414/",
+            "MIY_URL" : "https://makeityours-uat.royalenfield.com",
+            "paymentURL" : "https://pgi.billdesk.com/pgidsk/PGIMerchantPayment?msg=",
+            "deviceTokenServicesURL" : "https://api-uat2.royalenfield.com/v3/",
+            "appBaseURL" : "https://api-uat2.royalenfield.com/v3/",
+            "Wanderlust_Trips_URL" : "https://stagecdn.royalenfield.com/in/en/users/app-my-trips/",
+            "ServiceBookingURL" : "https://stagecdn.royalenfield.com/in/en/service/scc-home-app",
+            "bctURL" : "https://52.172.217.220:5160",
+            "ourWorldWeb" : "https://stagecdn.royalenfield.com/in/en/app/home/",
+            "lightweightPageURL" : "https://stagecdn.royalenfield.com",
+            "appBaseURL_V4" : "https://api-uat2.royalenfield.com/v4/",
+            "generatePaymentMessageURL" : "https://api-uat2.royalenfield.com/v3/",
+            "DRSA_URL" : "https://pls.europassistance.in:84/reindex.html?",
+            "Apparel_Store_URL" : "https://mcstaging-store.royalenfield.com/app-home?utm_source=app&amp;utm_medium=",
+            "firebaseTokenBaseURL" : "https://api-uat2.royalenfield.com/v3/",
+            "assetsURL" : "https://stagecdn.royalenfield.com"
+            }</value>
+    </entry>
+    <entry>
+        <key>firebase_urls</key>
+        <value>{"REACT_CONFIG_URL":"https://re-platform-uat-configurations.firebaseio.com/","cityMasterURL":"https://re-platform-uat-citymaster.firebaseio.com/","countryMasterURL":"https://re-platform-uat-countrymaster.firebaseio.com/","kConfigurationsURL":"https://re-platform-uat-configurations.firebaseio.com/","kProductVariantsMasterURL":"https://re-platform-uat-productvariantsmaster.firebaseio.com/","kVariantsMasterURL":"https://re-platform-uat-variantmaster.firebaseio.com/","productURL":"https://re-platform-uat-productvariantsmaster.firebaseio.com/","stateMapURL":"https://re-platform-uat-statecodemaster.firebaseio.com/","stateMasterURL":"https://re-platform-uat-statemaster.firebaseio.com/","stateWisePriceURL":"https://re-configurator-uat-productpricemaster.firebaseio.com/","dealerStateMasterURL":"https://re-platform-uat-dealerstatemaster.firebaseio.com/","dealerCityMasterURL":"https://re-platform-uat-dealercitymaster.firebaseio.com/","citywiseMYOStatusMasterURL":"https://re-platform-uat-citywisemyostatusmaster.firebaseio.com/","dealerMasterURL":"https://re-platform-uat-dealermaster.firebaseio.com/","kProductVariantsMasterURL_V2":"https://re-platform-uat-productvariantsmaster-v2.firebaseio.com/","MIY_URL":"https://makeityours-uat.royalenfield.com","staticURL":"https://re-platform-uat-static-files.firebaseio.com/"}</value>
+    </entry>
+    <entry>
+        <key>google_keys</key>
+        <value> {
+            "googleMapAppStoreLink" : "https://apps.apple.com/us/app/google-maps-transit-food/id585027354",
+            "APIKey" : "AIzaSyB0Hw8rQaKG5wk_APSHZsLpx-41KZ6luW8",
+            "googleURLScheme" : "https://maps.google.com/",
+            "APIKeyAndroid" : "AIzaSyADFFafYXw0cKkzcNgTNfCU5UZLtyKqICg",
+            "staticMapKey" : "AIzaSyB0Hw8rQaKG5wk_APSHZsLpx-41KZ6luW8",
+            "YoutubeAPIKey" : "AIzaSyDvirJ13Hhbgwb_J8Xurq_yTvoVL0sa66o",
+            "APIKeyIOS" : "AIzaSyDLX4rwuuB-xTeWEwknzqo1wurW_5Y3Buc"
+            }</value>
+    </entry>
+    <entry>
+        <key>re_keys</key>
+        <value>{"CustomerCare":"18002100007","CustomerSupport":"support@royalenfield.com","JWTExpiryThreshold":"2","JWTRetryAttemptsCount":"3","enableLogging":true,"appStoreURL":"itms://itunes.apple.com/app/apple-store/id375380948?mt=8","playStoreURL":"http://play.google.com/store/apps/details?id=com.royalenfield.reprime"}</value>
+    </entry>
+    <entry>
+        <key>logger_service</key>
+        <value>{"baseURL":"https://re-platform-fapp-application-logger-uat.azurewebsites.net/api/logger-service","query_param_key":"code","query_param_value":"3/PveS5f1iqncKOxY9azqfNHFODaaq6HwqbiIveqdd8UQZ3tg15TMw=="}</value>
+    </entry>
+    <entry>
+        <key>configurable_features</key>
+        <value>{
+            "createRide": {
+            "featureStatus": "disabled",
+            "country": "IN",
+            "category": "2",
+            "message": "Thank you for your interest in creating a ride. Like you, we all are itching to get out &amp; ride. However, our primary concern is everyone’s safety. We have therefore disabled this feature temporarily. We do hope we all are able to get back out riding soon when all this is over. Will keep you posted. Till then Stay Home, Stay Safe."
+            },
+            "serviceBooking": {
+            "featureStatus": "enabled",
+            "country": "IN",
+            "category": "3",
+            "message": "Service booking to start post lockdown. Please upgrade your app to initiate service booking"
+            },
+            "bookServiceAppointment": {
+            "featureStatus": "enabled",
+            "country": "IN",
+            "category": "1",
+            "message": "Service booking to start post lockdown. Please upgrade your app to initiate service booking"
+            },
+            "TBT": {
+            "featureStatus": "disabled",
+            "country": "IN",
+            "category": "4",
+            "message": "Maps",
+            "tbtReleaseFeatureStatus": "enabled"
+            },
+            "communityevents": {
+            "featureStatus": "disabled",
+            "country": "IN",
+            "category": "3",
+            "message": "Events to start post lockdown.",
+            "featureImageURL": "https://www.royalenfield.com/node/assets/reprime/event/450x250px(new).jpg"
+            },
+            "communityrides": {
+            "featureStatus": "disabled",
+            "country": "IN",
+            "category": "3",
+            "message": "Rides to start post lockdown.",
+            "featureImageURL": "https://www.royalenfield.com/node/assets/reprime/rides/500x900px(latest).jpg"
+            },
+            "recordroute": {
+            "featureStatus": "disabled",
+            "country": "IN",
+            "category": "1",
+            "message": "Record route disabled for the user"
+            },
+            "myo": {
+            "featureStatus": "disabled",
+            "country": "IN",
+            "category": "1",
+            "message": "Store"
+            },
+            "DRSA": {
+            "featureStatus": "disabled",
+            "country": "IN",
+            "category": "3",
+            "message": ""
+            }
+            }</value>
+    </entry>
+    <entry>
+        <key>feature_status</key>
+        <value>{
+            "default" : {
+            "showEditProfile" : "Y",
+            "wanderlust" : "N",
+            "apparel_store" : "N",
+            "showRideWebV2" : "Y",
+            "showOurWorldWebV2" : "Y",
+            "create_ride" : "Y",
+            "guest_login" : "Y",
+            "motorcycle_info" : "Y",
+            "bct" : "N",
+            "showDataSanitization" : "Y",
+            "connected_bike" : "Y",
+            "tripperCallNotification" : "N",
+            "community_rides" : "Y",
+            "edit_primary_no" : "Y",
+            "geo_query" : "N",
+            "showSparesGenuinityCheck" : "N",
+            "showOTPScreen" : "Y",
+            "community" : "Y",
+            "community_events" : "Y",
+            "show_track_order" : "N",
+            "showConsentControlsV2" : "Y",
+            "trips" : "N",
+            "FAQ" : "Y",
+            "showRideWeb" : "Y",
+            "showOTPEmailText" : "Y",
+            "MIY" : "Y",
+            "showConsentControls" : "Y",
+            "bctV2" : "Y",
+            "showOurWorldWeb" : "Y"
+            },
+            "IN" : {
+            "showEditProfile" : "Y",
+            "wanderlust" : "N",
+            "apparel_store" : "N",
+            "showRideWebV2" : "Y",
+            "showOurWorldWebV2" : "Y",
+            "create_ride" : "Y",
+            "guest_login" : "Y",
+            "motorcycle_info" : "Y",
+            "bct" : "N",
+            "showDataSanitization" : "Y",
+            "connected_bike" : "Y",
+            "tripperCallNotification" : "N",
+            "community_rides" : "Y",
+            "edit_primary_no" : "Y",
+            "geo_query" : "N",
+            "showSparesGenuinityCheck" : "N",
+            "showOTPScreen" : "Y",
+            "community" : "Y",
+            "community_events" : "Y",
+            "show_track_order" : "N",
+            "showConsentControlsV2" : "Y",
+            "trips" : "N",
+            "FAQ" : "Y",
+            "showRideWeb" : "Y",
+            "showOTPEmailText" : "Y",
+            "MIY" : "Y",
+            "showConsentControls" : "Y",
+            "bctV2" : "Y",
+            "showOurWorldWeb" : "Y"
+            }
+            }</value>
+    </entry>
+    <entry>
+        <key>rides_keys</key>
+        <value>{
+            "eventFeatureImageURL": "https://stagecdn.royalenfield.com/node/assets/reprime/event/450x250px(new).jpg",
+            "rideFeatureImageURL": "https://stagecdn.royalenfield.com/node/assets/reprime/rides/500x900px(latest).jpg",
+            "geo_query_radius": "25",
+            "create_ride_message": "Thank you for your interest in creating a ride. Like you, we all are itching to get out &amp; ride. However, our primary concern is everyone’s safety.
+            We have therefore disabled this feature temporarily. We do hope we all are able to get back out riding soon when all this is over. Will keep you posted. Till then Stay Home, Stay Safe."
+            }</value>
+    </entry>
+    <entry>
+        <key>app_update_interval</key>
+        <value>24</value>
+    </entry>
+    <entry>
+        <key>app_settings</key>
+        <value> {"distanceUnit":"Kilometers","decimalSeperator":"Point"}
+        </value>
+    </entry>
+    <entry>
+        <key>acm_configuration</key>
+        <value>{"trackingHost":"https://royalenfield-mkt-stage6-t.adobe-campaign.com/","marketingHost":"https://royalenfield-mkt-stage6.adobe-campaign.com/","iosIntegrationKey":"63e9cbee-34a8-409b-b2ff-8b2c9ba7220f","androidIntegrationKey":"8b69394c-d66d-497c-87ff-7a4f82a12d95"}</value>
+    </entry>
+</defaultsMap>

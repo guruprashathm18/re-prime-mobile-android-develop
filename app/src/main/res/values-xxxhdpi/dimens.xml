@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="re_actionbar_height">63dp</dimen>
+
+    <dimen name="dots_height">12dp</dimen>
+    <dimen name="dots_width">12dp</dimen>
+    <dimen name="dots_margin_left">8dp</dimen>
+    <dimen name="dots_margin_right">8dp</dimen>
+    <dimen name="dots_margin_bottom">27dp</dimen>
+    <dimen name="dots_padding">2dp</dimen>
+
+
+    <!--login screen-->
+
+    <dimen name="line_width">37dp</dimen>
+    <dimen name="line_height">2dp</dimen>
+    <dimen name="text_size">12sp</dimen>
+    <dimen name="login_top_bar">98dp</dimen>
+    <dimen name="login_option_fb">32dp</dimen>
+    <dimen name="login_item_size">40dp</dimen>
+    <dimen name="login_bar_icon">33dp</dimen>
+    <dimen name="login_skip_end">15dp</dimen>
+    <dimen name="login_skip_start">22dp</dimen>
+    <dimen name="login_text_bottom">18dp</dimen>
+    <dimen name="login_text_top">24dp</dimen>
+    <dimen name="login_text_size">20sp</dimen>
+    <dimen name="or_layout_margin">8dp</dimen>
+
+    <!--signupscreen1-->
+    <dimen name="signup_edittext_height">46dp</dimen>
+
+    <!--signupscreen2-->
+    <dimen name="signup_terms_padding">7dp</dimen>
+    <dimen name="signup_signup_button_margintop">46dp</dimen>
+    <dimen name="signup_privacypolicy_tv_margintop">12dp</dimen>
+    <dimen name="signup_privacypolicy_textsize">14sp</dimen>
+    <dimen name="image_bike_margin_from_bottom">10dp</dimen>
+
+    <!--fragment_user_created_rides-->
+    <dimen name="view_pager_height">535dp</dimen>
+    <dimen name="view_pager_width">380dp</dimen>
+    <dimen name="view_pager_margin_top">15dp</dimen>
+    <dimen name="ride_route">18sp</dimen>
+    <dimen name="ride_date">14sp</dimen>
+    <dimen name="no_of_days">14sp</dimen>
+    <dimen name="created_by_tv">13sp</dimen>
+    <dimen name="creator_name">16sp</dimen>
+    <dimen name="creator_place">12sp</dimen>
+    <dimen name="ride_description">16sp</dimen>
+    <dimen name="other_riders_names">13sp</dimen>
+    <dimen name="other_names_margin_start">2dp</dimen>
+    <dimen name="swipe_up_text">13sp</dimen>
+    <dimen name="ride_route_margin_bottom">40dp</dimen>
+    <dimen name="card_padding_right">15dp</dimen>
+    <dimen name="card_padding_left">17dp</dimen>
+    <dimen name="card_page_margin">-12dp</dimen>
+    <dimen name="created_by_margin_top">15dp</dimen>
+    <dimen name="rider_margin_top">10dp</dimen>
+    <dimen name="creator_image_height">58dp</dimen>
+    <dimen name="creator_image_width">60dp</dimen>
+    <dimen name="other_rider_image_width">32dp</dimen>
+    <dimen name="other_rider_image_height">31dp</dimen>
+    <dimen name="horizontal_line_margin_top">32dp</dimen>
+    <dimen name="swipe_text_margin_top">15dp</dimen>
+
+    <!--our world-->
+    <dimen name="text_size_launch">18sp</dimen>
+    <dimen name="launch_image_width">182dp</dimen>
+    <dimen name="launch_image_height">182dp</dimen>
+    <dimen name="launch_card_margin">6dp</dimen>
+    <dimen name="text_size_event">18sp</dimen>
+    <dimen name="event_image_height">207dp</dimen>
+    <dimen name="event_name_margin">83dp</dimen>
+    <dimen name="explore_margin">20dp</dimen>
+    <dimen name="text_size_launch_name">16sp</dimen>
+    <dimen name="text_size_event_name">22sp</dimen>
+    <dimen name="text_size_event_date">18sp</dimen>
+    <dimen name="explore">18sp</dimen>
+
+    <!-- Dealer ride details dimens -->
+    <dimen name="dimen_ride_detail_top_cover_image_height">206dp</dimen>
+    <dimen name="text_size_ride_details_14">14sp</dimen>
+    <dimen name="text_size_rider_details_18">18sp</dimen>
+
+    <!--by_other_riders-->
+    <dimen name="rider_name">12sp</dimen>
+    <dimen name="route">11sp</dimen>
+    <dimen name="by_other_riders_text">12sp</dimen>
+    <dimen name="by_other_riders_margin_top">16dp</dimen>
+    <dimen name="border_width">6sp</dimen>
+    <dimen name="total_height">180dp</dimen>
+    <dimen name="fragment_width">120dp</dimen>
+    <dimen name="fragment_height">130dp</dimen>
+
+    <!--RecommendedRouteDetailActivity-->
+    <dimen name="location_margin_top">31dp</dimen>
+    <dimen name="hotel_name">18sp</dimen>
+    <dimen name="hotel_name_margin_top">28dp</dimen>
+    <dimen name="hotel_description">14sp</dimen>
+    <dimen name="horizontal_separator_margin_top">27dp</dimen>
+    <dimen name="riders_been_here_margin_top">26dp</dimen>
+    <dimen name="rider_names_margin_top">19dp</dimen>
+    <dimen name="horizontal_separator2_margin_top">35dp</dimen>
+    <dimen name="button_margin_top">9dp</dimen>
+
+    <!-- Navigation Menu Icons text size -->
+    <dimen name="nav_tab_active_text_size">28sp</dimen>
+    <dimen name="nav_tab_in_active_text_size">17sp</dimen>
+
+    <!-- PC screen sizes size -->
+    <dimen name="pc_make_my_own_gif_size">180dp</dimen>
+
+    <!--motorcycle Dashboard-->
+    <dimen name="motorcycle_view_pager_height">240dp</dimen>
+    <dimen name="motorcycle_bike_width">326dp</dimen>
+    <dimen name="motorcycle_bike_height">184dp</dimen>
+    <dimen name="viewpager_layout_height">30dp</dimen>
+
+    <!--Text sizes-->
+    <dimen name="text_size_8">8sp</dimen>
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+
+    <!--sizes-->
+    <dimen name="size_2">2dp</dimen>
+    <dimen name="size_5">5dp</dimen>
+    <dimen name="size_8">8dp</dimen>
+    <dimen name="size_10">10dp</dimen>
+    <dimen name="size_15">15dp</dimen>
+    <dimen name="size_18">18dp</dimen>
+    <dimen name="size_20">20dp</dimen>
+    <dimen name="size_24">24dp</dimen>
+    <dimen name="size_30">30dp</dimen>
+    <dimen name="size_32">32dp</dimen>
+    <dimen name="size_40">40dp</dimen>
+    <dimen name="size_50">50dp</dimen>
+    <dimen name="size_60">60dp</dimen>
+    <dimen name="size_6">6dp</dimen>
+    <dimen name="size_3">3dp</dimen>
+    <dimen name="map_height">324dp</dimen>
+    <dimen name="size_1">1dp</dimen>
+
+</resources>

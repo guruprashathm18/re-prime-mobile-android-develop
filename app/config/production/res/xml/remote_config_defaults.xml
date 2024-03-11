@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>re_prime_app_minimum_android_version</key>
+        <value>72</value>
+    </entry>
+    <entry>
+        <key>mobile_base_urls</key>
+        <value>{"orderTrackingBaseURL":"https://makeityours.royalenfield.com/configurator/orderTracking","ConnectedSocketURL":"https://cop-api.royalenfield.com/websocketApp/websocket","ridesWeb":"https://www.royalenfield.com/in/en/app/rides/marquee-rides/","tbtURL":"https://api-tbt.royalenfield.com/v3/","financeYourRE":"https://finance.royalenfield.com/finance","appBaseURL":"https://api.royalenfield.com/v3/","Wanderlust_Trips_URL":"https://api.royalenfield.com/v3/","ServiceBookingURL":"https://www.royalenfield.com/in/en/service/scc-home-app","appBaseURL_V4":"https://api.royalenfield.com/v4/","generatePaymentMessageURL":"https://api.royalenfield.com/v3/","DRSA_URL":"https://pls.europassistance.in:84/reindex.html?","Apparel_Store_URL":"https://store.royalenfield.com/app-home?utm_source\u003dapp\u0026utm_medium\u003d","assetsURL":"https://www.royalenfield.com","Wanderlust_URL":"https://api.royalenfield.com/v3/","configurationShareUrl":"https://royalenfield.com/configurator3d/view/","configuratorServicesURL":"https://api.royalenfield.com/v3/3d/","countryUrl":"https://replatform.blob.core.windows.net/prod/reapp/static/countrymaster/countrymaster.json?timestamp\u003d1646215069","ConnectedBaseURL":"https://cop-api.royalenfield.com/","MIY_URL":"https://makeityours.royalenfield.com","paymentURL":"https://www.billdesk.com/pgidsk/PGIMerchantPayment?msg\u003d","deviceTokenServicesURL":"https://api.royalenfield.com/v3/","bctURL":"https://api-tbt.royalenfield.com/v3/bct/","ourWorldWeb":"https://www.royalenfield.com/in/en/app/home/","lightweightPageURL":"https://www.royalenfield.com","firebaseTokenBaseURL":"https://api.royalenfield.com/v3/"}</value>
+    </entry>
+    <entry>
+        <key>firebase_urls</key>
+        <value>{
+            "REACT_CONFIG_URL": "https://re-platform-prod-configurations.firebaseio.com/",
+            "cityMasterURL": "https://re-platform-prod-citymaster.firebaseio.com/",
+            "countryMasterURL": "https://re-platform-prod-countrymaster.firebaseio.com/",
+            "kConfigurationsURL": "https://re-platform-prod-configurations.firebaseio.com/",
+            "kProductVariantsMasterURL": "https://re-platform-prod-productvariantsmaster.firebaseio.com/",
+            "kVariantsMasterURL": "https://re-platform-prod-variantmaster.firebaseio.com/",
+            "productURL": "https://re-platform-prod-productvariantsmaster.firebaseio.com/",
+            "stateMapURL": "https://re-platform-prod-statecodemaster.firebaseio.com/",
+            "stateMasterURL": "https://re-platform-prod-statemaster.firebaseio.com/",
+            "stateWisePriceURL": "https://re-configurator-prod-productpricemaster.firebaseio.com/",
+            "dealerStateMasterURL": "https://re-platform-prod-dealerstatemaster.firebaseio.com/",
+            "dealerCityMasterURL": "https://re-platform-prod-dealercitymaster.firebaseio.com/",
+            "citywiseMYOStatusMasterURL": "https://re-platform-prod-citywisemyostatusmaster.firebaseio.com/",
+            "dealerMasterURL": "https://re-platform-prod-dealermaster.firebaseio.com/",
+            "kProductVariantsMasterURL_V2": "https://re-platform-prod-productvariantsmaster-v2.firebaseio.com/",
+            "MIY_URL": "https://makeityours.royalenfield.com",
+            "staticURL": "https://re-platform-prod-static-files.firebaseio.com/"
+            }</value>
+    </entry>
+    <entry>
+        <key>google_keys</key>
+        <value>{"APIKey":"AIzaSyBfayPuI_i3oQWm5qpqH4bAJrCQPTGgR40","APIKeyAndroid":"AIzaSyADFFafYXw0cKkzcNgTNfCU5UZLtyKqICg","APIKeyIOS":"AIzaSyDLX4rwuuB-xTeWEwknzqo1wurW_5Y3Buc","googleMapAppStoreLink":"https://apps.apple.com/us/app/google-maps-transit-food/id585027354","googleURLScheme":"https://maps.google.com/","staticMapKey":"AIzaSyBfayPuI_i3oQWm5qpqH4bAJrCQPTGgR40","YoutubeAPIKey":"AIzaSyDvirJ13Hhbgwb_J8Xurq_yTvoVL0sa66o"}</value>
+    </entry>
+    <entry>
+        <key>re_keys</key>
+        <value>{
+            "CustomerCare": "18002100007",
+            "CustomerSupport": "support@royalenfield.com",
+            "JWTExpiryThreshold": "2",
+            "JWTRetryAttemptsCount": "3",
+            "enableLogging": true,
+            "appStoreURL": "itms://itunes.apple.com/app/apple-store/id1472963660?mt=8",
+            "playStoreURL": "https://play.google.com/store/apps/details?id=com.royalenfield.reprime"
+            }</value>
+    </entry>
+    <entry>
+        <key>logger_service</key>
+        <value>{"baseURL":"https://re-platform-fapp-application-logger-prod.azurewebsites.net/api/logger-service","query_param_key":"code","query_param_value":"FLVreq5Syzk9rbizeOaF9K9n65NqDYu32iLuMmDGLUvFJBrSt6V3VQ=="}</value>
+    </entry>
+    <entry>
+        <key>configurable_features</key>
+        <value> </value>
+    </entry>
+
+    <entry>
+        <key>navigation_keys</key>
+        <value>{"trail_record_limit":"50"}</value>
+    </entry>
+
+    <entry>
+        <key>acm_configuration</key>
+        <value>{
+            "trackingHost": "https://t.ride.royalenfield.com/",
+            "marketingHost": "https://royalenfield-mkt-prod1.campaign.adobe.com/",
+            "iosIntegrationKey": "197C3956-8124-4539-BAD7-1853A368FE7C",
+            "androidIntegrationKey": "D4339EEB-E530-4E98-97DA-01EED0D31375"
+            }</value>
+
+    </entry>
+    <entry>
+        <key>feature_status</key>
+        <value>{"default":{"showEditProfile":"Y","wanderlust":"N","apparel_store":"N","showRideWebV2":"Y","showOurWorldWebV2":"Y","create_ride":"N","bct":"N","guest_login":"Y","motorcycle_info":"Y","showDataSanitization":"Y","connected_bike":"Y","tripperCallNotification":"N","community_rides":"N","edit_primary_no":"Y","geo_query":"N","showSparesGenuinityCheck":"Y","showOTPScreen":"Y","community":"Y","community_events":"N","show_track_order":"Y","showConsentControlsV2":"Y","trips":"N","FAQ":"Y","showRideWeb":"N","showOTPEmailText":"Y","MIY":"Y","showConsentControls":"N","bctV2":"Y","showOurWorldWeb":"N"},"IN":{"showEditProfile":"Y","wanderlust":"N","apparel_store":"N","showRideWebV2":"Y","showOurWorldWebV2":"Y","create_ride":"N","bct":"N","guest_login":"Y","motorcycle_info":"Y","showDataSanitization":"Y","connected_bike":"Y","tripperCallNotification":"N","community_rides":"N","edit_primary_no":"Y","geo_query":"N","showSparesGenuinityCheck":"Y","showOTPScreen":"Y","community":"Y","community_events":"N","show_track_order":"Y","showConsentControlsV2":"Y","trips":"N","FAQ":"Y","showRideWeb":"N","showOTPEmailText":"Y","MIY":"Y","showConsentControls":"N","bctV2":"Y","showOurWorldWeb":"N"}}</value>
+    </entry>
+    <entry>
+        <key>rides_keys</key>
+        <value>{"eventFeatureImageURL":"https://www.royalenfield.com/node/assets/reprime/event/450x250px(new).jpg","rideFeatureImageURL":"https://www.royalenfield.com/node/assets/reprime/rides/500x900px(latest).jpg","geo_query_radius":"25","create_ride_message":"Thank you for your interest in creating a ride. Like you, we all are itching to get out &amp; ride. However, our primary concern is everyone’s safety. We have therefore disabled this feature temporarily. We do hope we all are able to get back out riding soon when all this is over. Will keep you posted. Till then Stay Home, Stay Safe."}</value>
+    </entry>
+    <entry>
+        <key>app_update_interval</key>
+        <value>24</value>
+    </entry>
+
+    <entry>
+        <key>connected_keys</key>
+        <value>
+            {
+            "authKey":"evefuvbfbvbvbdfbvbvs",
+            "obd_refresh_interval":"65",
+            "other_refresh_interval":"10",
+            "fuelThreshold":"1",
+            "trip_count":"5",
+            "health_alert_count":"5",
+            "batteryThreshold":"11",
+            "gsm_threshold":"120",
+            "customer_care":"+918045369701"
+            }
+        </value>
+    </entry>
+
+    <entry>
+        <key>global_validations</key>
+        <value>
+            {"pincode":12,"phoneNumber":15,"minPhoneNum":7,"minPin":4}
+        </value>
+    </entry>
+    <entry>
+        <key>app_settings</key>
+        <value> {"distanceUnit":"Kilometers","decimalSeperator":"Point"}
+        </value>
+    </entry>
+    <entry>
+        <key>twoWheelerCountries</key>
+        <value> IN,LK,TH,MY,ID,VN,TW,SG,KH,MM,AR,CO,CL,EC,PE,BO,UY,PY,BR,MX,ZA,EG,NG,DZ,GH,KE
+        </value>
+    </entry>
+    <entry>
+        <key>isDummySlotsEnabled</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>serviceCentersLWPURL</key>
+        <value>https://www.royalenfield.com/in/en/locate-us/service-centres-app/</value>
+    </entry>
+    <entry>
+        <key>servicebookingCutOffTime</key>
+        <value>16:00</value>
+    </entry>
+</defaultsMap>

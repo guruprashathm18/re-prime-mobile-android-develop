@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/black_two">
+
+    <com.royalenfield.reprime.ui.custom.views.TitleBarView
+            android:id="@+id/tb_add_address"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_title_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="@dimen/re_actionbar_height"/>
+
+
+    <fragment xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/map"
+              android:name="com.google.android.gms.maps.SupportMapFragment"
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              app:layout_constraintBottom_toTopOf="@+id/guideline11"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="@+id/guideline_title_bar"
+              app:layout_constraintVertical_bias="0.0"
+              tools:context="example.com.mapexample.MapsActivity"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.47"/>
+
+    <ImageView
+            android:id="@+id/imageView_current_location_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/imageView_location_pin_marginend"
+            android:layout_marginTop="@dimen/imageView_location_pin_margintop"
+            app:layout_constraintBottom_toTopOf="@+id/guideline11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/map"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_location_address"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.058"/>
+
+    <TextView
+            android:id="@+id/textView_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="@dimen/textView_address_margintop"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/text_your_address"
+            android:textColor="@color/white_50"
+            android:textSize="@dimen/textView_address_textsize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toTopOf="@+id/guideline11"/>
+
+    <EditText
+            android:id="@+id/editText_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/editText_address_margintop"
+            android:ems="10"
+            android:focusable="false"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="@string/hint_add_address"
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:paddingEnd="@dimen/editText_address_paddingright"
+            android:paddingStart="0dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_50"
+            android:textSize="@dimen/editText_address_textsize"
+            android:theme="@style/MyEditTextTheme_Address"
+            app:layout_constraintEnd_toStartOf="@+id/guideline13"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toBottomOf="@+id/textView_address"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.945"/>
+
+    <EditText
+            android:id="@+id/editText_address_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/editText_address_two_margintop"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="@string/hint_add_flat"
+            android:singleLine="true"
+            android:paddingEnd="@dimen/editText_address_paddingright"
+            android:paddingStart="0dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_50"
+            android:textSize="@dimen/editText_address_textsize"
+            android:theme="@style/MyEditTextTheme_Address"
+            app:layout_constraintEnd_toStartOf="@+id/guideline13"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toBottomOf="@+id/editText_address"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.64"/>
+
+    <Button
+            android:id="@+id/button_add_this_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="@dimen/button_add_address_margintop"
+            android:background="@drawable/button_border_enable"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="@dimen/button_add_address_padding"
+            android:text="@string/button_text_add_address"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_add_address_textsize"
+            app:layout_constraintEnd_toStartOf="@+id/guideline16"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toBottomOf="@+id/editText_address_two"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

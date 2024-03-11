@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_two">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05109489" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v_95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+    <TextView
+        android:id="@+id/textView_ride_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/text_ride_endtime"
+        android:textColor="@color/white_50"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_ride_endtime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_ride_end_time">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/imageView_mrng_endTime"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView_ride_endtime"
+        app:srcCompat="@drawable/ic_time_morning" />
+
+    <ImageView
+        android:id="@+id/imageView_night_EndTime"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView_ride_endtime"
+        app:srcCompat="@drawable/ic_time_night_enabled" />
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="#c0c0c0"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_mrng_endTime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

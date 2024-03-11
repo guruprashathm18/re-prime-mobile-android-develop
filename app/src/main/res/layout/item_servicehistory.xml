@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:background="@color/black_two"
+                                                   android:paddingBottom="6dp">
+
+
+    <TextView
+        android:id="@+id/textView_invoice_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/textView_invoice_date_margintop"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/text_notavailable"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textView_invoice_date_textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_amountpaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/textView_amountpaid_margintop"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/text_amountpaid"
+        android:textColor="@color/white_50"
+        android:textSize="@dimen/textView_amountpaid_textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_invoice_date" />
+
+    <TextView
+        android:id="@+id/textView_invoice_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/textView_invoice_amount_margintop"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/text_notavailable"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textView_invoice_amount_textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_amountpaid" />
+
+    <TextView
+        android:id="@+id/textview_view_bill_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_next_arrow"
+        android:layout_marginTop="@dimen/textView_invoice_amount_margintop"
+        android:drawablePadding="@dimen/textview_view_bill_summary__drawablepadding"
+        android:fontFamily="@font/montserrat_regular"
+        android:paddingStart="0dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="@dimen/textview_view_bill_summary_paddingbottom"
+        android:text="@string/text_viewbill_summary"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textview_view_bill_summary_textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_invoice_amount" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

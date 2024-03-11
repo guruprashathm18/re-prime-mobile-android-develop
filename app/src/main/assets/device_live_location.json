@@ -1,0 +1,25 @@
+{
+  "data": {
+    "deviceLiveTracking": [
+      {
+        "timestamp": "1579671034",
+        "latitude": 17.436769485473633,
+        "longitude": 78.45771026611328,
+        "gpsStatus": "A",
+        "satellites": null,
+        "idlingStatus": false,
+        "haltStatus": false,
+        "isOverspeed": false,
+        "isHA": false,
+        "isHB": false,
+        "isPrimaryBattery": true,
+        "isNoGps": false,
+        "speed": 15,
+        "extBatVol": 14025,
+        "plusCode": "7J9WCFP5+",
+        "address": "6-3-1219/A, Kundanbagh Colony, Begumpet, Hyderabad, Telangana 500016, India",
+        "event_flag": "3072"
+      }
+    ]
+  }
+}

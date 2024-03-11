@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#424242</color>
+
+    <color name="black">#000000</color>
+    <color name="color_black_with_opacity5">#80000000</color>
+    <color name="black_2">#0D0D0D</color>
+    <color name="black_light">#202020</color>
+    <color name="white">#ffffff</color>
+    <color name="white_30">#4cffffff</color>
+    <color name="orangey_red">#da291c</color>
+    <color name="cool_blue">#38a0cd</color>
+    <color name="reddish">#cc463a</color>
+    <color name="cobalt">#25479b</color>
+    <color name="mustard">#daaa00</color>
+    <color name="white_50">#80ffffff</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_0">#00000000</color>
+    <color name="apple_green">#7ed321</color>
+    <color name="very_light_pink">#f2f2f2</color>
+    <color name="black_two">#252525</color>
+    <color name="userrides_circular_image_border">#FFda291c</color>
+
+    <color name="reddish_two">#e53517</color>
+    <color name="pale_grey">#f8f9fa</color>
+    <color name="white_editext_background">#f8f9fa</color>
+    <color name="light_white">#f8f9fa</color>
+    <color name="black_effective">#2a2a2a</color>
+    <color name="cZero">#c0c0c0</color>
+
+    <color name="transpaent_50">#0DFFFFFF</color>
+    <color name="white_blue">#99ffffff</color>
+    <color name="grey">#99ffffff</color>
+    <color name="white_30p">#4DFFFFFF</color>
+    <color name="default_map_color">#f9d527</color>
+    <color name="black_two_lighter">#80252525</color>
+
+    <color name="splash_text_yellow">#edbd08</color>
+    <color name="loading_bg">#89000000</color>
+    <color name="red_cicular">#d3291c</color>
+
+    <color name="yellow">#f7b500</color>
+    <color name="yellowWithOpacity">#66f7b500</color>
+
+    <color name="header_text_inactive">#4bffffff</color>
+
+    <color name="view_ride_creator_details">#33000000</color>
+    <color name="diy_strip_color">#475560</color>
+
+    <color name="onboard_background">#252525</color>
+    <color name="add_vehicle_screen_label_color">#80ffffff</color>
+    <color name="doc_error_text_color">#e02020</color>
+    <color name="colorSelectedTab">#f7b500</color>
+    <color name="colorUnSelectedTab">#808080</color>
+    <color name="black_three">#101010</color>
+
+    <!--phone configurator-->
+    <color name="google_tab_text_color">#555555</color>
+    <color name="google_tab_background_color">#141518</color>
+    <color name="pc_more_detail_title_color">#777777</color>
+    <color name="pc_bike_variant_color">#f7b500</color>
+    <color name="card_background_color">#2b2b2d</color>
+    <color name="pc_header_background_color">#141518</color>
+    <color name="pc_tab_divider_color">#333333</color>
+    <color name="pc_bike_variant_dot_color">#786E27</color>
+    <!--phone configurator-->
+
+    <!--Motorcycle screen-->
+    <color name="motorcycle_background_color">#141518</color>
+    <color name="text_color_white">#f7f7f7</color>
+    <color name="text_color_grey">#777777</color>
+    <color name="text_color_yellow">#eaab00</color>
+
+    <!--Trip Listing-->
+    <color name="black_bg">#1a1a1a</color>
+
+
+    <!--health alert -->
+    <color name="health_alert_bg">#1a1a1a</color>
+    <color name="health_alert_screen_text_color">#777777</color>
+    <color name="alert_list_count_color">#efaf00</color>
+    <color name="alert_list_count_color_2">#5b460d</color>
+    <color name="health_alert_horizontal_line_color">#3b3b3b</color>
+    <color name="attention_alert_left_header_color">#ec5656</color>
+    <color name="attention_alert_left_header_color1">#f7b500</color>
+    <color name="attention_alert_left_header_color2">#549836</color>
+    <color name="health_alert_row_bg">#252525</color>
+    <color name="splash_background">#ef4023</color>
+    <color name="divider">#BDBDBD</color>
+
+    <!-- Navigation -->
+    <color name="bottomsheet_background">#252525</color>
+
+
+    <!--Bottom sheet dialog for locate motorcycle-->
+    <color name="dialog_line_bg_color">#3b3b3b</color>
+    <color name="meter_box_bg_color">#303030</color>
+    <color name="dialog_bg_color">#1e1e1e</color>
+    <color name="alert_dialog_bg_color">#1f1f1f</color>
+
+    <color name="color_light_green">#549836</color>
+    <color name="color_green">#3a9c24</color>
+    <color name="color_light_red">#ec5656</color>
+    <color name="text_color_light_orange">#563f00</color>
+
+    <color name="colorSelectedDot">#f7b500</color>
+    <color name="colorUnSelectedDot">#66f7b500</color>
+
+    <color name="colorLightGrey">#0cffffff</color>
+
+    <color name="colorIndicatorGrey">#626262</color>
+    <color name="colorIndicatorGreen">#82bd0f</color>
+    <color name="colorIndicatorRed">#e53518</color>
+    <color name="banner_yellow">#daaa00</color>
+
+    <!--BLE-->
+    <color name="normal_thu">#4bffffff</color>
+    <color name="active_thu">#D81B60</color>
+    <color name="thumb">#FFF</color>
+    <color name="color_fore">#f9d527</color>
+
+
+    <color name="color_progress_back">#c0c0c0</color>
+    <color name="color_progress_status">#FFda291c</color>
+
+    <color name="transparent_black">#66000000</color>
+    <!--<color name="map_blue">#1967D2</color>
+    <color name="map_gray">#929497</color>-->
+    <color name="map_blue">#669DF6</color>
+    <color name="map_gray">#BBBDBE</color>
+    <color name="hint_color">#C3C3C3</color>
+    <color name="blue">#1976D2</color>
+    <color name="green">#00796B</color>
+    <color name="red">#d3291c</color>
+    <color name="light_green">#388E3C</color>
+
+</resources>

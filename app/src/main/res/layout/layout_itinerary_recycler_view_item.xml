@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:orientation="vertical"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:layout_marginTop="8dp"
+                                                   android:background="@color/black_two">
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05277"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9555"/>
+
+    <com.royalenfield.reprime.ui.home.rides.custom.RECircularImageView
+            android:id="@+id/events_and_schedules_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/inspiration_falls"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+            android:id="@+id/tv_events_and_schedules"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="Dirt track"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:lineSpacingExtra="3sp"
+            app:layout_constraintLeft_toRightOf="@id/events_and_schedules_image"
+            app:layout_constraintRight_toLeftOf="@id/guideline_v_95"
+            app:layout_constraintTop_toTopOf="@id/events_and_schedules_image"
+            app:layout_constraintBottom_toBottomOf="@id/events_and_schedules_image"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

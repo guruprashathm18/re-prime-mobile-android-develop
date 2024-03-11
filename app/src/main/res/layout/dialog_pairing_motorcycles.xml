@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_24"
+        android:layout_marginEnd="@dimen/size_24"
+        android:background="@drawable/layout_curved_border_top"
+        android:backgroundTint="#d3d3d3"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/size_24"
+        android:paddingEnd="@dimen/size_24">
+
+        <LinearLayout
+            android:id="@+id/llHeaderDialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/size_15"
+            android:paddingBottom="@dimen/size_15">
+
+            <TextView
+                android:id="@+id/txtHeaderDialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_bold"
+                android:lineSpacingExtra="3sp"
+                android:text="@string/pairing_motorcycles"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:id="@+id/imgCross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_cross_black"
+                android:contentDescription="@string/text_close_profile_image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llIgnitionOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgIgnitionIcon"
+                android:layout_width="@dimen/size_15"
+                android:layout_height="@dimen/size_15"
+                android:background="@drawable/ic_ignition_on_dot"
+                android:contentDescription="@string/text_ignition_on"
+                android:scaleType="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_6"
+                android:layout_marginEnd="@dimen/size_15"
+                android:fontFamily="@font/montserrat_bold"
+                android:lineSpacingExtra="5sp"
+                android:visibility="gone"
+                android:text="@string/instruction_ignition_on"
+                android:textColor="@color/color_green"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size_15"
+            android:layout_marginBottom="@dimen/size_10"
+            android:gravity="center"
+            android:padding="@dimen/size_10">
+
+            <ImageView
+                android:id="@+id/imgStartDot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_oval" />
+
+            <ImageView
+                android:id="@+id/imgLineDashes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_line_dashes1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imgEndDot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_oval" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_10">
+
+            <TextView
+                android:id="@+id/txtDeviceName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_10"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="start"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/your_phone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_12"
+                tools:text="Your iPhone" />
+
+            <TextView
+                android:id="@+id/txtBikeName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_10"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="end"
+                android:lineSpacingExtra="4sp"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_12"
+                tools:text="Motorcycle" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size_15"
+            android:fontFamily="@font/montserrat_bold"
+            android:lineSpacingExtra="3sp"
+            android:text="@string/enter_6_digit_code"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14" />
+
+        <EditText
+            android:id="@+id/txtPairingKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/size_20"
+            android:fontFamily="@font/montserrat_bold"
+            android:lineSpacingExtra="3sp"
+            android:padding="@dimen/size_10"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14"
+            android:visibility="gone"
+            tools:text="_  _  _  _  _  _" />
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <com.mukesh.OtpView
+        android:id="@+id/otp_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/size_10"
+        android:visibility="visible"
+        android:layout_marginBottom="@dimen/size_20"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/montserrat_bold"
+        android:text=""
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:inputType="text|textPassword"
+        android:textColor="@color/black"
+        app:itemCount="6"
+        app:itemSpacing="10dp"
+        app:itemWidth="12dp"
+        app:lineColor="@color/black"
+        app:state_filled="true"
+        app:viewType="line"
+        tools:text="123456" />
+
+    <ImageView
+        android:id="@+id/image_password_eye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:contentDescription="@string/password_eye_img_desc"
+        android:padding="@dimen/signup_image_password_eye_padding"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_hide_text" />
+
+</FrameLayout>
+
+        <TextView
+            android:id="@+id/txtConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/size_15"
+            android:background="@drawable/button_border"
+            android:backgroundTint="@color/black"
+            android:enabled="false"
+            android:fontFamily="@font/montserrat_regular"
+            android:lineSpacingExtra="-6sp"
+            android:paddingStart="@dimen/size_30"
+            android:paddingTop="@dimen/size_10"
+            android:paddingEnd="@dimen/size_30"
+            android:paddingBottom="@dimen/size_10"
+            android:text="@string/text_connect"
+            android:textColor="@color/textview_color"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/txtIncorrectCode"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_18"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/size_15"
+            android:fontFamily="@font/montserrat_bold"
+            android:lineSpacingExtra="5sp"
+            android:textColor="@color/color_light_red"
+            android:textSize="@dimen/text_size_12"
+            tools:text="@string/please_enter_correct_code" />
+
+            <TextView
+                android:id="@+id/txv_resnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="5dp"
+                android:text="@string/txt_resend"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_50" />
+
+        </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/curved_background"
+    android:layout_marginBottom="@dimen/dp_12"
+    android:orientation="horizontal"
+  >
+    <LinearLayout
+        android:id="@+id/rel_merged"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:visibility="visible"
+        android:paddingLeft="@dimen/_1sdp"
+        android:paddingRight="@dimen/_1sdp"
+        android:background="@drawable/left_curved_background">
+
+        <com.royalenfield.reprime.ui.tripdetail.view.VerticalTextView
+            android:id="@+id/merged_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center|bottom"
+            android:text="MERGED"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8ssp"
+            android:textStyle="bold"
+            android:visibility="visible">
+
+            >
+        </com.royalenfield.reprime.ui.tripdetail.view.VerticalTextView>
+        <com.royalenfield.reprime.ui.tripdetail.view.VerticalTextView
+            android:id="@+id/merged_badge1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center|bottom"
+            android:text="TRIP"
+            android:layout_toRightOf="@+id/merged_badge"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8ssp"
+            android:textStyle="bold"
+            android:visibility="visible">
+            >
+        </com.royalenfield.reprime.ui.tripdetail.view.VerticalTextView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/dp_16"
+        android:paddingBottom="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_10"
+
+        >
+    <CheckBox
+        android:id="@+id/check_box"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:buttonTint="@color/white"
+        android:layout_height="wrap_content"></CheckBox>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rel"
+        android:paddingTop="@dimen/dp_16"
+        android:paddingBottom="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_5">
+    <TextView
+        android:id="@+id/txv_trip_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18"
+        tools:text="19:32" />
+
+    <TextView
+        android:id="@+id/txv_trip_start_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txv_trip_start_time"
+        android:layout_alignStart="@+id/txv_trip_start_time"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_light"
+        android:textSize="@dimen/sp_12"
+        tools:text="NOV" />
+
+    <TextView
+        android:id="@+id/txv_trip_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txv_trip_start_time"
+        android:layout_toEndOf="@id/txv_trip_start_month"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="@dimen/sp_12"
+        android:layout_marginStart="4dp"
+        android:layout_alignBottom="@id/txv_trip_start_month"
+        tools:text="22" />
+
+    <TextView
+        android:id="@+id/txv_trip_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txv_trip_start_time"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_toEndOf="@id/txv_trip_start_time"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="@dimen/sp_14"
+        tools:text="22" />
+
+    <TextView
+        android:id="@+id/txv_trip_unit_in_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/txv_trip_distance"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="@color/white"
+        android:text="@string/kms"
+        android:textSize="@dimen/sp_14"
+        android:layout_alignBottom="@id/txv_trip_distance"/>
+
+    <TextView
+        android:id="@+id/txv_trip_elapsed_time_in_hr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_toEndOf="@id/txv_trip_unit_in_km"
+        android:layout_alignBottom="@id/txv_trip_distance"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14"
+        tools:text="05" />
+
+    <TextView
+        android:id="@+id/txv_trip_elapsed_hr_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/txv_trip_elapsed_time_in_hr"
+        android:layout_alignBottom="@id/txv_trip_distance"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="@color/white"
+        android:text="@string/hrs"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/txv_trip_elapsed_time_in_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txv_trip_distance"
+        android:layout_toEndOf="@id/txv_trip_elapsed_hr_unit"
+        android:layout_alignBottom="@id/txv_trip_distance"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14"
+        tools:text="12" />
+
+    <TextView
+        android:id="@+id/txv_trip_elapsed_min_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txv_trip_distance"
+        android:layout_toEndOf="@id/txv_trip_elapsed_time_in_min"
+        android:layout_alignBottom="@id/txv_trip_distance"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="@color/white"
+        android:text="@string/mins"
+        android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:id="@+id/ll_separator_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_line"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_below="@id/txv_trip_distance"
+            android:layout_alignStart="@id/txv_trip_distance"
+            android:contentDescription="@string/circle_image" />
+
+    <TextView
+        android:id="@+id/txv_source"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_separator_view"
+        android:layout_alignStart="@id/ll_separator_view"
+        android:layout_marginTop="@dimen/dp_7"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/text_color_grey"
+        android:textSize="@dimen/sp_10"
+        tools:text="Plot no. 3, kormangala near bus depot bangalore" />
+
+
+    <TextView
+        android:id="@+id/txv_dest"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_separator_view"
+        android:layout_marginStart="@dimen/dp_22"
+        android:layout_marginTop="@dimen/dp_7"
+        android:layout_toEndOf="@id/txv_source"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/text_color_grey"
+        android:textSize="@dimen/sp_10"
+        android:maxLines="2"
+        android:ellipsize="end"
+        tools:text="Plot no. 3, kormangala…" />
+    </RelativeLayout>
+</LinearLayout>

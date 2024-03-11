@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "message": "",
+  "data": [
+    {
+      "eventName": "Reunion Nepal",
+      "thumbnailImage": "/content/dam/re-platform-images/home/Rides/marqueeRides/gallery/1.jpg",
+      "url": "https://www.royalenfield.com/in/en/home/events/reunion-nepal/",
+      "startDate": "16th Feb 2019",
+      "endDate": "19th Feb 2019",
+      "noOfDays": "3",
+      "noOfBikersRegistered": "200"
+    },
+    {
+      "eventName": "Escapad Wayanad",
+      "thumbnailImage": "/content/dam/re-platform-images/home/Rides/marqueeRides/gallery/1.jpg",
+      "url": "https://www.royalenfield.com/in/en/home/events/escapade-wayanad/",
+      "startDate": "20th March 2019",
+      "endDate": "25th March 2019",
+      "noOfDays": "5",
+      "noOfBikersRegistered": "400"
+    }
+  ]
+}

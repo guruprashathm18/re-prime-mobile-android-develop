@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/black_two"
+                                                   tools:context="com.royalenfield.reprime.ui.riderprofile.activity.MotorcycleNotesActivity">
+
+    <com.royalenfield.reprime.ui.custom.views.TitleBarView
+            android:id="@+id/tb_motorcycle_notes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/guideline11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="@dimen/re_actionbar_height"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.0583"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_94"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.944"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_h_79"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.79375"/>
+
+    <EditText
+            android:id="@+id/edittext_write_notes"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="start"
+            android:hint="@string/write_notes"
+            android:paddingBottom="15dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="17dp"
+            android:paddingTop="30dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_two_lighter"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toTopOf="@id/guideline_h_79"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintRight_toLeftOf="@id/guideline_v_94"
+            app:layout_constraintTop_toBottomOf="@id/tb_motorcycle_notes"/>
+
+    <Button
+            android:id="@+id/button_save_notes"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="31dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_global_white_border_button"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/button_save_notes"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@id/edittext_write_notes"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

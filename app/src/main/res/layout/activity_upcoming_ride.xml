@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_two"
+    android:descendantFocusability="blocksDescendants"
+    android:scrollbars="none"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp"
+        tools:context="com.royalenfield.reprime.ui.home.rides.activity.DealerRideDetailsActivity">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.055555556" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v_95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+        <com.royalenfield.reprime.ui.custom.views.TitleBarView
+            android:id="@+id/title_bar_ride_detail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_title_bar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="@dimen/re_actionbar_height" />
+
+        <ImageView
+            android:id="@+id/imageView_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/frame_ride_detail_image"
+            app:layout_constraintEnd_toEndOf="@+id/title_bar_ride_detail"
+            app:layout_constraintTop_toTopOf="@+id/title_bar_ride_detail"
+            app:srcCompat="@drawable/ic_option_menu"
+            android:layout_marginRight="8dp" />
+
+        <FrameLayout
+            android:id="@+id/frame_ride_detail_image"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_ride_detail_top_cover_image_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_bar_ride_detail">
+
+            <ImageView
+                android:id="@+id/iv_upcoming_ride"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/text_desc_profile_image" />
+
+        </FrameLayout>
+
+        <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+            android:id="@+id/fl_waypoint_holder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/frame_ride_detail_image" />
+
+
+        <Button
+            android:id="@+id/btn_start_now"
+            android:layout_width="210dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_border_enable"
+            android:fontFamily="@font/montserrat_regular"
+            android:lineSpacingExtra="-5sp"
+            android:maxLines="1"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:text="@string/text_start_now"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/fl_waypoint_holder" />
+
+        <View
+            android:id="@+id/view1_start_line"
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:background="#c0c0c0"
+            android:visibility="visible"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/btn_start_now"
+            android:layout_marginRight="8dp" />
+
+
+        <com.royalenfield.reprime.ui.home.rides.custom.FragmentFrameHolder
+            android:id="@+id/fl_rider_invited"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:descendantFocusability="blocksDescendants"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/view1_start_line" />
+
+        <TextView
+            android:id="@+id/tv_share_ride"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@drawable/ic_next_arrow"
+            android:drawablePadding="@dimen/textview_reschedule_drawablepadding"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingStart="0dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="8dp"
+            android:text="@string/text_share_ride"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textview_reschedule_size"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/fl_rider_invited"
+            android:drawableRight="@drawable/ic_next_arrow"
+            android:paddingLeft="0dp"
+            android:paddingRight="10dp" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="#c0c0c0"
+            android:visibility="visible"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_share_ride" />
+
+
+        <TextView
+                android:id="@+id/tv_label_ride_details"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/text_label_ride_details"
+                android:textColor="@color/white_50"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+                app:layout_constraintTop_toBottomOf="@+id/view_line"/>
+
+
+        <com.royalenfield.reprime.ui.home.rides.custom.RideDetailsLayout
+            android:id="@+id/rideDetailsLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_label_ride_details">
+
+        </com.royalenfield.reprime.ui.home.rides.custom.RideDetailsLayout>
+
+
+        <TextView
+            android:id="@+id/tv_label_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:drawableEnd="@drawable/ic_next_arrow"
+            android:drawablePadding="@dimen/textview_reschedule_drawablepadding"
+            android:fontFamily="@font/montserrat_regular"
+            android:paddingBottom="8dp"
+            android:text="@string/modify"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textview_reschedule_size"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/rideDetailsLayout"
+            android:drawableRight="@drawable/ic_next_arrow" />
+
+        <View
+            android:id="@+id/view1_modify_line"
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="#c0c0c0"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_v_95"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_v_5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_label_modify" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
